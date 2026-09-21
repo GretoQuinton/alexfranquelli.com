@@ -58,6 +58,21 @@ additionalArchiveEntries.forEach(a=>{
  const prev=merged.get(a.t)||{};
  merged.set(a.t,{...prev,...a,u:a.u||prev.u||null});
 });
+const archiveBatchTwo=[
+{d:"23 Oct 2014",t:"The Necks @ Cafe Oto (London, UK)",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/the-necks-at-cafe-oto/"},
+{d:"3 Oct 2014",t:"Match & Fuse Festival: 3 October 2014 (London, UK)",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/match-fuse-festival-3-october-2014-london/"},
+{d:"25 Mar 2015",t:"Contretemps — Pronouncement",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/contretemps-pronouncement/"},
+{d:"2 Jun 2014",t:"Mayhem — Esoteric Warfare",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/mayhem-esoteric-warfare/"},
+{d:"20 May 2014",t:"Dave Porter — Breaking Bad OST",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/dave-porter-breaking-bad-ost/"},
+{d:"13 May 2014",t:"Horseback — Piedmont Apocrypha",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/horseback-piedmont-apocrypha/"},
+{d:"4 Nov 2012",t:"Änglagård — Viljans Öga",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/anglagrd-viljans-oga/"},
+{d:"18 Feb 2013",t:"Steven Wilson — The Raven that Refused to Sing (and Other Stories)",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:true,u:"../portfolio/steven-wilson-the-raven-that-refused-to-sing-and-other-stories/"},
+{d:"19 Jan 2013",t:"Cult of Luna — Vertikal",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/cult-of-luna-vertikal/"},
+{d:"3 Dec 2013",t:"Piano Interrupted — The Unified Field",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/pianointerruptedtheunifiedfield/"},
+{d:"4 Mar 2013",t:"Philip H. Anselmo / Warbeast — War of the Gargantuas EP",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:true,u:"../portfolio/philip-h-anselmo/warbeast-war-of-the-gargantuas-epauthor-punisher-women-children-hrbkn/"},
+{d:"8 Jul 2021",t:"Bryan Away — Sawdust",p:"The Line of Best Fit",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/bryanawaysawdust/"}
+];
+archiveBatchTwo.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
 const articleRows=[...merged.values()];
 const list=document.querySelector('#list'),q=document.querySelector('#q');let active='all';
 function matches(a){
