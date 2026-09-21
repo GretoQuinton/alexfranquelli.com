@@ -151,9 +151,3127 @@
       "original_url": "",
       "content_hash": "964598e",
       "status": "ingested"
+    },
+    {
+      "file_id": "id:T-Oqh_haUpYAAAAAAAAAFA",
+      "file": "An Autumn for Crippled Children - Only the ocean knows [Angry Metal Guy].docx",
+      "title": "An Autumn for Crippled Children – “Only the Ocean Knows”",
+      "pub": "Angry Metal Guy",
+      "date": "27 Aug 2012",
+      "lang": "en",
+      "topic": "music",
+      "type": "Review",
+      "slug": "an-autumn-for-crippled-children-only-the-ocean-knows",
+      "route": "/portfolio/an-autumn-for-crippled-children-only-the-ocean-knows/",
+      "original_url": "",
+      "content_hash": "3ac88b9c",
+      "status": "ingested"
+    },
+    {
+      "file_id": "id:T-Oqh_haUpYAAAAAAAAAFQ",
+      "file": "Anathema - Falling deeper [Ritual].doc",
+      "title": "Anathema - Falling deeper",
+      "pub": "Ritual",
+      "date": "",
+      "lang": "it",
+      "topic": "music",
+      "type": "Review",
+      "slug": "anathema-falling-deeper-ritual",
+      "route": "/portfolio/anathema-falling-deeper-ritual/",
+      "original_url": "",
+      "content_hash": "e2026ee7",
+      "status": "ingested"
+    },
+    {
+      "file_id": "id:T-Oqh_haUpYAAAAAAAAAFg",
+      "file": "Anathema live report.doc",
+      "title": "Anathema live report",
+      "pub": "Publication to verify",
+      "date": "",
+      "lang": "it",
+      "topic": "music",
+      "type": "Live report",
+      "slug": "anathema-live-report",
+      "route": "/portfolio/anathema-live-report/",
+      "original_url": "",
+      "content_hash": "205f1958",
+      "status": "ingested"
+    },
+    {
+      "file_id": "id:T-Oqh_haUpYAAAAAAAAAFw",
+      "file": "Andy Barlow – Back to mine.doc",
+      "title": "Andy Barlow – Back to mine",
+      "pub": "Publication to verify",
+      "date": "",
+      "lang": "it",
+      "topic": "music",
+      "type": "Review",
+      "slug": "andy-barlow-back-to-mine",
+      "route": "/portfolio/andy-barlow-back-to-mine/",
+      "original_url": "",
+      "content_hash": "a7d789c2",
+      "status": "ingested"
+    },
+    {
+      "file_id": "id:T-Oqh_haUpYAAAAAAAAAGg",
+      "file": "Andy Stott - Too Many Voices (Popmatters).docx",
+      "title": "Andy Stott — Too Many Voices",
+      "pub": "PopMatters",
+      "date": "2017-07-27",
+      "lang": "en",
+      "topic": "music",
+      "type": "Review",
+      "slug": "andy-stott-too-many-voices",
+      "route": "/portfolio/andy-stott-too-many-voices/",
+      "original_url": "",
+      "content_hash": "2be0b853",
+      "status": "ingested"
+    },
+    {
+      "file_id": "id:T-Oqh_haUpYAAAAAAAABig",
+      "file": "Änglagård - Viljans Öga [All About Jazz].docx",
+      "title": "Änglagård — Viljans Öga",
+      "pub": "All About Jazz",
+      "date": "4 Nov 2012",
+      "lang": "en",
+      "topic": "music",
+      "type": "Review",
+      "slug": "anglagrd-viljans-oga",
+      "route": "/portfolio/anglagrd-viljans-oga/",
+      "original_url": "",
+      "content_hash": "d984c96c",
+      "status": "ingested"
+    },
+    {
+      "file_id": "id:T-Oqh_haUpYAAAAAAAAAHQ",
+      "file": "Article (on music) for Dartford Living.doc",
+      "title": "Article (on music) for Dartford Living",
+      "pub": "Dartford Living",
+      "date": "",
+      "lang": "en",
+      "topic": "music",
+      "type": "Review",
+      "slug": "article-on-music-for-dartford-living-dartford-living",
+      "route": "/portfolio/article-on-music-for-dartford-living-dartford-living/",
+      "original_url": "",
+      "content_hash": "2e5abc28",
+      "status": "ingested"
+    },
+    {
+      "file_id": "id:T-Oqh_haUpYAAAAAAAAAHg",
+      "file": "Article on Mongolia.docx",
+      "title": "Article on Mongolia",
+      "pub": "Publication to verify",
+      "date": "",
+      "lang": "en",
+      "topic": "music",
+      "type": "Review",
+      "slug": "article-on-mongolia",
+      "route": "/portfolio/article-on-mongolia/",
+      "original_url": "",
+      "content_hash": "ff0ee292",
+      "status": "ingested"
+    },
+    {
+      "file_id": "id:T-Oqh_haUpYAAAAAAAAAJA",
+      "file": "Articolo per Il Fatto Quotidiano Dicembre 2011.doc",
+      "title": "Articolo per Il Fatto Quotidiano Dicembre 2011",
+      "pub": "Il Fatto Quotidiano",
+      "date": "",
+      "lang": "it",
+      "topic": "politics",
+      "type": "Review",
+      "slug": "articolo-per-il-fatto-quotidiano-dicembre-2011-il-fatto-quotidiano",
+      "route": "/portfolio/articolo-per-il-fatto-quotidiano-dicembre-2011-il-fatto-quotidiano/",
+      "original_url": "",
+      "content_hash": "ff2c2ca1",
+      "status": "ingested"
+    },
+    {
+      "file_id": "id:T-Oqh_haUpYAAAAAAAAAJQ",
+      "file": "Barlow, Andy – Back to mine.doc",
+      "title": "Barlow, Andy – Back to mine",
+      "pub": "Publication to verify",
+      "date": "",
+      "lang": "it",
+      "topic": "music",
+      "type": "Review",
+      "slug": "barlow-andy-back-to-mine",
+      "route": "/portfolio/barlow-andy-back-to-mine/",
+      "original_url": "",
+      "content_hash": "a7d789c2",
+      "status": "ingested"
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "file": "Angra - Aurora Consurgens [Kronic].doc",
+      "error": "INVALID_ARGUMENT: Error code: INVALID_ARGUMENT; Error: RuntimeException: Error calling MCP tool: [TextContent(type='text', text='Fetch could not extract file content. Could not extract text content from this file Open the file here: https://www.dropbox.com/scl/fi/pnwii5albcrq4jp554aa0', annotations=None, meta=None)]"
+    }
+  ],
   "skipped": [],
-  "known_count": 329
+  "known_count": 329,
+  "known_records": [
+    {
+      "title": "Terrorism Seen from Londonistan",
+      "pub": "PeaceReporter.net",
+      "date": "2005-08-18",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.peacereporter.net/dettaglio_articolo.php?idart=3462",
+      "topic": "Politics"
+    },
+    {
+      "title": "Le bombe viste dal Londonistan",
+      "pub": "PeaceReporter.net",
+      "date": "2005-08-11",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.peacereporter.net/dettaglio_articolo.php?idart=3444",
+      "topic": "Politics"
+    },
+    {
+      "title": "Meglio non parlarne",
+      "pub": "PeaceReporter.net",
+      "date": "2005-10-17",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.peacereporter.net/dettaglio_articolo.php?idart=3790",
+      "topic": "Politics"
+    },
+    {
+      "title": "A.M., the - The A.M.",
+      "pub": "Kronic",
+      "date": "2003-12-17",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=9235",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "A.M., the - The A.M.",
+      "pub": "Dedication.it",
+      "date": "2003-09-16",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-the_am.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "AA.VV. - Everything comes and goes",
+      "pub": "MusicBoom",
+      "date": "2005-12-25",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20051107044640",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Acid Brains - The End Of The Show",
+      "pub": "Dedication.it",
+      "date": "2004-08-08",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-acidbrains.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Adom - Idiot Savant",
+      "pub": "Dedication.it",
+      "date": "2003-09-03",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-adom.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Adventure In Time - Dreams of Water Themes",
+      "pub": "MusicBoom",
+      "date": "2004-03-01",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040223232114",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Aeternus - Hexaeon",
+      "pub": "Kronic",
+      "date": "2006-05-24",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=13385",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Agoraphobic Nosebleed - Altered States Of America",
+      "pub": "Dedication.it",
+      "date": "2004-01-28",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-agoraph.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Alephra - Sands",
+      "pub": "MusicBoom",
+      "date": "2004-03-14",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040302222636",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Alternative Allstars - 110% Rock",
+      "pub": "RockOn.it",
+      "date": "2004-07-19",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.rockon.it/modules.php?name=Reviews&rop=showcontent&id=669",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Angra - Aurora Consurgens ",
+      "pub": "Kronic",
+      "date": "2006-10-30",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=14102",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Atreyu - A Death Grip On Yesterday",
+      "pub": "Kronic",
+      "date": "2006-04-04",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=13147",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "B.B.A. - B.B.A.",
+      "pub": "Dedication.it",
+      "date": "2004-04-16",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-bba.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Barker, Sophie - Earthbound",
+      "pub": "MusicBoom",
+      "date": "2005-10-07",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20051006043804",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Barlow, Andy - Back To Mine - The Voodoo Sessions",
+      "pub": "MusicBoom",
+      "date": "2004-09-08",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040831053958",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Bikini Atoll - Moratoria",
+      "pub": "MusicBoom",
+      "date": "2004-03-12",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040304201622",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Black Eyes - Cough",
+      "pub": "MusicBoom",
+      "date": "2004-12-30",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20041229074832",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Black Heart Procession - In the fishtank Vol. 11",
+      "pub": "MusicBoom",
+      "date": "2004-06-05",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040605060118",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Bolt Thrower - Those once loyal",
+      "pub": "MusicBoom",
+      "date": "2005-01-17",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20051223035146",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Bright Eyes & Neva Dinova - One Jug Of Wine, Two Vessels",
+      "pub": "MusicBoom",
+      "date": "2004-07-03",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040702023310",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Brightblack - Ala.Cali.Tucky",
+      "pub": "MusicBoom",
+      "date": "2004-07-10",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040706045846",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Brinkmann, Thomas - Tokyo +1",
+      "pub": "MusicBoom",
+      "date": "2004-08-14",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040731195809",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "British Sea Power - The decline of British Sea Power",
+      "pub": "Kronic",
+      "date": "2004-01-27",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=9431",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Catacombs - In The Depths Of R`lyeh",
+      "pub": "Kronic",
+      "date": "2006-05-13",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=13347",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Centinex - Decadence - Prophecies Of Cosmic Chaos",
+      "pub": "MusicBoom",
+      "date": "2004-05-05",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040501191434",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Children Of Bodom - Are you dead yet ?",
+      "pub": "MusicBoom",
+      "date": "2006-03-11",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20060128053637",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "CKeline, Christian - Real Ghosts",
+      "pub": "MusicBoom",
+      "date": "2004-06-03",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040603051127",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Clouds Of Norah - Every Character Vs. My Criteria",
+      "pub": "RockOn.it",
+      "date": "2004-07-13",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.rockon.it/modules.php?name=Reviews&rop=showcontent&id=666",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Concept - Reason and truth ",
+      "pub": "MusicBoom",
+      "date": "2004-03-22",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040311105037",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Da Pulka - Da pulka",
+      "pub": "MusicBoom",
+      "date": "2005-12-04",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20051031200942",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Dälek and Faust - Derbe Respect, Alder",
+      "pub": "MusicBoom",
+      "date": "2004-05-31",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040531003439",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Dark Tranquillity - Character",
+      "pub": "Dedication.it",
+      "date": "2005-02-07",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-dark_tranq.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Dark Tranquillity - Exposure (In retrospect and denial)",
+      "pub": "MusicBoom",
+      "date": "2004-07-26",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040719004553",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Darkness, the - Permission to land",
+      "pub": "MusicBoom",
+      "date": "2004-01-01",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040101232901",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Darkthrone - The Cult Is Alive",
+      "pub": "Kronic",
+      "date": "2006-03-28",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=13116",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Deadbeat - New World Observer",
+      "pub": "MusicBoom",
+      "date": "2005-11-02",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20051005041932",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Deadbeat - Something Borrowed, Something Blue",
+      "pub": "MusicBoom",
+      "date": "2004-05-04",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040501061402",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Deadman - Our eternal ghosts",
+      "pub": "MusicBoom",
+      "date": "2005-12-12",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20051223043449",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Deflore - Human Indu[b]strial",
+      "pub": "Kronic",
+      "date": "2006-05-16",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=13364",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Depeche Mode - Playing the angel",
+      "pub": "MusicBoom",
+      "date": "2005-10-26",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20051025074109",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Diecast - Internal revolution",
+      "pub": "Kronic",
+      "date": "2007-02-18",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=14623",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Dillinger Escape Plan, the - Miss Machine",
+      "pub": "Dedication.it",
+      "date": "2004-08-10",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-dep2.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Dir En Grey - Vulgar",
+      "pub": "Kronic",
+      "date": "2006-10-14",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=14005",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Disorder - EneMYself",
+      "pub": "Dedication.it",
+      "date": "2004-03-16",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-disorder.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Duskfall - Lifetime supply of guilt",
+      "pub": "MusicBoom",
+      "date": "2006-03-22",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20060201063934",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Dustsucker - Jack Knife Rendezvous",
+      "pub": "Kronic",
+      "date": "2006-10-20",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=14032",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Ellesmere, David - Rites of spring",
+      "pub": "MusicBoom",
+      "date": "2004-12-28",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20041227222106",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Ellis, Rob - Music for the home vol. 2",
+      "pub": "MusicBoom",
+      "date": "2005-02-01",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20050201043147",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "End Of Level Boss - Prologue",
+      "pub": "MusicBoom",
+      "date": "2006-03-01",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20060201043456",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Entwine - DiEversity",
+      "pub": "MusicBoom",
+      "date": "2004-06-01",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040530030651",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Fantômas - Delirium Cordia",
+      "pub": "MusicBoom",
+      "date": "2004-02-04",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040130162559",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Fantômas - Suspended animation",
+      "pub": "MusicBoom",
+      "date": "2005-05-14",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20050513055918",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Farmer Boys – The Other Side",
+      "pub": "RockOn.it",
+      "date": "2004-03-10",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.rockon.it/modules.php?name=Reviews&rop=showcontent&id=549",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Faun Fables - Family album",
+      "pub": "MusicBoom",
+      "date": "2004-05-02",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040501070635",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Fear Factory - Archetype",
+      "pub": "Kronic",
+      "date": "2004-04-20",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=9905",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Fony - Circles",
+      "pub": "Dedication.it",
+      "date": "2004-04-01",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-fony.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Four Square - Three Chords...One Capo",
+      "pub": "MusicBoom",
+      "date": "2004-03-28",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040309230259",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Funeral For A Friend - Casually dressed and deep in conversation",
+      "pub": "MusicBoom",
+      "date": "2004-02-25",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040216151427",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Funeral For A Friend - Casually Dressed And Deep In Conversation",
+      "pub": "Kronic",
+      "date": "2004-02-16",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=9524",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Girls in Hawaii - From here to there ",
+      "pub": "MusicBoom",
+      "date": "2004-05-01",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040428070507",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Goatwhore - A haunting curse",
+      "pub": "Kronic",
+      "date": "2006-10-15",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=14006",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Golem - Dreamweaver ",
+      "pub": "Kronic",
+      "date": "2004-07-20",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=10462",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Grave - Fiendish regression",
+      "pub": "MusicBoom",
+      "date": "2004-08-30",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040816010109",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Grubbs, David - A guest at the riddle",
+      "pub": "MusicBoom",
+      "date": "2004-09-13",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040912185956",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Hammerfall - Chapter V: Unbent, Unbowed, Unbroken",
+      "pub": "MusicBoom",
+      "date": "2005-03-18",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20050317230944",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Hatebreed - Supremacy",
+      "pub": "Kronic",
+      "date": "2006-11-02",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=14088",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Hatesphere - Ballet Of The Brute",
+      "pub": "Kronic",
+      "date": "2004-07-15",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=10433",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Hearse - Armageddon, mon amour",
+      "pub": "MusicBoom",
+      "date": "2004-07-20",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040717220727",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Helloween - Keeper Of The Seven Keys - The Legacy",
+      "pub": "MusicBoom",
+      "date": "2006-01-31",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20060130033538",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Himsa - Courting tragedy and disaster",
+      "pub": "Kronic",
+      "date": "2003-09-09",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=8641",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Himsa - Courting tragedy and disaster",
+      "pub": "Nerds Attack!",
+      "date": "2003-09-05",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicaroma.it/nerds/articolone.asp?ID=558",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Himsa - Courting tragedy and disaster",
+      "pub": "Dedication.it",
+      "date": "2003-08-02",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-himsa.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Hypocrisy - Virus",
+      "pub": "MusicBoom",
+      "date": "2005-12-21",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20051126044444",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "I Am The World Trade center - The cover up",
+      "pub": "MusicBoom",
+      "date": "2004-09-15",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040912232023",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Illdisposed - Burn me wicked",
+      "pub": "Kronic",
+      "date": "2003-10-13",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=14007",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "In Flames - Soundtrack To Your Escape",
+      "pub": "Kronic",
+      "date": "2004-04-12",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=9843",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Incubus - A crow left out of murder",
+      "pub": "Kronic",
+      "date": "2004-02-12",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=9508",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Inferno - Inferno",
+      "pub": "Kronic",
+      "date": "2004-01-19",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=9401",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Innocent X - Haut/bas",
+      "pub": "MusicBoom",
+      "date": "2004-07-22",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040718175812",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Iron maiden - Dance of death",
+      "pub": "MusicBoom",
+      "date": "2004-01-06",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040105192930",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "IV Luna - Anteroom",
+      "pub": "Kronic",
+      "date": "2006-10-29",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=14090",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Karate - Pockets",
+      "pub": "Kronic",
+      "date": "2004-09-17",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=10672",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Keane - Hopes And Fears",
+      "pub": "Kronic",
+      "date": "2004-07-02",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=10379",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Kelis - Tasty",
+      "pub": "MusicBoom",
+      "date": "2004-02-28",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040223205726",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Kings Of Convenience - Riot On An Empty Street",
+      "pub": "Dedication.it",
+      "date": "2004-08-14",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-koc.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Korn - See you on the other side",
+      "pub": "MusicBoom",
+      "date": "2005-12-29",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20051223051950",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Limp Bizkit - The Unquestionable Truth Pt. 1",
+      "pub": "Kronic",
+      "date": "2005-06-01",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=11850",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Loscil - First narrows",
+      "pub": "MusicBoom",
+      "date": "2004-09-22",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040913004249",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Madrugada - The deep end",
+      "pub": "MusicBoom",
+      "date": "2005-10-12",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20051011064037",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Magnitude Nine - Decoding the soul",
+      "pub": "MusicBoom",
+      "date": "2004-03-16",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040303194148",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Malevolent Creation - Warkult",
+      "pub": "MusicBoom",
+      "date": "2004-07-08",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040705065948",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Marmaja - Marmaja",
+      "pub": "MusicBoom",
+      "date": "2004-07-02",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040624042342",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Megadeth - The system has failed",
+      "pub": "MusicBoom",
+      "date": "2004-10-08",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20041004002613",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Meshuggah - I",
+      "pub": "Kronic",
+      "date": "2004-08-31",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=10614",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Moist Vagina - Endless Line",
+      "pub": "Dedication.it",
+      "date": "2004-06-26",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-moist_vag.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Mollouw - 00:56/Kautokeino Desperation",
+      "pub": "Kronic",
+      "date": "2006-06-26",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=13569",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Monstrosity - Rise to power",
+      "pub": "MusicBoom",
+      "date": "2004-04-06",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040328213231",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Napalm Death - Leader, not followers Pt. 2",
+      "pub": "MusicBoom",
+      "date": "2004-10-14",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20041008024057",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "New Year, the - The end is near",
+      "pub": "MusicBoom",
+      "date": "2004-12-16",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20041216022053",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Norma Jean - Redemeer",
+      "pub": "Kronic",
+      "date": "2007-01-16",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=14473",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Øye, Erland - DJ kicks",
+      "pub": "MusicBoom",
+      "date": "2004-06-23",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040621024001",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "P.O.D. - Payable on death",
+      "pub": "Kronic",
+      "date": "2004-01-26",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=9425",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Paatos - Kallocain",
+      "pub": "MusicBoom",
+      "date": "2004-05-26",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040620210102",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Pan American - Quiet city",
+      "pub": "MusicBoom",
+      "date": "2005-01-19",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20050115203019",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Paradise Lost - Paradise Lost",
+      "pub": "MusicBoom",
+      "date": "2005-04-01",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20050401022101",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Permanent Fatal Erro - Law speed",
+      "pub": "MusicBoom",
+      "date": "2004-07-21",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040718063120",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Picastro - Red your blues",
+      "pub": "MusicBoom",
+      "date": "2004-09-18",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040912195723",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Pleasant Grove - The art of leaving",
+      "pub": "MusicBoom",
+      "date": "2004-08-09",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040731155222",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Poverty's no crime - Chemical chaos",
+      "pub": "MusicBoom",
+      "date": "2004-03-19",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040309213114",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Prime STH - Beautiful Awakening",
+      "pub": "RockOn.it",
+      "date": "2004-07-06",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.rockon.it/modules.php?name=Reviews&rop=showcontent&id=658",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Quarzo Nero - Ancora Vivo",
+      "pub": "Dedication.it",
+      "date": "2004-05-04",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-quarzonero.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Queens Of The Stone Age - Lullabies to paralyze",
+      "pub": "MusicBoom",
+      "date": "2005-03-29",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20050328192929",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Raunchy - Death pop romance",
+      "pub": "MusicBoom",
+      "date": "2006-08-03",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20060627031009",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Reflue - Slo-mo",
+      "pub": "MusicBoom",
+      "date": "2004-03-10",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040310213355",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Relapsed - Into a former state",
+      "pub": "Kronic",
+      "date": "2006-10-19",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=14031",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Relevant Few - The art of today",
+      "pub": "MusicBoom",
+      "date": "2004-07-23",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040718210230",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Revolting Cocks - Cocked and loaded",
+      "pub": "Kronic",
+      "date": "2006-04-05",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=13150",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Riverside - Second life syndrome",
+      "pub": "MusicBoom",
+      "date": "2006-02-26",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20060201055344",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Royksopp - The understanding",
+      "pub": "MusicBoom",
+      "date": "2005-09-16",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20050915072011",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Saga - Remember when (The very best of Saga)",
+      "pub": "Kronic",
+      "date": "2007-02-19",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=14624",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Saint Germain des Pres Cafe, Vol. 3",
+      "pub": "RockShock.it",
+      "date": "2003-09-20",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.rockshock.it/news.asp?id=611",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Schaefer, Janek - Cold storage",
+      "pub": "MusicBoom",
+      "date": "2004-10-15",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20041008032756",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Sevendust - Seasons",
+      "pub": "Kronic",
+      "date": "2004-01-12",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=13386",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Sigur Ròs - Takk",
+      "pub": "MusicBoom",
+      "date": "2005-09-19",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20050919052110",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Silent Drive - Rock H Design",
+      "pub": "Nerds Attack!",
+      "date": "2003-09-02",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicaroma.it/nerds/articolone.asp?ID=557",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Silent Drive - Rock H Design",
+      "pub": "Dedication.it",
+      "date": "2003-08-21",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-silent_d.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Skitsystem - Stigmata",
+      "pub": "Kronic",
+      "date": "2006-05-20",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=13386",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Slipknot - Vol. 3: (The Subliminal Verses)",
+      "pub": "MusicBoom",
+      "date": "2004-06-11",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040609040000",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Sophia - People Are Like Seasons",
+      "pub": "MusicBoom",
+      "date": "2004-01-30",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040130154913",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Sophia - People Are Like Seasons",
+      "pub": "Kronic",
+      "date": "2003-12-29",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=9295",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Sottopelle - Assioma Zero",
+      "pub": "Dedication.it",
+      "date": "2004-06-05",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-sottopelle.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Soulfly - Darg ages",
+      "pub": "MusicBoom",
+      "date": "2005-11-15",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20051112194046",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Statistics - Leave your name",
+      "pub": "MusicBoom",
+      "date": "2004-03-22",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040316221323",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Stereolab - Margerine eclipse ",
+      "pub": "MusicBoom",
+      "date": "2004-02-29",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040229215450",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Stone Sour - Come what(ever) may",
+      "pub": "Kronic",
+      "date": "2006-10-16",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=14008",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Streets, the - A grand don't come for free",
+      "pub": "MusicBoom",
+      "date": "2004-05-27",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040525041853",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Strokes, the - Room on fire",
+      "pub": "MusicBoom",
+      "date": "2003-10-27",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20031026103214",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Subzero - Suffering of man",
+      "pub": "Kronic",
+      "date": "2006-04-07",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=13162",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "System Of A Down - Mesmerize",
+      "pub": "MusicBoom",
+      "date": "2005-05-25",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20050524230116",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Terror - Always the hard way",
+      "pub": "Kronic",
+      "date": "2006-11-20",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=14203",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "The Psychos - Demo 2003",
+      "pub": "Dedication.it",
+      "date": "2004-03-06",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-psychos.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Throwdown - Vendetta",
+      "pub": "MusicBoom",
+      "date": "2005-12-20",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20051113204047",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Thyrane - Travesty Of Heavenly Essence",
+      "pub": "Kronic",
+      "date": "2006-05-10",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=13334",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Tikal - Tikal ",
+      "pub": "MusicBoom",
+      "date": "2005-04-16",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20050406211943",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Tiles - Windows dressing",
+      "pub": "MusicBoom",
+      "date": "2004-06-12",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040612033844",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Tintozenna - Tintozenna",
+      "pub": "MusicBoom",
+      "date": "2004-09-30",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040922062533",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Tortoise - It's all around you",
+      "pub": "MusicBoom",
+      "date": "2004-04-22",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040420062702",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Type O Negative - Life is killing me",
+      "pub": "MusicBoom",
+      "date": "2004-01-19",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040117210252",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Unearth - III: In The Eyes Of Fire",
+      "pub": "Kronic",
+      "date": "2006-10-17",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=14009",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Unnamed - The Market Of Stupids",
+      "pub": "Dedication.it",
+      "date": "2004-07-07",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-unnamed.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Uriah Heep - The ultimate anthology",
+      "pub": "MusicBoom",
+      "date": "2005-04-04",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20050403193025",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Vaux - There Must Be Some Way to Stop Them",
+      "pub": "Kronic",
+      "date": "2004-03-02",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=9609",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Verdena - Il suicidio dei Samurai",
+      "pub": "Kronic",
+      "date": "2004-10-30",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=9449",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Warrior Soul - Various",
+      "pub": "Kronic",
+      "date": "2006-07-31",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=13712",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Wolfmother - Wolfmother",
+      "pub": "Kronic",
+      "date": "2006-04-03",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=13138",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Zero 7 - When it falls",
+      "pub": "Kronic",
+      "date": "2004-04-07",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=2&sID=9831",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Zero 7 - When it falls",
+      "pub": "Nerds Attack!",
+      "date": "2004-04-05",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicaroma.it/nerds/articolone.asp?ID=1229",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Zero 7 - When it falls",
+      "pub": "MusicBoom",
+      "date": "2004-03-15",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040314191406",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Zonaloud - \"Quello Che Vedi",
+      "pub": "Dedication.it",
+      "date": "2004-06-02",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/trlist-zonaloud.htm",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Zu/Spaceways - Radiale",
+      "pub": "MusicBoom",
+      "date": "2004-09-11",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_recensioni.php?Unico=20040911060225",
+      "topic": "Music reviews"
+    },
+    {
+      "title": "Cathedral @ Underworld, London (UK)",
+      "pub": "MusicBoom",
+      "date": "2004-08-07",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_art.php?categoria=concerti&Unico=20040823053252",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Fony @ Underworld, London (UK)",
+      "pub": "MusicBoom",
+      "date": "2004-04-25",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_art.php?categoria=concerti&Unico=20040430030109",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Tortoise @ Mean Fiddler, London (UK)",
+      "pub": "MusicBoom",
+      "date": "2004-07-01",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_art.php?categoria=concerti&Unico=20040705021516",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Entombed @ Garage, London (UK)",
+      "pub": "MusicBoom",
+      "date": "2004-02-08",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_art.php?categoria=concerti&Unico=20040218193645",
+      "topic": "Live reports"
+    },
+    {
+      "title": "A.M., The @ Barfly, London (UK)",
+      "pub": "MusicBoom",
+      "date": "2003-12-01",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_art.php?categoria=concerti&Unico=20040107230142",
+      "topic": "Live reports"
+    },
+    {
+      "title": "The Mountaineers + The Killers + The Vanity Set @ Barfky, London (UK)",
+      "pub": "MusicBoom",
+      "date": "2003-10-01",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_art.php?categoria=concerti&Unico=20031104004224",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Paradise Lost + Deathstars @ Astoria, London (UK)",
+      "pub": "Kronic",
+      "date": "2003-11-18",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=200",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Will Haven + Crowbar + Kingsize Blues + Seventh Cross @ Zodiac, Oxford (UK)",
+      "pub": "Kronic",
+      "date": "2006-03-30",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=413",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Vaux + We @ Underworld, London (UK)",
+      "pub": "Kronic",
+      "date": "2004-03-08",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=242",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Turbonegro @ Mean Fiddler, London (UK)",
+      "pub": "Kronic",
+      "date": "2003-12-08",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=213",
+      "topic": "Live reports"
+    },
+    {
+      "title": "A.M., The @ Barfly, London (UK)",
+      "pub": "Kronic",
+      "date": "2003-12-01",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=212",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Sophia @ Carling Islington, London (UK)",
+      "pub": "Kronic",
+      "date": "2004-03-30",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=259",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Queens Of The Stone Age @  Brixton Academy, London (UK)",
+      "pub": "Kronic",
+      "date": "2003-06-22",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=208",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Napalm Death @ Underworld, London (UK)",
+      "pub": "Kronic",
+      "date": "2005-01-24",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=337",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Live 8 @ Hyde Park, London (UK)",
+      "pub": "Kronic",
+      "date": "2005-07-02",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=379",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Life Of Agony,+ Bloodsimple @ Mean Fiddler, London (UK)",
+      "pub": "Kronic",
+      "date": "2005-05-23",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=374",
+      "topic": "Live reports"
+    },
+    {
+      "title": "In Flames + Devildriver + Caliban @ Astoria, London (UK)",
+      "pub": "Kronic",
+      "date": "2004-04-25",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=269",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Himsa + Last Hour Of Torment @ Barfly, London (UK)",
+      "pub": "Kronic",
+      "date": "2003-08-09",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=163",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Hanoi Rocks @ Shepherd's Bush Empire, London (UK)",
+      "pub": "Kronic",
+      "date": "2003-09-30",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=175",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Grandaddy @ Astoria, London (UK)",
+      "pub": "Kronic",
+      "date": "2003-06-18",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=211",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Gasolineros @ Water Rats, London (UK)",
+      "pub": "Kronic",
+      "date": "2004-02-11",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=231",
+      "topic": "Live reports"
+    },
+    {
+      "title": "NME Awards @ Brixton Academy, London (UK)",
+      "pub": "Kronic",
+      "date": "2004-02-07",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=227",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Doomriders + November Coming Fire + Lords + Coliseum @ Underworld, London (UK)",
+      "pub": "Kronic",
+      "date": "2006-03-05",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=410",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Deftones + A Perfect Circle @ Wembley Arena, London (UK)",
+      "pub": "Kronic",
+      "date": "2003-09-19",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=171",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Cradle Of Filth @ Forum, London (UK)",
+      "pub": "Kronic",
+      "date": "2005-04-16",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=360",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Blonde Redhead @ Mean Fiddler, London (UK)",
+      "pub": "Kronic",
+      "date": "2004-04-20",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.kronic.it/artGet.aspx?aID=4&sID=279",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Jaga Jazzist @ Garage, London (UK)",
+      "pub": "Dedication.it",
+      "date": "2003-08-01",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/jagajazzist.htm",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Himsa + Last Hour Of Torment @ Barfly, London (UK)",
+      "pub": "Dedication.it",
+      "date": "2003-08-09",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/himsa2.htm",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Poison The Well + Thrice + Cult Of Luna @ Garage, London (UK)",
+      "pub": "Dedication.it",
+      "date": "2003-08-27",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/ptw+3+col.htm",
+      "topic": "Live reports"
+    },
+    {
+      "title": "NME Awards @ Brixton Academy, London (UK)",
+      "pub": "Dedication.it",
+      "date": "2004-02-07",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/ffaf_london.htm",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Life Of Agony + Breed77 @ Astoria, London (UK)",
+      "pub": "Dedication.it",
+      "date": "2003-11-09",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/lifeofagony.htm",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Tomahawk + Melvins + Kadaa + Guapo @ Forum, London (UK)",
+      "pub": "Dedication.it",
+      "date": "2003-07-18",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.dedication.it/tomahawk.htm",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Jaga Jazzist @ Garage, London (UK)",
+      "pub": "Nerds Attack!",
+      "date": "2003-08-01",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicaroma.it/nerds/articolone.asp?ID=561",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Jaga Jazzist @ Garage, London (UK)",
+      "pub": "RockOn.it",
+      "date": "2003-08-29",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.rockon.it/modules.php?name=News&file=article&sid=342",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Parkinsons, the + Divine Brown + Girls On Top @ Metro Club, London (UK)",
+      "pub": "Nerds Attack!",
+      "date": "2004-02-28",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicaroma.it/nerds/articolone.asp?ID=1146",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Us Maple @ La Palma, Roma (Italy)",
+      "pub": "Nerds Attack!",
+      "date": "2002-10-29",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicaroma.it/nerds/articolone.asp?ID=90",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Tarwater @ La Palma, Roma (Italy)",
+      "pub": "",
+      "date": "2002-10-27",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicaroma.it/nerds/articolone.asp?ID=99",
+      "topic": "Live reports"
+    },
+    {
+      "title": "Paatos",
+      "pub": "MusicBoom",
+      "date": "2005-05-12",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_art.php?categoria=interviste&Unico=20040728222918",
+      "topic": "Interviews"
+    },
+    {
+      "title": "Kurt Cobain: in morte di un Cristo pop",
+      "pub": "MusicBoom",
+      "date": "2005-01-15",
+      "lang": "",
+      "route": "",
+      "original_url": "http://www.musicboom.it/mostra_art.php?categoria=specials&Unico=20040421063145",
+      "topic": "Specials"
+    },
+    {
+      "title": "Lily Konigsberg — Lily We Need To Talk Now",
+      "pub": "The Line of Best Fit",
+      "date": "2021-10-29",
+      "lang": "en",
+      "route": "/portfolio/lily-konigsberg-lily-we-need-to-talk-now",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Drott — Orcus",
+      "pub": "The Line of Best Fit",
+      "date": "2021-10-14",
+      "lang": "en",
+      "route": "/portfolio/drott-orcus",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Manic Street Preachers — The Ultra Vivid Lament",
+      "pub": "The Line of Best Fit",
+      "date": "2021-09-10",
+      "lang": "en",
+      "route": "/portfolio/manic-street-preachers-the-ultra-vivid-lament",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Motorists — Surrounded",
+      "pub": "The Line of Best Fit",
+      "date": "2021-09-03",
+      "lang": "en",
+      "route": "/portfolio/motoristssurrounded",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Bryan Away — Sawdust",
+      "pub": "The Line of Best Fit",
+      "date": "2021-07-08",
+      "lang": "en",
+      "route": "/portfolio/bryanawaysawdust",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Various Artists — DC Dark Nights: Death Metal",
+      "pub": "The Line of Best Fit",
+      "date": "2021-06-18",
+      "lang": "en",
+      "route": "/portfolio/various-artists-dc-dark-nights-death-metal",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Sons of Raphael — Full-Throated Messianic Homage",
+      "pub": "The Line of Best Fit",
+      "date": "2021-05-21",
+      "lang": "en",
+      "route": "/portfolio/sons-of-raphael-full-throated-messianic-homage",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Andy Stott — Too Many Voices",
+      "pub": "PopMatters",
+      "date": "2017-07-27",
+      "lang": "en",
+      "route": "/portfolio/andy-stott-too-many-voices",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Lewis Pesacov And Wild Up — The Edge Of Forever",
+      "pub": "PopMatters",
+      "date": "2016-07-28",
+      "lang": "en",
+      "route": "/portfolio/lewis-pesacov-and-wild-up-the-edge-of-forever",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Denovali Festival @ London",
+      "pub": "PopMatters",
+      "date": "2016-04-25",
+      "lang": "en",
+      "route": "/portfolio/denovalifestival",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Ameen Saleem — The Groove Lab",
+      "pub": "All About Jazz",
+      "date": "2016-03-08",
+      "lang": "en",
+      "route": "/portfolio/ameen-saleem-the-groove-lab",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Jodie Landau — You Of All Things",
+      "pub": "PopMatters",
+      "date": "2016-01-14",
+      "lang": "en",
+      "route": "/portfolio/jodie-landau-you-of-all-things",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Exit Verse — Exit Verse",
+      "pub": "PopMatters",
+      "date": "2016-01-12",
+      "lang": "en",
+      "route": "/portfolio/exit-verse-exit-verse",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Avvenir — Glyphs",
+      "pub": "PopMatters",
+      "date": "2015-12-17",
+      "lang": "en",
+      "route": "/portfolio/avvenir-glyphs",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Kangding Ray — Cory Arcane",
+      "pub": "PopMatters",
+      "date": "2015-11-30",
+      "lang": "en",
+      "route": "/portfolio/kangding-ray-cory-arcane",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Dan Trueman — Nostalgic Synchronic",
+      "pub": "PopMatters",
+      "date": "2015-11-19",
+      "lang": "en",
+      "route": "/portfolio/dan-trueman-nostalgic-synchronic",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Funk Off — Things Change",
+      "pub": "All About Jazz",
+      "date": "2015-10-15",
+      "lang": "en",
+      "route": "/portfolio/funkoffthingschange",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Sunn O))) + Phurpa @ The Southbank Centre",
+      "pub": "PopMatters",
+      "date": "2015-09-01",
+      "lang": "en",
+      "route": "/portfolio/sunn-o-phurpa-london",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Sun Ra & His Intergalactic Research Arkestra — Planets Of Life Or Death: Amiens ’73",
+      "pub": "PopMatters",
+      "date": "2015-07-20",
+      "lang": "en",
+      "route": "/portfolio/sun-ra-his-intergalactic-research-arkestra-planets-of-life-or-death-amiens-73",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Boris — Noise",
+      "pub": "PopMatters",
+      "date": "2014-07-09",
+      "lang": "en",
+      "route": "/portfolio/borisnoise",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Fennesz — Bécs",
+      "pub": "PopMatters",
+      "date": "2014-06-24",
+      "lang": "en",
+      "route": "/portfolio/fennesz-becs",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Dave Porter — Breaking Bad OST",
+      "pub": "PopMatters",
+      "date": "2014-05-20",
+      "lang": "en",
+      "route": "/portfolio/dave-porter-breaking-bad-ost",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Horseback — Piedmont Apocrypha",
+      "pub": "PopMatters",
+      "date": "2014-05-13",
+      "lang": "en",
+      "route": "/portfolio/horseback-piedmont-apocrypha",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Slint live @ The Forum",
+      "pub": "The Quietus",
+      "date": "2013-12-05",
+      "lang": "en",
+      "route": "/portfolio/slintliveinlondon",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Shellac live @ Netil House",
+      "pub": "The Quietus",
+      "date": "2013-11-29",
+      "lang": "en",
+      "route": "/portfolio/shellacliveinlondon",
+      "original_url": "",
+      "topic": ""
+    },
+    {
+      "title": "Lewis Pesacov And Wild Up: The Edge Of Forever",
+      "pub": "PopMatters",
+      "date": "28 Jul 2016",
+      "lang": "en",
+      "route": "/portfolio/lewis-pesacov-and-wild-up-the-edge-of-forever/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Denovali Festival @ London (UK)",
+      "pub": "PopMatters",
+      "date": "25 Apr 2016",
+      "lang": "en",
+      "route": "/portfolio/denovalifestival/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Avvenir — Glyphs",
+      "pub": "PopMatters",
+      "date": "17 Dec 2015",
+      "lang": "en",
+      "route": "/portfolio/avvenir-glyphs/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Sun Ra & His Intergalactic Research Arkestra — Planets Of Life Or Death: Amiens ’73",
+      "pub": "PopMatters",
+      "date": "20 Jul 2015",
+      "lang": "en",
+      "route": "/portfolio/sun-ra-his-intergalactic-research-arkestra-planets-of-life-or-death-amiens-73/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Zu — Cortar Todo",
+      "pub": "PopMatters",
+      "date": "27 Mar 2015",
+      "lang": "en",
+      "route": "/portfolio/zucortartodo/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "The Necks @ Cafe Oto (London, UK)",
+      "pub": "All About Jazz",
+      "date": "23 Oct 2014",
+      "lang": "en",
+      "route": "/portfolio/the-necks-at-cafe-oto/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Match & Fuse Festival: 3 October 2014 (London, UK)",
+      "pub": "PopMatters",
+      "date": "3 Oct 2014",
+      "lang": "en",
+      "route": "/portfolio/match-fuse-festival-3-october-2014-london/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Contretemps — Pronouncement",
+      "pub": "PopMatters",
+      "date": "25 Mar 2015",
+      "lang": "en",
+      "route": "/portfolio/contretemps-pronouncement/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Mayhem — Esoteric Warfare",
+      "pub": "PopMatters",
+      "date": "2 Jun 2014",
+      "lang": "en",
+      "route": "/portfolio/mayhem-esoteric-warfare/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Dave Porter — Breaking Bad OST",
+      "pub": "PopMatters",
+      "date": "20 May 2014",
+      "lang": "en",
+      "route": "/portfolio/dave-porter-breaking-bad-ost/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Horseback — Piedmont Apocrypha",
+      "pub": "PopMatters",
+      "date": "13 May 2014",
+      "lang": "en",
+      "route": "/portfolio/horseback-piedmont-apocrypha/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Änglagård — Viljans Öga",
+      "pub": "All About Jazz",
+      "date": "4 Nov 2012",
+      "lang": "en",
+      "route": "/portfolio/anglagrd-viljans-oga/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Steven Wilson — The Raven that Refused to Sing (and Other Stories)",
+      "pub": "Angry Metal Guy",
+      "date": "18 Feb 2013",
+      "lang": "en",
+      "route": "/portfolio/steven-wilson-the-raven-that-refused-to-sing-and-other-stories/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Cult of Luna — Vertikal",
+      "pub": "Angry Metal Guy",
+      "date": "19 Jan 2013",
+      "lang": "en",
+      "route": "/portfolio/cult-of-luna-vertikal/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Piano Interrupted — The Unified Field",
+      "pub": "PopMatters",
+      "date": "3 Dec 2013",
+      "lang": "en",
+      "route": "/portfolio/pianointerruptedtheunifiedfield/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Philip H. Anselmo / Warbeast — War of the Gargantuas EP",
+      "pub": "Angry Metal Guy",
+      "date": "4 Mar 2013",
+      "lang": "en",
+      "route": "/portfolio/philip-h-anselmo/warbeast-war-of-the-gargantuas-epauthor-punisher-women-children-hrbkn/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Bryan Away — Sawdust",
+      "pub": "The Line of Best Fit",
+      "date": "8 Jul 2021",
+      "lang": "en",
+      "route": "/portfolio/bryanawaysawdust/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Jaga Jazzist — Starfire",
+      "pub": "All About Jazz",
+      "date": "23 Jun 2015",
+      "lang": "en",
+      "route": "/portfolio/jaga-jazzist-starfire/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Polar Bear — Same As You",
+      "pub": "PopMatters",
+      "date": "11 Jun 2015",
+      "lang": "en",
+      "route": "/portfolio/polar-bear-same-as-you/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Francesco Nastro Trio — Colors of Light",
+      "pub": "All About Jazz",
+      "date": "30 May 2015",
+      "lang": "en",
+      "route": "/portfolio/francesco-nastro-trio-colors-of-light/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "The Remote Viewers — Pitfall",
+      "pub": "All About Jazz",
+      "date": "22 May 2015",
+      "lang": "en",
+      "route": "/portfolio/the-remote-viewers-pitfall/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Tristan Perich — Parallels",
+      "pub": "PopMatters",
+      "date": "7 May 2015",
+      "lang": "en",
+      "route": "/portfolio/tristan-perich-parallels/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Author & Punisher — Melk En Honing",
+      "pub": "Angry Metal Guy",
+      "date": "2 Jul 2015",
+      "lang": "en",
+      "route": "/portfolio/author-punisher-melk-en-honing/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "At Folsom Prison — Every Dream And Every Crisis Means The Rise",
+      "pub": "PopMatters",
+      "date": "29 Jun 2015",
+      "lang": "en",
+      "route": "/portfolio/at-folsom-prison-every-dream-and-every-crisis-means-the-rise/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "The Shak & Speares — Dramedy",
+      "pub": "OndaRock",
+      "date": "14 Feb 2015",
+      "lang": "it",
+      "route": "/portfolio/the-shak-speares-dramedy/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "John Supko And Bill Seaman — S_Traits",
+      "pub": "PopMatters",
+      "date": "12 Feb 2015",
+      "lang": "en",
+      "route": "/portfolio/john-supko-and-bill-seaman-straits/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "The Sharp Things — Adventurer’s Inn",
+      "pub": "PopMatters",
+      "date": "21 Jan 2015",
+      "lang": "en",
+      "route": "/portfolio/the-sharp-things-adventurers-inn/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "George Harrison — The Apple Years 1968–75",
+      "pub": "PopMatters",
+      "date": "30 Oct 2014",
+      "lang": "en",
+      "route": "/portfolio/george-harrison-the-apple-years-1968-75/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Prominent Uyghur academic Ilham Tohti jailed for life",
+      "pub": "openDemocracy",
+      "date": "10 Oct 2014",
+      "lang": "en",
+      "route": "/portfolio/prominent-uyghur-academic-ilham-tohti-jailed-for-life/",
+      "original_url": "",
+      "topic": "politics"
+    },
+    {
+      "title": "Smallgang — San",
+      "pub": "PopMatters",
+      "date": "8 Oct 2014",
+      "lang": "en",
+      "route": "/portfolio/smallgang-san/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Pink Floyd — The Division Bell (20th Anniversary Deluxe Edition)",
+      "pub": "PopMatters",
+      "date": "15 Aug 2014",
+      "lang": "en",
+      "route": "/portfolio/pink-floyd-the-division-bell-20th-anniversary-deluxe-edition/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "RABBITSSS — PENGUINS",
+      "pub": "PopMatters",
+      "date": "4 Aug 2014",
+      "lang": "en",
+      "route": "/portfolio/rabbitsss-penguins/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Aisles — 4.45am",
+      "pub": "PopMatters",
+      "date": "24 Jul 2014",
+      "lang": "en",
+      "route": "/portfolio/aisles-445-am/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Mike Weis - “Don’t Know, Just Walk”",
+      "pub": "PopMatters",
+      "date": "17 Jul 2014",
+      "lang": "en",
+      "route": "/portfolio/mike-weis-dont-know-just-walk/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Kronos Quartet. –“A Thousand Thoughts”",
+      "pub": "PopMatters",
+      "date": "15 Jul 2014",
+      "lang": "en",
+      "route": "/portfolio/kronos-quartet-a-thousand-thoughts/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "British Summer Time @ Hyde Park (London, UK)",
+      "pub": "PopMatters",
+      "date": "14 Jul 2014",
+      "lang": "en",
+      "route": "/portfolio/british-summer-time-at-hyde-park/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Chris Brokaw - “Now, Forager OST”",
+      "pub": "PopMatters",
+      "date": "9 Jul 2014",
+      "lang": "en",
+      "route": "/portfolio/chris-brokaw-now-forager-ost/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Boris - “Noise”",
+      "pub": "PopMatters",
+      "date": "9 Jul 2014",
+      "lang": "en",
+      "route": "/portfolio/borisnoise/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Fennesz – “Bécs”",
+      "pub": "PopMatters",
+      "date": "24 Jun 2014",
+      "lang": "en",
+      "route": "/portfolio/fennesz-becs/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Cult Of Luna (Beyond The Redshift): 10 May 2014 (London, UK)",
+      "pub": "PopMatters",
+      "date": "3 Jun 2014",
+      "lang": "en",
+      "route": "/portfolio/cult-of-luna-beyond-the-redshift-10-may-2014-london-uk/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Area 11 April 2014 (London, UK)",
+      "pub": "PopMatters",
+      "date": "6 May 2014",
+      "lang": "en",
+      "route": "/portfolio/area-11-april-2014-london-uk/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Kangding Ray - “Solens Arc”",
+      "pub": "PopMatters",
+      "date": "28 Apr 2014",
+      "lang": "en",
+      "route": "/portfolio/kangding-ray-solens-arc/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "A Minor Forest: Flemish Altruism / Inindependence",
+      "pub": "PopMatters",
+      "date": "25 Apr 2014",
+      "lang": "en",
+      "route": "/portfolio/a-minor-forest-flemish-altruism-/-inindependence/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "John Zorn - “Fragmentations, Prayers and Interjections”",
+      "pub": "PopMatters",
+      "date": "2 Apr 2014",
+      "lang": "en",
+      "route": "/portfolio/john-zorn-fragmentations-prayers-and-interjections/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Corea del Nord – Il pericolo di un inevitabile cambiamento",
+      "pub": "In Italiano",
+      "date": "18 Mar 2014",
+      "lang": "it",
+      "route": "/portfolio/corea-del-nord-il-pericolo-di-un-inevitabile-cambiamento/",
+      "original_url": "",
+      "topic": "politics"
+    },
+    {
+      "title": "Ulver @ Circolo degli Artisti (Rome, IT)",
+      "pub": "In Italiano",
+      "date": "16 Feb 2014",
+      "lang": "it",
+      "route": "/portfolio/ulveratcircolo-degli-artisti-roma/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Fiberglass - “Hush”",
+      "pub": "OndaRock",
+      "date": "14 Feb 2014",
+      "lang": "it",
+      "route": "/portfolio/fiberglass-hush/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Ulver Messe - “I.X-VI.X”",
+      "pub": "In Italiano",
+      "date": "30 Dec 2013",
+      "lang": "it",
+      "route": "/portfolio/ulver-messe-ix-vix/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "The Remote Viewers - “Crimeways”",
+      "pub": "All About Jazz",
+      "date": "19 Dec 2013",
+      "lang": "en",
+      "route": "/portfolio/the-remote-viewers-crimeways/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Ulver – “Messe I.X–VI.X”",
+      "pub": "Angry Metal Guy",
+      "date": "17 Dec 2013",
+      "lang": "en",
+      "route": "/portfolio/ulver-messe-ixvix/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Ulver - “MESSE I.X–VI.X”",
+      "pub": "The Quietus",
+      "date": "13 Dec 2013",
+      "lang": "en",
+      "route": "/portfolio/ulvermesse-ixvix/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Slint live @ The Forum (London, UK)",
+      "pub": "The Quietus",
+      "date": "5 Dec 2013",
+      "lang": "en",
+      "route": "/portfolio/slintliveinlondon/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Shellac live @ Netil House (London, UK)",
+      "pub": "The Quietus",
+      "date": "29 Nov 2013",
+      "lang": "en",
+      "route": "/portfolio/shellacliveinlondon/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Melt Yourself Down & Flamingods @ The New Empowering Church (London, UK)",
+      "pub": "In Italiano",
+      "date": "29 Nov 2013",
+      "lang": "it",
+      "route": "/portfolio/melt-yourself-downand-flamingods/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Charlemagne Palestine / Z'ev – “RUBHITBANGKLANGHEAR/ RUBHITBANGKLANGEAR”",
+      "pub": "The Quietus",
+      "date": "25 Nov 2013",
+      "lang": "en",
+      "route": "/portfolio/charlemagne-palestinezev-rubhitbangklanghear/rubhitbangklangear/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "The Golden Circle - “The Golden Circle”",
+      "pub": "OndaRock",
+      "date": "15 Nov 2013",
+      "lang": "it",
+      "route": "/portfolio/the-golden-circle-the-golden-circle/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "The Body - “Christs, Redeemers”",
+      "pub": "OndaRock",
+      "date": "9 Nov 2013",
+      "lang": "it",
+      "route": "/portfolio/the-body-christs-redeemers/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Mamiffer & Circle – “Enharmonic Intervals (for Paschen Organ)”",
+      "pub": "Angry Metal Guy",
+      "date": "25 Oct 2013",
+      "lang": "en",
+      "route": "/portfolio/mamiffer-circle-enharmonic-intervals-for-paschen-organ/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Nine Inch Nails - “Hesitation Marks”",
+      "pub": "In Italiano",
+      "date": "9 Sep 2013",
+      "lang": "it",
+      "route": "/portfolio/nine-inch-nails-hesitation-marks/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Grumbling Fur – “Glynnaestra”",
+      "pub": "Angry Metal Guy",
+      "date": "9 Sep 2013",
+      "lang": "en",
+      "route": "/portfolio/grumbling-fur-glynnaestra/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Boards Of Canada - “Tomorrow’s Harvest”",
+      "pub": "In Italiano",
+      "date": "15 Jul 2013",
+      "lang": "it",
+      "route": "/portfolio/boards-of-canada-tomorrows-harvest/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Kwaidan - “Make All The Hell Of Dark Metal Bright”",
+      "pub": "OndaRock",
+      "date": "14 Jul 2013",
+      "lang": "it",
+      "route": "/portfolio/kwaidan-make-all-the-hell-of-dark-metal-bright/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Locrian – “Return to Annihilation”",
+      "pub": "Angry Metal Guy",
+      "date": "21 Jun 2013",
+      "lang": "en",
+      "route": "/portfolio/locrian-return-to-annihilation/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Author & Punisher – “Women & Children”",
+      "pub": "Angry Metal Guy",
+      "date": "15 Jun 2013",
+      "lang": "en",
+      "route": "/portfolio/author-punisher-women-children/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Einar Scheving - “Einar Scheving: Land Mins Fodur”",
+      "pub": "All About Jazz",
+      "date": "10 Jun 2013",
+      "lang": "en",
+      "route": "/portfolio/einar-scheving-einar-scheving-land-mins-fodur/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "The Heliocentrics - “13 Degrees Of Reality”",
+      "pub": "In Italiano",
+      "date": "5 Jun 2013",
+      "lang": "it",
+      "route": "/portfolio/the-heliocentrics-13-degrees-of-reality/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "CROWN – “Psychurgy”",
+      "pub": "Angry Metal Guy",
+      "date": "12 Apr 2013",
+      "lang": "en",
+      "route": "/portfolio/crown-psychurgy/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "The Shak & Speares - “Gagster”",
+      "pub": "OndaRock",
+      "date": "7 Apr 2013",
+      "lang": "it",
+      "route": "/portfolio/the-shak-speares-gagster/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Wormed - “Exodromos\"",
+      "pub": "Publication to verify",
+      "date": "21 Mar 2013",
+      "lang": "en",
+      "route": "/portfolio/wormed-exodromos/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Kongh – “Sole Creation”",
+      "pub": "Angry Metal Guy",
+      "date": "5 Feb 2013",
+      "lang": "en",
+      "route": "/portfolio/kongh-sole-creation/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Fabrizio Sferra Quartet - “Untitled #28”",
+      "pub": "All About Jazz",
+      "date": "28 Jan 2013",
+      "lang": "en",
+      "route": "/portfolio/fabrizio-sferra-quartet-untitled-28/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Tomahawk – “Oddfellows”",
+      "pub": "Angry Metal Guy",
+      "date": "25 Jan 2013",
+      "lang": "en",
+      "route": "/portfolio/tomahawk-oddfellows/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Neurosis – “Honor Found In Decay”",
+      "pub": "Angry Metal Guy",
+      "date": "8 Nov 2012",
+      "lang": "en",
+      "route": "/portfolio/neurosis-honor-found-in-decay/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Matteo Fraboni Quintet - “This Is My Music”",
+      "pub": "OndaRock",
+      "date": "25 Oct 2012",
+      "lang": "it",
+      "route": "/portfolio/matteo-fraboni-quintet-this-is-my-musicondarock/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Matteo Fraboni Quintet - “This is My Music”",
+      "pub": "All About Jazz",
+      "date": "5 Oct 2012",
+      "lang": "en",
+      "route": "/portfolio/matteo-fraboni-quintet-this-is-my-music/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Vision of Disorder – “The Cursed Remain Cursed”",
+      "pub": "Angry Metal Guy",
+      "date": "18 Sep 2012",
+      "lang": "en",
+      "route": "/portfolio/vision-of-disorder-the-cursed-remain-cursed/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "The Remote Viewers - “City Of Nets”",
+      "pub": "All About Jazz",
+      "date": "13 Sep 2012",
+      "lang": "en",
+      "route": "/portfolio/the-remote-viewers-city-of-nets/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Rex Shachath – “Sepulchral Torment”",
+      "pub": "Angry Metal Guy",
+      "date": "11 Sep 2012",
+      "lang": "en",
+      "route": "/portfolio/rex-shachath-sepulchral-torment/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Cryptopsy - “Cryptopsy”",
+      "pub": "Angry Metal Guy",
+      "date": "5 Sep 2012",
+      "lang": "en",
+      "route": "/portfolio/cryptopsy-cryptopsy/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Interview with Mike Fleishmann of Vision of Disorder",
+      "pub": "Angry Metal Guy",
+      "date": "1 Sep 2012",
+      "lang": "en",
+      "route": "/portfolio/interview-with-mike-fleishmann-of-vision-of-disorder/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "An Autumn for Crippled Children – “Only the Ocean Knows”",
+      "pub": "Angry Metal Guy",
+      "date": "27 Aug 2012",
+      "lang": "en",
+      "route": "/portfolio/an-autumn-for-crippled-children-only-the-ocean-knows/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Beak  - “>>”",
+      "pub": "In Italiano",
+      "date": "23 Jul 2012",
+      "lang": "it",
+      "route": "/portfolio/beak-/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Ulver - “Childhood’s End”",
+      "pub": "IndieForBunnies",
+      "date": "18 Jul 2012",
+      "lang": "it",
+      "route": "/portfolio/ulver-childhoods-end/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Katatonia - “Dead End Kings”",
+      "pub": "All About Jazz",
+      "date": "28 Jun 2012",
+      "lang": "en",
+      "route": "/portfolio/katatoniadeadendkings/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Enten Hitti - “La Solitudine del Sole”",
+      "pub": "OndaRock",
+      "date": "21 Dec 2011",
+      "lang": "it",
+      "route": "/portfolio/enten-hitti-la-solitudine-del-sole/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Star FK Radium - “Blue Siberia”",
+      "pub": "OndaRock",
+      "date": "21 Nov 2011",
+      "lang": "it",
+      "route": "/portfolio/star-fk-radium-blue-siberia/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Andy Stott - “We Stay Together”",
+      "pub": "IndieForBunnies",
+      "date": "18 Nov 2011",
+      "lang": "it",
+      "route": "/portfolio/andy-stott-we-stay-together/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Yu Miyashita - “Noble Niche”",
+      "pub": "OndaRock",
+      "date": "17 Nov 2011",
+      "lang": "it",
+      "route": "/portfolio/yu-miyashita-noble-niche/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Marcin Wasilewski Trio - “Faithfull”",
+      "pub": "OndaRock",
+      "date": "14 Nov 2011",
+      "lang": "it",
+      "route": "/portfolio/marcin-wasilewski-trio-faithfull/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Dennis Rea - “Views From Chicheng Precipice”",
+      "pub": "OndaRock",
+      "date": "9 Nov 2011",
+      "lang": "it",
+      "route": "/portfolio/dennis-rea-views-from-chicheng-precipice/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Keren Ann - “101”",
+      "pub": "OndaRock",
+      "date": "1 Jul 2011",
+      "lang": "it",
+      "route": "/portfolio/keren-ann-101/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "La Monte Young: Alla ricerca della musica eterna",
+      "pub": "OndaRock",
+      "date": "5 May 2011",
+      "lang": "it",
+      "route": "/portfolio/la-monte-youngmonografia/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Circulasione Totale Orchestra - “Bandwidth”",
+      "pub": "IndieForBunnies",
+      "date": "31 May 2010",
+      "lang": "it",
+      "route": "/portfolio/circulasione-totale-orchestra-bandwidth/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Lali Puna - “Our Inventions”",
+      "pub": "IndieForBunnies",
+      "date": "21 May 2010",
+      "lang": "it",
+      "route": "/portfolio/lali-puna-our-inventions/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Alex Maguire Sextet - “Brewed In Belgium”",
+      "pub": "OndaRock",
+      "date": "8 Mar 2009",
+      "lang": "it",
+      "route": "/portfolio/alex-maguire-sextet-brewed-in-belgium/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Napoletano, clochard a Londra: i rifiuti? Voglio ricordare solo pizza e mandolino",
+      "pub": "Corriere del Mezzogiorno",
+      "date": "9 Jul 2008",
+      "lang": "it",
+      "route": "/portfolio/napoletano-clochard-a-londra-i-rifiuti-voglio-ricordare-solo-pizza-e-mandolino/",
+      "original_url": "",
+      "topic": "politics"
+    },
+    {
+      "title": "Isis + Mothlite @ KOKO (Londra, UK)",
+      "pub": "Il Mucchio Selvaggio",
+      "date": "Dec 2009",
+      "lang": "it",
+      "route": "/portfolio/isis-mothlite-koko-london-2009/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Zu, Justice Yeldham, Dethscalator @ The Lexington (Londra, UK)",
+      "pub": "Il Mucchio Selvaggio",
+      "date": "Nov 2009",
+      "lang": "it",
+      "route": "/portfolio/zu-justice-yeldham-dethscalator-lexington-london-2009/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Ornette Coleman @ Royal Festival Hall (Londra, UK)",
+      "pub": "Il Mucchio Selvaggio",
+      "date": "Sep 2009",
+      "lang": "it",
+      "route": "/portfolio/ornette-coleman-royal-festival-hall-london-2009/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Ennio Morricone @ Royal Albert Hall (Londra, UK)",
+      "pub": "Il Mucchio Selvaggio",
+      "date": "May 2010",
+      "lang": "it",
+      "route": "/portfolio/ennio-morricone-royal-albert-hall-london-2010/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Genitorturers: Shock'n'Roll Revolution!",
+      "pub": "Ritual",
+      "date": "April/May 2010",
+      "lang": "it",
+      "route": "/portfolio/genitorturers-shock-n-roll-revolution-ritual/",
+      "original_url": "",
+      "topic": "music"
+    },
+    {
+      "title": "Swallow The Sun: Eclissi totale",
+      "pub": "Ritual",
+      "date": "April/May 2010",
+      "lang": "it",
+      "route": "/portfolio/swallow-the-sun-eclissi-totale-ritual/",
+      "original_url": "",
+      "topic": "music"
+    }
+  ]
 }
