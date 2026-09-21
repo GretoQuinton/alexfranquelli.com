@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Writing — Alex Franquelli</title><link rel="stylesheet" href="../assets/site.css"></head><body>
+<header class="wrap masthead"><a class="brand" href="../">Alex Franquelli</a><nav class="nav"><a href="./">Writing</a><a href="../about/">About</a><a href="../contact/">Contact</a></nav></header>
+<main class="wrap"><section class="page-head"><div class="eyebrow">Archive</div><h1>Writing</h1><p>A growing record of published criticism, essays, reporting and live writing in English and Italian.</p></section><section class="section"><div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="music">Music</button><button class="filter" data-filter="politics">Politics</button><button class="filter" data-filter="english">English</button><button class="filter" data-filter="italian">Italian</button><button class="filter" data-filter="rediscovered">Rediscovered</button></div><input id="q" class="search" placeholder="Search title or publication…" aria-label="Search archive"><div id="list" class="writing-list"></div></section></main><footer class="wrap footer"><div>© Alex Franquelli</div><div>Archive under reconstruction</div></footer>
+<script>
+const articles = [
+{d:'29 Oct 2021',t:'Lily Konigsberg — Lily We Need To Talk Now',p:'The Line of Best Fit',tags:'music english'},
+{d:'14 Oct 2021',t:'Drott — Orcus',p:'The Line of Best Fit',tags:'music english'},
+{d:'10 Sep 2021',t:'Manic Street Preachers — The Ultra Vivid Lament',p:'The Line of Best Fit',tags:'music english'},
+{d:'27 Jul 2017',t:'Andy Stott — Too Many Voices',p:'PopMatters',tags:'music english'},
+{d:'29 Oct 2016',t:'The Blues Against Youth — Apprentice',p:'All About Jazz',tags:'music english'},
+{d:'20 Feb 2014',t:'North Korea: totalitarianism in transition?',p:'openDemocracy',tags:'politics english'},
+{d:'9 Oct 2013',t:"A tipping point for Mongolia's democracy?",p:'openDemocracy',tags:'politics english'},
+{d:'10 Jul 2013',t:'Mongolia: is stability the new challenge?',p:'openDemocracy',tags:'politics english'},
+{d:'30 Dec 2013',t:'Ulver — Messe I.X–VI.X',p:'IndieForBunnies',tags:'music italian rediscovered'},
+{d:'9 Sep 2013',t:'Nine Inch Nails — Hesitation Marks',p:'IndieForBunnies',tags:'music italian rediscovered'},
+{d:'15 Jul 2013',t:"Boards of Canada — Tomorrow's Harvest",p:'IndieForBunnies',tags:'music italian rediscovered'},
+{d:'27 Feb 2013',t:'Bohemien — S/T',p:'IndieForBunnies',tags:'music italian rediscovered'},
+{d:'24 Dec 2012',t:"Godspeed You! Black Emperor — Allelujah! Don’t Bend! Ascend!",p:'IndieForBunnies',tags:'music italian rediscovered'},
+{d:'2 Apr 2012',t:'We Were Promised Jetpacks — In the Pit of the Stomach',p:'IndieForBunnies',tags:'music italian rediscovered'},
+{d:'28 Mar 2012',t:'Xiu Xiu — Always',p:'IndieForBunnies',tags:'music italian rediscovered'},
+{d:'18 Nov 2011',t:'Andy Stott — We Stay Together',p:'IndieForBunnies',tags:'music italian rediscovered'},
+{d:'30 Oct 2009',t:'David Sylvian — Manafon',p:'IndieForBunnies',tags:'music italian rediscovered'},
+{d:'23 Oct 2009',t:'The RAah Project — Score',p:'IndieForBunnies',tags:'music italian rediscovered'},
+{d:'19 Oct 2009',t:'Skunk Anansie — Live at Electric Ballroom',p:'IndieForBunnies',tags:'music italian rediscovered'},
+{d:'',t:'The Books — The Lemon of Pink',p:'OndaRock',tags:'music italian rediscovered'},
+{d:'',t:'Boris Savoldelli — Biocosmopolitan',p:'OndaRock',tags:'music italian rediscovered'},
+{d:'',t:'Danger Mouse & Daniele Luppi — Rome',p:'OndaRock',tags:'music italian rediscovered'},
+{d:'',t:'Dredg — The Pariah, The Parrot, The Delusion',p:'OndaRock',tags:'music italian rediscovered'},
+{d:'',t:'Jesu — Ascension',p:'OndaRock',tags:'music italian rediscovered'},
+{d:'',t:'Moby — Destroyed',p:'OndaRock',tags:'music italian rediscovered'},
+{d:'',t:'The Necks — Silverwater',p:'OndaRock',tags:'music italian rediscovered'},
+{d:'',t:'Opeth — Heritage',p:'OndaRock',tags:'music italian rediscovered'},
+{d:'',t:'Pearl Jam — Twenty (DVD)',p:'OndaRock',tags:'music italian rediscovered'},
+{d:'',t:'The xx — xx',p:'OndaRock',tags:'music italian rediscovered'}
+];
+const list=document.querySelector('#list'),q=document.querySelector('#q');let active='all';
+function draw(){const needle=q.value.toLowerCase();list.innerHTML=articles.filter(a=>(active==='all'||a.tags.includes(active))&&(`${a.t} ${a.p}`.toLowerCase().includes(needle))).map(a=>`<article class="writing-row"><div class="date">${a.d||'Date tbc'}</div><h2>${a.t}${a.tags.includes('rediscovered')?'<span class="badge">found</span>':''}</h2><div class="pub">${a.p}</div></article>`).join('')}
+document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{document.querySelector('.filter.active').classList.remove('active');b.classList.add('active');active=b.dataset.filter;draw()});q.oninput=draw;draw();
+</script></body></html>
