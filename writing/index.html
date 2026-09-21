@@ -95,6 +95,25 @@ const archiveBatchFour=[
 {d:"24 Jul 2014",t:"Aisles — 4.45am",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/aisles-445-am/"}
 ];
 archiveBatchFour.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
+const archiveBatchFive=[
+{d:"17 Jul 2014",t:"Mike Weis - “Don’t Know, Just Walk”",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/mike-weis-dont-know-just-walk/"},
+{d:"15 Jul 2014",t:"Kronos Quartet. –“A Thousand Thoughts”",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/kronos-quartet-a-thousand-thoughts/"},
+{d:"14 Jul 2014",t:"British Summer Time @ Hyde Park (London, UK)",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/british-summer-time-at-hyde-park/"},
+{d:"9 Jul 2014",t:"Chris Brokaw - “Now, Forager OST”",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/chris-brokaw-now-forager-ost/"},
+{d:"9 Jul 2014",t:"Boris - “Noise”",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/borisnoise/"},
+{d:"24 Jun 2014",t:"Fennesz – “Bécs”",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/fennesz-becs/"},
+{d:"3 Jun 2014",t:"Cult Of Luna (Beyond The Redshift): 10 May 2014 (London, UK)",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/cult-of-luna-beyond-the-redshift-10-may-2014-london-uk/"},
+{d:"6 May 2014",t:"Area 11 April 2014 (London, UK)",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/area-11-april-2014-london-uk/"},
+{d:"28 Apr 2014",t:"Kangding Ray - “Solens Arc”",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/kangding-ray-solens-arc/"},
+{d:"25 Apr 2014",t:"A Minor Forest: Flemish Altruism / Inindependence",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/a-minor-forest-flemish-altruism-/-inindependence/"},
+{d:"2 Apr 2014",t:"John Zorn - “Fragmentations, Prayers and Interjections”",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/john-zorn-fragmentations-prayers-and-interjections/"},
+{d:"18 Mar 2014",t:"Corea del Nord – Il pericolo di un inevitabile cambiamento",p:"In Italiano",topic:"politics",lang:"it",rediscovered:false,u:"../portfolio/corea-del-nord-il-pericolo-di-un-inevitabile-cambiamento/"},
+{d:"16 Feb 2014",t:"Ulver @ Circolo degli Artisti (Rome, IT)",p:"In Italiano",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/ulveratcircolo-degli-artisti-roma/"},
+{d:"14 Feb 2014",t:"Fiberglass - “Hush”",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/fiberglass-hush/"},
+{d:"30 Dec 2013",t:"Ulver Messe - “I.X-VI.X”",p:"In Italiano",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/ulver-messe-ix-vix/"},
+{d:"19 Dec 2013",t:"The Remote Viewers - “Crimeways”",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/the-remote-viewers-crimeways/"}
+];
+archiveBatchFive.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
 const articleRows=[...merged.values()];
 const list=document.querySelector('#list'),q=document.querySelector('#q');let active='all';
 function matches(a){
