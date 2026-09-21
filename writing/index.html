@@ -47,6 +47,17 @@ articles.forEach(a=>{
  const prev=merged.get(a.t)||{};
  merged.set(a.t,{...prev,...a,u:a.u||prev.u||legacyLinks[a.t]||null});
 });
+const additionalArchiveEntries=[
+{d:"28 Jul 2016",t:"Lewis Pesacov And Wild Up: The Edge Of Forever",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/lewis-pesacov-and-wild-up-the-edge-of-forever/"},
+{d:"25 Apr 2016",t:"Denovali Festival @ London (UK)",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/denovalifestival/"},
+{d:"17 Dec 2015",t:"Avvenir — Glyphs",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/avvenir-glyphs/"},
+{d:"20 Jul 2015",t:"Sun Ra & His Intergalactic Research Arkestra — Planets Of Life Or Death: Amiens ’73",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/sun-ra-his-intergalactic-research-arkestra-planets-of-life-or-death-amiens-73/"},
+{d:"27 Mar 2015",t:"Zu — Cortar Todo",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/zucortartodo/"}
+];
+additionalArchiveEntries.forEach(a=>{
+ const prev=merged.get(a.t)||{};
+ merged.set(a.t,{...prev,...a,u:a.u||prev.u||null});
+});
 const articleRows=[...merged.values()];
 const list=document.querySelector('#list'),q=document.querySelector('#q');let active='all';
 function matches(a){
