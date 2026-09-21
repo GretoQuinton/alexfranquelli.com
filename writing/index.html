@@ -153,6 +153,23 @@ const archiveBatchSeven=[
 {d:"23 Jul 2012",t:"Beak  - “>>”",p:"In Italiano",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/beak-/"}
 ];
 archiveBatchSeven.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
+const archiveBatchEight=[
+{d:"18 Jul 2012",t:"Ulver - “Childhood’s End”",p:"IndieForBunnies",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/ulver-childhoods-end/"},
+{d:"28 Jun 2012",t:"Katatonia - “Dead End Kings”",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/katatoniadeadendkings/"},
+{d:"21 Dec 2011",t:"Enten Hitti - “La Solitudine del Sole”",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/enten-hitti-la-solitudine-del-sole/"},
+{d:"21 Nov 2011",t:"Star FK Radium - “Blue Siberia”",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/star-fk-radium-blue-siberia/"},
+{d:"18 Nov 2011",t:"Andy Stott - “We Stay Together”",p:"IndieForBunnies",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/andy-stott-we-stay-together/"},
+{d:"17 Nov 2011",t:"Yu Miyashita - “Noble Niche”",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/yu-miyashita-noble-niche/"},
+{d:"14 Nov 2011",t:"Marcin Wasilewski Trio - “Faithfull”",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/marcin-wasilewski-trio-faithfull/"},
+{d:"9 Nov 2011",t:"Dennis Rea - “Views From Chicheng Precipice”",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/dennis-rea-views-from-chicheng-precipice/"},
+{d:"1 Jul 2011",t:"Keren Ann - “101”",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/keren-ann-101/"},
+{d:"5 May 2011",t:"La Monte Young: Alla ricerca della musica eterna",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/la-monte-youngmonografia/"},
+{d:"31 May 2010",t:"Circulasione Totale Orchestra - “Bandwidth”",p:"IndieForBunnies",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/circulasione-totale-orchestra-bandwidth/"},
+{d:"21 May 2010",t:"Lali Puna - “Our Inventions”",p:"IndieForBunnies",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/lali-puna-our-inventions/"},
+{d:"8 Mar 2009",t:"Alex Maguire Sextet - “Brewed In Belgium”",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/alex-maguire-sextet-brewed-in-belgium/"},
+{d:"9 Jul 2008",t:"Napoletano, clochard a Londra: i rifiuti? Voglio ricordare solo pizza e mandolino",p:"Corriere del Mezzogiorno",topic:"politics",lang:"it",rediscovered:false,u:"../portfolio/napoletano-clochard-a-londra-i-rifiuti-voglio-ricordare-solo-pizza-e-mandolino/"}
+];
+archiveBatchEight.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
 const articleRows=[...merged.values()];
 const list=document.querySelector('#list'),q=document.querySelector('#q');let active='all';
 function matches(a){
