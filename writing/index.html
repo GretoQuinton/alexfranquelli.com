@@ -170,6 +170,13 @@ const archiveBatchEight=[
 {d:"9 Jul 2008",t:"Napoletano, clochard a Londra: i rifiuti? Voglio ricordare solo pizza e mandolino",p:"Corriere del Mezzogiorno",topic:"politics",lang:"it",rediscovered:false,u:"../portfolio/napoletano-clochard-a-londra-i-rifiuti-voglio-ricordare-solo-pizza-e-mandolino/"}
 ];
 archiveBatchEight.forEach(upsertArticle);
+const archiveBatchNine=[
+{d:"Dec 2009",t:"Isis + Mothlite @ KOKO (Londra, UK)",p:"Il Mucchio Selvaggio",topic:"music",lang:"it",rediscovered:true,u:"../portfolio/isis-mothlite-koko-london-2009/"},
+{d:"Nov 2009",t:"Zu, Justice Yeldham, Dethscalator @ The Lexington (Londra, UK)",p:"Il Mucchio Selvaggio",topic:"music",lang:"it",rediscovered:true,u:"../portfolio/zu-justice-yeldham-dethscalator-lexington-london-2009/"},
+{d:"Sep 2009",t:"Ornette Coleman @ Royal Festival Hall (Londra, UK)",p:"Il Mucchio Selvaggio",topic:"music",lang:"it",rediscovered:true,u:"../portfolio/ornette-coleman-royal-festival-hall-london-2009/"},
+{d:"May 2010",t:"Ennio Morricone @ Royal Albert Hall (Londra, UK)",p:"Il Mucchio Selvaggio",topic:"music",lang:"it",rediscovered:true,u:"../portfolio/ennio-morricone-royal-albert-hall-london-2010/"}
+];
+archiveBatchNine.forEach(upsertArticle);
 const articleRows=[...merged.values()];
 const list=document.querySelector('#list'),q=document.querySelector('#q');let active='all';
 function matches(a){
