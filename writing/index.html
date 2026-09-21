@@ -43,10 +43,13 @@ const legacyLinks={
 "Mongolia: is stability the new challenge?":"../portfolio/mongolia-is-stability-the-new-challenge/"
 };
 const merged=new Map();
-articles.forEach(a=>{
- const prev=merged.get(a.t)||{};
- merged.set(a.t,{...prev,...a,u:a.u||prev.u||legacyLinks[a.t]||null});
-});
+const articleKey=a=>`${a.t}␟${a.p}␟${a.d||''}`;
+function upsertArticle(a){
+ const key=articleKey(a);
+ const prev=merged.get(key)||{};
+ merged.set(key,{...prev,...a,u:a.u||prev.u||legacyLinks[a.t]||null});
+}
+articles.forEach(upsertArticle);
 const additionalArchiveEntries=[
 {d:"28 Jul 2016",t:"Lewis Pesacov And Wild Up: The Edge Of Forever",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/lewis-pesacov-and-wild-up-the-edge-of-forever/"},
 {d:"25 Apr 2016",t:"Denovali Festival @ London (UK)",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/denovalifestival/"},
@@ -54,10 +57,7 @@ const additionalArchiveEntries=[
 {d:"20 Jul 2015",t:"Sun Ra & His Intergalactic Research Arkestra — Planets Of Life Or Death: Amiens ’73",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/sun-ra-his-intergalactic-research-arkestra-planets-of-life-or-death-amiens-73/"},
 {d:"27 Mar 2015",t:"Zu — Cortar Todo",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/zucortartodo/"}
 ];
-additionalArchiveEntries.forEach(a=>{
- const prev=merged.get(a.t)||{};
- merged.set(a.t,{...prev,...a,u:a.u||prev.u||null});
-});
+additionalArchiveEntries.forEach(upsertArticle);
 const archiveBatchTwo=[
 {d:"23 Oct 2014",t:"The Necks @ Cafe Oto (London, UK)",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/the-necks-at-cafe-oto/"},
 {d:"3 Oct 2014",t:"Match & Fuse Festival: 3 October 2014 (London, UK)",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/match-fuse-festival-3-october-2014-london/"},
@@ -72,7 +72,7 @@ const archiveBatchTwo=[
 {d:"4 Mar 2013",t:"Philip H. Anselmo / Warbeast — War of the Gargantuas EP",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:true,u:"../portfolio/philip-h-anselmo/warbeast-war-of-the-gargantuas-epauthor-punisher-women-children-hrbkn/"},
 {d:"8 Jul 2021",t:"Bryan Away — Sawdust",p:"The Line of Best Fit",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/bryanawaysawdust/"}
 ];
-archiveBatchTwo.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
+archiveBatchTwo.forEach(upsertArticle);
 const archiveBatchThree=[
 {d:"23 Jun 2015",t:"Jaga Jazzist — Starfire",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/jaga-jazzist-starfire/"},
 {d:"11 Jun 2015",t:"Polar Bear — Same As You",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/polar-bear-same-as-you/"},
@@ -80,7 +80,7 @@ const archiveBatchThree=[
 {d:"22 May 2015",t:"The Remote Viewers — Pitfall",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/the-remote-viewers-pitfall/"},
 {d:"7 May 2015",t:"Tristan Perich — Parallels",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/tristan-perich-parallels/"}
 ];
-archiveBatchThree.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
+archiveBatchThree.forEach(upsertArticle);
 const archiveBatchFour=[
 {d:"2 Jul 2015",t:"Author & Punisher — Melk En Honing",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/author-punisher-melk-en-honing/"},
 {d:"29 Jun 2015",t:"At Folsom Prison — Every Dream And Every Crisis Means The Rise",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/at-folsom-prison-every-dream-and-every-crisis-means-the-rise/"},
@@ -94,7 +94,7 @@ const archiveBatchFour=[
 {d:"4 Aug 2014",t:"RABBITSSS — PENGUINS",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/rabbitsss-penguins/"},
 {d:"24 Jul 2014",t:"Aisles — 4.45am",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/aisles-445-am/"}
 ];
-archiveBatchFour.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
+archiveBatchFour.forEach(upsertArticle);
 const archiveBatchFive=[
 {d:"17 Jul 2014",t:"Mike Weis - “Don’t Know, Just Walk”",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/mike-weis-dont-know-just-walk/"},
 {d:"15 Jul 2014",t:"Kronos Quartet. –“A Thousand Thoughts”",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/kronos-quartet-a-thousand-thoughts/"},
@@ -113,7 +113,7 @@ const archiveBatchFive=[
 {d:"30 Dec 2013",t:"Ulver Messe - “I.X-VI.X”",p:"In Italiano",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/ulver-messe-ix-vix/"},
 {d:"19 Dec 2013",t:"The Remote Viewers - “Crimeways”",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/the-remote-viewers-crimeways/"}
 ];
-archiveBatchFive.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
+archiveBatchFive.forEach(upsertArticle);
 const archiveBatchSix=[
 {d:"17 Dec 2013",t:"Ulver – “Messe I.X–VI.X”",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/ulver-messe-ixvix/"},
 {d:"13 Dec 2013",t:"Ulver - “MESSE I.X–VI.X”",p:"The Quietus",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/ulvermesse-ixvix/"},
@@ -133,7 +133,7 @@ const archiveBatchSix=[
 {d:"10 Jun 2013",t:"Einar Scheving - “Einar Scheving: Land Mins Fodur”",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/einar-scheving-einar-scheving-land-mins-fodur/"},
 {d:"5 Jun 2013",t:"The Heliocentrics - “13 Degrees Of Reality”",p:"In Italiano",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/the-heliocentrics-13-degrees-of-reality/"}
 ];
-archiveBatchSix.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
+archiveBatchSix.forEach(upsertArticle);
 const archiveBatchSeven=[
 {d:"12 Apr 2013",t:"CROWN – “Psychurgy”",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/crown-psychurgy/"},
 {d:"7 Apr 2013",t:"The Shak & Speares - “Gagster”",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/the-shak-speares-gagster/"},
@@ -152,7 +152,7 @@ const archiveBatchSeven=[
 {d:"27 Aug 2012",t:"An Autumn for Crippled Children – “Only the Ocean Knows”",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/an-autumn-for-crippled-children-only-the-ocean-knows/"},
 {d:"23 Jul 2012",t:"Beak  - “>>”",p:"In Italiano",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/beak-/"}
 ];
-archiveBatchSeven.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
+archiveBatchSeven.forEach(upsertArticle);
 const archiveBatchEight=[
 {d:"18 Jul 2012",t:"Ulver - “Childhood’s End”",p:"IndieForBunnies",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/ulver-childhoods-end/"},
 {d:"28 Jun 2012",t:"Katatonia - “Dead End Kings”",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/katatoniadeadendkings/"},
@@ -169,7 +169,7 @@ const archiveBatchEight=[
 {d:"8 Mar 2009",t:"Alex Maguire Sextet - “Brewed In Belgium”",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/alex-maguire-sextet-brewed-in-belgium/"},
 {d:"9 Jul 2008",t:"Napoletano, clochard a Londra: i rifiuti? Voglio ricordare solo pizza e mandolino",p:"Corriere del Mezzogiorno",topic:"politics",lang:"it",rediscovered:false,u:"../portfolio/napoletano-clochard-a-londra-i-rifiuti-voglio-ricordare-solo-pizza-e-mandolino/"}
 ];
-archiveBatchEight.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
+archiveBatchEight.forEach(upsertArticle);
 const articleRows=[...merged.values()];
 const list=document.querySelector('#list'),q=document.querySelector('#q');let active='all';
 function matches(a){
