@@ -177,6 +177,11 @@ const archiveBatchNine=[
 {d:"May 2010",t:"Ennio Morricone @ Royal Albert Hall (Londra, UK)",p:"Il Mucchio Selvaggio",topic:"music",lang:"it",rediscovered:true,u:"../portfolio/ennio-morricone-royal-albert-hall-london-2010/"}
 ];
 archiveBatchNine.forEach(upsertArticle);
+const archiveBatchTen=[
+{d:"April/May 2010",t:"Genitorturers: Shock'n'Roll Revolution!",p:"Ritual",topic:"music",lang:"it",rediscovered:true,u:"../portfolio/genitorturers-shock-n-roll-revolution-ritual/"},
+{d:"April/May 2010",t:"Swallow The Sun: Eclissi totale",p:"Ritual",topic:"music",lang:"it",rediscovered:true,u:"../portfolio/swallow-the-sun-eclissi-totale-ritual/"}
+];
+archiveBatchTen.forEach(upsertArticle);
 const articleRows=[...merged.values()];
 const list=document.querySelector('#list'),q=document.querySelector('#q');let active='all';
 function matches(a){
