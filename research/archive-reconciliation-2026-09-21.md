@@ -2,13 +2,13 @@
 
 ## Result
 
-The surviving published Squarespace Portfolio contains **112 unique routes**.
+The surviving published Squarespace Portfolio contains **114 unique routes**.
 
 The uploaded **Alex Franquelli - Articles.xls** master list contains **202 publication records** dated from **2002-10-27** to **2007-02-19**.
 
-The oldest surviving Squarespace Portfolio item is from 2008, so the two sets do not overlap by publication date. The **202 spreadsheet records are all additional to the 112 Squarespace records**.
+The oldest surviving Squarespace Portfolio item is from 2008, so the two sets do not overlap by publication date. The **202 spreadsheet records are all additional to the 114 Squarespace records**.
 
-That gives a current baseline of **314 known publication records before adding later external-archive discoveries and the new Dropbox material**.
+That gives a current baseline of **316 known publication records before adding later external-archive discoveries and the new Dropbox material**.
 
 ## Pre-Squarespace master-list breakdown
 
