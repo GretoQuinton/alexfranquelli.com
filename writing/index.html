@@ -114,6 +114,26 @@ const archiveBatchFive=[
 {d:"19 Dec 2013",t:"The Remote Viewers - “Crimeways”",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/the-remote-viewers-crimeways/"}
 ];
 archiveBatchFive.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
+const archiveBatchSix=[
+{d:"17 Dec 2013",t:"Ulver – “Messe I.X–VI.X”",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/ulver-messe-ixvix/"},
+{d:"13 Dec 2013",t:"Ulver - “MESSE I.X–VI.X”",p:"The Quietus",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/ulvermesse-ixvix/"},
+{d:"5 Dec 2013",t:"Slint live @ The Forum (London, UK)",p:"The Quietus",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/slintliveinlondon/"},
+{d:"29 Nov 2013",t:"Shellac live @ Netil House (London, UK)",p:"The Quietus",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/shellacliveinlondon/"},
+{d:"29 Nov 2013",t:"Melt Yourself Down & Flamingods @ The New Empowering Church (London, UK)",p:"In Italiano",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/melt-yourself-downand-flamingods/"},
+{d:"25 Nov 2013",t:"Charlemagne Palestine / Z'ev – “RUBHITBANGKLANGHEAR/ RUBHITBANGKLANGEAR”",p:"The Quietus",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/charlemagne-palestinezev-rubhitbangklanghear/rubhitbangklangear/"},
+{d:"15 Nov 2013",t:"The Golden Circle - “The Golden Circle”",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/the-golden-circle-the-golden-circle/"},
+{d:"9 Nov 2013",t:"The Body - “Christs, Redeemers”",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/the-body-christs-redeemers/"},
+{d:"25 Oct 2013",t:"Mamiffer & Circle – “Enharmonic Intervals (for Paschen Organ)”",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/mamiffer-circle-enharmonic-intervals-for-paschen-organ/"},
+{d:"9 Sep 2013",t:"Nine Inch Nails - “Hesitation Marks”",p:"In Italiano",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/nine-inch-nails-hesitation-marks/"},
+{d:"9 Sep 2013",t:"Grumbling Fur – “Glynnaestra”",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/grumbling-fur-glynnaestra/"},
+{d:"15 Jul 2013",t:"Boards Of Canada - “Tomorrow’s Harvest”",p:"In Italiano",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/boards-of-canada-tomorrows-harvest/"},
+{d:"14 Jul 2013",t:"Kwaidan - “Make All The Hell Of Dark Metal Bright”",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/kwaidan-make-all-the-hell-of-dark-metal-bright/"},
+{d:"21 Jun 2013",t:"Locrian – “Return to Annihilation”",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/locrian-return-to-annihilation/"},
+{d:"15 Jun 2013",t:"Author & Punisher – “Women & Children”",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/author-punisher-women-children/"},
+{d:"10 Jun 2013",t:"Einar Scheving - “Einar Scheving: Land Mins Fodur”",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/einar-scheving-einar-scheving-land-mins-fodur/"},
+{d:"5 Jun 2013",t:"The Heliocentrics - “13 Degrees Of Reality”",p:"In Italiano",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/the-heliocentrics-13-degrees-of-reality/"}
+];
+archiveBatchSix.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
 const articleRows=[...merged.values()];
 const list=document.querySelector('#list'),q=document.querySelector('#q');let active='all';
 function matches(a){
