@@ -17,14 +17,34 @@
   <div><div class="kicker">Writer · Rome / London</div><h1>Music.<br>Politics.<br><em>Stories.</em></h1></div>
   <div class="hero-copy"><p>Essays, criticism and reporting from more than fifteen years of writing across music, culture and politics.</p><a class="rule-link" href="writing/">Explore the archive →</a></div>
 </section>
+
 <section class="wrap section">
-  <div class="section-head"><h2>Selected work</h2><button id="shuffle" class="shuffle" type="button">Shuffle selection ↻</button></div>
-  <div class="feature-grid">
-    <a id="lead" class="lead" href="writing/"><div id="lead-pub" class="pub"></div><div><h3 id="lead-title"></h3><p id="lead-deck"></p></div></a>
-    <div id="stack" class="stack"></div>
+  <div class="section-head">
+    <h2>Selected work</h2>
+    <div class="carousel-tools">
+      <span id="slide-count" class="slide-count" aria-live="polite"></span>
+      <button id="prev" class="carousel-button" type="button" aria-label="Previous featured article">←</button>
+      <button id="next" class="carousel-button" type="button" aria-label="Next featured article">→</button>
+      <button id="shuffle" class="shuffle" type="button">Shuffle ↻</button>
+    </div>
+  </div>
+
+  <div id="carousel" class="carousel" aria-roledescription="carousel" aria-label="Selected articles">
+    <a id="lead" class="lead" href="writing/">
+      <div id="lead-pub" class="pub"></div>
+      <div>
+        <div id="lead-meta" class="lead-meta"></div>
+        <h3 id="lead-title"></h3>
+        <p id="lead-deck"></p>
+        <span class="lead-read">Read article →</span>
+      </div>
+    </a>
+    <div id="stack" class="stack" aria-label="Coming next"></div>
   </div>
 </section>
+
 <section class="band"><div class="wrap band-grid"><h2>Archive project</h2><blockquote>Not just what survived. What was actually published.</blockquote></div></section>
+
 <section class="wrap section">
   <div class="section-head"><h2>Rediscovered</h2><span>Recovered from publication archives</span></div>
   <div class="archive-grid">
@@ -38,7 +58,9 @@
   <p style="margin-top:34px"><a class="rule-link" href="writing/">See the working archive →</a></p>
 </section>
 </main>
+
 <footer class="wrap footer"><div>© Alex Franquelli</div><div>Music · Politics · Culture · Fiction</div><div>Independent archive</div></footer>
+
 <script>
 const featured = [
   {p:'The Line of Best Fit',d:'10 September 2021',t:'Manic Street Preachers — The Ultra Vivid Lament',deck:'A band still reaching for the epic, three decades into its life.',u:'https://www.alexfranquelli.com/portfolio/manic-street-preachers-the-ultra-vivid-lament',m:'Album review'},
@@ -54,8 +76,72 @@ const featured = [
   {p:'The Line of Best Fit',d:'21 May 2021',t:'Sons of Raphael — Full-Throated Messianic Homage',deck:'Kitsch, psychedelia, biblical references and English boarding-school pop.',u:'https://www.alexfranquelli.com/portfolio/sons-of-raphael-full-throated-messianic-homage',m:'Album review'},
   {p:'PopMatters',d:'13 May 2014',t:'Horseback — Piedmont Apocrypha',deck:'A raw and unusually personal record from Jenks Miller.',u:'https://www.alexfranquelli.com/portfolio/horseback-piedmont-apocrypha',m:'Album review'}
 ];
-function sample(items,n){const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a.slice(0,n)}
-function renderFeatured(){const picks=sample(featured,4), lead=picks[0];document.querySelector('#lead').href=lead.u;document.querySelector('#lead-pub').textContent=`${lead.p} · ${lead.d}`;document.querySelector('#lead-title').textContent=lead.t;document.querySelector('#lead-deck').textContent=lead.deck;document.querySelector('#stack').innerHTML=picks.slice(1).map(a=>`<a class="card" href="${a.u}"><div class="pub">${a.p} · ${a.d}</div><h3>${a.t}</h3><div class="meta">${a.m}</div></a>`).join('')}
-document.querySelector('#shuffle').addEventListener('click',renderFeatured);renderFeatured();
+
+function shuffled(items){
+  const a=[...items];
+  for(let i=a.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+  return a;
+}
+
+let order=shuffled(featured);
+let position=0;
+let timer;
+
+function itemAt(offset){ return order[(position+offset+order.length)%order.length]; }
+
+function renderCarousel(){
+  const lead=itemAt(0);
+  document.querySelector('#lead').href=lead.u;
+  document.querySelector('#lead-pub').textContent=`${lead.p} · ${lead.d}`;
+  document.querySelector('#lead-meta').textContent=lead.m;
+  document.querySelector('#lead-title').textContent=lead.t;
+  document.querySelector('#lead-deck').textContent=lead.deck;
+  document.querySelector('#slide-count').textContent=`${position+1} / ${order.length}`;
+  document.querySelector('#stack').innerHTML=[1,2,3].map(offset=>{
+    const a=itemAt(offset);
+    return `<button class="card carousel-card" type="button" data-offset="${offset}">
+      <div class="pub">${a.p} · ${a.d}</div>
+      <h3>${a.t}</h3>
+      <div class="meta">${a.m}</div>
+    </button>`;
+  }).join('');
+  document.querySelectorAll('.carousel-card').forEach(button=>{
+    button.addEventListener('click',()=>{
+      position=(position+Number(button.dataset.offset))%order.length;
+      renderCarousel();
+      restartTimer();
+    });
+  });
+}
+
+function next(){ position=(position+1)%order.length; renderCarousel(); }
+function prev(){ position=(position-1+order.length)%order.length; renderCarousel(); }
+
+function restartTimer(){
+  clearInterval(timer);
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    timer=setInterval(next,8000);
+  }
+}
+
+document.querySelector('#next').addEventListener('click',()=>{next();restartTimer()});
+document.querySelector('#prev').addEventListener('click',()=>{prev();restartTimer()});
+document.querySelector('#shuffle').addEventListener('click',()=>{
+  order=shuffled(featured);
+  position=0;
+  renderCarousel();
+  restartTimer();
+});
+const carousel=document.querySelector('#carousel');
+carousel.addEventListener('mouseenter',()=>clearInterval(timer));
+carousel.addEventListener('mouseleave',restartTimer);
+carousel.addEventListener('focusin',()=>clearInterval(timer));
+carousel.addEventListener('focusout',restartTimer);
+
+renderCarousel();
+restartTimer();
 </script>
 </body></html>
