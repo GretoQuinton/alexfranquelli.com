@@ -52,7 +52,7 @@
   </div>
   <div id="carousel" class="carousel" aria-roledescription="carousel" aria-label="Selected articles">
     <a id="lead" class="lead" href="writing/">
-      <div id="lead-art" class="lead-art" hidden></div>
+      <div id="lead-art" class="lead-art"><span id="lead-art-label" class="lead-art-label"></span></div>
       <div id="lead-pub" class="pub"></div>
       <div>
         <div id="lead-meta" class="lead-meta"></div>
@@ -129,7 +129,10 @@ function renderCarousel(){
  document.querySelector('#lead-title').textContent=lead.t;
  document.querySelector('#lead-deck').textContent=lead.deck;
  const art=document.querySelector('#lead-art');
- if(lead.img){art.hidden=false;art.style.backgroundImage=`url("${lead.img}")`;document.querySelector('#lead').classList.add('with-art')}else{art.hidden=true;art.style.backgroundImage='';document.querySelector('#lead').classList.remove('with-art')}
+ document.querySelector('#lead-art-label').textContent=lead.p;
+ art.style.backgroundImage=lead.img?`url("${lead.img}")`:'';
+ art.classList.toggle('has-image',Boolean(lead.img));
+ document.querySelector('#lead').classList.add('with-art')
  document.querySelector('#slide-count').textContent=`${position+1} / ${order.length}`;
  document.querySelector('#stack').innerHTML=[1,2,3].map(offset=>{const a=itemAt(offset);return `<button class="card carousel-card" type="button" data-offset="${offset}"><div class="pub">${a.p} · ${a.d}</div><h3>${a.t}</h3><div class="meta">${a.m}</div></button>`}).join('');
  document.querySelectorAll('.carousel-card').forEach(button=>button.addEventListener('click',()=>{position=(position+Number(button.dataset.offset))%order.length;renderCarousel()}));
