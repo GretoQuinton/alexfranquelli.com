@@ -134,6 +134,25 @@ const archiveBatchSix=[
 {d:"5 Jun 2013",t:"The Heliocentrics - “13 Degrees Of Reality”",p:"In Italiano",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/the-heliocentrics-13-degrees-of-reality/"}
 ];
 archiveBatchSix.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
+const archiveBatchSeven=[
+{d:"12 Apr 2013",t:"CROWN – “Psychurgy”",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/crown-psychurgy/"},
+{d:"7 Apr 2013",t:"The Shak & Speares - “Gagster”",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/the-shak-speares-gagster/"},
+{d:"21 Mar 2013",t:"Wormed - “Exodromos\"",p:"Publication to verify",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/wormed-exodromos/"},
+{d:"5 Feb 2013",t:"Kongh – “Sole Creation”",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/kongh-sole-creation/"},
+{d:"28 Jan 2013",t:"Fabrizio Sferra Quartet - “Untitled #28”",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/fabrizio-sferra-quartet-untitled-28/"},
+{d:"25 Jan 2013",t:"Tomahawk – “Oddfellows”",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/tomahawk-oddfellows/"},
+{d:"8 Nov 2012",t:"Neurosis – “Honor Found In Decay”",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/neurosis-honor-found-in-decay/"},
+{d:"25 Oct 2012",t:"Matteo Fraboni Quintet - “This Is My Music”",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/matteo-fraboni-quintet-this-is-my-musicondarock/"},
+{d:"5 Oct 2012",t:"Matteo Fraboni Quintet - “This is My Music”",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/matteo-fraboni-quintet-this-is-my-music/"},
+{d:"18 Sep 2012",t:"Vision of Disorder – “The Cursed Remain Cursed”",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/vision-of-disorder-the-cursed-remain-cursed/"},
+{d:"13 Sep 2012",t:"The Remote Viewers - “City Of Nets”",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/the-remote-viewers-city-of-nets/"},
+{d:"11 Sep 2012",t:"Rex Shachath – “Sepulchral Torment”",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/rex-shachath-sepulchral-torment/"},
+{d:"5 Sep 2012",t:"Cryptopsy - “Cryptopsy”",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/cryptopsy-cryptopsy/"},
+{d:"1 Sep 2012",t:"Interview with Mike Fleishmann of Vision of Disorder",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/interview-with-mike-fleishmann-of-vision-of-disorder/"},
+{d:"27 Aug 2012",t:"An Autumn for Crippled Children – “Only the Ocean Knows”",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/an-autumn-for-crippled-children-only-the-ocean-knows/"},
+{d:"23 Jul 2012",t:"Beak  - “>>”",p:"In Italiano",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/beak-/"}
+];
+archiveBatchSeven.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
 const articleRows=[...merged.values()];
 const list=document.querySelector('#list'),q=document.querySelector('#q');let active='all';
 function matches(a){
