@@ -73,6 +73,14 @@ const archiveBatchTwo=[
 {d:"8 Jul 2021",t:"Bryan Away — Sawdust",p:"The Line of Best Fit",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/bryanawaysawdust/"}
 ];
 archiveBatchTwo.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
+const archiveBatchThree=[
+{d:"23 Jun 2015",t:"Jaga Jazzist — Starfire",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/jaga-jazzist-starfire/"},
+{d:"11 Jun 2015",t:"Polar Bear — Same As You",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/polar-bear-same-as-you/"},
+{d:"30 May 2015",t:"Francesco Nastro Trio — Colors of Light",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/francesco-nastro-trio-colors-of-light/"},
+{d:"22 May 2015",t:"The Remote Viewers — Pitfall",p:"All About Jazz",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/the-remote-viewers-pitfall/"},
+{d:"7 May 2015",t:"Tristan Perich — Parallels",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/tristan-perich-parallels/"}
+];
+archiveBatchThree.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
 const articleRows=[...merged.values()];
 const list=document.querySelector('#list'),q=document.querySelector('#q');let active='all';
 function matches(a){
