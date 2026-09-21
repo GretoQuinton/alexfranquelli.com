@@ -81,6 +81,20 @@ const archiveBatchThree=[
 {d:"7 May 2015",t:"Tristan Perich — Parallels",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/tristan-perich-parallels/"}
 ];
 archiveBatchThree.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
+const archiveBatchFour=[
+{d:"2 Jul 2015",t:"Author & Punisher — Melk En Honing",p:"Angry Metal Guy",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/author-punisher-melk-en-honing/"},
+{d:"29 Jun 2015",t:"At Folsom Prison — Every Dream And Every Crisis Means The Rise",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/at-folsom-prison-every-dream-and-every-crisis-means-the-rise/"},
+{d:"14 Feb 2015",t:"The Shak & Speares — Dramedy",p:"OndaRock",topic:"music",lang:"it",rediscovered:false,u:"../portfolio/the-shak-speares-dramedy/"},
+{d:"12 Feb 2015",t:"John Supko And Bill Seaman — S_Traits",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/john-supko-and-bill-seaman-straits/"},
+{d:"21 Jan 2015",t:"The Sharp Things — Adventurer’s Inn",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/the-sharp-things-adventurers-inn/"},
+{d:"30 Oct 2014",t:"George Harrison — The Apple Years 1968–75",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/george-harrison-the-apple-years-1968-75/"},
+{d:"10 Oct 2014",t:"Prominent Uyghur academic Ilham Tohti jailed for life",p:"openDemocracy",topic:"politics",lang:"en",rediscovered:false,u:"../portfolio/prominent-uyghur-academic-ilham-tohti-jailed-for-life/"},
+{d:"8 Oct 2014",t:"Smallgang — San",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/smallgang-san/"},
+{d:"15 Aug 2014",t:"Pink Floyd — The Division Bell (20th Anniversary Deluxe Edition)",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/pink-floyd-the-division-bell-20th-anniversary-deluxe-edition/"},
+{d:"4 Aug 2014",t:"RABBITSSS — PENGUINS",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/rabbitsss-penguins/"},
+{d:"24 Jul 2014",t:"Aisles — 4.45am",p:"PopMatters",topic:"music",lang:"en",rediscovered:false,u:"../portfolio/aisles-445-am/"}
+];
+archiveBatchFour.forEach(a=>merged.set(a.t,{...(merged.get(a.t)||{}),...a}));
 const articleRows=[...merged.values()];
 const list=document.querySelector('#list'),q=document.querySelector('#q');let active='all';
 function matches(a){
