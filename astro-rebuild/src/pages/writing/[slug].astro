@@ -7,7 +7,7 @@ const { article }=Astro.props;const { Content }=await render(article);const d=ar
 <BaseLayout title={d.title+' — Alex Franquelli'} description={d.description||d.title}>
 <article class="article" data-pagefind-body>
   <div class="eyebrow">{d.type}</div><h1>{d.title}</h1>
-  <div class="article-meta"><span><strong>Publication:</strong> {d.publication}</span><span><strong>Date:</strong> {d.publicationDate.toLocaleDateString('en-GB')}</span><span><strong>Language:</strong> {d.language}</span>{d.originalUrl&&<span><a href={d.originalUrl}>Original publication ↗</a></span>}</div>
+  <div class="article-meta"><span><strong>Publication:</strong> {d.publication}</span><span><strong>Date:</strong> {d.displayDate||d.publicationDate}</span><span><strong>Language:</strong> {d.language}</span>{d.originalUrl&&<span><a href={d.originalUrl}>Original publication ↗</a></span>}</div>
   <div class="prose"><Content /></div>
   {(d.magazineIssue||d.printedPages||d.cover)&&<aside class="publication-card"><div class="eyebrow">Original publication</div><h3>{d.publication}</h3>{d.magazineIssue&&<p><strong>Issue:</strong> {d.magazineIssue}</p>}{d.printedPages&&<p><strong>Printed page:</strong> {d.printedPages}</p>}{d.cover&&<img src={d.cover} alt={d.publication+' cover'} />}</aside>}
 </article>
