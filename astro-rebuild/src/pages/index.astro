@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+const writing=(await getCollection('writing',({data})=>!data.draft)).sort((a,b)=>b.data.publicationDate.valueOf()-a.data.publicationDate.valueOf());
+---
+<BaseLayout>
+<section class="wrap hero">
+  <div class="eyebrow">Writer · Film &amp; TV · Rome / London</div>
+  <h1>Alex Franquelli</h1>
+  <p class="intro">Writing across music, politics and culture, with a parallel career in film and television.</p>
+</section>
+<section class="wrap section">
+  <h2>Selected writing</h2>
+  {writing.slice(0,6).map(a => <article class="article-row"><a href={'/writing/'+a.data.slug}>{a.data.title}</a><span>{a.data.publication}</span><span>{a.data.publicationDate.getFullYear()}</span></article>)}
+</section>
+</BaseLayout>
