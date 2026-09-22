@@ -56,6 +56,10 @@ content:
       - name: description
         label: Description / subject
         type: text
+      - name: byline
+        label: Byline
+        type: string
+        description: "Use when the original piece has a credited co-author or non-standard byline."
       - name: originalUrl
         label: Original URL
         type: string
