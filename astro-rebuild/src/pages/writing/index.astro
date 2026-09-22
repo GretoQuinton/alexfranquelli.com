@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-const sortDate=(value:string)=>Date.parse(value.length===4?`${value}-01-01`:value.length===7?`${value}-01`:value)||0;
+const sortDate=(value?:string)=>value ? (Date.parse(value.length===4?`${value}-01-01`:value.length===7?`${value}-01`:value)||0) : 0;
 const writing=(await getCollection('writing',({data})=>!data.draft)).sort((a,b)=>sortDate(b.data.publicationDate)-sortDate(a.data.publicationDate));
 const types=[...new Set(writing.map(x=>x.data.type))].sort();
 ---
@@ -13,7 +13,7 @@ const types=[...new Set(writing.map(x=>x.data.type))].sort();
     <div class="filters"><button data-filter="all" aria-pressed="true">All</button>{types.map(t=><button data-filter={t}>{t}</button>)}</div>
   </div>
   <div id="list">
-    {writing.map(a=><article class="article-row" data-type={a.data.type} data-search={(a.data.title+' '+a.data.publication+' '+(a.data.description||'')).toLowerCase()}><a href={'/writing/'+a.data.slug}>{a.data.title}</a><span>{a.data.publication}</span><span>{a.data.displayDate||a.data.publicationDate}</span></article>)}
+    {writing.map(a=><article class="article-row" data-type={a.data.type} data-search={(a.data.title+' '+a.data.publication+' '+(a.data.description||'')).toLowerCase()}><a href={'/writing/'+a.data.slug}>{a.data.title}</a><span>{a.data.publication}</span><span>{a.data.displayDate||a.data.publicationDate||'Date to verify'}</span></article>)}
   </div>
 </section>
 <script is:inline>
