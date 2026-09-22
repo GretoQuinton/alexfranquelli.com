@@ -32,8 +32,8 @@ content:
       - name: publicationDate
         label: Publication date
         type: string
-        required: true
-        description: "Use YYYY, YYYY-MM or YYYY-MM-DD. Do not invent missing day/month precision."
+        required: false
+        description: "Use YYYY, YYYY-MM or YYYY-MM-DD when known. Leave blank rather than inventing a date."
         pattern:
           regex: "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
           message: "Use YYYY, YYYY-MM or YYYY-MM-DD."
