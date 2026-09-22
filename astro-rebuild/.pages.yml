@@ -1,0 +1,74 @@
+media:
+  input: public/images
+  output: /images
+
+content:
+  - name: writing
+    label: Writing
+    type: collection
+    path: src/content/writing
+    filename: "{primary}.md"
+    view:
+      fields: [title, publication, publicationDate, language, type, draft]
+      primary: title
+      sort: [publicationDate, title]
+      default:
+        sort: publicationDate
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: slug
+        label: Website slug
+        type: string
+        required: true
+        pattern: "^[a-z0-9-]+$"
+      - name: publication
+        label: Publication
+        type: string
+        required: true
+      - name: publicationDate
+        label: Publication date
+        type: date
+        required: true
+      - name: language
+        label: Language
+        type: select
+        required: true
+        options:
+          values: [English, Italian]
+      - name: type
+        label: Article type
+        type: select
+        required: true
+        options:
+          values: [Review, Interview, Feature, Live report, Politics / feature, Blog, Commissioned feature, Other]
+      - name: description
+        label: Description / subject
+        type: text
+      - name: originalUrl
+        label: Original URL
+        type: string
+      - name: magazineIssue
+        label: Magazine issue
+        type: string
+      - name: printedPages
+        label: Printed page(s)
+        type: string
+      - name: cover
+        label: Magazine cover
+        type: image
+      - name: featured
+        label: Featured on homepage
+        type: boolean
+      - name: draft
+        label: Draft
+        type: boolean
+      - name: body
+        label: Article body
+        type: rich-text
+        options:
+          format: markdown
+          media: false
