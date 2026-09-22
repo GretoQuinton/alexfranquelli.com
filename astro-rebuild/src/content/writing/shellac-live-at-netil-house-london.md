@@ -1,0 +1,20 @@
+---
+title: "Shellac live at Netil House, London"
+slug: "shellac-live-at-netil-house-london"
+publication: "The Quietus"
+publicationDate: "2013-11-29"
+displayDate: "2013-11-29"
+language: "English"
+type: "Live report"
+originalUrl: "https://thequietus.com/news/shellac-netil-house-live-review/"
+featured: false
+draft: false
+---
+
+<p>The only way not to appreciate a Shellac gig is if Steve Albini throws some money at a random person at the front before leaving the stage forty-five minutes into the set. And that is exactly what happened last time I went to see this bunch of apparently innocuous council office workers a number of lustrums back. At that time, someone shouted the wrong combination of words that triggered something in the notorious mercurial producer, audio engineer, music journalist and, well, guitarists. This time, the usual Q&amp;A game bassist Bob Weston plays with the crowd between songs is as inoffensive as it is bland. “Do you prefer ‘Quincy’ or ‘Murder, She Wrote?’”, “What does one have to do to play the bass next to Todd Trainer?” and “What weighs more, a ton of feathers or a ton of bricks?” are followed by the equally insipid bass player’s answers, so that there is no doubt that the focus is and should stay on the music. That same music that, may the gods have mercy upon the first person who associated this term with it, is quintessentially ‘angular’ and dry like a cloth in the mouth.</p>
+
+<p>You could not ask a band, any band, to be rawer than Shellac. The trio’s sound is in fact a sonic manifesto of its leader’s ethics, and their live sets are an obvious extension of it. The stage lights are motionless; the drum kit is stripped to the core; no silly guitar changes; there is no fixed setlist and the band sweats, they’re all ugly and do nothing to conceal their anatomic brutalism. ‘A minute’ kicks off the evening and a mosh pit is quickly formed. Albini’s raucous, almost inaudible, off-key lament is too easily covered by Trainer’s drumming in a state of apparent confusion. Apparent, because the pulse he provides is instead a meticulous and formidable clockwork in the hands of a wandering mind which lets its inspiration take the lead from time to time. Improvisation is still a crucial component of Shellac’s live set and tonight’s gig makes no exception. ‘Squirrel Song’, ‘Copper’, ‘Be Prepared’, more silly questions, ‘My Black Ass’ and ‘Steady As She Goes’ and more questions. Snare drums, a floor tom and a bass drum can hardly constitute material for a solo. But in Trainer’s case, they are more than enough to unleash one minute of mayhem before ‘Canada’ and ‘Watch Song’ bring Netil House to an almost unbearable temperature.</p>
+
+<p>“Why aren’t you wearing your usual red jeans?”, a clearly fashion-inclined girl asks Bob Weston, whose body is drenched in perspiration. “His jeans are the colour of piss, today”, rebukes Albini, just before the usually quiet bass player admits that the pigment of his pants “is in tone with this gloomy country”. The boos are quickly silenced by a ‘Prayer to God’ that is almost torn apart by Albini’s voiceless screams, rants, curses. From time to time there is room for the skeleton of the occasional new song (“A new album should be out in less than 6 months”, said Weston), the usual gimmicks and the drummer solitary walks throughout the stage, snares in hands, while his two companions rape the cymbals to fulfil a sonic ritual that takes the audience towards the end of the set.</p>
+
+<p>‘Wingwalker’ becomes a spoken word performance, which transcends into a wall of noise and feedback. “Two more tracks and that will be it. There is no way you can talk us out of it”, shouts Albini. Boom. ‘The End of the Radio’ and ‘The Crow’. And that is really it. At the end, the whole band sits to talk with the audience, shake hands and sell t-shirts. One wonders whether or not it is possible to deconstruct rock in a more constructive way. “Great acts are made up of small deeds”, Lao Tzu famously said. Albini hugs us while packing his stuff on stage. It is the same thing. It is exactly the same thing.</p>
