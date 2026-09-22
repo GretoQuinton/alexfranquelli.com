@@ -12,6 +12,7 @@ const writing = defineCollection({
     language: z.enum(['English','Italian']),
     type: z.enum(['Review','Interview','Feature','Live report','Politics / feature','Blog','Commissioned feature','Other']),
     description: z.string().optional(),
+    byline: z.string().optional(),
     originalUrl: z.string().url().optional(),
     legacyPath: z.string().optional(),
     magazineIssue: z.string().optional(),
