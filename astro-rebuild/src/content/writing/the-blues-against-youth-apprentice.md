@@ -1,0 +1,19 @@
+---
+title: "The Blues Against Youth - Apprentice"
+slug: "the-blues-against-youth-apprentice"
+publication: "PopMatters"
+publicationDate: "2016-10-29"
+displayDate: "2016-10-29"
+language: "English"
+type: "Review"
+featured: false
+draft: false
+---
+
+<p>Somewhere, in a hushed place between Vicksburg and Yazoo City, an old riverboat must be chugging under the sun, clumsily pushing its cargo on the cloudy waters of that forgotten river, leading memories firmly astray.<br />The old, Mighty Mississippi is just a few miles down, its stream running parallel to its tired cousin’s lazy stroll, its gurgling refrain the longest theme ever heard by the old people chomping tobacco at this time of the day. “A river is a river”, some say, but the music it spawns travels as far as its reputation. Until another waterway hears about the first and continues its story. Gianny TBAY was born on the banks of the river Tiber, in Rome, Italy. He doesn’t talk much about his hardcore roots these days - never a word too many about the past, his past – but you can hear him talk about the blues, if you like, and explain as it slowly, calmly filled his present.</p>
+
+<p>A one-man band is always worthy of respect. Because the artist must obviously know what he’s doing, we like to think he dwells in his voluntary, functional loneliness, and, more importantly, he has to carry a hell of a lot of stuff. Gianni ferries around the skull of a goat too, who must be his companion during his long tours of the Old Continent, where the blues reaches other urban waterways, estuaries and tributaries before pretending to fill a sea or an ocean. The Blues Against Youth is the banner behind which Mr. TBAY (yes, I know) stocks the names he has learned to love and respect: Hank Williams, Guy Clark, probably Jimmie Rodgers, Carl Smith, echoes of an old honky tonk and some Steve Young, because it’s good to have him around.</p>
+
+<p>For his third album (the other two, “Pure at Heart Blues” and “Trapped in the Country”, from 2011 and 2013 respectively, are definitely worth a spin), The Blues Against Youth has not reinvented his (paddle) wheel, but he has rather focused on the acoustic side of his musical spectrum. True, “Barbed Times” and “Somebody Settles Down” see the obligatory harp (played by guest musician Andrea Cruciani), an electric organ on the title-track and generally speaking all the right ingredients are there for you to say that, yes, this is cool, but why should I be interested? Because the well-known components are there to be toyed with, and the end result is a catchy, dirty and sweaty beast of a record.</p>
+
+<p>The overarching feeling is one of a record which has undeniable live roots, and this is rather clear in the way the tunes develop, perennially swinging from the subtle tempo changes, to the touching cover of "Lonesome Whistle Blow", from the already mentioned Hank Williams. The up-tempo (“Boundless”), the sluggish traits ("Wish Pile Blues"), the slide (“Kep it Goin’”) make of Apprentice a little piece of contemporary vintage: too old and too new at the same time, too American-sounding and too European to be appreciated by the purists. This is it, nothing else. This is no Vicksburg or Mississippi Delta here, this is for a place which is no more, this is for a place that will ever be.</p>
