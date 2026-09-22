@@ -1,0 +1,36 @@
+---
+title: "Entombed @ Garage, London (UK)"
+slug: "entombed-garage-london-uk"
+publication: "Musicboom"
+publicationDate: "2004-02-08"
+displayDate: "2004-02-08"
+language: "Italian"
+type: "Live report"
+originalUrl: "http://www.musicboom.it/mostra_art.php?categoria=concerti&Unico=20040218193645"
+featured: false
+draft: false
+---
+
+<p>É una mezzanotte umida quella che mi avvolge appena fuori dal Garage. I suoni ovattati, lontani, sembrano fare capolino dietro l’angolo e più mi addentro nella strada e meno riesco a sentirli.</p>
+
+<p>Sarà che a volte la musica aggredisce col suo calore bianco o forse é solo una vuota impressione datami dal sonno; fatto sta che un concerto degli Entombed stride da morire col silenzio ed i suoi derivati empirici.</p>
+
+<p>Tutto é iniziato col mio ritardo. Ho colpevolmente perso due bands delle quali non credo resterà una gran traccia dal momento che il locale é desolatamente vuoto così come il bancone del bar che, in una dantesca penombra, mi accoglie quasi invitandomi ad approfittare della fila inesistente.</p>
+
+<p>Nel suo piccolo é un evento vedere gli Entombed a Londra da headliners. Non di certo perché la Storia non parli per loro e neanche perché non lo meritino ma solo perché, negli anni, ho avuto come l’impressione che tanti abbiano vissuto il loro mutamento artistico da “traditori” di una fede, da venduti a Dio solo sa quale mainstream.</p>
+
+<p>La verità é che nel 2004 gli Entombed sono una delle migliori live bands del pianeta e poco importa se hanno violentato la regola della coerenza e della fedeltà musicale seguendo una precisa voglia di dissacrare “l’etica metallica”. Poco importa se la stampa inglese ha stroncato da più parti il loro ultimo “Inferno” descrivendoli come una band finita, morta da tempo senza saperlo.</p>
+
+<p>Stando così le cose dovrebbero spiegarmi da dove proviene il boato che accoglie l’intro di violini che anticipa “Chief Rebel Angel” perché la sala é ora gremita all’inverosimile e il pubblico conosce i testi a memoria coprendo a tratti le vibrazioni che fuoriescono dalle casse.</p>
+
+<p>Dovrebbero spiegarmi infine se l’assoluta e cieca coerenza alla fine paga davvero e, se é così, perché mai non c’é un atomo del Garage che non si muova, che non vibri con “The Fix Is In” (assolutamente geniale l’inizio della parte cantata con “I was around/When god was a boy/Now, I am the one/Who stole his favourite toy”) e mi domando come faccia la storica “Left Hand Path” a sembrare così recente se lo stile é davvero cambiato come dicono.</p>
+
+<p>Il feeling col pubblico é quasi palpabile: non c’é retorica populista, non cercano di ingraziarsi il pubblico con frasi di circostanza - Londra é la stessa del mitico “Monkey Puss” e li ama proprio per il loro essere estranei ad ogni circolo che conti, ad ogni trend che li vorrebbe chiusi nei cliché del genere senza lasciarsi andare all’ironia intelligente che invece li contraddistingue ed accompagna oramai da una decina d’anni.</p>
+
+<p>“Living Dead”, “Eyemaster”, “I For An Eye” e “Bringer Of Light” sembrano un’enorme suite ininterrotta dall’entusiasmo dell’adesso incredibilmente piccolo locale di Highbury.</p>
+
+<p>L’unica vera pecca é la durata del concerto: un’ora abbondante che ha forse il pregio di finire al punto giusto e di non lasciar che lo spirito della serata diventi meno che tirato e dirompente.</p>
+
+<p>É la stessa potenza degli esordi che impressiona me e la folla che fila via all’uscita accolta da una pioggia leggera e quasi timida.</p>
+
+<p>Credo abbia piovuto anche quella sera dell’Astoria; quando il mondo sembrava voltato a guardare Seattle non sapendo che, forse, sarebbe stato un diabolico manipolo di svedesi ad accompagnarlo dritto nel nuovo millennio...</p>
