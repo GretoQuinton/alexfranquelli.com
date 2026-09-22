@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+const writing=(await getCollection('writing',({data})=>!data.draft)).sort((a,b)=>b.data.publicationDate.valueOf()-a.data.publicationDate.valueOf());
+const types=[...new Set(writing.map(x=>x.data.type))].sort();
+---
+<BaseLayout title="Writing Archive — Alex Franquelli" description="Published writing by Alex Franquelli in English and Italian.">
+<section class="wrap section">
+  <div class="eyebrow">Archive</div><h1>Writing</h1>
+  <div class="archive-tools">
+    <input class="search" id="q" type="search" placeholder="Search title, publication or subject…" />
+    <div class="filters"><button data-filter="all" aria-pressed="true">All</button>{types.map(t=><button data-filter={t}>{t}</button>)}</div>
+  </div>
+  <div id="list">
+    {writing.map(a=><article class="article-row" data-type={a.data.type} data-search={(a.data.title+' '+a.data.publication+' '+(a.data.description||'')).toLowerCase()}><a href={'/writing/'+a.data.slug}>{a.data.title}</a><span>{a.data.publication}</span><span>{a.data.publicationDate.getFullYear()}</span></article>)}
+  </div>
+</section>
+<script is:inline>
+const q=document.querySelector('#q'),buttons=[...document.querySelectorAll('[data-filter]')],rows=[...document.querySelectorAll('.article-row')];let active='all';
+function update(){const term=q.value.trim().toLowerCase();rows.forEach(r=>r.hidden=!((active==='all'||r.dataset.type===active)&&(!term||r.dataset.search.includes(term))))}
+q.addEventListener('input',update);buttons.forEach(b=>b.addEventListener('click',()=>{active=b.dataset.filter;buttons.forEach(x=>x.setAttribute('aria-pressed',String(x===b)));update()}));
+</script>
+</BaseLayout>
