@@ -31,8 +31,16 @@ content:
         required: true
       - name: publicationDate
         label: Publication date
-        type: date
+        type: string
         required: true
+        description: "Use YYYY, YYYY-MM or YYYY-MM-DD. Do not invent missing day/month precision."
+        pattern:
+          regex: "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+          message: "Use YYYY, YYYY-MM or YYYY-MM-DD."
+      - name: displayDate
+        label: Display date
+        type: string
+        description: "Optional human-readable form such as April/May 2010."
       - name: language
         label: Language
         type: select
@@ -50,6 +58,9 @@ content:
         type: text
       - name: originalUrl
         label: Original URL
+        type: string
+      - name: legacyPath
+        label: Legacy website path
         type: string
       - name: magazineIssue
         label: Magazine issue
