@@ -7,7 +7,7 @@ const writing = defineCollection({
     title: z.string(),
     slug: z.string(),
     publication: z.string(),
-    publicationDate: z.string(),
+    publicationDate: z.string().optional(),
     displayDate: z.string().optional(),
     language: z.enum(['English','Italian']),
     type: z.enum(['Review','Interview','Feature','Live report','Politics / feature','Blog','Commissioned feature','Other']),
