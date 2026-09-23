@@ -2,6 +2,8 @@
 title: "RAah Project - Score"
 slug: "raah-project-score"
 publication: "IndieForBunnies"
+publicationDate: "2009-10-23"
+displayDate: "2009-10-23"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
