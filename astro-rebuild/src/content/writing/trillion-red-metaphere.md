@@ -2,6 +2,8 @@
 title: "Trillion Red - Metaphere"
 slug: "trillion-red-metaphere"
 publication: "Angry Metal Guy"
+publicationDate: "2012-11-20"
+displayDate: "2012-11-20"
 language: "English"
 type: "Review"
 featured: false
