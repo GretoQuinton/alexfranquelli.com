@@ -2,6 +2,8 @@
 title: "Person L - The Positives"
 slug: "person-l-the-positives"
 publication: "IndieForBunnies"
+publicationDate: "2009-12-18"
+displayDate: "2009-12-18"
 language: "Italian"
 type: "Review"
 featured: false
