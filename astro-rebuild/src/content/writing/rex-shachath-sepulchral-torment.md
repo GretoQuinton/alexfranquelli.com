@@ -2,6 +2,8 @@
 title: "Rex Shachath - Sepulchral Torment"
 slug: "rex-shachath-sepulchral-torment"
 publication: "Angry Metal Guy"
+publicationDate: "2012-09-11"
+displayDate: "2012-09-11"
 language: "English"
 type: "Review"
 byline: "Alex Franquelli"
