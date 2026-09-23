@@ -2,6 +2,8 @@
 title: "Pissed Jeans - King Of Jeans"
 slug: "pissed-jeans-king-of-jeans"
 publication: "IndieForBunnies"
+publicationDate: "2009-11-23"
+displayDate: "2009-11-23"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
