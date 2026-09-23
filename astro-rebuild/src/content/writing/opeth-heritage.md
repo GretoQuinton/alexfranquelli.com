@@ -2,6 +2,8 @@
 title: "Opeth - Heritage"
 slug: "opeth-heritage"
 publication: "Ondarock"
+publicationDate: "2011-10-12"
+displayDate: "2011-10-12"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
