@@ -2,6 +2,8 @@
 title: "Ulver - Messe I.X-VI.X"
 slug: "ulver-messe-i-x-vi-x-indieforbunnies"
 publication: "IndieForBunnies"
+publicationDate: "2013-12-30"
+displayDate: "2013-12-30"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
