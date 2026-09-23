@@ -2,6 +2,8 @@
 title: "Swans - The Seer"
 slug: "swans-the-seer"
 publication: "Angry Metal Guy"
+publicationDate: "2013-01-09"
+displayDate: "2013-01-09"
 language: "English"
 type: "Review"
 featured: false
