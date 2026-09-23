@@ -2,6 +2,8 @@
 title: "Tomahawk - Oddfellows"
 slug: "tomahawk-oddfellows"
 publication: "Angry Metal Guy"
+publicationDate: "2013-01-25"
+displayDate: "2013-01-25"
 language: "English"
 type: "Review"
 featured: false
