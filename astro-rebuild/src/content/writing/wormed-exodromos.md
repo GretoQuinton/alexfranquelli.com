@@ -2,6 +2,8 @@
 title: "Wormed - Exodromos"
 slug: "wormed-exodromos"
 publication: "Angry Metal Guy"
+publicationDate: "2013-03-21"
+displayDate: "2013-03-21"
 language: "English"
 type: "Review"
 featured: false
