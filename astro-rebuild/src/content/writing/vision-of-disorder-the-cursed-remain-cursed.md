@@ -2,6 +2,8 @@
 title: "Vision Of Disorder - The Cursed Remain Cursed"
 slug: "vision-of-disorder-the-cursed-remain-cursed"
 publication: "Angry Metal Guy"
+publicationDate: "2012-09-18"
+displayDate: "2012-09-18"
 language: "English"
 type: "Review"
 byline: "Alex Franquelli"
