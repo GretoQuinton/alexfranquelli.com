@@ -2,6 +2,8 @@
 title: "Ulver - Messe I.X–VI.X"
 slug: "ulver-messe-i-x-vi-x-angry-metal-guy"
 publication: "Angry Metal Guy"
+publicationDate: "2013-12-17"
+displayDate: "2013-12-17"
 language: "English"
 type: "Review"
 byline: "Alex Franquelli"
