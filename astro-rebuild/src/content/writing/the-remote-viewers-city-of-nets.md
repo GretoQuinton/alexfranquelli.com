@@ -2,6 +2,8 @@
 title: "The Remote Viewers - City Of Nets"
 slug: "the-remote-viewers-city-of-nets"
 publication: "All About Jazz"
+publicationDate: "2012-09-13"
+displayDate: "2012-09-13"
 language: "English"
 type: "Review"
 byline: "Alex Franquelli"
