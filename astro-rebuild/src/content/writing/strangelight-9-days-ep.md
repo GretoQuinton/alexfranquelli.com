@@ -2,6 +2,8 @@
 title: "Strangelight - 9 Days EP"
 slug: "strangelight-9-days-ep"
 publication: "Angry Metal Guy"
+publicationDate: "2013-11-02"
+displayDate: "2013-11-02"
 language: "English"
 type: "Review"
 featured: false
