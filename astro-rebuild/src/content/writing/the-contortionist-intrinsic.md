@@ -1,0 +1,21 @@
+---
+title: "The Contortionist - Intrinsic"
+slug: "the-contortionist-intrinsic"
+publication: "Angry Metal Guy"
+language: "English"
+type: "Review"
+featured: false
+draft: false
+---
+
+<p>The Contortionist// Intrinsic <br />Rating: 3.0/5.0<br />Label: eOne Music  <br />Websites:  facebook.com <br />Release Dates:  Worldwide: 2012.07.17 </p>
+
+<p>Have you ever wondered what would happen if the guys of Anathema got in an elevator with the ugly bunch from Obscura and the (now) ethereal lot from Cynic? That would probably cause the lift to come to a halt, thereby giving them an opportunity to play some music together in the quiet of an empty building, somewhere in the suburbs of your favourite city.<br />The Contortionist’s new album comes with the answer to this and other questions. Think about that elevator, now divide the feeling into 10 tracks and you get the picture. So is this band from Indiana worth our time? Can we avoid them if we want to understand where metal is going at the end of 2012?</p>
+
+<p>“Intrinsic” is the natural evolution of The Contortionist’s preceding effort entitled “Exoplanet” (no pun intended, I hope), whose nervous dynamic embodied a sound too raw to be called progressive, and too elegant to be labelled ‘metalcore’. “Intrinsic” is the relatively inspired album by a band flirting with heterogeneity and the diluted pace of melancholy in a way that redefines the boundaries of pensiveness in extreme metal.<br />The faint mentions of jazz and fusion that populated “Exoplanet” are now bold statements, which can be easily spotted between the lines in tracks such as “Holomovement” and “Cortical”.  As the more attentive listener may notice, the real agent responsible for this change is Christopher Tilley’s bass, whose tasteful textures not only serve as a cosmetic proxy for the overall aesthetic outcome, but which appear to lead the way when the song breaks into yet another change of atmosphere.</p>
+
+<p>The price to pay is – rather obviously – a loss of immediacy: a rather incongruous succession of parts which makes the listen an arduous task that ends up being rewarding if one is focused enough not to lose sight of the whole picture. But the image is a blurred rendition of a band struggling to find balance between melody and brutality in ways which don’t pose any challenge to the doctrine formulated by the likes of Opeth and Between The Buried And Me. <br />“Intrinsic” is a safe compromise between the two historical opposites of progressive metal, but it fails to pose challenges. “Dreaming Schematics” and “Sequential Vision” are vivid examples of the fact that a lesson has been learned, but that there is no going forward from there, no diversification from the melody-brutality dualism which is the overarching motive behind every single tune and singer and keyboardist (yes, keyboards) Jonathan Carpenter’s melodies of choice.</p>
+
+<p>The music sometimes tends to go adrift in the dangerous waters of math-core (“Feedback Loop”, “Geocentric Confusion”), but it is only a matter of time before it sways back to the reassuring territories of a melancholic grind. However, the tension between the opposites is seldom enough to make do for the lack of inventiveness in terms of experimentation. “Intrinsic” fails to convince us that there is a way to progressive metal that is somehow more original than pre-“Watershed” (nomen omen) Opeth.</p>
+
+<p>What is good in “Intrinsic” is the mere fact that it is something solid that The Contortionist will build their future on. There is nothing new or special in this album other than its gracious take on grind, which leads its listener to a utopic world where progressive metal hasn’t lost all its appeal by favouring  subgenres such as djent, math-core and another dozen names.<br />Music is indeed an elevator; but The Contortionist’s one is a damn crowded mode of vertical transport.</p>
