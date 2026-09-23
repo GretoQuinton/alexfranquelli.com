@@ -1,0 +1,62 @@
+---
+title: "Mike Patton - Mondo Cane"
+slug: "mike-patton-mondo-cane"
+publication: "IndieForBunnies"
+publicationDate: "2010-06-18"
+displayDate: "2010-06-18"
+language: "Italian"
+type: "Review"
+byline: "Alex Franquelli"
+featured: false
+draft: false
+---
+
+<p>Mike Patton</p>
+
+<p>“Mondo Cane”</p>
+
+<p>Similar Artist: Fred Buscaglione, Nat King Cole, Gino Paoli</p>
+
+<p>Rating: 4/5</p>
+
+<p>1.  Il cielo in una stanza</p>
+
+<p>2. Che notte</p>
+
+<p>3. Ore d'amore!</p>
+
+<p>4. 0 km al giorno</p>
+
+<p>5. Quello che conta</p>
+
+<p>6. Urlo negro</p>
+
+<p>7. Deep down</p>
+
+<p>8. Scalinatella</p>
+
+<p>9. L'uomo che non sapeva amare</p>
+
+<p>10. Ti offro da bere</p>
+
+<p>11. Senza fine<br />di Alex Franquelli</p>
+
+<p>Mike Patton canta i classici del pop italiano degli anni 50 e 60. La recensione potrebbe finire qui e avremmo descritto per filo e per segno un album che, solo in apparenza, si distanzia di molto dalla produzione dell’ex vocalist dei Faith No More. Le cose non stanno invece esattamente in questo modo e viene da sorridere al pensiero di ciò che alcuni organi della stampa mainstream del nostro Paese hanno dipinto per descrivere un’opera che, è vero, non ha molte pretese, ma che rappresenta comunque un unicum nel panorama internazionale (veramente) indipendente.</p>
+
+<p>Patton ha da sempre affermato di amare sonorità semplici, immediate pop. Il ritenerle ‘estreme’ alla stregua delle derive sperimentali in compagnia di gente come John Zorn o di uno a caso dei suoi progetti paralleli è impresa normale, quasi spontanea proprio in virtù di una eterogeneità apparentemente confusa o forse solo dannatamente instancabile.</p>
+
+<p>“Mondo Cane” è in questo contesto un album estremo, fortemente espressivo che ha l’invidiabile pregio di essere ironico ma non goliardico, fedele e non parodistico. </p>
+
+<p>Può sembrare strano ma i brani non sono stravolti e gli arrangiamenti non sono più ricercati di quelli che uscirebbero da una TV accesa su un balcone in un giovedì sera di un’afosa estate italiana se a cantarli fosse un’elegante mummia dei tanti che la infestano.</p>
+
+<p>L’anima da vero crooner non è neanch’essa una novità, un gioco surreale e contingente, ma la manifestazione, l’esposizione di ciò che è sempre stato, del sottile amore per Nat King Cole, Johnnie Ray o l’immancabile Frank Sinatra, per l’orchestra e i suoi modi, per le luci soffuse, l’odore di fumo e sventole e quel retrogusto legnoso di whisky d’annata.</p>
+
+<p>Chi non abbia mai visto tutto questo nei Faith No More di “Angel Dust”, nei momenti più introspettivi dei Mr Bungle di “Disco Volante” o nella deriva trash dei Peeping Tom assiste da sempre a qualcosa che non è mai esistito.</p>
+
+<p>Dunque questo album può sorprendere un pubblico disattento; gli altri possono solo ascoltarlo. Musicalmente non lo si può discutere: un’orchestra di 30 elementi, gli innesti (azzeccatissimi) dell’onnipresente Roy Paci e Alessandro Stefana, un repertorio che pesca  da Gino Paoli a Tenco per finire da Morricone, Buscaglione e la canzone napoletana non passano inosservati. </p>
+
+<p>La post-produzione c’è e si sente, le sovrapposizioni si notano al secondo ascolto ma non viene intaccata in alcun modo la magia di un album solo nominalmente dal vivo e dunque da considerarsi quasi un’opera in studio.</p>
+
+<p>Mike Patton canta i classici del pop italiano degli anni 50 e 60. La recensione potrebbe finire qui e avrei detto anche troppo. Perché la musica estrema (di qualsiasi tipo: rumorosa, sperimentale, melodica) va ascoltata e vissuta. Il resto è rumore bianco inutile e dannoso.</p>
+
+<p>“Mondo Cane” non è un capolavoro ma fa quello che promette: raccoglie per un’ora un pugno di buona poesia dei tempi andati che una volta ci lambiva ma che uno stupido vento a poco a poco s’è portato via con sé.</p>
