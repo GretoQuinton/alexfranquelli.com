@@ -2,6 +2,8 @@
 title: "The Body - Master, We Perish"
 slug: "the-body-master-we-perish"
 publication: "Angry Metal Guy"
+publicationDate: "2013-04-29"
+displayDate: "2013-04-29"
 language: "English"
 type: "Review"
 featured: false
