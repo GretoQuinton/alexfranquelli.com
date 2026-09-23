@@ -2,6 +2,8 @@
 title: "The Contortionist - Intrinsic"
 slug: "the-contortionist-intrinsic"
 publication: "Angry Metal Guy"
+publicationDate: "2012-10-21"
+displayDate: "2012-10-21"
 language: "English"
 type: "Review"
 featured: false
