@@ -2,6 +2,8 @@
 title: "The Secret - Agnus Dei"
 slug: "the-secret-agnus-dei"
 publication: "Angry Metal Guy"
+publicationDate: "2012-11-01"
+displayDate: "2012-11-01"
 language: "English"
 type: "Review"
 featured: false
