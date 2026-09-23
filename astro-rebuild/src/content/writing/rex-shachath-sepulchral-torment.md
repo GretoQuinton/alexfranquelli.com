@@ -1,0 +1,16 @@
+---
+title: "Rex Shachath - Sepulchral Torment"
+slug: "rex-shachath-sepulchral-torment"
+publication: "Angry Metal Guy"
+language: "English"
+type: "Review"
+byline: "Alex Franquelli"
+featured: false
+draft: false
+---
+
+<p>Rex Shachath // Sepulchral Torment<br />Rating: 2.0/5.0<br />Label: Hostile Media <br />Websites: rexshachath.bigcartel.com // facebook.com<br />Release Dates: EU: 2012.09.07 | US: 07.09.2012<br />Alex Franquelli</p>
+
+<p>A band with no past is not necessarily a band without a future. But a band which doesn’t look at the future is surely one which lives in the past. With regards to the present, if you title your album Sepulchral Torment and you play old-school death metal, well, there is apparently not much to be said. Rex Shachath is a band with a good hand playing an old game not many people appreciate anymore, but it does it with style and you can’t help but recognise it. </p>
+
+<p>Not even a year ago, drummer Jay Rogers and guitarist Andrew Pennington (both from Irish band Overoth, whose 2010 album Kingdom of Shadows somehow laid the foundations for the current release) got together and decided to ride the long wave of death metal revival or, if we want to take a more romantic view, they had great songs that needed to be heard. And great they are. <br />Sepulchral Torment is an EP which sounds as an exercise in style: one which inherently cites Grave while toying with a groove which pays its respects to names like Morbid Angel and, why not, Asphyx. Once the useless, albeit apparently mandatory, intro is skipped, the title track explodes in a fury which would make Dan Lilker headbang, while the rotten seeds of Morbid Angel are cast all over Andrew Pennington and Jonathan 'Frankie' Francis’s solos and overall style. Growling vocals and a drumming which reminds us of an early, essential Gene Hoglan, close a circle which may not strike us for being intellectually challenging or particularly interesting, but which surely does its job.<br />If you have ever come across mother band Overoth, you may wonder whether or not the world needed yet another band playing exactly the same way our metal ancestors did back in the early 90s. The answer is obvious; therefore it won’t be mentioned on this review, but the very fact that we feel like interrogating ourselves with such a rhetoric thought in 2012 is a statement in itself.<br />Sepulchral Torment has got some great tunes (“Follow the Bastard Prophet” and “Blind from Birth”) above all), but you have already heard them at least a thousand times even if you are not aware of it. <br />There is something in metal, which makes the genre rather unique. Stockhausen and Messiaen owe a lot to Mozart, but they don’t sound like him. Whoever tries to imitate the Austrian genius is ridiculed or ends up writing (successful, I give you that) soundtracks. Rap died 25 years ago and today nobody in his or her right mind would ever try to emulate Chuck D, Flavor Flav and Professor Griff: if they did, we would all have a laugh. Do you know The Beatles? Have you heard Oasis? Should we care about the latter?<br />So why should we take Rex Shachath seriously?</p>
