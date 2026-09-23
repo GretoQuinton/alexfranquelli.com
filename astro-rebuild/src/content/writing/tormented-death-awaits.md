@@ -2,6 +2,8 @@
 title: "Tormented - Death Awaits"
 slug: "tormented-death-awaits"
 publication: "Angry Metal Guy"
+publicationDate: "2013-05-03"
+displayDate: "2013-05-03"
 language: "English"
 type: "Review"
 featured: false
