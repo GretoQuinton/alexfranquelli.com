@@ -2,6 +2,8 @@
 title: "Skunk Anansie @ The Electric Ballroom"
 slug: "skunk-anansie-the-electric-ballroom"
 publication: "IndieForBunnies"
+publicationDate: "2009-10-19"
+displayDate: "2009-10-19"
 language: "Italian"
 type: "Live report"
 byline: "Alex Franquelli"
