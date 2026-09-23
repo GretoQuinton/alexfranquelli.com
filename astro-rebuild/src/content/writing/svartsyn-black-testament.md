@@ -2,6 +2,8 @@
 title: "Svartsyn - Black Testament"
 slug: "svartsyn-black-testament"
 publication: "Angry Metal Guy"
+publicationDate: "2013-05-23"
+displayDate: "2013-05-23"
 language: "English"
 type: "Review"
 featured: false
