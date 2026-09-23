@@ -1,0 +1,112 @@
+---
+title: "In morte di un Cristo Pop: Nirvana dieci anni dopo"
+slug: "in-morte-di-un-cristo-pop-nirvana-10-anni-dopo"
+publication: "Musicboom"
+language: "Italian"
+type: "Feature"
+byline: "Ilario Galati, Alessandro Bertolotti, Alessandro Franquelli"
+featured: false
+draft: false
+---
+
+<p>In morte di un Cristo Pop: Nirvana dieci anni dopo</p>
+
+<p>di</p>
+
+<p>Ilario Galati, Alessandro Bertolotti, Alessandro Franquelli</p>
+
+<p>Dieci anni fa un colpo di fucile metteva fine alla giovane vita di Kurt</p>
+
+<p>Cobain. Da allora copiose sono state le esegesi e i tributi. Il mercato e i media hanno cannibalizzato la sua figura, trasformandola in un'icona da venerare e contabilizzare.</p>
+
+<p>Dieci anni sono relativamente pochi, ma ci permettono di leggere questa parabola con il distacco e lo spirito critico necessari per cercare di comprendere a fondo la storia dei Nirvana.</p>
+
+<p>Ci resta la sua musica, e ci resta la consapevolezza che quel colpo alla tempia ci ha privati di uno dei più grandi talenti della musica</p>
+
+<p>contemporanea.</p>
+
+<p>I swear I don't have a gun - Canzoni che incendiarono una generazione.</p>
+
+<p>Smells like teen spirit mi ha dato appartenenza, mi ha fatto sentire parte di un tutto.</p>
+
+<p>Parto così, ignorando bellamente le regole per scrivere un coerente pezzo che ripercorra la discografia di una band, e lo faccio per due ragioni: in primo luogo perché sono già così vecchio da poter dire di essermeli vissuti in pieno, in diretta, e in secondo luogo perché di articoli 'ufficiali' ne trovate a buttare.</p>
+
+<p>Già, sui Nirvana è stato detto tutto. Come vi dicevo, preferisco partire da Nevermind.</p>
+
+<p>Ricordo le recensioni dell'epoca, alcune le conservo, e devo dire che a conti fatti in pochi salutarono il secondo disco dei Nirvana come fosse un capolavoro. I più misero l'accento sul presunto tradimento che Cobain e soci perpetrarono al movimento indie firmando per la David Geffen Co anche se alcuni si sentivano tranquilli sapendo che dietro lo sdoganamento c'era Thurston Moore (che di lì a poco avrebbe dato alle stampe per Geffen, con i suoi Sonic Youth, il formidabile Dirty). In pochi però capirono che questo avrebbe avuto, da lì a venire, un effetto dirompente: il suono dei sotterranei diventava mainstream. Con tutto quello che ne derivava. Dopo un</p>
+
+<p>decennio di musica 'sintetica', dalle radio commerciali, dai locali di</p>
+
+<p>ritrovo giovanili, nelle discoteche, ricominciavano a ruggire le chitarre. E fu proprio Smells Like teen Spirit, con quel riff di quattro accordi in maggiore, e il si/mi arpeggiato nella strofa a rappresentare degnamente la punta dell'iceberg.</p>
+
+<p>Nevermind suona oggi datato-ma-non-troppo e conserva la sua innata potenza espressiva. Colpisce la maturità del songwriting del giovane Cobain, capace anche di liriche dignitose (spesso autobiografiche), e colpisce ancor di più l'anima pop. E come se i Pixies di Doolittle, i Melvins da Seattle, gli Husker Du di Mould &amp; Hart, i già generazionali Rem siano stati metabolizzati e rigettati in queste devastanti canzoni-da-tre-minuti. Gemme pop che sono la summa del Cobain pensiero, alcune delle quali si riveleranno delle hit irresistibili: dall'oscura Something in the Way al tormentone Come as you</p>
+
+<p>are, dalla 'ballata' Lithium alla urticante Territorial Pissing, dal</p>
+
+<p>micidiale attacco di Drain You alla deviata In Bloom, Nevermind inanella dodici canzoni di una semplicità disarmante, capaci di comunicare, ad una generazione desiderosa e orfana di miti, ben oltre la semplice connessione delle note e delle parole.</p>
+
+<p>Abbiamo detto canzoni brevi e devastanti, ma il punk c'entra poco. Le chitarre infatti sono più debitrici ad un certo suono hard, guarda caso coerente con quello di altri dischi dello stesso periodo ma, a differenza dei loro colleghi, i Nirvana eliminano tutto quello che è inutile. C'avete presente Lo Straniero di Camus? Non c'è una parola o una virgola di troppo nel libro del grande scrittore franco-algerino. Così è per Nevermind: 33 minuti (durata netta, senza contare la fastidiosa ghost track) davvero sorprendenti. Stilisticamente nulla eccede, è tutto confezionato alla perfezione, ma Nevermind in realtà è un cortocircuito che parte dai sotterranei per marchiare a fuoco un intero decennio.</p>
+
+<p>Il predecessore Bleach oggi suona decisamente più superato, ma ha in sé tutti i germi pop che infetteranno i dischi a venire. Ancora influenzato da certo hard-rock e poco 'mediato' (si percepisce un'urgenza e una rozzezza punk estranea ai dischi successivi) risulta essere nel complesso molto naive, nonostante alcuni brani indichino chiaramente di che stoffa è fatto il compositore Cobain: su tutte la lamentosa e circolare About a girl, prodigio pop imbevuto di Tavor. Ma anche la spigolosa School non è male.</p>
+
+<p>Se alcuni colleghi all'epoca diedero alle stampe esordi più convincenti, è anche vero che Bleach risulta essere, col senno di poi, un entusiasmante ritratto dell'artista da giovane, già capace di dare forma alle confusioni e alle paranoie di una nazione di giovani esclusi. Acerbo, grezzo, ma poetico.</p>
+
+<p>Il 22 febbraio del 94 festeggiai il mio diciottesimo compleanno regalandomi il concerto dei Nirvana a Roma. Era uscito da poco In Utero, preceduto un anno prima dalla prescindibile raccolta di b-side e rarità Incesticide (anche questo però utile a capire il fenomeno Nirvana) e mi sembrava piuttosto debole. Col tempo ho cambiato idea. L'ho riascoltato in questi giorni e mi è sembrato un tentativo sostanzialmente riuscito di dare un seguito a Nevermind. L'impianto resta lo stesso, il suono muta di poco ma sembra che la band abbia riferimenti musicali più ampi, che affondano nella storia del rock. Non è una bestemmia considerare beatlesiano il refrain di Serve the Servants o l'arpeggio di All Apologies. Anche per In Utero Cobain</p>
+
+<p>mette in fila canzoni più che perfette, anche qui le melodie colpiscono nel segno ma, in alcuni casi, la vena creativa del nostro comincia a mostrare una certa stanchezza: è il caso della banale Rape Me, che sembra quasi la caricatura di Smells like teen spirit, con una struttura identica e gli accordi sostanzialmente invertiti. Dal punto di vista delle liriche invece si avverte un indubbio passo in avanti, come se Kurt avesse compreso il ruolo sociale che suo malgrado recitava. Mi pare l'abbiano chiamata la generazione x… beh, In Utero potrebbe essere una specie di breviario, un libretto rosso. Anzi, nero. Vista l'angoscia di cui sono intrise le canzoni.</p>
+
+<p>Resta il fatto che in quel periodo si registrano uscite ben più memorabili dell'atteso nuovo disco dei Nirvana (di qualche mese dopo è lo splendido Mighty Joe Moon che, con il suo guardare alla tradizione folk degli Usa, supera agevolmente l'epica grunge, mentre, in un altro contesto, l'infezione del post-rock comincia a cronicizzarsi).</p>
+
+<p>Dopo il colpo di fucile esce l'Unplugged in New York, targato Mtv. Ricordo che non lo comprai, infastidito dalla sovraesposizione e dalle distorsioni che di solito seguono dopo la morte di un musicista. Ammetto di averlo scoperto tardi, e me ne pento. Perché credo che sia un capolavoro. Cobain, Novoselic e Grohl costruiscono la dimensione finalmente ideale alle canzoni, che esprimono una fragilità fino a quel momento impensabile e dimostrano finalmente - ai tanti che lo dubitavano - di essere grandi musicisti. Il violoncello contrappunta la voce nuda di Kurt, mai così profonda e mai così toccante. Gli arrangiamenti acustici accrescono lo spessore delle canzoni, senza però violarne lo spirito. Le cover scelte sono</p>
+
+<p>tutte azzeccate con una menzione speciale per Where Did You Sleep Last Night di Leadbelly. Il grunge non c'entra più nulla: si tratta solo di grandi canzoni pop così tanto calate nei propri anni da sembrare adesso universali.</p>
+
+<p>E di anni ne son passati solo dieci.</p>
+
+<p>Metteteci pure il lato metafisico (Cobain che urla "I swear I don't have a gun" mica è facile da mandare giù) e avrete uno dei migliori live di sempre.</p>
+
+<p>Per il sottoscritto, la storia finisce qui. Tutto il resto (live, best of,</p>
+
+<p>inediti, gossip, libri) lo ignoro volutamente.</p>
+
+<p>(Ilario Galati)</p>
+
+<p>No Apologies - Note a margine sul fenomeno Nirvana</p>
+
+<p>Fornire un’adeguata definizione del fenomeno Nirvana e della sua importanza (sociale/artistica e quant’altro) è impresa ardua. Ma a mio avviso lo è maggiormente per talune fasce generazionali.</p>
+
+<p>Arduo non prevedere infatti un certo distacco nell’ipotetica analisi di un consumatore di musica rock cresciuto nel pieno degli anni ottanta (indipendentemente dal fatto che tale crescita sia avvenuta “a pane e U2” o che possa vantare il classico “io c’ero” snocciolando sempre quei nomi, pesanti come macigni: Pixies, Husker Du, Sonic Youth, “i- R.E.M –di- Murmur” e mi fermo qui).</p>
+
+<p>Ma è altrettanto plausibile un certo spaesamento nell’analisi di un qualsiasi teenager oggigiorno (sia coloro che abbracciano l’icona Cobain per l’apparato romantico che il personaggio ha maturato in questi ultimi dieci anni, sia coloro- e ce n’è parecchi- che si chiedono cosa abbiano di diverso o di seminale i Nirvana rispetto agli idoli rock odierni, a parte il non potersi considerare portavoce di una generazione-orrido fardello!-).</p>
+
+<p>Ma per chi come il sottoscritto, era adolescente nel 1991 poteva succedere di svegliarsi un bel giorno e ascoltare (e vedere, potenza del tubo catodico) Smells Like Teen Spirit.</p>
+
+<p>In quel periodo mi stavo giusto riprendendo dalla sbornia U2 durata più di un anno (fino al tradimento di Achtung Baby, chiedete ad ogni vero vecchio fan) e la mia cura ricostituente prevedeva massicce dosi di The Who, Joy Division, The Clash e Sex Pistols.</p>
+
+<p>I Pistols in particolare mi impressionavano per la loro portata rivoluzionaria. Il sogno di far parte del contingente Bromley ed esserci mentre Anarchy In The U.K. mandava ogni cosa a fare in culo era troppo per un sedicenne nell’italia pre-tangentopoliana.</p>
+
+<p>Mi ero sempre chiesto cosa potessero aver provato i ragazzi della mia età nel 1977 di fronte a quella rivelazione. Me lo ero sempre chiesto sino al giorno in cui “vidi-e-sentii” Smells Like Teen Spirit. Quella voce… ognuno ci può sentire ciò che vuole ma molti ci sentirono rabbia e frustrazione rivelata (fino a quel finale, forse il solo e possibile “Nirvana”).</p>
+
+<p>L’analisi del fenomeno potrebbe fermarsi qui. Non fosse che quel singolo faceva parte di un album che ora compare negli scaffali di ogni magazzino e collezione di dischi alla voce classico (forse il primo classico “in cd”?) e quella voce usciva da un corpo che aveva una mente, e prima di finire sbriciolata da un colpo di pistola c’era una faccia che ora è su milioni di magliette in tutto il mondo.</p>
+
+<p>Ma restiamo sulla musica. Ci sono miriadi di ipotesi che potrebbero far crollare le architetture dei detrattori di Nirvana/Nervermind. Cominciamo col dire che erano una grande band. Nella loro formazione definitiva, tolto il gregario Novoselic (una sorta di Adam Clayton del rock alternativo, tanto per stare in tema), resta un grande batterista. Le grandi band si fanno con i grandi batteristi, lo diceva la mia nonna, ebbene questo emulo di Bonham che ora si diletta al canto, ogni volta che siede dietro le pelli lascia il segno (inutile ricordare il salto di qualità fatto dai Queens Of The Stone Age).</p>
+
+<p>Ma ovviamente, per stare nella storia ci vogliono le canzoni. E ce le avevano eccome (ma rimando alle recensioni di questo special). Kurt aveva una delle voci più inimitabili (ed allo stesso tempo imitabile, chiedetelo ai vari Gavin Rossdale, che ora venderebbero accendini) che il rock ricordi, se non altro una delle più espressive. Devo purtroppo tirare in ballo di nuovo i Pistols. Never Mind The Bollocks a mio avviso è un album molto simile a Nevermind (non solo per quel titolo e per il suo grado di classico). Entrambi i dischi contengono grandi pezzi, una produzione ultraleccata e… sono “pop” (nell’accezione popular / fatto per piacere alla gente). Quel qualcosa in più è dato dalla voce. Provate ad immaginare gli stessi pezzi cantati da un altro e capirete cosa voglio dire. (Non è così scontato. I pezzi dei Velvet sono grandi anche quando non li canta Nico). Poi il sound complessivo: Steve Albini li ha sempre considerati i “R.E.M con il distorsore”. La sonica Kim Gordon (sorta di novella Maria Giovanna Maglie) parlava di “tre quarti di R.E.M e tre quarti di Pixies”. Eppure anche in queste definizioni (tutt’altro che denigratorie) si scopre il grande segreto della grandezza dei Nirvana. I Sonic Youth e i Fugazi saranno pure immortali ma non si possono canticchiare mentre vai a lavorare e gli esempi di tal fatta sarebbero infiniti. I Nirvana fecero il miracolo di mettere d’accordo il metallaro (i riff di Bleach e l’intero sound), l’amante delle semplici pop song- “Verse-Chorus-Verse”- e lo snob patito delle band indipendenti (quelli che “ne sanno sempre una piu’ di te”). Furono anche additati come i capofila di un genere (cosa che avviene dai tempi dei Beatles e del “Mersey Sound”) che rapidamente De-Generò in moda (film, abbigliamento, spot commerciali).</p>
+
+<p>Il Grunge. Non fu ovviamente coniato appositamente per loro. Anzi furono tra i primi a risentirsene (perché circolava dall’88/89, dalla prima invasione britannica di bands del catalogo SUB-POP). Non ci fu solo la maglietta di Kurt “Grunge is Dead” indossata già dal 1992, tra le grandi abiure. Andate a rivedervi il geniale e spassosissimo video di Suck You Dry dei Mudhoney (in cui compare anche Novoselic). Comunque Cobain aveva fiutato questa corsa al Business fin dalle prime critiche mosse ai Pearl Jam, a onor del vero, il primo gruppo a nutrirsi dei crismi del fenomeno alternativo (minime riprese di un certo tipo di sound e massicci richiami nell’immagine). A costo di attirarmi critiche dico che il grunge è morto nel momento in cui tale definizione è stata accostata ai Pearl Jam (che è un po’ come dire che “il punk è morto quando i Clash hanno firmato con la Cbs”, e scusate l’ennesimo parallelo). Se non altro la band di Vedder aveva la sua identità e non sfruttò nello specifico le intuizioni di Cobain e soci. Lo fecero però altri e persino alcuni insospettabili. Quel tipo di suono infatti, quegli “stop-and-go”, quei momenti di quiete prima dell’esplosione del distorsore non li avevano ovviamente inventati i Nirvana (come i Pistols non inventarono il punk-rock). Spettò a loro infatti il semplice codificare tali elementi e renderli di pubblico dominio. Perciò i tanto osannati Radiohead si fecero un nome con il dolce/ruvido impatto di Creep (e di quel testo cosa dovremmo dire?) molto prima di bands che è bello odiare adesso come i “Puddle” e i “Nickel” (onesti lavoratori in fondo, no?), ma anche di adepti di casa nostra ora alle stelle.</p>
+
+<p>Persino la divina P.J.Harvey (la Patti Smith della nostra generazione) si rivelò con quel concetto “Calma-Esplosione” nei primi due album (uno dei quali prodotto da Albini), e non è troppo azzardato dire che si trovò la strada spianata per un successo non prevedibile a metà anni ottanta.</p>
+
+<p>Detto della musica, rimane l’immagine. Camice di flanella e Doc Martens? La sfiga fu farsi fotografare con qualche straccio addosso (ma i Doc Martens non li ho mai visti indossare né da Kurt, né da Chris, che per di più suonava scalzo). Ricordo il completo ultracool di Cobain nella bizzarra apparizione a “Tunnel” della Dandini nel ’94. L’immagine non è mai stata un problema per i Nirvana. L’apparato grunge, come detto, andava bene per altri. Ma il suonare con i vestiti che hai indosso ogni giorno fu comunque un’altra bella trovata che vale per milioni di band in tutto il mondo (a meno che i Darkness non impongano una ennesima controriforma).</p>
+
+<p>Infine, la questione suicidio.</p>
+
+<p>Beh, anche quello fu un impatto di portata considerevole, ma per fortuna non ha indotto una generazione a riconoscersi completamente nei supposti ideali autodistruttivi di un personaggio (essendo in realtà insormontabili problemi di natura personale). Oppure per dirla con Buzz Osbourne dei Melvins, in uno dei pezzi di tv più memorabili che io ricordi: [RED RONNIE: &lt;&lt;Perché Cobain è Morto?&gt;&gt; BUZZ: &lt;&lt;Cobain died ‘cose he was junkie!&gt;&gt;.]</p>
+
+<p>Non mi viene altro. Forse solo le parole di un pezzo di Billy Corgan, per il quale i Nirvana furono un bel bastone tra le ruote per un certo periodo: No Bodies Felt Like You…Love Is Suicide…</p>
+
+<p>Io aggiungerei: no bodies smelled like you!</p>
+
+<p>P.S. Per chi la vuole menare con la storia Courtney Love=Yoko Ono=Assassina… campo libero (contenti voi!).</p>
+
+<p>(Alessandro Bertolotti)</p>
