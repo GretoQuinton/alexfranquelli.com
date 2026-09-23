@@ -2,6 +2,8 @@
 title: "Ulver - Messe I.X–VI.X"
 slug: "ulver-messe-i-x-vi-x-the-quietus"
 publication: "The Quietus"
+publicationDate: "2013-12-13"
+displayDate: "2013-12-13"
 language: "English"
 type: "Review"
 byline: "Alex Franquelli"
