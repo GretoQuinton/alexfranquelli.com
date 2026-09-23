@@ -2,9 +2,12 @@
 title: "Fire! - You liked me five minutes ago"
 slug: "fire-you-liked-me-five-minutes-ago"
 publication: "IndieForBunnies"
+publicationDate: "2010-03-19"
+displayDate: "2010-03-19"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
+originalUrl: "https://www.indieforbunnies.com/2010/03/19/fire-you-liked-me-five-minutes-ago/"
 featured: false
 draft: false
 ---
