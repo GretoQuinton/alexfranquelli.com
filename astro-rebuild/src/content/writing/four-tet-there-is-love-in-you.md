@@ -2,6 +2,8 @@
 title: "Four Tet - There Is Love In You"
 slug: "four-tet-there-is-love-in-you"
 publication: "IndieForBunnies"
+publicationDate: "2010-03-01"
+displayDate: "2010-03-01"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
