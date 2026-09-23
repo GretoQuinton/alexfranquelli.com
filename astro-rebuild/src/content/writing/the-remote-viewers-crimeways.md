@@ -2,6 +2,8 @@
 title: "The Remote Viewers - Crimeways"
 slug: "the-remote-viewers-crimeways"
 publication: "All About Jazz"
+publicationDate: "2013-12-19"
+displayDate: "2013-12-19"
 language: "English"
 type: "Review"
 featured: false
