@@ -2,6 +2,8 @@
 title: "Pearl Jam Twenty"
 slug: "pearl-jam-twenty"
 publication: "Ondarock"
+publicationDate: "2011-09-29"
+displayDate: "2011-09-29"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
