@@ -2,9 +2,12 @@
 title: "Fabrizio Sferra Quartet - Untitled#28"
 slug: "fabrizio-sferra-quartet-untitled-28"
 publication: "All About Jazz"
+publicationDate: "2013-01-28"
+displayDate: "2013-01-28"
 language: "English"
 type: "Review"
 byline: "Alex Franquelli"
+originalUrl: "https://www.allaboutjazz.com/untitled-28-fabrizio-sferra-via-veneto-jazz-review-by-alex-franquelli"
 featured: false
 draft: false
 ---
