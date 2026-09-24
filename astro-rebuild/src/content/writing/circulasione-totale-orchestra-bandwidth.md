@@ -2,6 +2,8 @@
 title: "Circulasione Totale Orchestra - Bandwidth"
 slug: "circulasione-totale-orchestra-bandwidth"
 publication: "IndieForBunnies"
+publicationDate: "2010-05-31"
+displayDate: "2010-05-31"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
