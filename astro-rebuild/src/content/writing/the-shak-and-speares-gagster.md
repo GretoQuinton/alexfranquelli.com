@@ -2,6 +2,8 @@
 title: "The Shak & Speares - Gagster"
 slug: "the-shak-and-speares-gagster"
 publication: "Ondarock"
+publicationDate: "2013-04-07"
+displayDate: "2013-04-07"
 language: "Italian"
 type: "Review"
 featured: false
