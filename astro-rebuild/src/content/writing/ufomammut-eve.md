@@ -2,6 +2,8 @@
 title: "Ufomammut - Eve"
 slug: "ufomammut-eve"
 publication: "IndieForBunnies"
+publicationDate: "2010-06-04"
+displayDate: "2010-06-04"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
