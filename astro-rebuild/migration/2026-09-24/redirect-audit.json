@@ -1,17 +1,13 @@
 {
   "checkedOn": "2026-09-24",
-  "articleFiles": 361,
-  "generatedPages": 367,
+  "articleFiles": 362,
+  "generatedPages": 368,
   "redirectRules": 220,
   "legacyMappings": 110,
-  "mappingsWithBuiltTargets": 77,
-  "mappingsWithoutBuiltTargets": 33,
-  "distinctMissingDestinations": 33,
+  "mappingsWithBuiltTargets": 78,
+  "mappingsWithoutBuiltTargets": 32,
+  "distinctMissingDestinations": 32,
   "missingDestinations": {
-    "/writing/horseback-piedmont-apocrypha": [
-      "/portfolio/horseback-piedmont-apocrypha/",
-      "/portfolio/horseback-piedmont-apocrypha"
-    ],
     "/writing/tristan-perich-parallels": [
       "/portfolio/tristan-perich-parallels/",
       "/portfolio/tristan-perich-parallels"
