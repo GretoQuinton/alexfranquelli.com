@@ -1,7 +1,9 @@
 ---
 title: "The Remote Viewers - Pitfall"
 slug: "the-remote-viewers-pitfall"
-publication: "PopMatters"
+publication: "All About Jazz"
+publicationDate: "2015-05-22"
+displayDate: "2015-05-22"
 language: "English"
 type: "Review"
 featured: false
