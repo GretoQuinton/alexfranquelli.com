@@ -2,6 +2,8 @@
 title: "Enten Hitti - La Solitudine del Sole"
 slug: "enten-hitti-la-solitudine-del-sole"
 publication: "Ondarock"
+publicationDate: "2011-12-21"
+displayDate: "2011-12-21"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
