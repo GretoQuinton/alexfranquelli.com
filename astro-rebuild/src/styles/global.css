@@ -144,6 +144,8 @@ h2,h3{line-height:1}
 .simple p{max-width:740px;margin:0 0 1.2em;font-family:var(--serif);font-size:23px;line-height:1.58}
 .simple p:first-of-type{font-size:29px;line-height:1.45}
 
+.error-page{min-height:62vh;padding:80px 0 110px}.error-page h1{font-size:clamp(70px,12vw,150px);margin:15px 0 30px}.error-page p{max-width:600px;font-family:var(--serif);font-size:24px;color:var(--muted)}
+
 .site-footer{border-top:1px solid var(--ink);padding:48px 0 24px}
 .footer-grid{display:grid;grid-template-columns:1.5fr .65fr .85fr;gap:50px}
 .footer-name{font-family:var(--serif);font-size:27px}
