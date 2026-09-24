@@ -2,6 +2,8 @@
 title: "We Were Promised Jetpacks - In the Pit of the Stomach"
 slug: "we-were-promised-jetpacks-in-the-pit-of-the-stomach"
 publication: "IndieForBunnies"
+publicationDate: "2012-04-02"
+displayDate: "2012-04-02"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
