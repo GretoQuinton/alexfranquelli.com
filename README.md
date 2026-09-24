@@ -1,33 +1,65 @@
 # alexfranquelli.com
 
-Rebuild of Alex Franquelli's personal website, publication archive and professional portfolio.
+Personal portfolio and publication archive for Alex Franquelli.
 
-## Current WIP
+## Production site
 
-- GitHub Pages preview is live
-- Navigation: Film & TV / Writing / Fiction / About / Contact
-- Featured writing is shuffled on each visit but no longer auto-advances
-- Writing archive carries explicit EN / IT language metadata and filters
-- Archive recovery is underway across live publisher sites and web archives
-- Film & TV and Fiction sections are now scaffolded
-- WIP pages use `noindex,nofollow` so the temporary preview does not compete with the current alexfranquelli.com in search
+The production implementation lives in `astro-rebuild/` and is built with Astro.
 
-## SEO launch plan
+Current launch corpus:
+- 368 full-text published articles
+- English and Italian
+- reviews, interviews, features and live reports
+- legacy Squarespace redirects preserved in `public/_redirects`
+- Pagefind static search index
+- custom 404, sitemap, robots.txt and structured metadata
 
-Before launch:
-1. Remove WIP `noindex,nofollow`.
-2. Preserve old Squarespace paths wherever possible.
-3. Add canonical URLs on the final alexfranquelli.com domain.
-4. Generate a full XML sitemap from the finished page inventory.
-5. Add Article JSON-LD to article pages (headline, author, publication date, image where available).
-6. Use `<html lang="en">` or `<html lang="it">` according to the article's actual language.
-7. Add `hreflang` only when a genuine translated alternate version exists.
-8. Add unique title and meta description per article/page.
-9. Add Open Graph images and social metadata.
-10. Verify the domain in Google Search Console before cutover and submit the sitemap after launch.
-11. Monitor indexing, 404s and redirects after migration.
+The remaining historical recovery list is a post-launch archive backlog and is not a launch dependency.
 
-## Preservation
+## Local development
 
-The target record for each article is:
-title / publication / date / language / original URL / archived URL / local preservation copy / public page URL / rights status.
+```bash
+cd astro-rebuild
+npm install
+npm run dev
+```
+
+Production validation:
+
+```bash
+npm run build
+```
+
+The output is written to `astro-rebuild/dist/`.
+
+## Cloudflare Workers deployment
+
+Use Cloudflare Workers Builds with the GitHub repository `GretoQuinton/alexfranquelli.com`.
+
+Recommended settings:
+- Production branch: `main`
+- Root directory: `astro-rebuild`
+- Build command: `npm run build`
+- Deploy command: `npx wrangler deploy`
+- Preview command: `npx wrangler preview`
+- Preview builds: enabled
+
+The Worker configuration is `astro-rebuild/wrangler.jsonc`. It serves the static `dist` directory and uses the custom Astro 404 page for missing routes.
+
+After the workers.dev preview has been checked, attach `www.alexfranquelli.com` as the Worker custom domain. Keep Squarespace live until the preview passes final visual and redirect QA.
+
+## Launch QA
+
+Before changing the production domain:
+1. Check homepage on desktop and mobile.
+2. Check `/writing` search and filters.
+3. Open several long English and Italian articles.
+4. Test representative legacy `/portfolio/...` redirects.
+5. Check `/404`, `/sitemap.xml` and `/robots.txt`.
+6. Check contact links and external original-publication links.
+7. Confirm Cloudflare serves HTTPS and the custom domain correctly.
+
+After cutover:
+1. Submit `https://www.alexfranquelli.com/sitemap.xml` in Google Search Console.
+2. Monitor 404s and redirect failures.
+3. Cancel Squarespace only after the new domain has been stable and verified.

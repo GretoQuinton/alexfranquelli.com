@@ -1,13 +1,15 @@
-name: Astro rebuild check
+name: Astro portfolio check
 
 on:
   push:
-    branches: [astro-rebuild]
+    branches: [main]
     paths:
       - 'astro-rebuild/**'
+      - '.github/workflows/astro-rebuild-check.yml'
   pull_request:
     paths:
       - 'astro-rebuild/**'
+      - '.github/workflows/astro-rebuild-check.yml'
 
 jobs:
   build:
