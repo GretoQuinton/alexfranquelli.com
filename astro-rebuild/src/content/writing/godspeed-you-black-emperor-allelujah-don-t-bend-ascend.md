@@ -2,6 +2,8 @@
 title: "Godspeed You! Black Emperor – Allelujah! Don’t Bend! Ascend!"
 slug: "godspeed-you-black-emperor-allelujah-don-t-bend-ascend"
 publication: "Ritual"
+publicationDate: "2013-01"
+displayDate: "January 2013"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
