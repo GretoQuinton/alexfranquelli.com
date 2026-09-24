@@ -2,6 +2,8 @@
 title: "Commenti agli album del decennio"
 slug: "commenti-agli-album-del-decennio"
 publication: "IndieForBunnies"
+publicationDate: "2009-12-18"
+displayDate: "2009-12-18"
 language: "Italian"
 type: "Feature"
 byline: "Alex Franquelli"
