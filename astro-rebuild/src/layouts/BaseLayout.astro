@@ -1,28 +1,81 @@
 ---
 import '../styles/global.css';
-const { title='Alex Franquelli', description='Writing on music, politics and culture by Alex Franquelli.' } = Astro.props;
+const {
+  title='Alex Franquelli — Writer',
+  description='Writing on music, politics and culture by Alex Franquelli.',
+  lang='en',
+  type='website'
+}=Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const path = Astro.url.pathname;
+const nav = [
+  { href:'/writing', label:'Writing' },
+  { href:'/fiction', label:'Fiction' },
+  { href:'/about', label:'About' },
+  { href:'/contact', label:'Contact' }
+];
+const isActive=(href:string)=>href==='/' ? path==='/' : path===href || path.startsWith(href+'/');
+const personJsonLd = JSON.stringify({
+  '@context':'https://schema.org',
+  '@type':'Person',
+  name:'Alex Franquelli',
+  url:'https://www.alexfranquelli.com',
+  sameAs:['https://uk.linkedin.com/in/alexfranquelli'],
+  knowsLanguage:['English','Italian']
+});
 ---
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <meta name="description" content={description} />
+  <meta name="theme-color" content="#f1eee6" />
+  <meta name="robots" content="index,follow" />
   <link rel="canonical" href={canonical} />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content={type} />
+  <meta property="og:site_name" content="Alex Franquelli" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <script type="application/ld+json" set:html={personJsonLd}></script>
   <title>{title}</title>
 </head>
 <body>
-<header class="wrap masthead">
-  <a class="brand" href="/">Alex Franquelli</a>
-  <nav class="nav" aria-label="Primary">
-    <a href="/writing">Writing</a>
-    <a href="/fiction">Fiction</a>
-    <a href="/about">About</a>
-    <a href="/contact">Contact</a>
-  </nav>
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="site-header">
+  <div class="wrap masthead">
+    <a class="brand" href="/" aria-label="Alex Franquelli — home">
+      <span class="brand-name">Alex Franquelli</span>
+      <span class="brand-role">Writer</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      {nav.map(item => <a href={item.href} aria-current={isActive(item.href)?'page':undefined}>{item.label}</a>)}
+    </nav>
+  </div>
 </header>
-<main><slot /></main>
-<footer class="wrap footer">© {new Date().getFullYear()} Alex Franquelli · Writing archive</footer>
+<main id="content"><slot /></main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="footer-name">Alex Franquelli</div>
+      <p>Writing on music, politics and culture.<br />Rome / London.</p>
+    </div>
+    <div class="footer-links">
+      <a href="/writing">Writing archive</a>
+      <a href="/about">About</a>
+      <a href="/fiction">Fiction</a>
+    </div>
+    <div class="footer-links footer-contact">
+      <a href="mailto:alexfranquelli@gmail.com">alexfranquelli@gmail.com</a>
+      <a href="https://uk.linkedin.com/in/alexfranquelli" rel="me">LinkedIn ↗</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">© {new Date().getFullYear()} Alex Franquelli</div>
+</footer>
 </body>
 </html>

@@ -5,22 +5,37 @@ const sortDate=(value?:string)=>value ? (Date.parse(value.length===4?`${value}-0
 const writing=(await getCollection('writing',({data})=>!data.draft)).sort((a,b)=>sortDate(b.data.publicationDate)-sortDate(a.data.publicationDate));
 const types=[...new Set(writing.map(x=>x.data.type))].sort();
 ---
-<BaseLayout title="Writing Archive — Alex Franquelli" description="Published writing by Alex Franquelli in English and Italian.">
-<section class="wrap section">
-  <div class="eyebrow">Archive</div>
+<BaseLayout title="Writing — Alex Franquelli" description="Reviews, interviews, features and live reports by Alex Franquelli, published in English and Italian.">
+<section class="wrap archive-header">
+  <div class="eyebrow">Archive · {writing.length} pieces</div>
   <h1>Writing</h1>
-  <p class="archive-intro">{writing.length} published pieces currently preserved here. Search by title, publication or subject, or filter by type.</p>
+  <p class="archive-intro">Reviews, interviews, live reports and features on music, politics and culture. Search the archive or filter by format.</p>
+</section>
+<section class="wrap archive-section">
   <div class="archive-tools">
-    <input class="search" id="q" type="search" placeholder="Search title, publication or subject…" aria-label="Search writing archive" />
-    <div class="filters"><button data-filter="all" aria-pressed="true">All</button>{types.map(t=><button data-filter={t}>{t}</button>)}</div>
+    <label class="search-wrap">
+      <span class="sr-only">Search writing archive</span>
+      <input class="search" id="q" type="search" placeholder="Search title, publication or subject…" autocomplete="off" />
+      <span class="search-mark" aria-hidden="true">⌕</span>
+    </label>
+    <div class="filters" aria-label="Filter by article type">
+      <button data-filter="all" aria-pressed="true">All</button>
+      {types.map(t=><button data-filter={t} aria-pressed="false">{t}</button>)}
+    </div>
   </div>
-  <div id="list">
-    {writing.map(a=><article class="article-row" data-type={a.data.type} data-search={(a.data.title+' '+(a.data.publication||'')+' '+(a.data.description||'')).toLowerCase()}><a href={'/writing/'+a.data.slug}>{a.data.title}</a><span>{a.data.publication||'Publication to verify'}</span><span>{a.data.displayDate||a.data.publicationDate||'Date to verify'}</span></article>)}
+  <div class="archive-status" aria-live="polite"><span id="result-count">{writing.length}</span> pieces</div>
+  <div id="list" class="archive-list">
+    {writing.map(a=><article class="article-row" data-type={a.data.type} data-search={(a.data.title+' '+(a.data.publication||'')+' '+(a.data.description||'')).toLowerCase()}>
+      <a href={'/writing/'+a.data.slug}>{a.data.title}</a>
+      <span>{a.data.publication||'Publication to verify'}</span>
+      <span>{a.data.displayDate||a.data.publicationDate||'Date to verify'}</span>
+    </article>)}
   </div>
+  <p id="empty-state" class="empty-state" hidden>No pieces match that search.</p>
 </section>
 <script is:inline>
-const q=document.querySelector('#q'),buttons=[...document.querySelectorAll('[data-filter]')],rows=[...document.querySelectorAll('.article-row')];let active='all';
-function update(){const term=q.value.trim().toLowerCase();rows.forEach(r=>r.hidden=!((active==='all'||r.dataset.type===active)&&(!term||r.dataset.search.includes(term))))}
+const q=document.querySelector('#q'),buttons=[...document.querySelectorAll('[data-filter]')],rows=[...document.querySelectorAll('.article-row')],count=document.querySelector('#result-count'),empty=document.querySelector('#empty-state');let active='all';
+function update(){const term=q.value.trim().toLowerCase();let visible=0;rows.forEach(r=>{const show=(active==='all'||r.dataset.type===active)&&(!term||r.dataset.search.includes(term));r.hidden=!show;if(show)visible++});count.textContent=visible;empty.hidden=visible!==0}
 q.addEventListener('input',update);buttons.forEach(b=>b.addEventListener('click',()=>{active=b.dataset.filter;buttons.forEach(x=>x.setAttribute('aria-pressed',String(x===b)));update()}));
 </script>
 </BaseLayout>

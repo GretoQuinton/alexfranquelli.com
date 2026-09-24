@@ -1,14 +1,45 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
+const sortDate=(value?:string)=>value ? (Date.parse(value.length===4?`${value}-01-01`:value.length===7?`${value}-01`:value)||0) : 0;
 export async function getStaticPaths(){const writing=await getCollection('writing',({data})=>!data.draft);return writing.map(article=>({params:{slug:article.data.slug},props:{article}}))}
-const { article }=Astro.props;const { Content }=await render(article);const d=article.data;
+const { article }=Astro.props;
+const { Content }=await render(article);
+const d=article.data;
+const writing=(await getCollection('writing',({data})=>!data.draft)).sort((a,b)=>sortDate(b.data.publicationDate)-sortDate(a.data.publicationDate));
+const currentIndex=writing.findIndex(a=>a.data.slug===d.slug);
+const newer=currentIndex>0?writing[currentIndex-1]:null;
+const older=currentIndex>=0&&currentIndex<writing.length-1?writing[currentIndex+1]:null;
+const lang=d.language==='Italian'?'it':'en';
 ---
-<BaseLayout title={d.title+' — Alex Franquelli'} description={d.description||d.title}>
+<BaseLayout title={d.title+' — Alex Franquelli'} description={d.description||`${d.title}, by Alex Franquelli.`} lang={lang} type="article">
 <article class="article" data-pagefind-body>
-  <div class="eyebrow">{d.type}</div><h1>{d.title}</h1>
-  <div class="article-meta"><span><strong>Publication:</strong> {d.publication||'Publication to verify'}</span><span><strong>Date:</strong> {d.displayDate||d.publicationDate||'Date to verify'}</span><span><strong>Language:</strong> {d.language}</span>{d.byline&&<span><strong>Byline:</strong> {d.byline}</span>}{d.originalUrl&&<span><a href={d.originalUrl}>Original publication ↗</a></span>}</div>
+  <a class="back-link" href="/writing">← Writing archive</a>
+  <header class="article-header">
+    <div class="eyebrow">{d.type}{d.publication&&<> · {d.publication}</>}</div>
+    <h1>{d.title}</h1>
+    {d.description&&<p class="article-deck">{d.description}</p>}
+    <div class="article-meta">
+      <div><span>Publication</span><strong>{d.publication||'To verify'}</strong></div>
+      <div><span>Date</span><strong>{d.displayDate||d.publicationDate||'To verify'}</strong></div>
+      <div><span>Language</span><strong>{d.language}</strong></div>
+      {d.byline&&<div><span>Byline</span><strong>{d.byline}</strong></div>}
+    </div>
+    {d.originalUrl&&<a class="original-link" href={d.originalUrl}>View original publication ↗</a>}
+  </header>
   <div class="prose"><Content /></div>
-  {(d.magazineIssue||d.printedPages||d.cover)&&<aside class="publication-card"><div class="eyebrow">Original publication</div><h3>{d.publication||'Publication to verify'}</h3>{d.magazineIssue&&<p><strong>Issue:</strong> {d.magazineIssue}</p>}{d.printedPages&&<p><strong>Printed page:</strong> {d.printedPages}</p>}{d.cover&&<img src={d.cover} alt={(d.publication||'Publication')+' cover'} />}</aside>}
+  {(d.magazineIssue||d.printedPages||d.cover)&&<aside class="publication-card">
+    <div class="eyebrow">Print archive</div>
+    <h3>{d.publication||'Original publication'}</h3>
+    <div class="publication-details">
+      {d.magazineIssue&&<p><span>Issue</span><strong>{d.magazineIssue}</strong></p>}
+      {d.printedPages&&<p><span>Page</span><strong>{d.printedPages}</strong></p>}
+    </div>
+    {d.cover&&<img src={d.cover} alt={(d.publication||'Publication')+' cover'} loading="lazy" />}
+  </aside>}
 </article>
+{(newer||older)&&<nav class="wrap article-nav" aria-label="More writing">
+  <div>{newer&&<a href={'/writing/'+newer.data.slug}><span>Newer</span><strong>{newer.data.title}</strong></a>}</div>
+  <div>{older&&<a href={'/writing/'+older.data.slug}><span>Older</span><strong>{older.data.title}</strong></a>}</div>
+</nav>}
 </BaseLayout>
