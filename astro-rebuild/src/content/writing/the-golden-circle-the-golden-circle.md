@@ -2,6 +2,8 @@
 title: "The Golden Circle - The Golden Circle"
 slug: "the-golden-circle-the-golden-circle"
 publication: "Ondarock"
+publicationDate: "2013-11-15"
+displayDate: "2013-11-15"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
