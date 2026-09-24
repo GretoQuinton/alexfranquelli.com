@@ -2,6 +2,8 @@
 title: "Yu Miyashita - Noble Niche"
 slug: "yu-miyashita-noble-niche"
 publication: "Ondarock"
+publicationDate: "2011-11-17"
+displayDate: "2011-11-17"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
