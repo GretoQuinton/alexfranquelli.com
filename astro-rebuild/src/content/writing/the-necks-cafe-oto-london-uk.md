@@ -1,0 +1,21 @@
+---
+title: "The Necks @ Cafe Oto (London, UK)"
+slug: "the-necks-cafe-oto-london-uk"
+publication: "AllAboutJazz"
+publicationDate: "2014-10-23"
+displayDate: "2014-10-23"
+language: "English"
+type: "Live report"
+featured: false
+draft: false
+---
+
+<p>The Necks<br>Cafe Oto<br>London<br>October 8, 2014</p>
+
+<p>It is always a good sign when the imposing windows of Cafe Oto are misted up. If one could see through the condensation, if one could, with just one finger, remove the minuscule droplets amassed on the vertical plains, one would almost invariably spot fine music in the making. A woman, glass of red wine in hand, explains to her neighbour that, yes, this is jazz, but no, this is not like any other jazz. And that, after all, one never knows what to expect when this Australian trio decide to break the silence with the first note. "One of them plays a trance-inducing pattern, and this gets followed through by his band mates, who diligently go out of their way to improvise something." Then a microscopic variation, chosen apparently at random from the infinite variety of notes, tones, clangs and accents leads the music somewhere else, and the audience follows suit. Someone closes their eyes reverting to a state of quasi-slumber, while someone else can be seen visualising a tennis ball bouncing from the double bass to the piano, then from an agitated sea of strings to the intricate inflections of the percussions. Tonight is the last of a sold out three-day residency, at what is probably the best venue in London for experimental music.</p>
+
+<p>All is good, and the first note—repeated, obsessively struck by double bassist Lloyd Swanton—opens the floodgates. Pianist Chris Abrahams' fingers brush against the keys of his piano, gently arousing the audience's attention, while subliminally preparing the texture which is then used by drummer Tony Buck to set the percussive, delirious pace with bells and the occasional resort to the cymbals. It is very simple music, but we have not yet entered the realm of minimalism, as the repetitions are dynamic, fluid and abandoned to their precarious artistic balance. The trio exchanges frequencies, building melodies upon a thick slab of noise and self-inflicted loops. The first set ends with fury, and the final applause is delayed by the healthy fear of interrupting a torrent of silence leading, once again, to the curling of the music in an arching form. Waves.</p>
+
+<p>It is getting late and London's peculiar, overcomplicated and ultimately weary transport network doesn't allow people to remain out and about for long. But the windows go back to their clear state as the small crowd now gathers outside the venue; some immerse themselves into a fug of their own, while others remain within the four bare walls of Café Oto. Fifteen, maybe twenty-five minutes later, The Necks are back to where they belong, and this time it is a vague, rather effortless blues calling the shots. The dark haired woman next to us starts taking notes ("It is for my future reference," she will mysteriously add at the end), while a couple of guys right behind the drumkit close their eyes remaining in that state for the duration of the set. Tony Buck is in a world of his own and randomly turns his head to attentively gaze at the individuals surrounding him. Blues, at first, we said, but then it's krautrock, free jazz, drones and some sort of mechanic poetry triggered by Abrahams' loop on his piano's lowest notes. Echoes of Tony Conrad and Faust's "Outside the Dream Syndicate" reply from the left, while the bass acts as a mediator desperately trying to impose a way out of this beautiful impasse.</p>
+
+<p>The end arrives right when the music reaches its swirling climax and the applause is once again postponed as a sign of respect and gratitude. Lloyd Swanton breaks the gridlock by lifting his head as if he meant to reassure the dazed congregation standing behind an invisible dark curtain. As we rush to catch the last underground train, the tiny globules get cooler and regress or evolve into another state. Unclassifiable because it is continuously expanding into something else, The Necks' music is what it is while it is so. Music lives in the past by its own nature, therefore extemporaneity is as close as one can get to the future. One moment too late and no sound has ever existed.</p>

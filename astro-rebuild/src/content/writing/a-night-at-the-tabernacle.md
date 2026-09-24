@@ -1,0 +1,17 @@
+---
+title: "A Night at the Tabernacle"
+slug: "a-night-at-the-tabernacle"
+language: "Italian"
+type: "Live report"
+byline: "Alex Franquelli"
+featured: false
+draft: false
+---
+
+<p>A Night at the Tabernacle<br />Londra, 2 Maggio 2012</p>
+
+<p>North Atlantic Oscillation, Mothlite, Bruce Soord (Pineapple Thief)</p>
+
+<p>di Alex Franquelli<br />foto di Francesca Colasanti</p>
+
+<p>Le vie di Notting Hill, sospese in un limbo di luci, ombre e nebbia, sembrano perdersi nel silenzio di un giovedì sera di una finta primavera. Il Tabernacle, dal canto suo, non fa nulla per farsi notare. La sua forma tonda, romanica è nascosta in un lungo cortile tra le fronde e l’elegante indifferenza di un quartiere che non fatica certo a ignorarne l’esistenza. Chiesa sconsacrata, il Tabernacle, è ora luogo di culto artistico. Di un tipo sotterraneo ma ambizioso come l’etichetta, la londinese Kscope, che stasera organizza uno showcase di 2 sue band con album in uscita: Mothlite e North Atlantic Oscillation. <br />Sono da poco passate le 19 e un Bruce Soord (Pineapple Thief) in incognito imbraccia la chitarra acustica in maniera furtiva quasi scusandosi dell’intromissione. I brani non hanno ancora un titolo (l’album è previsto per Settembre) ma la sensazione è che nel grezzo incedere di sonorità drammaticamente pop possa nascondersi un’ispirazione che ricorda un anti-manierismo quasi neofolk. “Avevo chiamato la Kscope per chiedere dei biglietti gratis per questa serata e mi hanno ricattato chiedendomi di suonare”, si schernisce. <br />Le luci si abbassano e una ragazza mi domanda se io non sia Daniel O’Sullivan. Le rispondo che potrei non esserlo, ma d’altronde chi è davvero O’Sullivan? Mente creativa degli Æthenor, dei Miracle, dei Guapo, degli Miasma &amp; The Carousel of Headless Horses, membro in pianta stabile degli Ulver, compositore e collaboratore dei Sunn O))), dei Big Pink e dei Chrome Hoof o semplicemente niente di tutto ciò? Questa sera sale sul palco nascosto dai merletti di una vecchia signora d’epoca vittoriana. E la musica dei suoi Mothlite prende una nuova forma inaspettata fatta di ritmi tribali, deviazioni industrial, mescolanze pop (Talk Talk e Tears For Fears su tutti) e improvvisazione. Il risultato è un caos controllato; un rumore di metodo e misura che trascende i piani fissati con il precedente lavoro. ‘Dark Age’ è un album oscuro e ispirato da un’apparente mancanza di disciplina che dal vivo risuona in maniera egregiamente violenta. Ora O’Sullivan ha la maschera di un leone africano e ora si è liquefatto. O’Sullivan non c’è più. <br />Al suo posto troviamo una band di Edimburgo, i North Atlantic Oscillation, che in situazioni meno mondane non degneremmo di un ascolto. E faremmo cosa giusta poiché quel che risulta dal loro sodalizio sul palco è un ordine confuso di generi, di citazioni anni 70, di curvature psichedeliche con la mente lucida, di distorsioni annacquate con un irritante falsetto, di un’indecisione perenne tra la vita e la morte dell’inventiva, tra feedback involontari e mesti intoppi di natura tecnica assortita. Se i Sigur Ros decidessero di suonare rock lo farebbero in questo modo. Ma lo farebbero meglio. <br />La notte si è fatta più calda e porta con sé gli odori di quella che somiglia a una timida primavera. Nell’aria le note, chissà perché, dei Death In June. Tra le fronde, le ombre di quello che a noi sembra essere un tiepido vento.</p>

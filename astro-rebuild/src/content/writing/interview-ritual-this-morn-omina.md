@@ -1,0 +1,52 @@
+---
+title: "This Morn’ Omina – Interview"
+slug: "interview-ritual-this-morn-omina"
+publication: "Ritual"
+language: "Italian"
+type: "Interview"
+byline: "Alex Franquelli"
+featured: false
+draft: false
+---
+
+<p>La forma è all’apparenza meccanica e disciplinata da estetiche fredde, ma la sostanza è sensibile ai cambiamenti e alle sensazioni. I This Morn’ Omina arricchiscono un sound inorganico per definizione di concetti e significati che vanno ben al di la’ di ciò che traspare a prima vista. Mika Goedrijk, mente originante e storica del progetto da quasi 15 anni, ha da poco trovato in Karolus Lerocq un alter-ego che apre nuovi scenari nel futuro di questa entità che prosegue un itinerario colorato di techno, noise e world music per finire in ambiti poco battuti e per questo terribilmente affascinanti.</p>
+
+<p>Quando si parla dei TMO vengono alla mente esibizioni live - quelle si’ organiche e umane - dalla forte componente rituale. Il climax viene raggiunto e superato, rivolto e stravolto per dar luce ad un’esperienza a tratti ascetica, estatica, che trascende il luogo e il tempo. Una musica senza riferimenti per un’epoca che li ha persi quasi tutti.</p>
+
+<p>Trovo affascinante come generazioni di persone nate e cresciute in tempi e luoghi profondamente post-industriali siano attratte da ritmi che si basano sulle meccaniche tipiche delle fabbriche. Come spieghi questo rapporto così stretto?</p>
+
+<p>Mika &amp; Karolus: I ritmi organici mi attraggono allo stesso modo in cui mi spinge a sé l'inorganicità aspra del rumore di uno scontro frontale fra treni. La sintesi musicale tra questi due aspetti è ciò che spinge noi creature alla continua ricerca di un equilibrio tra tecnologia e natura.</p>
+
+<p>Un equilibrio che promuovete appieno in quanto il vostro sound richiama aspetti tribali, ricordi ancestrali relegati negli anfratti della mente umana. Possiamo dire che avete successo perché richiamate un certo imprinting ancestrale?</p>
+
+<p>Mika: La convivenza in piccoli gruppi è insita nell’uomo e questo spiega il proliferare delle sotto-culture nella nostra epoca che assumono un valore di reazione all’omologazione e al sovrappopolamento. La musica percussiva avrà sempre successo in quanto non si limita a riprendere l’”imprinting ancestrale” di cui giustamente parlavi ma anche il battito del cuore o l'attività dei vasi sanguigni. Per questo motivo è destinata a durare per sempre.</p>
+
+<p>World music, techno, noise e un’altra manciata di generi: definire la vostra musica è compito arduo. Come riuscite a mantenere questo equilibrio costante e funzionale? La tentazione di approfondire un solo genere immagino sia sempre dietro l’angolo...</p>
+
+<p>Mika: Apparentemente i giornalisti hanno da sempre difficoltà a classificarci. Perché non lasciare che la musica ti arrivi come ti deve arrivare? Ho sempre pensato che la musica dei TMO fosse musica “rituale” in quanto questo termine copre tutti gli aspetti che ritengo importanti nel nostro suono. La tentazione a cui accennavi non si è mai manifestata finora. Trovo molto più interessante mischiare il tutto in quanto mi riesce del tutto impossibile fermarmi ad un solo genere.</p>
+
+<p>I TMO e la violenza. La sua sublimazione concettuale si esprime in vari modi attraverso la vostra musica. Partendo dal presupposto che nelle nostre società ad avere il monopolio della violenza è lo Stato, non vi siete mai visti come delle “valvole di sfogo” che permettono all’ascoltatore di sfogare, seppur indirettamente e per inter-posta persona il proprio bisogno di violenza? D’altronde l’artista è un privilegiato in quanto può essere aggressivo, mentre l’uomo della strada può solo sognare di poter esprimere la propria violenza.</p>
+
+<p>Mika: Non ho mai pensato ai TMO come intrinsecamente violenti. Ovvio: alcune tracce hanno in nuce una certa dose di aggressività ma più precisamente credo si tratti di voglia di perdere il controllo attraverso una pseudo-trance.</p>
+
+<p>Karolus: Gia: forse più naturale aggressività che violenza. Quanto all’uomo della strada che può solo sognare la sua violenza, evidentemente non sei mai stato nella mia città natale di notte....(ride, ndr)</p>
+
+<p>No, grazie, mi basta la mia. Con ‘L’Unification des Forces Opposantes’ avete chiuso la trilogia Nyan. Potreste dirci di più a tal proposito?</p>
+
+<p>Riassumere una decade della mia vita non è facile ma ci provo. La trilogia nyan riguarda il kundalini in qualsiasi sua forma. Nyan significa “creatura serpentina”, ha origine nella mitologia cinese e si riferisce alla figura dell’ “ouroboros”: vale a dire la ripetizione ciclica della natura che troviamo sia nella tradizione cinese che in quella nordica. Nyan ha a che fare con le dualità e le conflittualità di cui sono fatte le nostre vite e il mondo attorno a noi. Ciò che è bianco per una persona, per un’altra può essere nero e viceversa. Con questa trilogia ho unito tutto in un unico essere in cui gli opposti non esistono più a livello musicale come su quello personale. Però forse è meglio che mi fermi qui altrimenti Karolus si annoia.</p>
+
+<p>Karolus: Uh? no no...</p>
+
+<p>Potreste dirci qualcosa di più su Karolus Lerocq? Come è entrato a far parte della band e cosa ha aggiunto al prodotto finale?</p>
+
+<p>Karolus: Tutto è cominciato quando ho lavorato ad una traccia chiamata ‘God’s Zoo’ l’anno scorso. Dopo averla postata su Youtube, ho scritto nella descrizione qualcosa come “ho cercato di dargli un sound molto TMO ma alla fine mi è uscita roba alla Enigma.... Mika ha ascoltato questo brano e mi ha mandato una email chiedendomi se poteva lavorarci un pò su. Il risultato è ‘Nev’im (God’s Zoo) che ora si trova sull’album. Tornando allo scambio di email, qualche tempo dopo Mika mi ha chiesto se ero pronto per una sfida. Mi ha mandato un demo di 2 minuti di ‘Oahspe’ - che ho completamente modificato -  e così è nata ‘Tawhid’. Abbiamo continuato in questo modo e alla fine è uscito un doppio album. Io intanto ancora aspetto che mi chiamino gli Enigma...</p>
+
+<p>Una domanda che è banale se posta a musicisti che scrivono musica come reazione alla noia, ma che ha un significato del tutto diverso se indirizzata a qualcuno che, come voi, ha una vastissima gamma di influenze. Cosa vi ispira ancora a 15 anni dal vostro debutto?</p>
+
+<p>Mika: La letteratura, l’arte e il mondo. Ma anche solo uno sguardo fuori dalla finestra e vedere come gira e cambia tutto attorno a noi.</p>
+
+<p>Karolus: Sono un DJ techno dal 1993. Ho sempre amato la musica e ballare. Dopo tutto questo tempo passato a mettere i dischi degli altri, arrivi al punto in cui non puoi più sopprimere il demone interno che vuole portare avanti le proprie esplorazioni musicali !</p>
+
+<p>Oggi ho letto un aforisma di Inayat Khan (una figura prominente del sufismo). Dice pressapoco: “Il rumore viene dall’inquietudine e l’inquietudine è un ritmo distruttivo”. C’è davvero ben poco di più poetico della creazione e del suo opposto: per quanto tempo possiamo continuare ad ascoltare il ritmo distruttivo dei TMO? Vi siete posti un target?</p>
+
+<p>Mika: Capisco cosa voglia dire Khan ma la risposta non la conosco. Con Karolus a bordo tutto assume una nuova piega in vista di un futuro per forza di cose diverso. Se abbiamo un target è quello di fare ottima musica e non uscire con un nuovo album da consumare alla svelta ogni 6 mesi finendo per annoiare noi e gli ascoltatori. Qualità più che quantità!</p>

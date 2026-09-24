@@ -1,0 +1,17 @@
+{
+  "name": "alexfranquelli-com-astro",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^7.3.0"
+  },
+  "devDependencies": {
+    "pagefind": "^1.4.0"
+  }
+}

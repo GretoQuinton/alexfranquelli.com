@@ -1,0 +1,100 @@
+---
+title: "Paatos — Indicativo presente progressivo"
+slug: "paatos"
+publication: "Musicboom"
+publicationDate: "2006-01-15"
+displayDate: "2006-01-15"
+language: "Italian"
+type: "Interview"
+byline: "Alex Franquelli"
+featured: false
+draft: false
+---
+
+<p>Intervista ai Paatos</p>
+
+<p>15/01/06</p>
+
+<p>Indicativo presente progressivo</p>
+
+<p>di</p>
+
+<p>Alex Franquelli</p>
+
+<p>Ho letto che la vostra collaborazione è iniziata suonando per Turid, una leggenda del folk svedese, e che la stessa ha contribuito alla stesura del materiale per il vostro primo CD. Quanto la vostra musica è influenzata dal folklore ?</p>
+
+<p>Hux: E’ corretto: I 4 membri originari dei Paatos eravamo io e Johan degli Ägg e Stefan e Reine dei Landberk. Dopo un paio di concerti con Turid abbiamo deciso di iniziare a lavorare insieme per il semplice gusto di farlo. Dopo all’incirca un anno abbiamo sentito il bisogno di qualcuno che desse una voce al progetto ed é cosí che Petronella si é unita a noi – sebbene dopo una pressante opera di persuasione – e cosí abbiamo terminato Timeloss.</p>
+
+<p>Turid scrisse il testo di Tea su quell’album. In seguito Reine dovette lasciarci e al suo posto reclutammo Peter chiudendo il cerchio !</p>
+
+<p>Penso da sempre che l’approccio italiano e quello svedese alla melodia siano molto simili (persino quando entrambi producono spazzatura).</p>
+
+<p>Parlando di musica progressive, mi sembra che ci sia una sorta di legame tra queste due nazioni – non solo tecnicamente parlando – che le riconduce entrambe su di un terreno comune. Quale é la tua opinione a riguardo ?</p>
+
+<p>Hux: Concordo su un punto: c’e’ un tipo di passione molto simile che puó essere avvertita da entrambe le parti. Penso comunque che sia un genere di attitudine simile a quella, per esempio, degli argentini per il tango o alla musica gitana europea. E’ solo ed esclusivamente un modo di “sentire“; se ascoltassi per un attimo la vecchia musica folk di paesi come, ad esempio, la Russia o la Finlandia avvertiresti lo stesso tipo di approccio.</p>
+
+<p>L’interesse per il progressive é probabilmente maggiore in Italia. Ho saputo che i Genesis erano in cima alla classifica negli anni ’70: non è favoloso ??</p>
+
+<p>Il problema alla base è che qui é pieno di gente dall’apertura mentale ristretta [in Svezia ? questa me la devo segnare…ndr] che non hanno il coraggio di osare tanto quanto fate voi, “lucky bastards”, in Italia.</p>
+
+<p>Molta gente considera la vostra musica come influenzata da gente come Radiohead, Portishead e Sigur Ros. Posso sbagliarmi ma non avverto queste specifiche somiglianze nel suono dei Paatos. A questo proposito quali sono secondo voi i gruppi che vi hanno maggiormente indirizzato verso un prodotto eterogeneo come Kallocain ?</p>
+
+<p>Hux: Sarebbe un’intervista davvero troppo lunga se cominciassi ad elencarti le nostre influenze. Ci sono cinque personalitá distinte con cinque miliardi di diverse influenze !</p>
+
+<p>Per farti qualche nome: Il Balletto di Bronzo, Keith Jarrett, Tortoise, Boards Of Canada, Björk, Mono, Can, Black Sabbath, Anja Garbarek…domanda difficilissima !</p>
+
+<p>MB: In quale misura si e’ fatto sentire l’apporto di Steve Wilson (Porcupine Tree) in studio ?</p>
+
+<p>Hux: Steve Wilson e’ stato chiamato per il missaggio di Kallocain e penso sinceramente di non aver mai incontrato una persona dalle orecchie piú grandi delle sue [sic].</p>
+
+<p>Prendeva ogni nostra piú piccola richiesta dannatamente sul serio e qualche volta è arrivato in studio con delle idee di gran lunga migliori di quelle che immaginavamo potesse avere. Ci ha regalato qualche spunto e tutti noi ci siamo sentiti davvero in mani sicure e felici di potergli dare corda. Saluti, Steve !</p>
+
+<p>Ho notato come la stampa italiana sia rimasta piacevolmente impressionata dalla voce di Petronella. Volete parlarci di come é avvenuto l’incontro ? quali erano le sue esperienze precedenti come cantante ?</p>
+
+<p>Petronella: Sono sposata con Huxflux e conosco Johan da quando ho incontrato mio marito per la prima volta. Il resto dei ragazzi l’ho conosciuto una volta entrata nella band. Cantavo parecchio quando ero piú giovane ma erano per lo piú esperienze come backing-vocalist.</p>
+
+<p>Dopo una pausa di qualche anno ho capito che non sarei andata granché lontano, pensando inoltre di non essere in grado di poter scrivere del materiale. Qualche tempo dopo, poco prima di entrare nei Paatos, ho iniziato comunque a scrivere delle canzoni ed ho scoperto come sia un modo per ricevere e donare. I ragazzi mi hanno esortato parecchio sotto questo punto di vista aiutandomi a crescere come cantante e compositrice e sono loro parecchio grata per avermi dato questa opportunitá !</p>
+
+<p>Sono stato al negozio della Mellotronen a Stoccolma un paio di anni fa per una specie di pellegrinaggio musicale. Ho chiesto allo staff di suggerirmi qualche nome nuovo del prog svedese e la prima cosa con cui se ne sono usciti é stata: Morte Macabre !</p>
+
+<p>Ora amo quel CD e sono curioso di sapere se avrá un seguito. Cosa ci puoi dire a tal proposito ? So che come Paatos avete scritto del materiale per la musiche di Nosferatu: ci suggerireste qualche titolo cinematografico la cui colonna sonora sia costituita da del buon vecchio prog svedese ?</p>
+
+<p>Stefan: Mi fa piacere che tu abbia apprezzato l’album dei Morte Macabre ! Con quel monicker abbiamo fatto addirittura qualche concerto: uno a Stoccolma ed un paio in Finlandia. Pensa che avevamo persino programmato un tour americano per Novembre ’99 ma poi é stato cancellato !</p>
+
+<p>Nei pochi anni di attivitá come Morte Macabre ci sono state parecchie voci che davano l’uscita di un secondo CD come imminente ed in molti dissero che non avremmo potuto ripetere il successo di Symphonic Holocaust.</p>
+
+<p>Chi lo sa ! Avevamo l’ispirazione e sono certo che il secondo album sarebbe stato bello come il primo ma il tempo é stato tiranno. Non avremmo mai potuto programmare un tour per la band e cosí</p>
+
+<p>é finito tutto. Hai visto mai peró che il prossimo CD possa essere disponibile un giorno o l’altro ?</p>
+
+<p>Parlando di colonne sonore ti posso dire che quella che amo di piú è quella per Chameleon, la cui musica e’ stata scritta ed eseguita dal trombettista Lasse Farnlof intorno al 1978.</p>
+
+<p>Ascoltando quell’album chiunque puo’ intuire cosa stesse ascoltando Bo Hansson…le stesse sonoritá alla base de Il Signore Degli Anelli…</p>
+
+<p>Mi incuriosisce da sempre sapere se c’é mai stata una relazione di amicizia e collaborazione tra le bands svedesi degli anni ’90. Come Landberk conoscevate e frequentavate bands come Änglagård o Anekdoten (solo per citare un paio di nomi) ?</p>
+
+<p>Stefan: Certo ! C’era molta comunicazione fra queste 3 entitá ed includeva anche gli Ägg (la band di Huxflux e Johan) ed un altro progetto chiamato Dirty Old Men. Posso dirmi certo del fatto che i Landberk li abbiano ispirati tutti.</p>
+
+<p>Gli Änglagård erano sicuramente piú tecnici mentre gli Anekdoten avevano una natura maggiormente aggressiva e c’era di sicuro meno interesse nei confronti di una band “sognante“ come i Landberk a quell’epoca. Immagino che le cose siano davvero cambiate ed un nome come quello dei Landberk ha certamente un maggior richiamo ai giorni nostri.</p>
+
+<p>Naturalmente non considero i Paatos come puramente progressivi ma tendo a considerarli come un naturale continuum di quella gloriosa scena degli anni ’90.</p>
+
+<p>Pensi che la tua band stia in qualche modo preparando la strada ad un ritorno “artistico” a quegli anni ?</p>
+
+<p>Hux: Grazie ! No, non ci accoltelliamo alle spalle chiudendoci nella definizione di “progressive”. Vogliamo solamente fare musica che commuova la gente nel profondo.</p>
+
+<p>Non molleremo finché avremo la possibilitá di provarci e chissá che non ci sia un futuro anche per quella scena. La cosa certa è che dovremmo lasciare il passato da parte e prenderne solo la saggezza tralasciando il resto per non continuare a ripetere le stesse cose per tutta la vita.</p>
+
+<p>La musica è infinita: non è un concetto assolutamente fantastico per un mondo di sole 12 note ?</p>
+
+<p>Quale band scandinava ci raccomandereste ?</p>
+
+<p>Hux: Di sicuro questoi nomi: Tape, Beardfish, BeepKid e Bergman Rock (una sorta di Bob Hund in inglese)</p>
+
+<p>Quando sarete in tour ?</p>
+
+<p>Hux: Faremo un viaggetto in Europa questo autunno e speriamo davvero di poter venire in Italia ma nulla é ancora confermato.</p>
+
+<p>Grazie per una canzone come Stream.</p>
+
+<p>Hux: Scherzi ? Grazie a te per ascoltarla !</p>

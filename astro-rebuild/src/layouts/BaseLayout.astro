@@ -1,0 +1,28 @@
+---
+import '../styles/global.css';
+const { title='Alex Franquelli', description='Writing on music, politics and culture by Alex Franquelli.' } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <title>{title}</title>
+</head>
+<body>
+<header class="wrap masthead">
+  <a class="brand" href="/">Alex Franquelli</a>
+  <nav class="nav" aria-label="Primary">
+    <a href="/writing">Writing</a>
+    <a href="/fiction">Fiction</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </nav>
+</header>
+<main><slot /></main>
+<footer class="wrap footer">© {new Date().getFullYear()} Alex Franquelli · Writing archive</footer>
+</body>
+</html>

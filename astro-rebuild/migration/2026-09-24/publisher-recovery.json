@@ -1,0 +1,57 @@
+[
+  {
+    "articleId": "AF-0579",
+    "url": "https://www.indieforbunnies.com/2013/09/09/nine-inch-nails-hesitation-marks/",
+    "sourceHtmlSha256": "e2d95651ef09f2f603f4103696663b4ed5a7c7a8ad56232560389e23b999c0e2",
+    "bodySha256": "5ac6af72f3656b248200c664b9c1047e845a2cd17ad3757e74eb94df1ec59ec9",
+    "paragraphs": 7,
+    "repairs": [
+      {
+        "from": "à¼",
+        "to": "ü",
+        "count": 1
+      },
+      {
+        "from": "““",
+        "to": "–",
+        "count": 2
+      },
+      {
+        "from": "“‘",
+        "to": "‘",
+        "count": 3
+      },
+      {
+        "from": "à ",
+        "to": "à",
+        "count": 7
+      }
+    ],
+    "policy": "Only listed character-encoding repairs and HTML entity decoding; original wording and apparent typographical errors retained."
+  },
+  {
+    "articleId": "AF-0581",
+    "url": "https://www.indieforbunnies.com/2013/07/15/boards-of-canada-tomorrows-harvest/",
+    "sourceHtmlSha256": "c71e8c8f26959483411425b997a7789ceb88ae0d31f1e136e9dc7fb27270ffb9",
+    "bodySha256": "5c881c541084f6213dd14de9195f2a1c115d7b6278f70e507217c3db61d71656",
+    "paragraphs": 8,
+    "repairs": [
+      {
+        "from": "à§",
+        "to": "ç",
+        "count": 1
+      },
+      {
+        "from": "““",
+        "to": "–",
+        "count": 3
+      },
+      {
+        "from": "à ",
+        "to": "à",
+        "count": 6
+      }
+    ],
+    "policy": "Only listed character-encoding repairs and HTML entity decoding; original wording and apparent typographical errors retained."
+  }
+]

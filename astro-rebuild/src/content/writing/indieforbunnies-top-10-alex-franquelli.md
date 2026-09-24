@@ -1,0 +1,36 @@
+---
+title: "IndieForBunnies - Top 10"
+slug: "indieforbunnies-top-10-alex-franquelli"
+publication: "IndieForBunnies"
+language: "Italian"
+type: "Feature"
+byline: "Alex Franquelli"
+featured: false
+draft: false
+---
+
+<p>Album musicali</p>
+
+<p>10) Weh - En Natt Kom Doed Il folk scandinavo è roba seria. Nel senso che, sì, parliamo di musica, ma è comunque affare triste. Per pochi, malinconici, malconci malati cronici di un malessere profondo dalle radici per lo più urbane. Weh esce fuori dal nulla con una gemma semplice di vecchia scuola: una chitarra e una voce che racconta una storia. Per lo più in norvegese. Ma la malinconia, si sa, preferisce il freddo.</p>
+
+<p>9) Nils Frahm – Screws E’ volgare mettere quest’album in una classifica. E’ volgare: tutto, è volgare. Ma questo disco no, non lo è. Un pianista, un pollice rotto, 9 dita rimaste, un brano ogni notte prima di andare a dormire, il tempo. Un pianoforte così vicino da sentirne le meccaniche che ci sembra perciò, ironia delle ironie, lontano anni luce. Ascoltato ieri per la prima volta e l’impossibilità di poterlo lasciar fuori da qualsiasi classifica. Che roba volgare, noi e le nostre classifiche.</p>
+
+<p>8) Vision Of Disorder – The Cursed Remain Cursed A molti viene da sorridere. Eppure l’hardcore di oggi è un genere intimista. Rappresenta e racconta il male di vivere nella maniera più diretta: con la rabbia, senza filtri artistici o lezioni morali da insegnare. I Vision Of Disorder sono i nuovi cantautori dalla luce soffusa; dei perdenti che cantano la vita. ‘It's always such a mess; don't cry to me about your problems. Save it: I've got my own’. Non può venir fuori meglio di così.</p>
+
+<p>7) Kayo Dot – Gamma Knife La scrittura è un bene sottile, delicato, che vive in funzione del messaggio. “Gamma Knife” non fa eccezione: è un Toby Driver sempre più lontano dai canoni del rock, quello che riesce a scrivere un album di tale dolce violenza da apparire grottesco, inutile. Invece il coltello scinde tra ciò che c’era prima e quel che resta alla fine. Eravamo partiti dal metal estremo e ci ritroviamo un’epifania di sogni elettrici.</p>
+
+<p>6) Oren Ambarchi – Audience Of One Quando credevi di aver sentito tutto, Ambarchi genera un album minimalista che lo riavvicina al rock. Eppure “Audience Of One” non è nulla di tutto ciò: nasce per essere musica pura, dai suoni di una matematica imperfetta fatta d’imprecise sensazioni d’una geometria apparente ma dal peso specifico indecifrabile. Venissero, gli alieni, cadessero le più violenti piogge solari sulle nostre teste! La musica di Oren Ambarchi ha bisogno di silenzio per respirare: lasciatelo solo.</p>
+
+<p>5) Ahab – The Giant Come non voler bene agli Ahab? Continuano imperterriti a proporre un funeral doom marino fregandosene delle mode. Non parliamo di una tarda fascinazione coi pirati, della giusta causa dell’estinzione della balena nei dintorni di Osaka o delle mattanze nelle Fær Øer: proprio di mare, si parla. Da 3 album e qualche EP. “The Giant” è un lavoro poetico e accessibile. Come il mare, ha le sue malinconie, le carezze di vento e la morte nascosta tra le sue notti insonni. Funeral doom marino, dio bono, capito?</p>
+
+<p>4) Deftones – Koi No Yokan A furia di sembrare qualcosa, i Deftones hanno finito per non somigliare più a nulla. O meglio: hanno creato un sottogenere che è un elegante ibrido tra pop e altro, lì, a metà strada, tra rabbia e malinconia, angst giovanile e ansia in dosi per adulti. Cambiano restando identici; evolvono tornando al punto di partenza. Un nuovo dark americano, radiofonico, di cui “Koi No Yokan” è l’intimo manifesto.</p>
+
+<p>3) Änglagård - Viljans Öga Passi che l’equilibrio fra tradizione e sperimentazione non è cosa nuova. Passi persino lontani di Yezda Urfa, Colosseum e quelli più vicini dei Guapo, infatti, appaiono come avessero un suono solo. Passi e non ti accorgi che gli Änglagård mancavano da anni dagli scaffali. Perché? Perché la complessità è anch’essa una forma d’arte e richiede costanza: dunque “Viljans Öga” è l’ennesimo apice del folk progressivo.</p>
+
+<p>2) Locrian &amp; Christoph Heemann - Locrian &amp; Christoph Heemann Ci sono album che non serve ascoltare a fondo per poterli capire. Ci sono album che, invece, bisogna sezionare e far finta di comprendere. Io non so bene a quale delle due categorie l’album omonimo dei Locrian e di Christoph Heemann appartenga ma il bello dell’avanguardia è proprio quello. Una bellezza commovente, distratta, morente, eterna.</p>
+
+<p>1) Swans – The Seer Per farle bene, le cose, occorre tempo. Per renderle perfette ci vogliono 30 anni. ‘The Seer” è la musica contemporanea che si piega al rock. Ogni traccia e ogni singolo secondo di questo album colmano gli spazi e li dilatano. È arte. Nella sua forma più pura e dunque più pericolosa.</p>
+
+<p>Menzione speciale per:</p>
+
+<p>Greg Haines - Digressions Can – Lost Tapes Converge - All We Love We Leave Behind Demdike Stare - Elemental Author &amp; Punisher – Ursus Americanus</p>

@@ -1,0 +1,32 @@
+---
+title: "The Mountaineers + The Killers + The Vanity Set @ Barfky, London (UK)"
+slug: "the-mountaineers-the-killers-the-vanity-set-barfky-london-uk"
+publication: "Musicboom"
+publicationDate: "2003-10-01"
+displayDate: "2003-10-01"
+language: "Italian"
+type: "Live report"
+originalUrl: "http://www.musicboom.it/mostra_art.php?categoria=concerti&Unico=20031104004224"
+featured: false
+draft: false
+---
+
+<p>Salendo le scale del Garage hai quasi l’impressione di andare verso il guardaroba o i bagni del locale. L’odore acre di parecchie cose quasi ti stordisce che non fai in tempo a capire dove sei che ti ci trovi immerso d’un botto.</p>
+
+<p>Forse e’ per questo che entro di soppiatto e scorgo all’improvviso un omone di due metri che si agita sul palco, concede due passi di walzer all’aria intorno a lui e torna con le mani conserte in attesa di esplodere di nuovo. James Sclavunos sa cosa vuol dire essere uno spettatore, essere parte vibrante di un qualcosa di musicale senza per questo venir notato da alcuno.</p>
+
+<p>L’ex batteria di Nick Cave sa come suona la musica di questi tempi e non vuole di certo essere lasciato indietro; d’altronde se nella vita hai suonato con Sonic Youth, The Cramps, Teenage Jesus e The Jerks devi per forza di cose essere tutto e te stesso, concetto e ragione, pensiero ed azione.</p>
+
+<p>La pantomima di un musical lascia spesso il posto ad un cabaret noir, all’impressione di essere da qualche parte fuorché in qualche posto - in altre parole i TheVanity Set propongono senza coinvolgere o, peggio, non sanno scegliere cosa essere. C’e’, d’accordo,  Nick Cave e parecchia avanguardia newyorchese (d’altronde la frequentazione di Lydia Lunch non può che lasciare il segno) nel marchio lasciato dal combo ma anche, e non solo, la Commedia dell’Arte e Voltaire e De Sade ("with dicks in hand we spoil the land") cosi’ come i Doors ed una versione rallentata, volutamente stonata e claustrofobica, di I Started A Joke dei Bee Gees. La band regge il gioco coadiuvata dallo splendido suono del violino di Meredith Yayanos, dalle geometrie percussive di David Berger e dai sentieri contorti disegnati dalla tuba di Jennifer Carey.</p>
+
+<p>La performance si chiude con She Came Out of Nowhere, dove la ragazza del testo quasi passa in secondo piano dietro i gesti schizoidi ed a tratti irritanti dello Sclavunos.</p>
+
+<p>Sicuramente mi sfugge qualcosa di questo combo – ma sono giovane abbastanza per imparare ed imparare a conoscerli.</p>
+
+<p>I The Killers mi suscitano subito simpatia. Una manciata scarna di ragazzini che sembrano usciti da un incubo di Noel Gallagher sui suoi esordi. L’impressione (soprattutto visiva) e’ di trovarsi infatti dinanzi all’ennesima replica dei fratellini di Manchester. In realtà mi trovo dinanzi una band giovane e ricca di talento compositivo come a volte sanno essere solo le bands inglesi pur nella loro disarmante semplicità. E’ proprio nella sequenza di quei 3 o 4 accordi a brano che ritrovo la purezza del rock ed il suo fascino immediato. Attenzione: i The Killers sanno fare questo e di piu’: e  forse a causa di cio’ mi ritrovo appena sotto il palco ad osservarli per cercare di carpire loro qualche segreto a proposito della formula vincente che sembrano aver trovato. Il singer Brandon Flowers rievoca vocalita’ alla Morrissey apportando loro una maggiore profondita’ ed estensione mentre paga un ben piu’ pesante tributo al Duca Bianco ed alle sue sperimentazioni. Magari non saranno la next big thing ma brani come Jenny e Mr. Brightside restano nella testa forse proprio per il loro essere psichedelici quanto basta. Davvero ottimi !</p>
+
+<p>Con i The Mountaineers mi sembra di essere capitato nel bel mezzo di una festa alla quale non ero stato invitato. Gia’ durante il soundcheck mi sembra quasi di essere arrivato all’inizio di una “seconda puntata”. Il singer Alex Germains dialoga col pubblico mentre accorda la sua chitarra acustica e le sue prime parole sono: “Quanti di voi c’erano l’altra volta ?”.</p>
+
+<p>La tentazione di lasciarli soli mi e’ balenata per un attimo nella testa. Poi, forse complice l’atmosfera familiare e la mia innata curiosità, decido di restare e godermi lo show. Forse poche nuove bands riescono a spiazzare un critico musicale come i The Mountaineers. Nel loro sound ci sono gli Air cosi’ come i Sophia, sonorita’ classiche e indie rock, Bob Dylan ed il New Acoustic Movement. Di tutto un po’ come le loro origini, dal momento che i tre discendono chi da un cantante gitano, chi da un pianista classico e chi da un trapezista del circo. Insomma: un ensemble davvero intrigante che lascia le proprie note scivolare sulle nostre teste come quando l’opener Self Catering che me li lascia scoprire pian piano come con una sorpresa del tutto inaspettata e forse per questo ancora piu’ intrigante. Si prosegue con Radio Cat (dall’ottimo debutto omonimo) dove le armonie si stringono intorno alla chitarra ed i campionamenti lasciano quasi del tutto il suono per far si’ che l’intimismo prenda il sopravvento sull’adrenalina iniziale. Camped Out e’ solo l’ennesima sorpresa di questa splendida serata e cerco di non lasciarmi sfuggire una parola del grazioso dialogo tra una voce fuoricampo ed il piano che l’accompagna.</p>
+
+<p>Per tutta la durata dell’esibizione il sound resta fresco e neanche lontanamente intaccato dalle sonorita’ elettroniche (piu’ Grandaddy che Kraftwerk per dire la verita’) e puramente digitali delle composizioni. Un po’ come non spingersi troppo senza aver comunque paura di affacciarsi. Come un musicista popolare dovrebbe saper fare – senza perdere di vista il suo passato – tralasciando per una sera il suo presente.</p>

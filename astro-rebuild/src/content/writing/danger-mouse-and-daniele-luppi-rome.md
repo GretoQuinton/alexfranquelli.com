@@ -1,0 +1,37 @@
+---
+title: "Danger Mouse & Daniele Luppi - Rome"
+slug: "danger-mouse-and-daniele-luppi-rome"
+publication: "Ondarock"
+publicationDate: "2011-06-14"
+displayDate: "2011-06-14"
+language: "Italian"
+type: "Review"
+byline: "Alex Franquelli"
+originalUrl: "https://www.ondarock.it/recensioni/2011_dangermouseluppi/"
+featured: false
+draft: false
+---
+
+<p>All’uomo della strada piace sicuramente “Rome” di Danger Mouse e Daniele Luppi. Ascoltandolo come farebbe lui - e lo conosciamo, lo conosciamo bene - c’è quel basso rutilante che lo riporta ai tempi belli, agli audaci ascolti che ora gli sfuggono ma che lega a dei ricordi che è sicuro di avere. Ma è tutto così indefinito, latente, fuori fuoco. Eppure sente che “Rome” un poco gli appartiene perché quel suo suonare vecchio lo riporta giovane e mentre la mente si apre si chiude su se stessa implodendo in un caldo sogno analogico.</p>
+
+<p>L’uomo della strada sta ascoltando un album del 2011 che suona familiare perché ispirato da quegli stessi ricordi di cui non riesce a venire a capo.</p>
+
+<p>Nel 2006, Brian Burton (aka Danger Mouse) incontra Daniele Luppi e da stima reciproca nasce l’idea di un album semplicemente ispirato alla musica di Ennio Morricone e all’iconografia che il Maestro, con la sua opera, ha contribuito a costruire. Di Danger Mouse e Luppi si è detto e scritto parecchio ultimamente. Uno è un produttore affermato in ambito hip pop/rock (Beck, The Black Keys e prossimamente gli U2, fra gli altri) balzato agli onori della popolarità grazie soprattutto alla collaborazione coi Gorillaz e allo splendido “The Grey Album” realizzato col rapper Jay Z su musiche dei Beatles.</p>
+
+<p>L’altro, forse appena meno noto, è autore neanche troppo emergente di colonne sonore, produttore di album come il celeberrimo “Mondo Cane” di pattoniana memoria e arrangiatore dell’ottimo “St. Elsewhere” di Gnarls Barkley, ovvero Mr Burton &amp; Cee Lo Green.</p>
+
+<p>Se le premesse lasciavano presagire l’inizio di una collaborazione qualitativamente fruttuosa, l’evoluzione della stessa prendeva una piega inaspettata quando, non paghi di ripercorrere le estetiche di un mondo in celluloide che fu, si misero in testa di coinvolgere chi, di quell’ambiente, è stato fautore e cantore. La partecipazione di musicisti quali Alessandro Alessandroni (classe ’25 e ombra di Morricone), infatti, accresce ovviamente la credibilità del progetto - soprattutto quando a comprovarla è l’ormai mitico coro dei Cantori Moderni da lui messo su per opere quali “C’era una Volta nel West” e “Il Grande Colpo dei Sette Uomini d’Oro” o Gilda Buttà (arpa) - e due oramai mitiche figure della musica leggera italiana come Dario Rosciglione e Luciano Ciccaglioni.</p>
+
+<p>Ovviamente l’uomo della strada nota fin da subito la partecipazione di Jack White e Norah Jones ma il punto, qui, è un altro. È la bontà di un’opera che non si propone di imitare le atmosfere dello spaghetti western con fare parodico, non cerca mezzi antiquati per suonare retro, polveroso o, come ormai sa dire l’uomo della strada, “vintage”.</p>
+
+<p>Tutt’altro: la grandezza e la gradevolezza di un album simile è proprio nel suo suonare moderno con mezzi antiquati, di riscrivere la storia con in mente una visione moderna della stessa e non una mera celebrazione dei bei tempo che furono.</p>
+
+<p>Ecco allora che la musica di “Rome” assume connotati alla Zero 7, ambientazioni lounge e dinamiche pop tra fumi vagamente ambient e smooth jazz.</p>
+
+<p>Jack White e Norah Jones, dicevamo, accrescono il valore di un’opera che non è certamente un capolavoro ma che ha in nuce intenti quasi storiografici che gli attribuiscono un valore a sé, quasi come se la musica che ne risulti fosse il mezzo e non il fine della ricerca. Le voci sono dunque strumentali mantenendo allo stesso tempo un profilo basso, artisticamente dimesso e lontano dalle derive jazz (Jones) e dagli eccessi blues e garage (White) a cui eravamo preparati</p>
+
+<p>Colonna sonora di un film mai scritto, “Rome” divaga in ambiti propriamente easy-listening tenendo un piede ben saldo in una musica comunque cinematografica (ma d’altronde quale album di Danger Mouse non è?) ma che ha il pregio di essere fruibile dagli appassionati così come dalle radio con poche pretese.</p>
+
+<p>La bontà dell’opera è appunto questa: poterne scrivere citando, seppur implicitamente, Gershwin, ed essere tra gli ascolti dell’uomo della strada. Perché alla fin fine è lui (e soprattutto Vincenzo Mollica) a decretarne il giusto e meritato successo.</p>
+
+<p>6.5/10</p>

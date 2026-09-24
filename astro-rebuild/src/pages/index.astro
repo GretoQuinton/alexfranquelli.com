@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+const sortDate=(value?:string)=>value ? (Date.parse(value.length===4?`${value}-01-01`:value.length===7?`${value}-01`:value)||0) : 0;
+const writing=(await getCollection('writing',({data})=>!data.draft)).sort((a,b)=>sortDate(b.data.publicationDate)-sortDate(a.data.publicationDate));
+const featured=writing.filter(a=>a.data.featured);
+const selected=[...featured,...writing.filter(a=>!a.data.featured)].slice(0,6);
+---
+<BaseLayout>
+<section class="wrap hero">
+  <div class="eyebrow">Writer · Rome / London</div>
+  <h1>Alex Franquelli</h1>
+  <p class="intro">Writing on music, politics and culture, published in English and Italian. This site brings together two decades of reviews, interviews, features and live reports.</p>
+  <div class="actions"><a class="button" href="/writing">Browse {writing.length} articles</a><a class="text-link" href="/about">About Alex →</a></div>
+</section>
+<section class="wrap section">
+  <div class="section-heading"><h2>Selected writing</h2><a class="text-link" href="/writing">Full archive →</a></div>
+  {selected.map(a => <article class="article-row"><a href={'/writing/'+a.data.slug}>{a.data.title}</a><span>{a.data.publication||'Publication to verify'}</span><span>{a.data.displayDate||a.data.publicationDate||'Date to verify'}</span></article>)}
+</section>
+</BaseLayout>

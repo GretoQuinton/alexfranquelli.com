@@ -1,0 +1,19 @@
+---
+title: "The Unsigned Bands Rodeo"
+slug: "the-unsigned-bands-rodeo"
+publication: "Angry Metal Guy"
+language: "English"
+type: "Feature"
+featured: false
+draft: false
+---
+
+<p>Bill Pulmonary Embolism are a nasty but lovable creature.<br />“There is no demise of Nastidious / It is time to die / You will die, you will die / You will suffer”, they say. This fine example of grindcore poetry pretty much sums up what this duo is all about: blast beats with a Voivodian imagery and a touch of European crust to top an awesome cake anyone fond of post-apocalyptic entertainment shouldn’t miss. Because, whether one likes it or not, we all need some controlled violence...(3.0/5.0)</p>
+
+<p>…from time to time a band comes out of nowhere claiming they know how to handle those riffs. They know what to do with them and there’s no way you can explain to them that, well, what Toni Iommi did back in the 1970s cannot be perfected 40 years later. You can slow them down and even detune your guitar, but adding growling vocals on top of a riff out of Volume 4 won’t necessarily make your songs better. And this is exactly what Boudain don’t do. The pig on the cover must be their manifesto: you don’t throw anything away when you slaughter a swine because everything can be used and eaten. The same applies to the band’s music: acid, psychedelic, freaky, trippy. Everything matters. Boudain don’t reproduce; they deconstruct all their influences and filter the disjointed fragments through sludge and stoner rock. Didn’t Eyehategod and Down do it ages ago? Yes, but that was ages ago and Volume 4 is a fantastic album…(3.5/5.0)</p>
+
+<p>…no matter what people say, it doesn’t matter whether the glass of water is half empty or half full, because what’s in the glass is and remains only water. And in the eternal struggle between optimism and pessimism, Forlorn Path stand right there in the metal goblet, oscillating vertically between the nihilist fumes of nihilism and the inebriating pheromones of a long-awaited comeback. More European than a Belgian Eurovision pop singer, this band from New Jersey seems to know their craft quite well. Nothing new, nothing bad and the album is free, so just grab it…(3.0/5.0)</p>
+
+<p>…”and if the riffs are good, the rest doesn’t really count”, said the wise man holding a copy of “Nevermind the Bollocks” in his hands. Riffs, riffs and riffs again. Do they still matter? They don’t: modern music can do without them and will soon break its chains to bring us back to the joys of monotony and drones. In the meantime, let’s enjoy the music of Infested (previously known as Siphon the Mammon) and their debut album Obliterate. Yes, I know what you’re thinking: finding information on a specific metal band using “infested” and “obliterate” as keywords in Google is a hopeless task, but eventually your efforts will be rewarded with a cascade of influences ranging from The Haunted to Neaera and The Acacia Strain. Oh, and riffs. Lots of those bloody, goddamn riffs…(3.5/5.0)</p>
+
+<p>… rock music has lead us to love. However then, one day, we realised that songs could be used for more noble purposes and Blue Cheer gave us the summertime blues and bands like Witch Ripper. Their powerful grasp of blues chords might sound strikingly similar to the likes of Baroness and Torche, if you listen close enough. And the proggy edges of their music could remind the listener of the likes of Mastodon and High On Fire. But it’s all played with a stoner soul: one which pays a heavy tribute to a virtual scene that includes Kvelertak, Black Tusk and Doomriders. So, let’s all raise our half-empty glasses to the mighty Order of the Riff. And may His Majesty Iommi have pity of all of us. For we do not know what we are doing and we gladly prefer it this way. (4.0/5.0)</p>

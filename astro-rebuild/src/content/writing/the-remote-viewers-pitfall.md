@@ -1,0 +1,19 @@
+---
+title: "The Remote Viewers - Pitfall"
+slug: "the-remote-viewers-pitfall"
+publication: "All About Jazz"
+publicationDate: "2015-05-22"
+displayDate: "2015-05-22"
+language: "English"
+type: "Review"
+featured: false
+draft: false
+---
+
+<p>I love a bit of Remote Viewers in the evening. If it’s not in the scarcely busy second to last northbound Victoria Line carriage, I follow their urban drifts while strolling, hands in my pockets, on a straight line: the shortest trajectory from A to home. The things you see while listening to this London-based septet are the stuff you wouldn’t notice otherwise. Pitfall closes a circle, one that started back in 2012 when the marvellous City of Nets came out, followed, one year later, by the cynical, nervous Crimeways. </p>
+
+<p>Pitfall is an album that the ensemble had to write, as its angular yet smooth stride could not and would not do without a tougher approach to jazz. The tracks live a life of their own, not proceeding from one to the next following a creative path. On the contrary, Pitfall is the most beautifully inconsistent work the band has ever written. Gone are the days of the dark, rain-drenched compositions that made their previous works stand out; this album is a hymn to eclecticism and the array of influences which have surely contributed to the ensemble’s fortune. This is heavy stuff: one which might depict the disillusion of man with the city, the rage flowing like a lifeline in our streets or, more simply, a sign that the times are changing and post-industrial life demands pretty sharp answers. </p>
+
+<p>Whatever the reason, Pitfall continues to blend urban dark thoughts with improvisation – which remains the core of The Remote Viewers’ music – while keeping an eye to avant-gardism. Free jazz, movie scores, noise, atonalism and a minimalist approach to composition make the ensemble what it is today: one of Britain’s most peculiar jazz exports. What strikes the most is the modesty and lucidity of such intricate textures: experimentalism is not something to be achieved at all costs, but rather a medium. And this is exactly what this ensemble does. Tunes like “Hiring Hall”, “Raw Deal” or “Notetaker” take all the time they need to breathe in and breathe out the impurities of the daily (and nightly) routines in everyday’s lives. It is almost as if violence, which is an integral part of our social texture, were controlled and subdued to the subtly noisy recesses of this record. Caroline Kraabel (alto saxophone, baritone saxophone), Sue Lynch (tenor saxophone, clarinet), Adrian Northover (soprano, sopranino, alto saxes, wasp, autoharp), David Petts (tenor sax, noise generator), John Edwards (double bass), Mark Sanders (drums) and Rosa Lynch-Northover (keyboards, tuned percussion) know how to manage this process and its implications.</p>
+
+<p>Permeated by irony, Pitfall is indeed an album that – as its title suggests – warns its listener by subjugating her, presenting the raw reality without mediation or intercession. Your world is an ugly place not because “D.O.A.” distorts the rhythm, dilutes the tempo and destroys harmony, but despite art’s attempts to depict it in front of us to make it look distant, other.<br />This trilogy is perfect. You may despise the music, dislike Petts’ ideas, ridicule their attempt to sketch the present with too bleak strokes, but this is you, and this is the sound you hear every single hour of the day. You didn’t realize it, but you have been listening to this album for quite some time. And you love to hate it.</p>
