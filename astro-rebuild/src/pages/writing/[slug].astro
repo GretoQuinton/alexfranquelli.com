@@ -11,8 +11,22 @@ const currentIndex=writing.findIndex(a=>a.data.slug===d.slug);
 const newer=currentIndex>0?writing[currentIndex-1]:null;
 const older=currentIndex>=0&&currentIndex<writing.length-1?writing[currentIndex+1]:null;
 const lang=d.language==='Italian'?'it':'en';
+const canonical=new URL('/writing/'+d.slug, Astro.site).toString();
+const articleJsonLd=JSON.stringify({
+  '@context':'https://schema.org',
+  '@type':'Article',
+  headline:d.title,
+  description:d.description||undefined,
+  url:canonical,
+  mainEntityOfPage:canonical,
+  author:{'@type':'Person',name:'Alex Franquelli',url:'https://www.alexfranquelli.com/about'},
+  datePublished:d.publicationDate||undefined,
+  inLanguage:lang,
+  publisher:d.publication?{'@type':'Organization',name:d.publication}:undefined,
+  isBasedOn:d.originalUrl||undefined
+});
 ---
-<BaseLayout title={d.title+' — Alex Franquelli'} description={d.description||`${d.title}, by Alex Franquelli.`} lang={lang} type="article">
+<BaseLayout title={d.title+' — Alex Franquelli'} description={d.description||`${d.title}, by Alex Franquelli.`} lang={lang} type="article" jsonLd={articleJsonLd}>
 <article class="article" data-pagefind-body>
   <a class="back-link" href="/writing">← Writing archive</a>
   <header class="article-header">
