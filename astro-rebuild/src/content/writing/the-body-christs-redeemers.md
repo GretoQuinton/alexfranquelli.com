@@ -2,6 +2,8 @@
 title: "The Body - Christs, Redeemers"
 slug: "the-body-christs-redeemers"
 publication: "Ondarock"
+publicationDate: "2013-11-09"
+displayDate: "2013-11-09"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
