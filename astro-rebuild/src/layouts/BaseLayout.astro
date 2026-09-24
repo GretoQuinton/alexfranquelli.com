@@ -4,7 +4,8 @@ const {
   title='Alex Franquelli — Writer',
   description='Writing on music, politics and culture by Alex Franquelli.',
   lang='en',
-  type='website'
+  type='website',
+  jsonLd=null
 }=Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const path = Astro.url.pathname;
@@ -43,6 +44,7 @@ const personJsonLd = JSON.stringify({
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
   <script type="application/ld+json" set:html={personJsonLd}></script>
+  {jsonLd&&<script type="application/ld+json" set:html={jsonLd}></script>}
   <title>{title}</title>
 </head>
 <body>
