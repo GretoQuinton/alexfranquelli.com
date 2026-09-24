@@ -1,12 +1,12 @@
 {
   "checkedOn": "2026-09-24",
-  "articleFiles": 362,
-  "generatedPages": 368,
+  "articleFiles": 363,
+  "generatedPages": 369,
   "redirectRules": 220,
   "legacyMappings": 110,
-  "mappingsWithBuiltTargets": 78,
-  "mappingsWithoutBuiltTargets": 32,
-  "distinctMissingDestinations": 32,
+  "mappingsWithBuiltTargets": 79,
+  "mappingsWithoutBuiltTargets": 31,
+  "distinctMissingDestinations": 31,
   "missingDestinations": {
     "/writing/tristan-perich-parallels": [
       "/portfolio/tristan-perich-parallels/",
@@ -92,10 +92,6 @@
       "/portfolio/fiberglass-hush/",
       "/portfolio/fiberglass-hush"
     ],
-    "/writing/melt-yourself-down-at-the-new-empowering-church-londra-29-11-13": [
-      "/portfolio/melt-yourself-downand-flamingods/",
-      "/portfolio/melt-yourself-downand-flamingods"
-    ],
     "/writing/kwaidan-make-all-the-hell-of-dark-metal-bright": [
       "/portfolio/kwaidan-make-all-the-hell-of-dark-metal-bright/",
       "/portfolio/kwaidan-make-all-the-hell-of-dark-metal-bright"
@@ -137,5 +133,5 @@
       "/portfolio/mongolia-is-stability-the-new-challenge"
     ]
   },
-  "limitation": "Checks destination existence, not historical publication-version equivalence. Ulver Messe legacy paths were version-resolved from preserved Squarespace metadata on 2026-09-24. No deployment performed."
+  "limitation": "Checks destination existence, not historical publication-version equivalence. Ulver Messe legacy paths were version-resolved from preserved Squarespace metadata on 2026-09-24. Horseback and Melt Yourself Down / Flamingods destinations are now built. No deployment performed."
 }
