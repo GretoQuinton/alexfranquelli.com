@@ -2,6 +2,8 @@
 title: "Ulver - Childhood’s End"
 slug: "ulver-childhood-s-end-indieforbunnies"
 publication: "IndieForBunnies"
+publicationDate: "2012-07-18"
+displayDate: "2012-07-18"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
