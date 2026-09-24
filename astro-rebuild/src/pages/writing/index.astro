@@ -7,9 +7,11 @@ const types=[...new Set(writing.map(x=>x.data.type))].sort();
 ---
 <BaseLayout title="Writing Archive — Alex Franquelli" description="Published writing by Alex Franquelli in English and Italian.">
 <section class="wrap section">
-  <div class="eyebrow">Archive</div><h1>Writing</h1>
+  <div class="eyebrow">Archive</div>
+  <h1>Writing</h1>
+  <p class="archive-intro">{writing.length} published pieces currently preserved here. Search by title, publication or subject, or filter by type.</p>
   <div class="archive-tools">
-    <input class="search" id="q" type="search" placeholder="Search title, publication or subject…" />
+    <input class="search" id="q" type="search" placeholder="Search title, publication or subject…" aria-label="Search writing archive" />
     <div class="filters"><button data-filter="all" aria-pressed="true">All</button>{types.map(t=><button data-filter={t}>{t}</button>)}</div>
   </div>
   <div id="list">
