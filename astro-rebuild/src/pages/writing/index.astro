@@ -13,7 +13,7 @@ const types=[...new Set(writing.map(x=>x.data.type))].sort();
     <div class="filters"><button data-filter="all" aria-pressed="true">All</button>{types.map(t=><button data-filter={t}>{t}</button>)}</div>
   </div>
   <div id="list">
-    {writing.map(a=><article class="article-row" data-type={a.data.type} data-search={(a.data.title+' '+a.data.publication+' '+(a.data.description||'')).toLowerCase()}><a href={'/writing/'+a.data.slug}>{a.data.title}</a><span>{a.data.publication}</span><span>{a.data.displayDate||a.data.publicationDate||'Date to verify'}</span></article>)}
+    {writing.map(a=><article class="article-row" data-type={a.data.type} data-search={(a.data.title+' '+(a.data.publication||'')+' '+(a.data.description||'')).toLowerCase()}><a href={'/writing/'+a.data.slug}>{a.data.title}</a><span>{a.data.publication||'Publication to verify'}</span><span>{a.data.displayDate||a.data.publicationDate||'Date to verify'}</span></article>)}
   </div>
 </section>
 <script is:inline>
