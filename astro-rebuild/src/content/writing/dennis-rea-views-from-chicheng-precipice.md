@@ -2,6 +2,8 @@
 title: "Dennis Rea - Views from Chicheng Precipice"
 slug: "dennis-rea-views-from-chicheng-precipice"
 publication: "Ondarock"
+publicationDate: "2011-11-09"
+displayDate: "2011-11-09"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
