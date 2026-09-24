@@ -2,6 +2,8 @@
 title: "Xiu Xiu - Always"
 slug: "xiu-xiu-always"
 publication: "IndieForBunnies"
+publicationDate: "2012-03-28"
+displayDate: "2012-03-28"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
