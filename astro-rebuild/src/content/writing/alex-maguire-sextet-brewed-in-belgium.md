@@ -2,6 +2,8 @@
 title: "Alex Maguire Sextet - Brewed In Belgium"
 slug: "alex-maguire-sextet-brewed-in-belgium"
 publication: "Ondarock"
+publicationDate: "2009-03-08"
+displayDate: "2009-03-08"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
