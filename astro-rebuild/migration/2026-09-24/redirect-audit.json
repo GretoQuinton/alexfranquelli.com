@@ -4,9 +4,9 @@
   "generatedPages": 367,
   "redirectRules": 220,
   "legacyMappings": 110,
-  "mappingsWithBuiltTargets": 74,
-  "mappingsWithoutBuiltTargets": 36,
-  "distinctMissingDestinations": 34,
+  "mappingsWithBuiltTargets": 77,
+  "mappingsWithoutBuiltTargets": 33,
+  "distinctMissingDestinations": 33,
   "missingDestinations": {
     "/writing/horseback-piedmont-apocrypha": [
       "/portfolio/horseback-piedmont-apocrypha/",
@@ -96,14 +96,6 @@
       "/portfolio/fiberglass-hush/",
       "/portfolio/fiberglass-hush"
     ],
-    "/writing/ulver-messe-i-x-vi-x": [
-      "/portfolio/ulver-messe-ix-vix/",
-      "/portfolio/ulver-messe-ix-vix",
-      "/portfolio/ulver-messe-ixvix/",
-      "/portfolio/ulver-messe-ixvix",
-      "/portfolio/ulvermesse-ixvix/",
-      "/portfolio/ulvermesse-ixvix"
-    ],
     "/writing/melt-yourself-down-at-the-new-empowering-church-londra-29-11-13": [
       "/portfolio/melt-yourself-downand-flamingods/",
       "/portfolio/melt-yourself-downand-flamingods"
@@ -149,5 +141,5 @@
       "/portfolio/mongolia-is-stability-the-new-challenge"
     ]
   },
-  "limitation": "Checks destination existence, not historical publication-version equivalence. The three Ulver Messe legacy mappings require version-specific verification before selecting among three preserved articles. No deployment performed."
+  "limitation": "Checks destination existence, not historical publication-version equivalence. Ulver Messe legacy paths were version-resolved from preserved Squarespace metadata on 2026-09-24. No deployment performed."
 }
