@@ -2,6 +2,8 @@
 title: "Jastreb – Jastreb"
 slug: "jastreb-jastreb"
 publication: "Ritual"
+publicationDate: "2013-01"
+displayDate: "January 2013"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
