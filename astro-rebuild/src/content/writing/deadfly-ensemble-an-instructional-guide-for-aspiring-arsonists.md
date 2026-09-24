@@ -2,6 +2,8 @@
 title: "Deadfly Ensemble – An Instructional Guide for Aspiring Arsonists"
 slug: "deadfly-ensemble-an-instructional-guide-for-aspiring-arsonists"
 publication: "Ritual"
+publicationDate: "2013-01"
+displayDate: "January 2013"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
