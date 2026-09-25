@@ -12,6 +12,7 @@ const newer=currentIndex>0?writing[currentIndex-1]:null;
 const older=currentIndex>=0&&currentIndex<writing.length-1?writing[currentIndex+1]:null;
 const lang=d.language==='Italian'?'it':'en';
 const canonical=new URL('/writing/'+d.slug, Astro.site).toString();
+const imageUrl=d.image?new URL(d.image, Astro.site).toString():undefined;
 const articleJsonLd=JSON.stringify({
   '@context':'https://schema.org',
   '@type':'Article',
@@ -23,6 +24,7 @@ const articleJsonLd=JSON.stringify({
   datePublished:d.publicationDate||undefined,
   inLanguage:lang,
   publisher:d.publication?{'@type':'Organization',name:d.publication}:undefined,
+  image:imageUrl?[imageUrl]:undefined,
   isBasedOn:d.originalUrl||undefined
 });
 ---
@@ -41,6 +43,13 @@ const articleJsonLd=JSON.stringify({
     </div>
     {d.originalUrl&&<a class="original-link" href={d.originalUrl}>View original publication ↗</a>}
   </header>
+  {d.image&&<figure class="article-image">
+    <img src={d.image} alt={d.imageAlt||''} loading="eager" fetchpriority="high" />
+    {(d.imageCredit||d.imageSourceUrl)&&<figcaption>
+      {d.imageCredit&&<span>{d.imageCredit}</span>}
+      {d.imageSourceUrl&&<a href={d.imageSourceUrl}>Image source ↗</a>}
+    </figcaption>}
+  </figure>}
   <div class="prose"><Content /></div>
   {(d.magazineIssue||d.printedPages||d.cover)&&<aside class="publication-card">
     <div class="eyebrow">Print archive</div>
