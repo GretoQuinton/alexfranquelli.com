@@ -27,8 +27,8 @@ const types=[...new Set(writing.map(x=>x.data.type))].sort();
   <div id="list" class="archive-list">
     {writing.map(a=><article class="article-row" data-type={a.data.type} data-search={(a.data.title+' '+(a.data.publication||'')+' '+(a.data.description||'')).toLowerCase()}>
       <a href={'/writing/'+a.data.slug}>{a.data.title}</a>
-      <span>{a.data.publication||'Publication to verify'}</span>
-      <span>{a.data.displayDate||a.data.publicationDate||'Date to verify'}</span>
+      <span>{a.data.publication||'Publication unconfirmed'}</span>
+      <span>{a.data.displayDate||a.data.publicationDate||'Date unconfirmed'}</span>
     </article>)}
   </div>
   <p id="empty-state" class="empty-state" hidden>No pieces match that search.</p>
