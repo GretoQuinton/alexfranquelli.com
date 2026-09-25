@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist",
+    "build": "astro build && node scripts/check-redirects.mjs && pagefind --site dist",
     "preview": "astro preview",
     "preview:cloudflare": "npm run build && wrangler preview",
     "deploy": "npm run build && wrangler deploy"
