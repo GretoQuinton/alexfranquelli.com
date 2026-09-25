@@ -63,6 +63,14 @@ content:
       - name: originalUrl
         label: Original URL
         type: string
+      - name: originalUrlStatus
+        label: Original URL status
+        type: select
+        options:
+          values: [live, dead, unchecked]
+      - name: archiveUrl
+        label: Archived URL
+        type: string
       - name: legacyPath
         label: Legacy website path
         type: string

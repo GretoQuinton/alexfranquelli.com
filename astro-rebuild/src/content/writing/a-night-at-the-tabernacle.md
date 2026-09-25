@@ -1,6 +1,8 @@
 ---
 title: "A Night at the Tabernacle"
 slug: "a-night-at-the-tabernacle"
+publicationDate: "2012-05-02"
+displayDate: "2 May 2012"
 language: "Italian"
 type: "Live report"
 byline: "Alex Franquelli"

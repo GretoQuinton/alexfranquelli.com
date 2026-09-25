@@ -10,7 +10,7 @@ const archive=selected.slice(3);
 const dated=writing.map(a=>a.data.publicationDate).filter(Boolean) as string[];
 const years=dated.map(d=>Number(d.slice(0,4))).filter(Boolean);
 const span=years.length?`${Math.min(...years)}—${Math.max(...years)}`:'Two decades';
-const publications=new Set(writing.map(a=>a.data.publication).filter(Boolean));
+const publications=new Set(writing.map(a=>a.data.publication?.trim().toLowerCase().replace(/[^a-z0-9]+/g,'')).filter(Boolean));
 const heroImage='https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/7d580778-c1f9-45d0-b073-ce2166a984b4/IMG_2633.jpeg';
 ---
 <BaseLayout description="Alex Franquelli is a writer based between Rome and London. Browse reviews, interviews and features on music, politics and culture.">
@@ -48,7 +48,13 @@ const heroImage='https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c
   <div class="featured-grid">
     {lead.map((a,i) => <article class="feature-card">
       <a class="feature-card-link" href={'/writing/'+a.data.slug}>
-        {a.data.image&&<img class="feature-image" src={a.data.image} alt={a.data.imageAlt||''} loading="lazy" />}
+        {a.data.image
+          ? <img class="feature-image" src={a.data.image} alt={a.data.imageAlt||''} loading="lazy" />
+          : <div class="feature-fallback" aria-hidden="true">
+              <span>{a.data.publication||'Alex Franquelli'}</span>
+              <strong>{a.data.title}</strong>
+              <em>{a.data.publicationDate?.slice(0,4)||'Archive'}</em>
+            </div>}
         <div class="feature-index">0{i+1}</div>
         <div class="feature-meta"><span>{a.data.publication||'Archive'}</span><span>{a.data.displayDate||a.data.publicationDate||''}</span></div>
         <h3>{a.data.title}</h3>

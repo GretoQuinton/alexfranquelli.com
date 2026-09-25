@@ -36,12 +36,16 @@ const articleJsonLd=JSON.stringify({
     <h1>{d.title}</h1>
     {d.description&&<p class="article-deck">{d.description}</p>}
     <div class="article-meta">
-      <div><span>Publication</span><strong>{d.publication||'To verify'}</strong></div>
-      <div><span>Date</span><strong>{d.displayDate||d.publicationDate||'To verify'}</strong></div>
+      <div><span>Publication</span><strong>{d.publication||'Unconfirmed'}</strong></div>
+      <div><span>Date</span><strong>{d.displayDate||d.publicationDate||'Unconfirmed'}</strong></div>
       <div><span>Language</span><strong>{d.language}</strong></div>
       {d.byline&&<div><span>Byline</span><strong>{d.byline}</strong></div>}
     </div>
-    {d.originalUrl&&<a class="original-link" href={d.originalUrl}>View original publication ↗</a>}
+    {d.originalUrlStatus==='live'&&d.originalUrl&&<a class="original-link" href={d.originalUrl} rel="noopener">View original publication ↗</a>}
+    {d.originalUrlStatus==='dead'&&d.archiveUrl&&<a class="original-link" href={d.archiveUrl} rel="noopener">View archived publication ↗</a>}
+    {d.originalUrlStatus==='dead'&&!d.archiveUrl&&<p class="original-note">The original publication is no longer online.</p>}
+    {!d.originalUrlStatus&&d.originalUrl&&<a class="original-link" href={d.originalUrl} rel="noopener">View original publication ↗</a>}
+    {(!d.publicationDate||!d.publication)&&<p class="verification-note">Some archive metadata is still being verified. <a href="/contact">Corrections are welcome.</a></p>}
   </header>
   {d.image&&<figure class="article-image">
     <img src={d.image} alt={d.imageAlt||''} loading="eager" fetchpriority="high" />
