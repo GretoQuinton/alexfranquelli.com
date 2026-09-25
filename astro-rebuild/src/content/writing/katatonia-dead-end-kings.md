@@ -8,6 +8,8 @@ language: "English"
 type: "Review"
 byline: "Alex Franquelli"
 originalUrl: "https://www.nocleansinging.com/2012/06/28/katatonia-dead-end-kings/"
+image: "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704035387466-SU7LEP9YQRML992C6U8M/Katatonia-Dead-End-Kings.jpg"
+imageAlt: "Artwork or image associated with Katatonia - “Dead End Kings”"
 featured: false
 draft: false
 ---
