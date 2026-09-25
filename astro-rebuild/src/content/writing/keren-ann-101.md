@@ -8,6 +8,8 @@ language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
 originalUrl: "https://www.ondarock.it/recensioni/2011_kerenann/"
+image: "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704033380398-0QY6UR9DYS9GJI2A4AA3/keren_ann_101_1309508553.jpg"
+imageAlt: "Artwork or image associated with Keren Ann - “101”"
 featured: false
 draft: false
 ---
