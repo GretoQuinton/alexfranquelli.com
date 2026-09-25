@@ -14,6 +14,8 @@ const writing = defineCollection({
     description: z.string().optional(),
     byline: z.string().optional(),
     originalUrl: z.string().url().optional(),
+    originalUrlStatus: z.enum(['live','dead','unchecked']).optional(),
+    archiveUrl: z.string().url().optional(),
     legacyPath: z.string().optional(),
     magazineIssue: z.string().optional(),
     printedPages: z.string().optional(),
