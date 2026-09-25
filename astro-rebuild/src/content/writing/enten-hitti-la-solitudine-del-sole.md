@@ -7,6 +7,8 @@ displayDate: "2011-12-21"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
+image: "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704031303007-E6982Q3742KNAFDGPQRG/R-3102072-1315837745.jpg"
+imageAlt: "Artwork or image associated with Enten Hitti - “La Solitudine del Sole”"
 featured: false
 draft: false
 ---
