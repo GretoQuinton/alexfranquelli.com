@@ -23,7 +23,7 @@ const span=years.length?`${Math.min(...years)}—${Math.max(...years)}`:'Two dec
 const publications=new Set(writing.map(a=>a.data.publication?.trim().toLowerCase().replace(/[^a-z0-9]+/g,'')).filter(Boolean));
 const heroImage='https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/7d580778-c1f9-45d0-b073-ce2166a984b4/IMG_2633.jpeg';
 ---
-<BaseLayout description="Alex Franquelli is a writer based between Rome and London. Browse reviews, interviews and features on music, politics and culture.">
+<BaseLayout description="Alex Franquelli is a writer based between Rome and London. Browse reviews, interviews and features on music, politics and culture." image={heroImage}>
 <section class="hero wrap">
   <div class="hero-grid">
     <div>
