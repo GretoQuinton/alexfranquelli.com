@@ -1,15 +1,30 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+
 const sortDate=(value?:string)=>value ? (Date.parse(value.length===4?`${value}-01-01`:value.length===7?`${value}-01`:value)||0) : 0;
 const writing=(await getCollection('writing',({data})=>!data.draft)).sort((a,b)=>sortDate(b.data.publicationDate)-sortDate(a.data.publicationDate));
 const types=[...new Set(writing.map(x=>x.data.type))].sort();
+const publicationKey=(value?:string)=>(value||'').trim().toLowerCase().replace(/[^a-z0-9]+/g,'');
+const publicationMap=new Map<string,string>();
+for(const article of writing){
+  const label=article.data.publication?.trim();
+  if(!label) continue;
+  const key=publicationKey(label);
+  if(!publicationMap.has(key)) publicationMap.set(key,label);
+}
+const publications=[...publicationMap.entries()].sort((a,b)=>a[1].localeCompare(b[1]));
+const languages=[...new Set(writing.map(x=>x.data.language).filter(Boolean))].sort();
+const decades=[...new Set(writing.map(x=>{
+  const year=Number(x.data.publicationDate?.slice(0,4));
+  return year?Math.floor(year/10)*10:null;
+}).filter(Boolean))].sort((a,b)=>(b as number)-(a as number)) as number[];
 ---
 <BaseLayout title="Writing — Alex Franquelli" description="Reviews, interviews, features and live reports by Alex Franquelli, published in English and Italian.">
 <section class="wrap archive-header">
   <div class="eyebrow">Archive · {writing.length} pieces</div>
   <h1>Writing</h1>
-  <p class="archive-intro">Reviews, interviews, live reports and features on music, politics and culture. Search the archive or filter by format.</p>
+  <p class="archive-intro">Reviews, interviews, live reports and features on music, politics and culture. Search by keyword, publication, language, period or format.</p>
 </section>
 <section class="wrap archive-section">
   <div class="archive-tools">
@@ -18,24 +33,120 @@ const types=[...new Set(writing.map(x=>x.data.type))].sort();
       <input class="search" id="q" type="search" placeholder="Search title, publication or subject…" autocomplete="off" />
       <span class="search-mark" aria-hidden="true">⌕</span>
     </label>
+    <div class="archive-selects">
+      <label><span>Publication</span>
+        <select id="publication">
+          <option value="">All publications</option>
+          {publications.map(([key,label])=><option value={key}>{label}</option>)}
+        </select>
+      </label>
+      <label><span>Language</span>
+        <select id="language">
+          <option value="">All languages</option>
+          {languages.map(language=><option value={language}>{language}</option>)}
+        </select>
+      </label>
+      <label><span>Period</span>
+        <select id="decade">
+          <option value="">All years</option>
+          {decades.map(decade=><option value={String(decade)}>{decade}s</option>)}
+          <option value="undated">Date unconfirmed</option>
+        </select>
+      </label>
+    </div>
     <div class="filters" aria-label="Filter by article type">
-      <button data-filter="all" aria-pressed="true">All</button>
+      <button data-filter="all" aria-pressed="true">All formats</button>
       {types.map(t=><button data-filter={t} aria-pressed="false">{t}</button>)}
     </div>
+    <button id="clear-filters" class="clear-filters" type="button">Clear filters</button>
   </div>
   <div class="archive-status" aria-live="polite"><span id="result-count">{writing.length}</span> pieces</div>
   <div id="list" class="archive-list">
-    {writing.map(a=><article class="article-row" data-type={a.data.type} data-search={(a.data.title+' '+(a.data.publication||'')+' '+(a.data.description||'')).toLowerCase()}>
-      <a href={'/writing/'+a.data.slug}>{a.data.title}</a>
-      <span>{a.data.publication||'Publication unconfirmed'}</span>
-      <span>{a.data.displayDate||a.data.publicationDate||'Date unconfirmed'}</span>
-    </article>)}
+    {writing.map(a=>{
+      const year=Number(a.data.publicationDate?.slice(0,4));
+      const decade=year?String(Math.floor(year/10)*10):'undated';
+      return <article
+        class="article-row"
+        data-type={a.data.type}
+        data-publication={publicationKey(a.data.publication)}
+        data-language={a.data.language}
+        data-decade={decade}
+        data-search={(a.data.title+' '+(a.data.publication||'')+' '+(a.data.description||'')).toLowerCase()}>
+        <a href={'/writing/'+a.data.slug}>{a.data.title}</a>
+        <span>{a.data.publication||'Publication unconfirmed'}</span>
+        <span>{a.data.displayDate||a.data.publicationDate||'Date unconfirmed'}</span>
+      </article>
+    })}
   </div>
-  <p id="empty-state" class="empty-state" hidden>No pieces match that search.</p>
+  <p id="empty-state" class="empty-state" hidden>No pieces match those filters.</p>
 </section>
 <script is:inline>
-const q=document.querySelector('#q'),buttons=[...document.querySelectorAll('[data-filter]')],rows=[...document.querySelectorAll('.article-row')],count=document.querySelector('#result-count'),empty=document.querySelector('#empty-state');let active='all';
-function update(){const term=q.value.trim().toLowerCase();let visible=0;rows.forEach(r=>{const show=(active==='all'||r.dataset.type===active)&&(!term||r.dataset.search.includes(term));r.hidden=!show;if(show)visible++});count.textContent=visible;empty.hidden=visible!==0}
-q.addEventListener('input',update);buttons.forEach(b=>b.addEventListener('click',()=>{active=b.dataset.filter;buttons.forEach(x=>x.setAttribute('aria-pressed',String(x===b)));update()}));
+const q=document.querySelector('#q');
+const typeButtons=[...document.querySelectorAll('[data-filter]')];
+const publication=document.querySelector('#publication');
+const language=document.querySelector('#language');
+const decade=document.querySelector('#decade');
+const clear=document.querySelector('#clear-filters');
+const rows=[...document.querySelectorAll('.article-row')];
+const count=document.querySelector('#result-count');
+const empty=document.querySelector('#empty-state');
+let activeType='all';
+
+const params=new URLSearchParams(location.search);
+q.value=params.get('q')||'';
+publication.value=params.get('publication')||'';
+language.value=params.get('lang')||'';
+decade.value=params.get('decade')||'';
+activeType=params.get('type')||'all';
+typeButtons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.filter===activeType)));
+
+function syncUrl(){
+  const next=new URLSearchParams();
+  const term=q.value.trim();
+  if(term) next.set('q',term);
+  if(publication.value) next.set('publication',publication.value);
+  if(language.value) next.set('lang',language.value);
+  if(decade.value) next.set('decade',decade.value);
+  if(activeType!=='all') next.set('type',activeType);
+  const query=next.toString();
+  history.replaceState(null,'',location.pathname+(query?'?'+query:''));
+}
+function update(){
+  const term=q.value.trim().toLowerCase();
+  let visible=0;
+  rows.forEach(row=>{
+    const show=
+      (activeType==='all'||row.dataset.type===activeType)&&
+      (!publication.value||row.dataset.publication===publication.value)&&
+      (!language.value||row.dataset.language===language.value)&&
+      (!decade.value||row.dataset.decade===decade.value)&&
+      (!term||row.dataset.search.includes(term));
+    row.hidden=!show;
+    if(show) visible++;
+  });
+  count.textContent=visible;
+  empty.hidden=visible!==0;
+  syncUrl();
+}
+q.addEventListener('input',update);
+publication.addEventListener('change',update);
+language.addEventListener('change',update);
+decade.addEventListener('change',update);
+typeButtons.forEach(button=>button.addEventListener('click',()=>{
+  activeType=button.dataset.filter;
+  typeButtons.forEach(x=>x.setAttribute('aria-pressed',String(x===button)));
+  update();
+}));
+clear.addEventListener('click',()=>{
+  q.value='';
+  publication.value='';
+  language.value='';
+  decade.value='';
+  activeType='all';
+  typeButtons.forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.filter==='all')));
+  update();
+  q.focus();
+});
+update();
 </script>
 </BaseLayout>
