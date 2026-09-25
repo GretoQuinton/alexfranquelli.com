@@ -1,7 +1,8 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { join, relative } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const root=new URL('../src/content/writing/',import.meta.url);
+const root=fileURLToPath(new URL('../src/content/writing/',import.meta.url));
 const output=new URL('../link-audit.json',import.meta.url);
 const timeoutMs=15000;
 const concurrency=6;

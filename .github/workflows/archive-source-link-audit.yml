@@ -1,4 +1,5 @@
 name: Archive source link audit
+# Workflow-file pushes also run the audit, so fixes can be validated immediately.
 
 on:
   workflow_dispatch:
