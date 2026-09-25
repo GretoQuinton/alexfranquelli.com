@@ -1,0 +1,74 @@
+name: Archive source link audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 9 1 * *'
+      timezone: 'Europe/Rome'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Check original publication links
+        run: node astro-rebuild/scripts/check-original-links.mjs
+      - name: Upload audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: archive-source-link-audit
+          path: astro-rebuild/link-audit.json
+      - name: Open or update review issue
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const fs = require('fs');
+            const report = JSON.parse(fs.readFileSync('astro-rebuild/link-audit.json','utf8'));
+            if (!report.needsReviewCount) return;
+            const rows = report.needsReview.slice(0,60).map(item =>
+              `| ${item.state} | ${item.status ?? '—'} | ${item.publication ?? ''} | ${item.title ?? item.slug ?? ''} | ${item.originalUrl} |`
+            );
+            const body = [
+              'Automated monthly audit of original publication URLs.',
+              '',
+              `Checked: **${report.checked}** · Needs review: **${report.needsReviewCount}**`,
+              '',
+              '| State | HTTP | Publication | Piece | URL |',
+              '| --- | ---: | --- | --- | --- |',
+              ...rows,
+              report.needsReviewCount > 60 ? `\n_Only the first 60 rows are shown here. Download the workflow artifact for the complete report._` : '',
+              '',
+              `Generated: ${report.generatedAt}`
+            ].join('\n');
+            const prefix = 'Archive source link audit';
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100
+            });
+            const existing = issues.find(issue => issue.title.startsWith(prefix));
+            const title = `${prefix}: ${report.needsReviewCount} URL(s) need review`;
+            if (existing) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                title,
+                body
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body
+              });
+            }
