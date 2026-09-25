@@ -1,1 +1,387 @@
-{}
+{
+  "ulver-childhood-s-end": {
+    "src": "/images/recovered/ulver-childhood-s-end.webp",
+    "alt": "Artwork or image associated with Ulver - “Childhood’s End”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704034678783-E23KDEKDNJCRZD7FYOIQ/Childhood%27s_End_%28album%29.jpg"
+  },
+  "katatonia-dead-end-kings": {
+    "src": "/images/recovered/katatonia-dead-end-kings.webp",
+    "alt": "Artwork or image associated with Katatonia - “Dead End Kings”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704035387466-SU7LEP9YQRML992C6U8M/Katatonia-Dead-End-Kings.jpg"
+  },
+  "enten-hitti-la-solitudine-del-sole": {
+    "src": "/images/recovered/enten-hitti-la-solitudine-del-sole.webp",
+    "alt": "Artwork or image associated with Enten Hitti - “La Solitudine del Sole”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704031303007-E6982Q3742KNAFDGPQRG/R-3102072-1315837745.jpg"
+  },
+  "star-fk-radium-blue-siberia": {
+    "src": "/images/recovered/star-fk-radium-blue-siberia.webp",
+    "alt": "Artwork or image associated with Star FK Radium - “Blue Siberia”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704032915455-ABREOW34AWQBANRHPNVY/star_fk_radium_blue_siberia_1308672950.jpg"
+  },
+  "yu-miyashita-noble-niche": {
+    "src": "/images/recovered/yu-miyashita-noble-niche.webp",
+    "alt": "Artwork or image associated with Yu Miyashita - “Noble Niche”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704033079637-DUNQFYAO2NT621Y03LBM/yumiyashita_nobleniche_1321293697.jpg"
+  },
+  "marcin-wasilewski-trio-faithful": {
+    "src": "/images/recovered/marcin-wasilewski-trio-faithful.webp",
+    "alt": "Artwork or image associated with Marcin Wasilewski Trio - “Faithfull”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704031498926-7PVM3CUVO00HVFY6C1D0/Faithful_%28Marcin_Wasilewski_album%29.jpg"
+  },
+  "dennis-rea-views-from-chicheng-precipice": {
+    "src": "/images/recovered/dennis-rea-views-from-chicheng-precipice.webp",
+    "alt": "Artwork or image associated with Dennis Rea - “Views From Chicheng Precipice”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704032756064-5V7DWAKYGQD20RLG9OP8/dennis_rea_1320403580.jpg"
+  },
+  "keren-ann-101": {
+    "src": "/images/recovered/keren-ann-101.webp",
+    "alt": "Artwork or image associated with Keren Ann - “101”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704033380398-0QY6UR9DYS9GJI2A4AA3/keren_ann_101_1309508553.jpg"
+  },
+  "circulasione-totale-orchestra-bandwidth": {
+    "src": "/images/recovered/circulasione-totale-orchestra-bandwidth.webp",
+    "alt": "Artwork or image associated with Circulasione Totale Orchestra - “Bandwidth”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704142475559-6FC26HY96FKXFEYVRHCB/61zn51z4%2BQL._UF1000%2C1000_QL80_.jpg"
+  },
+  "lali-puna-our-inventions": {
+    "src": "/images/recovered/lali-puna-our-inventions.webp",
+    "alt": "Artwork or image associated with Lali Puna - “Our Inventions”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704035172885-2HUT4E1YL66OMBJ1T3JA/Lali_Puna_Our_Inventions.jpg"
+  },
+  "alex-maguire-sextet-brewed-in-belgium": {
+    "src": "/images/recovered/alex-maguire-sextet-brewed-in-belgium.webp",
+    "alt": "Artwork or image associated with Alex Maguire Sextet - “Brewed In Belgium”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704032289706-IKQMV9ANMZEHITN9YGFL/maguire.jpg"
+  },
+  "drott-orcus": {
+    "src": "/images/recovered/drott-orcus.webp",
+    "alt": "Artwork or image associated with Drott — Orcus",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703845345783-DE75DNHHJGPVNV35A8O6/drott-orcus-art.jpeg"
+  },
+  "motorists-surrounded": {
+    "src": "/images/recovered/motorists-surrounded.webp",
+    "alt": "Artwork or image associated with Motorists — Surrounded",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703846105915-SSTQ2LN00G9ZDX6PER01/motorists-surrounded-art.jpeg"
+  },
+  "bryan-away-sawdust": {
+    "src": "/images/recovered/bryan-away-sawdust.webp",
+    "alt": "Artwork or image associated with Bryan Away — Sawdust",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703846286679-JER1CGYI65E9L3VDZRC7/bryanawaycanyonstosawdustart.jpeg"
+  },
+  "sons-of-raphael-full-throated-messianic-homage": {
+    "src": "/images/recovered/sons-of-raphael-full-throated-messianic-homage.webp",
+    "alt": "Artwork or image associated with Sons of Raphael — Full-Throated Messianic Homage",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703847393336-5CIRW6BEL9KN375N2OZ1/Sons_of_Raphael_FTMH_album_art.jpeg"
+  },
+  "andy-stott-too-many-voices": {
+    "src": "/images/recovered/andy-stott-too-many-voices.webp",
+    "alt": "Artwork or image associated with Andy Stott — Too Many Voices",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703850939022-N7QTEFH66727G14665EZ/814TprjkRIL._UF1000%2C1000_QL80_.jpg"
+  },
+  "denovali-festival-london-uk": {
+    "src": "/images/recovered/denovali-festival-london-uk.webp",
+    "alt": "Artwork or image associated with Denovali Festival @ London",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703851134035-ICZ3G1C4PNG941P6S0CD/img-30156.jpg"
+  },
+  "ameen-saleem-the-groove-lab": {
+    "src": "/images/recovered/ameen-saleem-the-groove-lab.webp",
+    "alt": "Artwork or image associated with Ameen Saleem — The Groove Lab",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704018195533-WYL8Y345YJ6POINWM0TC/R-14610195-1578140761-1915.jpg"
+  },
+  "exit-verse-exit-verse": {
+    "src": "/images/recovered/exit-verse-exit-verse.webp",
+    "alt": "Artwork or image associated with Exit Verse — Exit Verse",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703871682242-5RXMK90S0IEVI1PXLTPJ/Exit-Verse.jpg"
+  },
+  "avvenir-glyphs": {
+    "src": "/images/recovered/avvenir-glyphs.webp",
+    "alt": "Artwork or image associated with Avvenir — Glyphs",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703851585112-RDVQCSL9NR1D6DZM3WSX/img-33168.jpg"
+  },
+  "kangding-ray-cory-arcane": {
+    "src": "/images/recovered/kangding-ray-cory-arcane.webp",
+    "alt": "Artwork or image associated with Kangding Ray — Cory Arcane",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703851815101-RSLI3Z7VNG22MGB2DJB4/Untitled.jpg"
+  },
+  "dan-trueman-nostalgic-synchronic": {
+    "src": "/images/recovered/dan-trueman-nostalgic-synchronic.webp",
+    "alt": "Artwork or image associated with Dan Trueman — Nostalgic Synchronic",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703852367284-293MFESD9K4CETV01PFU/image-asset.jpeg"
+  },
+  "funk-off-things-change": {
+    "src": "/images/recovered/funk-off-things-change.webp",
+    "alt": "Artwork or image associated with Funk Off — Things Change",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703964679926-8HGQQ4FMS6IC784T6BFC/71o1X6h6jaL._UF1000%2C1000_QL80_.jpg"
+  },
+  "sun-ra-and-his-intergalactic-research-arkestra-planets-of-life-or-death-amiens-73": {
+    "src": "/images/recovered/sun-ra-and-his-intergalactic-research-arkestra-planets-of-life-or-death-amiens-73.webp",
+    "alt": "Artwork or image associated with Sun Ra & His Intergalactic Research Arkestra — Planets Of Life Or Death: Amiens ’73",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703855042624-PBFWM6F8L6EPTXX7WD0D/a0089314253_10.jpg"
+  },
+  "the-necks-cafe-oto-london-uk": {
+    "src": "/images/recovered/the-necks-cafe-oto-london-uk.webp",
+    "alt": "Artwork or image associated with The Necks @ Cafe Oto (London, UK)",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704017943894-DYTHE7R4L9PQLFK04M9Q/9a8b8ddd26d4852b25dd02bf2a0a2.jpg"
+  },
+  "george-harrison-the-apple-years-1968-75-box-set": {
+    "src": "/images/recovered/george-harrison-the-apple-years-1968-75-box-set.webp",
+    "alt": "Artwork or image associated with George Harrison — The Apple Years 1968–75",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703951954189-LEAOMJUX2QWIBYIEA6TC/universal-music-group1.jpg"
+  },
+  "pink-floyd-the-division-bell-20th-anniversary-deluxe-edition": {
+    "src": "/images/recovered/pink-floyd-the-division-bell-20th-anniversary-deluxe-edition.webp",
+    "alt": "Artwork or image associated with Pink Floyd — The Division Bell (20th Anniversary Deluxe Edition)",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703953221670-HLVYTK7HGCPYI01W1HAN/61Chksg8MRL._UF1000%2C1000_QL80_.jpg"
+  },
+  "jaga-jazzist-starfire": {
+    "src": "/images/recovered/jaga-jazzist-starfire.webp",
+    "alt": "Artwork or image associated with Jaga Jazzist — Starfire",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704014636285-D157LLPKHEHPEXY7M6BY/Starfire_%28Jaga_Jazzist_album%29.jpg"
+  },
+  "polar-bear-same-as-you": {
+    "src": "/images/recovered/polar-bear-same-as-you.webp",
+    "alt": "Artwork or image associated with Polar Bear — Same As You",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703861977500-TPUP0S4CS9BY5R694IVY/Polar_bear_same_as_you_album_cover.jpg"
+  },
+  "francesco-nastro-trio-colors-of-light": {
+    "src": "/images/recovered/francesco-nastro-trio-colors-of-light.webp",
+    "alt": "Artwork or image associated with Francesco Nastro Trio — Colors of Light",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704015019762-GWN96MJ5EWTFHET3J07U/81%2B3DFk2xzL._UF1000%2C1000_QL80_.jpg"
+  },
+  "the-remote-viewers-pitfall": {
+    "src": "/images/recovered/the-remote-viewers-pitfall.webp",
+    "alt": "Artwork or image associated with The Remote Viewers — Pitfall",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704014842189-TZIR2GNA9VBEQ9Z6GKVB/a1795627586_10.jpg"
+  },
+  "zu-cortar-todo": {
+    "src": "/images/recovered/zu-cortar-todo.webp",
+    "alt": "Artwork or image associated with Zu — Cortar Todo",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703862389675-PQGQOB1U8GJYAN2FN4W2/91NtifOUwUL._UF1000%2C1000_QL80_.jpg"
+  },
+  "contretemps-pronouncement": {
+    "src": "/images/recovered/contretemps-pronouncement.webp",
+    "alt": "Artwork or image associated with Contretemps — Pronouncement",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703862590678-AG5BMATZ9D59AATBEJIA/41h7bprsM0L._UXNaN_FMjpg_QL85_.jpg"
+  },
+  "match-and-fuse-festival-at-rich-mix-3-october-2014": {
+    "src": "/images/recovered/match-and-fuse-festival-at-rich-mix-3-october-2014.webp",
+    "alt": "Artwork or image associated with Match & Fuse Festival: 3 October 2014 (London, UK)",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703952571432-1987LQZBA8GR7YEU6X7Z/img-44206.jpg"
+  },
+  "chris-brokaw-now-forager-ost": {
+    "src": "/images/recovered/chris-brokaw-now-forager-ost.webp",
+    "alt": "Artwork or image associated with Chris Brokaw - “Now, Forager OST”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703954821984-YW0MTFAGZ5MFENBBAJXU/1200x1200bf-60.jpg"
+  },
+  "boris-noise": {
+    "src": "/images/recovered/boris-noise.webp",
+    "alt": "Artwork or image associated with Boris - “Noise”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703954388748-NRSGUEVOWST69HG0TFC0/Boris_-_Noise_%28Japanese_Release%29.jpg"
+  },
+  "fennesz-becs": {
+    "src": "/images/recovered/fennesz-becs.webp",
+    "alt": "Artwork or image associated with Fennesz – “Bécs”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703954628154-RC224107R4Y624L3F8QS/Fennesz_-_Be%CC%81cs.jpg"
+  },
+  "ulver-messe-i-x-vi-x-indieforbunnies": {
+    "src": "/images/recovered/ulver-messe-i-x-vi-x-indieforbunnies.webp",
+    "alt": "Artwork or image associated with Ulver Messe - “I.X-VI.X”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704019540284-DRT01DTF23RBW1FQOLO3/Ulver_Messe_I.X-VI.X_cover.jpg"
+  },
+  "the-remote-viewers-crimeways": {
+    "src": "/images/recovered/the-remote-viewers-crimeways.webp",
+    "alt": "Artwork or image associated with The Remote Viewers - “Crimeways”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704015254258-STH57DBFETB9K7Y9RATT/600x600bf-60.jpg"
+  },
+  "mayhem-esoteric-warfare": {
+    "src": "/images/recovered/mayhem-esoteric-warfare.webp",
+    "alt": "Artwork or image associated with Mayhem — Esoteric Warfare",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703955137941-QA9ICSGGA9WK21RQOCBT/mayhem-Esoteric-Warfare-2014-500x500.jpg"
+  },
+  "dave-porter-breaking-bad-ost": {
+    "src": "/images/recovered/dave-porter-breaking-bad-ost.webp",
+    "alt": "Artwork or image associated with Dave Porter — Breaking Bad OST",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703955417840-OZ4Z2A0Y32N6246USWHR/ab67616d0000b2732aabcf79e0240e36f95877b5.jpeg"
+  },
+  "horseback-piedmont-apocrypha": {
+    "src": "/images/recovered/horseback-piedmont-apocrypha.webp",
+    "alt": "Artwork or image associated with Horseback — Piedmont Apocrypha",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703955661414-HBLB6GIOBZIMKPAEQ4CC/a3581755759_65.jpeg"
+  },
+  "ulver-messe-i-x-vi-x-angry-metal-guy": {
+    "src": "/images/recovered/ulver-messe-i-x-vi-x-angry-metal-guy.webp",
+    "alt": "Artwork or image associated with Ulver – “Messe I.X–VI.X”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704021687761-GKHYES90QEGHUNB0JLEX/Ulver_Messe_I.X-VI.X_cover.jpg"
+  },
+  "ulver-messe-i-x-vi-x-the-quietus": {
+    "src": "/images/recovered/ulver-messe-i-x-vi-x-the-quietus.webp",
+    "alt": "Artwork or image associated with Ulver - “MESSE I.X–VI.X”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703956937150-W64VPFX5BABFX8G294XF/Ulver_Messe_I.X-VI.X_cover.jpg"
+  },
+  "slint-at-the-hmv-forum-london-03-12-13": {
+    "src": "/images/recovered/slint-at-the-hmv-forum-london-03-12-13.webp",
+    "alt": "Artwork or image associated with Slint live @ The Forum (London, UK)",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703957380778-CM6MCDMLGCZWITEIA625/20131203-20131203-_MG_1155-2_1386260825_crop_550x367.jpg"
+  },
+  "piano-interrupted-the-unified-field": {
+    "src": "/images/recovered/piano-interrupted-the-unified-field.webp",
+    "alt": "Artwork or image associated with Piano Interrupted - “The Unified Field”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703957628916-G9U1OP02EUN2TNS3ABW0/piano_interupted_unified_grande.jpeg"
+  },
+  "shellac-live-at-netil-house-london": {
+    "src": "/images/recovered/shellac-live-at-netil-house-london.webp",
+    "alt": "Artwork or image associated with Shellac live @ Netil House (London, UK)",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703957862058-JNTM3L5N1LSMZZEROWEX/shellac3_1385751883_crop_550x367.jpg"
+  },
+  "melt-yourself-down-at-the-new-empowering-church-londra-29-11-13": {
+    "src": "/images/recovered/melt-yourself-down-at-the-new-empowering-church-londra-29-11-13.webp",
+    "alt": "Artwork or image associated with Melt Yourself Down & Flamingods @ The New Empowering Church (London, UK)",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704037774192-TJHZYJW61LS6RRQ963LA/melt-yourself-down-20200327070018.jpg"
+  },
+  "charlemagne-palestine-z-ev-rubhitbangklanghear-rubhitbangklangear": {
+    "src": "/images/recovered/charlemagne-palestine-z-ev-rubhitbangklanghear-rubhitbangklangear.webp",
+    "alt": "Artwork or image associated with Charlemagne Palestine / Z'ev – “RUBHITBANGKLANGHEAR/ RUBHITBANGKLANGEAR”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1703958118038-7XETAXZ3CRZPD78ONP8S/a1316056171_10.jpg"
+  },
+  "the-golden-circle-the-golden-circle": {
+    "src": "/images/recovered/the-golden-circle-the-golden-circle.webp",
+    "alt": "Artwork or image associated with The Golden Circle - “The Golden Circle”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704032431703-GWW7SXT0KN9U4CLHK4D9/51dA3ryJ4ML_1384341212.jpg"
+  },
+  "the-body-christs-redeemers": {
+    "src": "/images/recovered/the-body-christs-redeemers.webp",
+    "alt": "Artwork or image associated with The Body - “Christs, Redeemers”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704031900496-EH92SN4UAX8292G4HU0U/a4015257588_65.jpg"
+  },
+  "mamiffer-circle-enharmonic-intervals-for-paschen-organ": {
+    "src": "/images/recovered/mamiffer-circle-enharmonic-intervals-for-paschen-organ.webp",
+    "alt": "Artwork or image associated with Mamiffer & Circle – “Enharmonic Intervals (for Paschen Organ)”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704021503153-LT4DB7BPFQNN4Y9SXGRQ/Mamiffer-Circle-Enharmonic-Intervals-Artwork.jpg"
+  },
+  "nine-inch-nails-hesitation-marks": {
+    "src": "/images/recovered/nine-inch-nails-hesitation-marks.webp",
+    "alt": "Artwork or image associated with Nine Inch Nails - “Hesitation Marks”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704034355539-J2M5P4UN97TKV6JSBOC8/81sr0CzzmrL._UF1000%2C1000_QL80_.jpg"
+  },
+  "grumbling-fur-glynnaestra": {
+    "src": "/images/recovered/grumbling-fur-glynnaestra.webp",
+    "alt": "Artwork or image associated with Grumbling Fur – “Glynnaestra”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704022162341-ZBEAP24GHJVSXJ9F6IM9/Grumbling-Fur_Glynnaestra.jpg"
+  },
+  "boards-of-canada-tomorrows-harvest": {
+    "src": "/images/recovered/boards-of-canada-tomorrows-harvest.webp",
+    "alt": "Artwork or image associated with Boards Of Canada - “Tomorrow’s Harvest”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704034160023-ZFB2ZBYJ9AOB4GKIZ8IJ/boccover.jpg"
+  },
+  "locrian-return-to-annihilation": {
+    "src": "/images/recovered/locrian-return-to-annihilation.webp",
+    "alt": "Artwork or image associated with Locrian – “Return to Annihilation”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704021251785-6MTX4SA3LQ9KZT2S70S5/locrian-returntoannihilation.jpg"
+  },
+  "einar-scheving-einar-scheving-land-mins-fodur": {
+    "src": "/images/recovered/einar-scheving-einar-scheving-land-mins-fodur.webp",
+    "alt": "Artwork or image associated with Einar Scheving - “Einar Scheving: Land Mins Fodur”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704015434270-GF2BNBU9YG9248V3D9IJ/Cover_LMF_2.png"
+  },
+  "the-heliocentrics-13-degrees-of-reality": {
+    "src": "/images/recovered/the-heliocentrics-13-degrees-of-reality.webp",
+    "alt": "Artwork or image associated with The Heliocentrics - “13 Degrees Of Reality”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704035007993-Q01GWGEMGWN800C70QUG/ab67616d0000b27301f6aea5b0cd8bb9a52080e8.jpg"
+  },
+  "c-r-o-w-n-psychurgy": {
+    "src": "/images/recovered/c-r-o-w-n-psychurgy.webp",
+    "alt": "Artwork or image associated with CROWN – “Psychurgy”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704030044300-WAAQX5QT3421VFBNMOP9/CrownPsychurgyalbumcoverartworkpackshot400pxThrashHits.jpg"
+  },
+  "the-shak-and-speares-gagster": {
+    "src": "/images/recovered/the-shak-and-speares-gagster.webp",
+    "alt": "Artwork or image associated with The Shak & Speares - “Gagster”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704033231481-MCD8CWS1T5S212HXKB6Y/The-Shak-Speares-Gagster_1364842693.jpg"
+  },
+  "wormed-exodromos": {
+    "src": "/images/recovered/wormed-exodromos.webp",
+    "alt": "Artwork or image associated with Wormed - “Exodromos\"",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704019903859-KLFIK149KB5DOC3VM82F/Wormed-Exodromos.jpg"
+  },
+  "philip-h-anselmo-warbeast-war-of-the-gargantuas": {
+    "src": "/images/recovered/philip-h-anselmo-warbeast-war-of-the-gargantuas.webp",
+    "alt": "Artwork or image associated with Philip H. Anselmo/ Warbeast – “War of the Gargantuas” EP",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704030213454-FPV9OS47MIU2ZO7ADR9J/War-of-the-Gargantuas.jpg"
+  },
+  "steven-wilson-the-raven-that-refused-to-sing-and-other-stories": {
+    "src": "/images/recovered/steven-wilson-the-raven-that-refused-to-sing-and-other-stories.webp",
+    "alt": "Artwork or image associated with Steven Wilson – “The Raven that Refused to Sing (and Other Stories)”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704020429315-O36HL89R319RRU0AO62D/Steven-Wilscon-TRtRtSaOS.jpg"
+  },
+  "kongh-sole-creation": {
+    "src": "/images/recovered/kongh-sole-creation.webp",
+    "alt": "Artwork or image associated with Kongh – “Sole Creation”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704029833903-LTXX3JWAMQ124A2OQEJ5/kongh-sole-creation.jpg"
+  },
+  "fabrizio-sferra-quartet-untitled-28": {
+    "src": "/images/recovered/fabrizio-sferra-quartet-untitled-28.webp",
+    "alt": "Artwork or image associated with Fabrizio Sferra Quartet - “Untitled #28”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704015624134-WCRHXMKCM69F1DUHI2PZ/51PCUs38yPL._UF1000%2C1000_QL80_.jpg"
+  },
+  "tomahawk-oddfellows": {
+    "src": "/images/recovered/tomahawk-oddfellows.webp",
+    "alt": "Artwork or image associated with Tomahawk – “Oddfellows”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704023640199-Z25ATV8TT82T3H6YZ6B9/Tomahawks_album_-Oddfellows-500.jpg"
+  },
+  "cult-of-luna-vertikal": {
+    "src": "/images/recovered/cult-of-luna-vertikal.webp",
+    "alt": "Artwork or image associated with Cult of Luna – “Vertikal”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704020852060-LF5JXQEP86Y369XVRGLN/Cult-of-Luna-Vertikal.jpg"
+  },
+  "neurosis-honor-found-in-decay": {
+    "src": "/images/recovered/neurosis-honor-found-in-decay.webp",
+    "alt": "Artwork or image associated with Neurosis – “Honor Found In Decay”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704022897423-PQHJY5MLV57WVQ7A6PD8/Neurosis_honor_found_in_decay.jpg"
+  },
+  "anglagard-viljans-oga": {
+    "src": "/images/recovered/anglagard-viljans-oga.webp",
+    "alt": "Artwork or image associated with Änglagård - \"Viljans Öga\"",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704015963305-EU4Q5B3MSQULAIHKOFQT/cover_54581342017_r.jpeg"
+  },
+  "matteo-fraboni-quintet-this-is-my-music": {
+    "src": "/images/recovered/matteo-fraboni-quintet-this-is-my-music.webp",
+    "alt": "Artwork or image associated with Matteo Fraboni Quintet - “This is My Music”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704016152172-QPKS8QEZ23K1GMTRZGSF/matteofraboni.jpg"
+  },
+  "vision-of-disorder-the-cursed-remain-cursed": {
+    "src": "/images/recovered/vision-of-disorder-the-cursed-remain-cursed.webp",
+    "alt": "Artwork or image associated with Vision of Disorder – “The Cursed Remain Cursed”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704023237086-GVHDOMVMAISNMJLS2VA3/Vision-of-Disorder.jpg"
+  },
+  "the-remote-viewers-city-of-nets": {
+    "src": "/images/recovered/the-remote-viewers-city-of-nets.webp",
+    "alt": "Artwork or image associated with The Remote Viewers - “City Of Nets”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704016318309-ZNHTKTXBRWR4N0JVXHFU/71zwDb8yG-L._UF894%2C1000_QL80_.jpg"
+  },
+  "rex-shachath-sepulchral-torment": {
+    "src": "/images/recovered/rex-shachath-sepulchral-torment.webp",
+    "alt": "Artwork or image associated with Rex Shachath – “Sepulchral Torment”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704023081233-1XL459SUUZOC7YV7PT1K/Rex-Shachath-Sepulchral-Torment.jpg"
+  },
+  "cryptopsy-cryptopsy": {
+    "src": "/images/recovered/cryptopsy-cryptopsy.webp",
+    "alt": "Artwork or image associated with Cryptopsy - “Cryptopsy”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704020606864-27WP2TAJ7YU9LQVGTD7H/cryptopsy-2012.jpg"
+  },
+  "an-autumn-for-crippled-children-only-the-ocean-knows": {
+    "src": "/images/recovered/an-autumn-for-crippled-children-only-the-ocean-knows.webp",
+    "alt": "Artwork or image associated with An Autumn for Crippled Children – “Only the Ocean Knows”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704021870922-P36V4IONQRX8WOSMBEF9/OTOK_BIG.jpg"
+  },
+  "beak-beak": {
+    "src": "/images/recovered/beak-beak.webp",
+    "alt": "Artwork or image associated with Beak  - “>>”",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704034516508-LF91SE4ZE5WOZJ7XTPN9/a3856040600_10.jpg"
+  },
+  "__homeHero": {
+    "src": "/images/recovered/home-hero.webp",
+    "alt": "",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/7d580778-c1f9-45d0-b073-ce2166a984b4/IMG_2633.jpeg"
+  }
+}
