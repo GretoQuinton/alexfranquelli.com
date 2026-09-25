@@ -57,7 +57,7 @@ for(const path of paths){
   const originalUrl=field(fm[1],'originalUrl');
   if(!originalUrl) continue;
   items.push({
-    file:relative(new URL('../',root).pathname,path),
+    file:relative(root,path),
     slug:field(fm[1],'slug'),
     title:field(fm[1],'title'),
     publication:field(fm[1],'publication'),
