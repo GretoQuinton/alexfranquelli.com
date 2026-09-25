@@ -72,6 +72,18 @@ content:
       - name: printedPages
         label: Printed page(s)
         type: string
+      - name: image
+        label: Editorial image
+        type: image
+      - name: imageAlt
+        label: Image alt text
+        type: string
+      - name: imageCredit
+        label: Image credit
+        type: string
+      - name: imageSourceUrl
+        label: Image source URL
+        type: string
       - name: cover
         label: Magazine cover
         type: image
