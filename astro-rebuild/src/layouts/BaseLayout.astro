@@ -32,7 +32,8 @@ const personJsonLd = JSON.stringify({
   <meta name="viewport" content="width=device-width" />
   <meta name="description" content={description} />
   <meta name="theme-color" content="#f1eee6" />
-  <meta name="robots" content="index,follow" />
+  <!-- PRE-LAUNCH: switch to index,follow when alexfranquelli.com points here. -->
+  <meta name="robots" content="noindex,nofollow" />
   <link rel="canonical" href={canonical} />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <meta property="og:type" content={type} />
@@ -65,7 +66,7 @@ const personJsonLd = JSON.stringify({
   <div class="wrap footer-grid">
     <div>
       <div class="footer-name">Alex Franquelli</div>
-      <p>Writing on music, politics and culture.<br />Rome / London.</p>
+      <p>Writing on music, politics and culture.<br />Rome.</p>
     </div>
     <div class="footer-links">
       <a href="/writing">Writing archive</a>
@@ -73,8 +74,8 @@ const personJsonLd = JSON.stringify({
       <a href="/fiction">Fiction</a>
     </div>
     <div class="footer-links footer-contact">
-      <a href="mailto:alexfranquelli@gmail.com">alexfranquelli@gmail.com</a>
-      <a href="https://uk.linkedin.com/in/alexfranquelli" rel="me">LinkedIn ↗</a>
+      <a href="/contact">Contact</a>
+      <a href="https://uk.linkedin.com/in/alexfranquelli" rel="me noopener">LinkedIn ↗</a>
     </div>
   </div>
   <div class="wrap footer-bottom">© {new Date().getFullYear()} Alex Franquelli</div>
