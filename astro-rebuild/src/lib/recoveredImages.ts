@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
+// Preserved local assets are preferred; source-manifest URLs remain a recovery fallback.
 type ImageRecord={src:string;alt:string;sourceUrl?:string};
 
 const csvFiles=[
