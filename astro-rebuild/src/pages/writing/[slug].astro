@@ -30,7 +30,7 @@ const articleJsonLd=JSON.stringify({
   isBasedOn:d.originalUrl||undefined
 });
 ---
-<BaseLayout title={d.title+' — Alex Franquelli'} description={d.description||`${d.title}, by Alex Franquelli.`} lang={lang} type="article" jsonLd={articleJsonLd}>
+<BaseLayout title={d.title+' — Alex Franquelli'} description={d.description||`${d.title}, by Alex Franquelli.`} lang={lang} type="article" image={imageUrl} jsonLd={articleJsonLd}>
 <article class="article" data-pagefind-body>
   <a class="back-link" href="/writing">← Writing archive</a>
   <header class="article-header">
