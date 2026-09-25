@@ -11,6 +11,7 @@ const dated=writing.map(a=>a.data.publicationDate).filter(Boolean) as string[];
 const years=dated.map(d=>Number(d.slice(0,4))).filter(Boolean);
 const span=years.length?`${Math.min(...years)}—${Math.max(...years)}`:'Two decades';
 const publications=new Set(writing.map(a=>a.data.publication).filter(Boolean));
+const heroImage='https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/7d580778-c1f9-45d0-b073-ce2166a984b4/IMG_2633.jpeg';
 ---
 <BaseLayout description="Alex Franquelli is a writer based between Rome and London. Browse reviews, interviews and features on music, politics and culture.">
 <section class="hero wrap">
@@ -28,6 +29,9 @@ const publications=new Set(writing.map(a=>a.data.publication).filter(Boolean));
       </div>
     </div>
   </div>
+  <figure class="hero-media">
+    <img src={heroImage} alt="" aria-hidden="true" loading="eager" fetchpriority="high" />
+  </figure>
   <div class="stats" aria-label="Archive at a glance">
     <div><strong>{writing.length}</strong><span>pieces online</span></div>
     <div><strong>{span}</strong><span>published work</span></div>
@@ -44,6 +48,7 @@ const publications=new Set(writing.map(a=>a.data.publication).filter(Boolean));
   <div class="featured-grid">
     {lead.map((a,i) => <article class="feature-card">
       <a class="feature-card-link" href={'/writing/'+a.data.slug}>
+        {a.data.image&&<img class="feature-image" src={a.data.image} alt={a.data.imageAlt||''} loading="lazy" />}
         <div class="feature-index">0{i+1}</div>
         <div class="feature-meta"><span>{a.data.publication||'Archive'}</span><span>{a.data.displayDate||a.data.publicationDate||''}</span></div>
         <h3>{a.data.title}</h3>
