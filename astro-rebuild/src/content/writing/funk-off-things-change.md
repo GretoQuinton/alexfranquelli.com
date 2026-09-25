@@ -1,7 +1,7 @@
 ---
 title: "Funk Off - Things Change"
 slug: "funk-off-things-change"
-publication: "AllAboutJazz"
+publication: "All About Jazz"
 publicationDate: "2015-10-15"
 displayDate: "2015-10-15"
 language: "English"
