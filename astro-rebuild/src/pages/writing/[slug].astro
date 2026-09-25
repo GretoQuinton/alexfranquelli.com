@@ -2,12 +2,14 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
 import { getRecoveredImage } from '../../lib/recoveredImages';
+import { auditedOriginalStatus } from '../../data/auditedLinkStates';
 const sortDate=(value?:string)=>value ? (Date.parse(value.length===4?`${value}-01-01`:value.length===7?`${value}-01`:value)||0) : 0;
 export async function getStaticPaths(){const writing=await getCollection('writing',({data})=>!data.draft);return writing.map(article=>({params:{slug:article.data.slug},props:{article}}))}
 const { article }=Astro.props;
 const { Content }=await render(article);
 const d=article.data;
 const resolvedImage=d.image?{src:d.image,alt:d.imageAlt||''}:getRecoveredImage(d.slug,d.title);
+const originalStatus=d.originalUrlStatus||auditedOriginalStatus(d.slug);
 const writing=(await getCollection('writing',({data})=>!data.draft)).sort((a,b)=>sortDate(b.data.publicationDate)-sortDate(a.data.publicationDate));
 const currentIndex=writing.findIndex(a=>a.data.slug===d.slug);
 const newer=currentIndex>0?writing[currentIndex-1]:null;
@@ -43,10 +45,10 @@ const articleJsonLd=JSON.stringify({
       <div><span>Language</span><strong>{d.language}</strong></div>
       {d.byline&&<div><span>Byline</span><strong>{d.byline}</strong></div>}
     </div>
-    {d.originalUrlStatus==='live'&&d.originalUrl&&<a class="original-link" href={d.originalUrl} rel="noopener">View original publication ↗</a>}
-    {d.originalUrlStatus==='dead'&&d.archiveUrl&&<a class="original-link" href={d.archiveUrl} rel="noopener">View archived publication ↗</a>}
-    {d.originalUrlStatus==='dead'&&!d.archiveUrl&&<p class="original-note">The original publication is no longer online.</p>}
-    {!d.originalUrlStatus&&d.originalUrl&&<a class="original-link" href={d.originalUrl} rel="noopener">View original publication ↗</a>}
+    {originalStatus==='live'&&d.originalUrl&&<a class="original-link" href={d.originalUrl} rel="noopener">View original publication ↗</a>}
+    {originalStatus==='dead'&&d.archiveUrl&&<a class="original-link" href={d.archiveUrl} rel="noopener">View archived publication ↗</a>}
+    {originalStatus==='dead'&&!d.archiveUrl&&<p class="original-note">The original publication is no longer online.</p>}
+    {!originalStatus&&d.originalUrl&&<a class="original-link" href={d.originalUrl} rel="noopener">View original publication ↗</a>}
     {(!d.publicationDate||!d.publication)&&<p class="verification-note">Some archive metadata is still being verified. <a href="/contact">Corrections are welcome.</a></p>}
   </header>
   {resolvedImage&&<figure class="article-image">
