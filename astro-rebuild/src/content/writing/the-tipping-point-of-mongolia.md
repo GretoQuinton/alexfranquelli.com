@@ -1,7 +1,7 @@
 ---
 title: "The tipping point of Mongolia"
 slug: "the-tipping-point-of-mongolia"
-publication: "Open Democracy"
+publication: "openDemocracy"
 publicationDate: "2013-10-09"
 displayDate: "9 October 2013"
 language: "English"
