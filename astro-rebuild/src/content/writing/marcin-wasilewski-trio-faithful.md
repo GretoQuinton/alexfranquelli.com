@@ -7,6 +7,8 @@ displayDate: "14 November 2011"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
+image: "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704031498926-7PVM3CUVO00HVFY6C1D0/Faithful_%28Marcin_Wasilewski_album%29.jpg"
+imageAlt: "Artwork or image associated with Marcin Wasilewski Trio - “Faithfull”"
 featured: false
 draft: false
 ---
