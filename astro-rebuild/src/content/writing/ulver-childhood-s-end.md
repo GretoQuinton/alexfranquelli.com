@@ -5,6 +5,8 @@ publication: "Ritual"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
+image: "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704034678783-E23KDEKDNJCRZD7FYOIQ/Childhood%27s_End_%28album%29.jpg"
+imageAlt: "Artwork or image associated with Ulver - “Childhood’s End”"
 featured: false
 draft: false
 ---

@@ -1,18 +1,20 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
+import { getRecoveredImage } from '../../lib/recoveredImages';
 const sortDate=(value?:string)=>value ? (Date.parse(value.length===4?`${value}-01-01`:value.length===7?`${value}-01`:value)||0) : 0;
 export async function getStaticPaths(){const writing=await getCollection('writing',({data})=>!data.draft);return writing.map(article=>({params:{slug:article.data.slug},props:{article}}))}
 const { article }=Astro.props;
 const { Content }=await render(article);
 const d=article.data;
+const resolvedImage=d.image?{src:d.image,alt:d.imageAlt||''}:getRecoveredImage(d.slug,d.title);
 const writing=(await getCollection('writing',({data})=>!data.draft)).sort((a,b)=>sortDate(b.data.publicationDate)-sortDate(a.data.publicationDate));
 const currentIndex=writing.findIndex(a=>a.data.slug===d.slug);
 const newer=currentIndex>0?writing[currentIndex-1]:null;
 const older=currentIndex>=0&&currentIndex<writing.length-1?writing[currentIndex+1]:null;
 const lang=d.language==='Italian'?'it':'en';
 const canonical=new URL('/writing/'+d.slug, Astro.site).toString();
-const imageUrl=d.image?new URL(d.image, Astro.site).toString():undefined;
+const imageUrl=resolvedImage?new URL(resolvedImage.src, Astro.site).toString():undefined;
 const articleJsonLd=JSON.stringify({
   '@context':'https://schema.org',
   '@type':'Article',
@@ -28,7 +30,7 @@ const articleJsonLd=JSON.stringify({
   isBasedOn:d.originalUrl||undefined
 });
 ---
-<BaseLayout title={d.title+' — Alex Franquelli'} description={d.description||`${d.title}, by Alex Franquelli.`} lang={lang} type="article" jsonLd={articleJsonLd}>
+<BaseLayout title={d.title+' — Alex Franquelli'} description={d.description||`${d.title}, by Alex Franquelli.`} lang={lang} type="article" image={imageUrl} jsonLd={articleJsonLd}>
 <article class="article" data-pagefind-body>
   <a class="back-link" href="/writing">← Writing archive</a>
   <header class="article-header">
@@ -47,8 +49,8 @@ const articleJsonLd=JSON.stringify({
     {!d.originalUrlStatus&&d.originalUrl&&<a class="original-link" href={d.originalUrl} rel="noopener">View original publication ↗</a>}
     {(!d.publicationDate||!d.publication)&&<p class="verification-note">Some archive metadata is still being verified. <a href="/contact">Corrections are welcome.</a></p>}
   </header>
-  {d.image&&<figure class="article-image">
-    <img src={d.image} alt={d.imageAlt||''} loading="eager" fetchpriority="high" />
+  {resolvedImage&&<figure class="article-image">
+    <img src={resolvedImage.src} alt={resolvedImage.alt} loading="eager" fetchpriority="high" />
     {(d.imageCredit||d.imageSourceUrl)&&<figcaption>
       {d.imageCredit&&<span>{d.imageCredit}</span>}
       {d.imageSourceUrl&&<a href={d.imageSourceUrl}>Image source ↗</a>}

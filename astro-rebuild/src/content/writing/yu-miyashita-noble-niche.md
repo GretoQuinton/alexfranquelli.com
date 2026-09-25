@@ -7,6 +7,8 @@ displayDate: "2011-11-17"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
+image: "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704033079637-DUNQFYAO2NT621Y03LBM/yumiyashita_nobleniche_1321293697.jpg"
+imageAlt: "Artwork or image associated with Yu Miyashita - “Noble Niche”"
 featured: false
 draft: false
 ---

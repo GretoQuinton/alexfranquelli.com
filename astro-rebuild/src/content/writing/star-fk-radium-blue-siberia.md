@@ -7,6 +7,8 @@ displayDate: "2011-11-21"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
+image: "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704032915455-ABREOW34AWQBANRHPNVY/star_fk_radium_blue_siberia_1308672950.jpg"
+imageAlt: "Artwork or image associated with Star FK Radium - “Blue Siberia”"
 featured: false
 draft: false
 ---
