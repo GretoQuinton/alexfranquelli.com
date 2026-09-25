@@ -5,6 +5,7 @@ const {
   description='Writing on music, politics and culture by Alex Franquelli.',
   lang='en',
   type='website',
+  image=null,
   jsonLd=null
 }=Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -42,7 +43,9 @@ const personJsonLd = JSON.stringify({
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonical} />
-  <meta name="twitter:card" content="summary" />
+  {image&&<meta property="og:image" content={image} />}
+  <meta name="twitter:card" content={image?'summary_large_image':'summary'} />
+  {image&&<meta name="twitter:image" content={image} />}
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
   <script type="application/ld+json" set:html={personJsonLd}></script>
