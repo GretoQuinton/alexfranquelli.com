@@ -8,7 +8,9 @@ export async function getStaticPaths(){const writing=await getCollection('writin
 const { article }=Astro.props;
 const { Content }=await render(article);
 const d=article.data;
-const resolvedImage=d.image?{src:d.image,alt:d.imageAlt||''}:getRecoveredImage(d.slug,d.title);
+const recoveredImage=getRecoveredImage(d.slug,d.title);
+const explicitImage=d.image?{src:d.image,alt:d.imageAlt||''}:null;
+const resolvedImage=d.image&&!d.image.includes('squarespace-cdn.com')?explicitImage:(recoveredImage||explicitImage);
 const originalStatus=d.originalUrlStatus||auditedOriginalStatus(d.slug);
 const writing=(await getCollection('writing',({data})=>!data.draft)).sort((a,b)=>sortDate(b.data.publicationDate)-sortDate(a.data.publicationDate));
 const currentIndex=writing.findIndex(a=>a.data.slug===d.slug);

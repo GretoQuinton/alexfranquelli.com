@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-type ImageRecord={src:string;alt:string};
+type ImageRecord={src:string;alt:string;sourceUrl?:string};
 
 const csvFiles=[
   '../research/squarespace-final-page-recovery.csv',
@@ -34,6 +34,10 @@ function parseCSV(input:string){
 
 const normalise=(value:string)=>
   (value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'');
+
+const localManifestPath=resolve(process.cwd(),'src/data/recovered-images.json');
+let localManifest:Record<string,ImageRecord>={};
+try{localManifest=JSON.parse(readFileSync(localManifestPath,'utf8'));}catch{}
 
 const redirectsText=readFileSync(resolve(process.cwd(),'public/_redirects'),'utf8');
 const legacyToSlug=new Map<string,string>();
@@ -76,7 +80,7 @@ for(const [key,records] of byTitleCandidates){
 }
 
 export function getRecoveredImage(slug:string,title:string):ImageRecord|null{
-  return bySlug.get(slug)||byTitle.get(normalise(title))||null;
+  return localManifest[slug]||bySlug.get(slug)||byTitle.get(normalise(title))||null;
 }
 
-export const recoveredImageCount=bySlug.size;
+export const recoveredImageCount=Object.keys(localManifest).length||bySlug.size;
