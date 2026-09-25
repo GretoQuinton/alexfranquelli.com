@@ -7,6 +7,8 @@ displayDate: "2011-11-09"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
+image: "https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/1704032756064-5V7DWAKYGQD20RLG9OP8/dennis_rea_1320403580.jpg"
+imageAlt: "Artwork or image associated with Dennis Rea - “Views From Chicheng Precipice”"
 featured: false
 draft: false
 ---
