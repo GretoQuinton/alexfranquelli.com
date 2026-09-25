@@ -106,15 +106,21 @@ h2,h3{line-height:1}
 .archive-header h1{font-size:clamp(78px,12vw,154px);margin:16px 0 24px}
 .archive-intro{max-width:760px;margin:0;font-family:var(--serif);font-size:25px;line-height:1.35;color:var(--muted)}
 .archive-section{padding:34px 0 88px}
-.archive-tools{display:grid;grid-template-columns:minmax(300px,1fr) 2fr;gap:20px;align-items:start;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.archive-tools{display:grid;grid-template-columns:minmax(280px,1fr) minmax(0,1.7fr);gap:18px 20px;align-items:end;padding-bottom:28px;border-bottom:1px solid var(--line)}
 .search-wrap{position:relative;display:block}
+.archive-selects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.archive-selects label>span{display:block;margin-bottom:6px;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.11em}
+.archive-selects select{width:100%;height:46px;border:1px solid var(--line);border-radius:0;background:transparent;color:var(--ink);padding:0 34px 0 11px}
+.archive-selects select:focus{border-color:var(--ink);outline:3px solid var(--accent);outline-offset:2px}
 .search{width:100%;height:46px;padding:0 44px 0 14px;border:1px solid var(--ink);border-radius:0;background:transparent;color:var(--ink);outline:none}
 .search:focus{box-shadow:inset 0 0 0 1px var(--ink)}
 .search-mark{position:absolute;right:14px;top:8px;font-size:22px;color:var(--muted)}
-.filters{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+.filters{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-start;grid-column:1/-1}
 .filters button{min-height:36px;padding:0 11px;border:1px solid var(--line);background:transparent;font-size:10px;text-transform:uppercase;letter-spacing:.08em;cursor:pointer}
 .filters button:hover{border-color:var(--ink)}
 .filters button[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:var(--paper)}
+.clear-filters{justify-self:end;grid-column:2;background:transparent;border:0;padding:0;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.1em;text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+.clear-filters:hover{color:var(--accent)}
 .archive-status{padding:18px 0 5px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.12em}
 .empty-state{padding:50px 0;font-family:var(--serif);font-size:28px;color:var(--muted)}
 
@@ -197,7 +203,7 @@ h2,h3{line-height:1}
   .stats{grid-template-columns:1fr 1fr}.stats>div:nth-child(2){border-right:0}.stats>div:nth-child(-n+2){border-bottom:1px solid var(--line)}
   .featured-grid{grid-template-columns:1fr}.feature-card{border-right:0;border-bottom:1px solid var(--line)}.feature-card:last-child{border-bottom:0}.feature-card-link{min-height:280px}
   .now-grid{grid-template-columns:1fr}.now-grid>.text-link{justify-self:start}.statement-grid{grid-template-columns:1fr}.statement .button{justify-self:start}
-  .archive-tools{grid-template-columns:1fr}.filters{justify-content:flex-start}
+  .archive-tools{grid-template-columns:1fr}.archive-selects{grid-template-columns:repeat(3,1fr)}.filters{justify-content:flex-start}.clear-filters{grid-column:1;justify-self:start}
 }
 @media(max-width:700px){
   .wrap{width:min(100% - 32px,var(--max))}
@@ -210,7 +216,7 @@ h2,h3{line-height:1}
   .article-row{grid-template-columns:1fr auto;gap:5px 18px;padding:15px 0}.article-row a{grid-column:1/-1;font-size:20px}.article-row span:last-child{text-align:right}
   .now-section{padding:58px 0}.now-list>div{grid-template-columns:1fr;gap:5px}.statement{padding:58px 0}
   .archive-header{padding-top:50px}.archive-header h1{font-size:clamp(72px,22vw,112px)}.archive-intro{font-size:21px}
-  .filters{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;margin-right:-16px}.filters button{flex:none}
+  .archive-selects{grid-template-columns:1fr}.filters{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;margin-right:-16px}.filters button{flex:none}
   .article{width:min(100% - 32px,850px);padding-top:38px}.back-link{margin-bottom:42px}.article-header h1{font-size:clamp(36px,10vw,64px)}.article-deck{font-size:21px}
   .article-meta{grid-template-columns:1fr 1fr}.article-meta>div,.article-meta>div:nth-child(3n){border-right:1px solid var(--line)}.article-meta>div:nth-child(even){border-right:0}.article-meta>div:nth-child(n+3){border-top:1px solid var(--line)}
   .article-image{margin-bottom:38px}.article-image figcaption{flex-direction:column;gap:3px}
