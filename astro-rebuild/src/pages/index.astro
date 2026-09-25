@@ -15,13 +15,18 @@ const editorialSlugs=[
 const editorial=editorialSlugs.map(slug=>writing.find(a=>a.data.slug===slug)).filter(Boolean);
 const selected=[...editorial,...writing.filter(a=>!editorialSlugs.includes(a.data.slug))].slice(0,6);
 const lead=selected.slice(0,3);
-const leadCards=lead.map(article=>({article,image:article.data.image?{src:article.data.image,alt:article.data.imageAlt||''}:getRecoveredImage(article.data.slug,article.data.title)}));
+const leadCards=lead.map(article=>{
+  const recovered=getRecoveredImage(article.data.slug,article.data.title);
+  const explicit=article.data.image?{src:article.data.image,alt:article.data.imageAlt||''}:null;
+  const image=article.data.image&&!article.data.image.includes('squarespace-cdn.com')?explicit:(recovered||explicit);
+  return {article,image};
+});
 const archive=selected.slice(3);
 const dated=writing.map(a=>a.data.publicationDate).filter(Boolean) as string[];
 const years=dated.map(d=>Number(d.slice(0,4))).filter(Boolean);
 const span=years.length?`${Math.min(...years)}—${Math.max(...years)}`:'Two decades';
 const publications=new Set(writing.map(a=>a.data.publication?.trim().toLowerCase().replace(/[^a-z0-9]+/g,'')).filter(Boolean));
-const heroImage='https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/7d580778-c1f9-45d0-b073-ce2166a984b4/IMG_2633.jpeg';
+const heroImage=getRecoveredImage('__homeHero','')?.src||'https://images.squarespace-cdn.com/content/v1/658e990e3cae2759c6d9f2ff/7d580778-c1f9-45d0-b073-ce2166a984b4/IMG_2633.jpeg';
 ---
 <BaseLayout description="Alex Franquelli is a writer based between Rome and London. Browse reviews, interviews and features on music, politics and culture." image={heroImage}>
 <section class="hero wrap">
