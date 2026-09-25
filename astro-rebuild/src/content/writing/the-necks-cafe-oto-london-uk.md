@@ -1,7 +1,7 @@
 ---
 title: "The Necks @ Cafe Oto (London, UK)"
 slug: "the-necks-cafe-oto-london-uk"
-publication: "AllAboutJazz"
+publication: "All About Jazz"
 publicationDate: "2014-10-23"
 displayDate: "2014-10-23"
 language: "English"
