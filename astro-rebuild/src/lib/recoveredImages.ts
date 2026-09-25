@@ -1,15 +1,15 @@
 import { readFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
+import { resolve } from 'node:path';
 
 type ImageRecord={src:string;alt:string};
 
 const csvFiles=[
-  '../../../research/squarespace-final-page-recovery.csv',
-  '../../../research/squarespace-page-1-recovery.csv',
-  '../../../research/squarespace-page-2-recovery.csv',
-  '../../../research/squarespace-page-3-recovery.csv',
-  '../../../research/squarespace-page-4-recovery.csv',
-  '../../../research/squarespace-page-5-recovery.csv'
+  '../research/squarespace-final-page-recovery.csv',
+  '../research/squarespace-page-1-recovery.csv',
+  '../research/squarespace-page-2-recovery.csv',
+  '../research/squarespace-page-3-recovery.csv',
+  '../research/squarespace-page-4-recovery.csv',
+  '../research/squarespace-page-5-recovery.csv'
 ];
 
 function parseCSV(input:string){
@@ -35,7 +35,7 @@ function parseCSV(input:string){
 const normalise=(value:string)=>
   (value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'');
 
-const redirectsText=readFileSync(fileURLToPath(new URL('../../public/_redirects',import.meta.url)),'utf8');
+const redirectsText=readFileSync(resolve(process.cwd(),'public/_redirects'),'utf8');
 const legacyToSlug=new Map<string,string>();
 for(const line of redirectsText.split(/\n/)){
   const rule=line.trim();
@@ -49,7 +49,7 @@ const bySlug=new Map<string,ImageRecord>();
 const byTitleCandidates=new Map<string,ImageRecord[]>();
 
 for(const relative of csvFiles){
-  const text=readFileSync(fileURLToPath(new URL(relative,import.meta.url)),'utf8');
+  const text=readFileSync(resolve(process.cwd(),relative),'utf8');
   for(const record of parseCSV(text)){
     const image=(record.image||'').trim();
     if(!image) continue;
