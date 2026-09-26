@@ -2,6 +2,7 @@
 title: "Rhys Chatham + Ex Easter Island Head at Cafe Oto"
 slug: "rhys-chatham-ex-easter-island-head-at-cafe-oto"
 publication: "Ondarock"
+displayDate: "27 March 2011 (event date)"
 language: "Italian"
 type: "Live report"
 byline: "Alex Franquelli"
