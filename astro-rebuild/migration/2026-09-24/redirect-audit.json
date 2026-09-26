@@ -1,7 +1,7 @@
 {
-  "checkedOn": "2026-09-24",
-  "articleFiles": 368,
-  "generatedPages": 374,
+  "checkedOn": "2026-09-26",
+  "articleFiles": 383,
+  "generatedPages": 390,
   "redirectRules": 220,
   "legacyMappings": 110,
   "mappingsWithBuiltTargets": 79,
@@ -104,10 +104,6 @@
       "/portfolio/interview-with-mike-fleishmann-of-vision-of-disorder/",
       "/portfolio/interview-with-mike-fleishmann-of-vision-of-disorder"
     ],
-    "/writing/andy-stott-we-stay-together-doc": [
-      "/portfolio/andy-stott-we-stay-together/",
-      "/portfolio/andy-stott-we-stay-together"
-    ],
     "/writing/la-monte-youngmonografia": [
       "/portfolio/la-monte-youngmonografia/",
       "/portfolio/la-monte-youngmonografia"
@@ -131,7 +127,11 @@
     "/writing/mongolia-is-stability-the-new-challenge": [
       "/portfolio/mongolia-is-stability-the-new-challenge/",
       "/portfolio/mongolia-is-stability-the-new-challenge"
+    ],
+    "/writing/andy-stott-we-stay-together": [
+      "/portfolio/andy-stott-we-stay-together/",
+      "/portfolio/andy-stott-we-stay-together"
     ]
   },
-  "limitation": "Checks destination existence, not historical publication-version equivalence. Ulver Messe legacy paths were version-resolved from preserved Squarespace metadata on 2026-09-24. Horseback and Melt Yourself Down / Flamingods destinations are now built. No deployment performed."
+  "limitation": "Rechecked against current main-equivalent content on 2026-09-26: 383 article files, 390 generated pages, and 31 distinct missing legacy destinations. Destination existence is verified; historical publication-version equivalence is not inferred. Pending redirects remain commented until exact article bodies are built."
 }
