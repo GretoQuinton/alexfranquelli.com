@@ -2,6 +2,7 @@
 title: "Unknown Pleasures: The Life/Word of Ian Curtis and Joy Division"
 slug: "unknown-pleasures-report-da-macclesfield"
 publication: "Nerds Attack!"
+displayDate: "31 July 2010 (visit date)"
 language: "Italian"
 type: "Feature"
 featured: false
