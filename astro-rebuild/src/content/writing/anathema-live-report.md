@@ -1,6 +1,7 @@
 ---
 title: "Anathema live report"
 slug: "anathema-live-report"
+displayDate: "21 May 2010 (event date)"
 language: "Italian"
 type: "Live report"
 byline: "Alex Franquelli"
