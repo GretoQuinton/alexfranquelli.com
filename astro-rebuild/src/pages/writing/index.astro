@@ -104,7 +104,9 @@ q.value=params.get('q')||'';
 publication.value=params.get('publication')||'';
 language.value=params.get('lang')||'';
 decade.value=params.get('decade')||'';
-activeType=params.get('type')||'all';
+const requestedType=params.get('type')||'all';
+const allowedTypes=new Set(typeButtons.map(button=>button.dataset.filter));
+activeType=allowedTypes.has(requestedType)?requestedType:'all';
 typeButtons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.filter===activeType)));
 
 function normalisePath(value){
