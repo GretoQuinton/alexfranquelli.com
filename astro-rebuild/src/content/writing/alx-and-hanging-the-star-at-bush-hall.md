@@ -1,6 +1,7 @@
 ---
 title: "Alx and Hanging the Star at Bush Hall"
 slug: "alx-and-hanging-the-star-at-bush-hall"
+displayDate: "10 February 2012 (event date)"
 language: "English"
 type: "Live report"
 byline: "Alex Franquelli"
