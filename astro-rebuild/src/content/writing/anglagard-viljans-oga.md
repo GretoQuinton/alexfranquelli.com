@@ -7,6 +7,7 @@ displayDate: "2012-11-04"
 language: "English"
 type: "Review"
 originalUrl: "https://www.allaboutjazz.com/viljans-oga-anglagard-alvarsdotter-review-by-alex-franquelli"
+originalUrlStatus: "live"
 featured: false
 draft: false
 ---
