@@ -1,3 +1,4 @@
-# PRE-LAUNCH ONLY. Replace with Allow: / when the production domain points at this site.
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://www.alexfranquelli.com/sitemap.xml
