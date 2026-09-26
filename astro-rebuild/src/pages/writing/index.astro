@@ -55,8 +55,8 @@ const decades=[...new Set(writing.map(x=>{
       </label>
     </div>
     <div class="filters" aria-label="Filter by article type">
-      <button data-filter="all" aria-pressed="true">All formats</button>
-      {types.map(t=><button data-filter={t} aria-pressed="false">{t}</button>)}
+      <button type="button" data-filter="all" aria-pressed="true">All formats</button>
+      {types.map(t=><button type="button" data-filter={t} aria-pressed="false">{t}</button>)}
     </div>
     <button id="clear-filters" class="clear-filters" type="button">Clear filters</button>
   </div>
