@@ -63,3 +63,11 @@ After cutover:
 1. Submit `https://www.alexfranquelli.com/sitemap.xml` in Google Search Console.
 2. Monitor 404s and redirect failures.
 3. Cancel Squarespace only after the new domain has been stable and verified.
+
+## Project tracking
+
+- #55 — launch cutover checklist
+- #53 — final responsive and mobile QA
+- #54 — post-launch historical article recovery
+- #47 — production indexing switch; merge only during domain cutover
+- #52 — current Cloudflare review preview
