@@ -2,6 +2,7 @@
 title: "Overcoming the challenges of running multi-currency, multi-language and multi-tax merchandising systems"
 slug: "overcoming-the-challenges-of-running-multi-currency-multi-language-and-multi-tax-merchandi"
 publication: "World Business Research"
+displayDate: "Submitted 29 January 2014"
 language: "English"
 type: "Commissioned feature"
 byline: "Alex Franquelli"
