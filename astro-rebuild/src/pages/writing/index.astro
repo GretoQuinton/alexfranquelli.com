@@ -71,6 +71,7 @@ const decades=[...new Set(writing.map(x=>{
         data-publication={publicationKey(a.data.publication)}
         data-language={a.data.language}
         data-decade={decade}
+        data-url={'/writing/'+a.data.slug}
         data-search={(a.data.title+' '+(a.data.publication||'')+' '+(a.data.description||'')).toLowerCase()}>
         <a href={'/writing/'+a.data.slug}>{a.data.title}</a>
         <span>{a.data.publication||'Publication unconfirmed'}</span>
@@ -90,7 +91,13 @@ const clear=document.querySelector('#clear-filters');
 const rows=[...document.querySelectorAll('.article-row')];
 const count=document.querySelector('#result-count');
 const empty=document.querySelector('#empty-state');
+const status=document.querySelector('.archive-status');
 let activeType='all';
+let pagefindPromise=null;
+let pagefindUrls=null;
+let resolvedTerm='';
+let searchSequence=0;
+let searchTimer=null;
 
 const params=new URLSearchParams(location.search);
 q.value=params.get('q')||'';
@@ -99,6 +106,15 @@ language.value=params.get('lang')||'';
 decade.value=params.get('decade')||'';
 activeType=params.get('type')||'all';
 typeButtons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.filter===activeType)));
+
+function normalisePath(value){
+  try{
+    const url=new URL(value,location.origin);
+    return (url.pathname.replace(/\/$/,'')||'/');
+  }catch{
+    return (String(value).split('?')[0].replace(/\/$/,'')||'/');
+  }
+}
 
 function syncUrl(){
   const next=new URLSearchParams();
@@ -111,8 +127,15 @@ function syncUrl(){
   const query=next.toString();
   history.replaceState(null,'',location.pathname+(query?'?'+query:''));
 }
+
+function matchesSearch(row,term){
+  if(!term) return true;
+  if(resolvedTerm===term&&pagefindUrls) return pagefindUrls.has(normalisePath(row.dataset.url));
+  return row.dataset.search.includes(term.toLowerCase());
+}
+
 function update(){
-  const term=q.value.trim().toLowerCase();
+  const term=q.value.trim();
   let visible=0;
   rows.forEach(row=>{
     const show=
@@ -120,7 +143,7 @@ function update(){
       (!publication.value||row.dataset.publication===publication.value)&&
       (!language.value||row.dataset.language===language.value)&&
       (!decade.value||row.dataset.decade===decade.value)&&
-      (!term||row.dataset.search.includes(term));
+      matchesSearch(row,term);
     row.hidden=!show;
     if(show) visible++;
   });
@@ -128,7 +151,56 @@ function update(){
   empty.hidden=visible!==0;
   syncUrl();
 }
-q.addEventListener('input',update);
+
+async function getPagefind(){
+  if(!pagefindPromise){
+    pagefindPromise=import('/pagefind/pagefind.js')
+      .then(async module=>{
+        const pagefind=module.default||module;
+        if(pagefind.init) await pagefind.init();
+        return pagefind;
+      })
+      .catch(()=>null);
+  }
+  return pagefindPromise;
+}
+
+async function runFullTextSearch(){
+  const term=q.value.trim();
+  const sequence=++searchSequence;
+  resolvedTerm='';
+  pagefindUrls=null;
+  update();
+  if(!term){
+    status.removeAttribute('aria-busy');
+    return;
+  }
+  status.setAttribute('aria-busy','true');
+  const pagefind=await getPagefind();
+  if(sequence!==searchSequence) return;
+  if(!pagefind){
+    status.removeAttribute('aria-busy');
+    return;
+  }
+  try{
+    const search=await pagefind.search(term);
+    const results=await Promise.all(search.results.map(result=>result.data()));
+    if(sequence!==searchSequence) return;
+    pagefindUrls=new Set(results.map(result=>normalisePath(result.url)));
+    resolvedTerm=term;
+    update();
+  }finally{
+    if(sequence===searchSequence) status.removeAttribute('aria-busy');
+  }
+}
+
+q.addEventListener('input',()=>{
+  clearTimeout(searchTimer);
+  resolvedTerm='';
+  pagefindUrls=null;
+  update();
+  searchTimer=setTimeout(runFullTextSearch,140);
+});
 publication.addEventListener('change',update);
 language.addEventListener('change',update);
 decade.addEventListener('change',update);
@@ -138,15 +210,22 @@ typeButtons.forEach(button=>button.addEventListener('click',()=>{
   update();
 }));
 clear.addEventListener('click',()=>{
+  clearTimeout(searchTimer);
+  searchSequence++;
   q.value='';
   publication.value='';
   language.value='';
   decade.value='';
   activeType='all';
+  resolvedTerm='';
+  pagefindUrls=null;
+  status.removeAttribute('aria-busy');
   typeButtons.forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.filter==='all')));
   update();
   q.focus();
 });
-update();
+
+if(q.value.trim()) runFullTextSearch();
+else update();
 </script>
 </BaseLayout>
