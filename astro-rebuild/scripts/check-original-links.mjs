@@ -20,8 +20,11 @@ async function files(dir){
 }
 async function loadKnownDeadSlugs(){
   const source=await readFile(auditedStates,'utf8');
-  const block=source.match(/auditedDeadOriginalSlugs\\s*=\\s*new Set\\(\\[([\\s\\S]*?)\\]\\)/)?.[1]||'';
-  return new Set([...block.matchAll(/["']([^"']+)["']/g)].map(match=>match[1]));
+  const setStart=source.indexOf('new Set([');
+  const setEnd=setStart>=0?source.indexOf(']);',setStart):-1;
+  if(setStart<0||setEnd<0) return new Set();
+  const block=source.slice(setStart,setEnd);
+  return new Set([...block.matchAll(/"([^"]+)"/g)].map(match=>match[1]));
 }
 function field(frontmatter,name){
   const match=frontmatter.match(new RegExp('^'+name+':\\s*(.+)\\s*$','m'));
