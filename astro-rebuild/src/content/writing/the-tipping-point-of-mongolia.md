@@ -8,6 +8,7 @@ language: "English"
 type: "Politics / feature"
 byline: "Alex Franquelli and Luigi Creazzo"
 originalUrl: "https://www.opendemocracy.net/en/tipping-point-for-mongolias-democracy/"
+originalUrlStatus: "live"
 featured: false
 draft: false
 ---

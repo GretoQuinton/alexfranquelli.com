@@ -7,6 +7,7 @@ displayDate: "2013-11-29"
 language: "English"
 type: "Live report"
 originalUrl: "https://thequietus.com/news/shellac-netil-house-live-review/"
+originalUrlStatus: "live"
 featured: false
 draft: false
 ---
