@@ -292,4 +292,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .form-actions{display:block}
   .contact-form .button{width:100%}
   .form-status{margin-top:12px!important}
+  .article-image img{max-height:none;object-fit:contain}
+  .error-page{padding-top:58px;padding-bottom:80px}
+  .error-page h1{font-size:52px;line-height:.96;margin-bottom:24px}
+  .error-page p{font-size:20px}
+  .footer-links a{display:inline-flex;align-items:center;min-height:36px}
+  .site-footer{padding-bottom:max(24px,env(safe-area-inset-bottom))}
 }
