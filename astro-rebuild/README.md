@@ -1,19 +1,26 @@
-# Astro migration branch
+# Alex Franquelli — Astro portfolio
 
-This folder is the incremental migration path for the existing alexfranquelli.com static work-in-progress.
+This folder contains the production Astro rebuild of alexfranquelli.com. The source of truth is the `main` branch; the historical `astro-rebuild` branch is retained only for reference.
 
-## Chosen stack
+## Stack
 
 - Astro 7
-- GitHub repository content
-- Markdown article files
+- Markdown article files in GitHub
 - Pages CMS for browser-based editing
-- Pagefind for static full-text search
-- Cloudflare Workers Static Assets for hosting and automatic Git deployments
+- Pagefind for static full-text archive search
+- Cloudflare Workers Static Assets for hosting and Git deployments
 
-## Safety rule
+## Current state
 
-The existing static prototype at the repository root remains untouched while this folder is evaluated. Film & TV and Fiction routes are retained in navigation. Existing Fiction content is not part of the article-archive migration.
+- 384 unique full-text article pages
+- searchable `/writing` archive with publication, language, period and format filters
+- Home, About, Fiction and Contact routes
+- legacy `/film-tv` route retained outside primary navigation
+- local preservation of recovered Squarespace imagery
+- permanent legacy redirects activated only when the destination exists
+- CI checks the Astro build, redirect destinations and Pagefind index
+
+The historical archive remains incomplete. Missing article bodies or uncertain metadata stay unresolved until a verified source is available; published copy must not be invented or reconstructed.
 
 ## Development
 
@@ -23,25 +30,30 @@ npm install
 npm run dev
 ```
 
-Production:
+Production build:
 
 ```bash
 npm run build
 ```
 
-The static output is written to `dist/`. The included `wrangler.jsonc` points Cloudflare Workers Static Assets at that directory.
+The static output is written to `dist/`. `wrangler.jsonc` serves that directory through Cloudflare Workers Static Assets.
 
 ## Content workflow
 
-Each article becomes one Markdown file in `src/content/writing`. Frontmatter mirrors the master migration sheet: title, slug, publication, date, language, type, original URL, issue/page and cover reference.
+Each published article is one Markdown file in `src/content/writing`. Frontmatter stores title, slug, publication, date, language, type, original URL and optional print/image metadata.
 
-Pages CMS reads `.pages.yml` and provides a browser editor over those GitHub files. Article bodies must be imported from a verified source; the migration must not manufacture or paraphrase missing published copy.
+Pages CMS reads `.pages.yml` and edits the same GitHub Markdown files. Publication and date may remain blank when genuinely unconfirmed.
 
-## Next implementation pass
+The master migration tracker records provenance, canonical/version decisions, build readiness and legacy redirect mappings.
 
-1. Convert the first build-ready batch from the master Sheet to Markdown.
-2. Preserve existing Squarespace paths with redirects or matching routes.
-3. Add Pagefind UI and publication/language filters.
-4. Migrate magazine cover assets.
-5. Compare Astro output against the current GitHub Pages preview.
-6. Connect the branch to a Cloudflare preview only after the content import is representative.
+## Search and redirects
+
+Pagefind indexes article bodies after the Astro build. The `/writing` interface combines full-text results with the archive filters.
+
+Active rules in `public/_redirects` are validated after every build by `scripts/check-redirects.mjs`. Pending legacy rules remain commented until their article destination exists.
+
+## Launch safety
+
+The preview remains blocked from indexing until the production domain is cut over. The production indexing switch is kept in a separate draft pull request and should be merged only during the custom-domain launch.
+
+Do not change DNS merely to test repository changes. Verify the Cloudflare preview and the green GitHub build first.
