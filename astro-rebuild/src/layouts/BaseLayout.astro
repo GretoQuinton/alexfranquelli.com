@@ -9,6 +9,7 @@ const {
   jsonLd=null
 }=Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const socialImage = image ? new URL(image, Astro.site).toString() : null;
 const path = Astro.url.pathname;
 const nav = [
   { href:'/writing', label:'Writing' },
@@ -22,7 +23,7 @@ const personJsonLd = JSON.stringify({
   '@type':'Person',
   name:'Alex Franquelli',
   url:'https://www.alexfranquelli.com',
-  sameAs:['https://uk.linkedin.com/in/alexfranquelli'],
+  sameAs:['https://uk.linkedin.com/in/alexfranquelli','https://www.goodreads.com/author/show/8057489.Alex_Franquelli'],
   knowsLanguage:['English','Italian']
 });
 ---
@@ -42,9 +43,9 @@ const personJsonLd = JSON.stringify({
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonical} />
-  {image&&<meta property="og:image" content={image} />}
-  <meta name="twitter:card" content={image?'summary_large_image':'summary'} />
-  {image&&<meta name="twitter:image" content={image} />}
+  {socialImage&&<meta property="og:image" content={socialImage} />}
+  <meta name="twitter:card" content={socialImage?'summary_large_image':'summary'} />
+  {socialImage&&<meta name="twitter:image" content={socialImage} />}
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
   <script type="application/ld+json" set:html={personJsonLd}></script>
