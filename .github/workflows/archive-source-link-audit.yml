@@ -1,5 +1,5 @@
 name: Archive source link audit
-# Workflow-file pushes run the audit, allowing maintenance fixes to be validated immediately.
+# Maintenance pushes run the audit so link-state changes are validated immediately.
 
 on:
   workflow_dispatch:
@@ -7,6 +7,8 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/archive-source-link-audit.yml'
+      - 'astro-rebuild/scripts/check-original-links.mjs'
+      - 'astro-rebuild/src/data/auditedLinkStates.ts'
   schedule:
     - cron: '30 9 1 * *'
       timezone: 'Europe/Rome'
@@ -36,36 +38,57 @@ jobs:
           script: |
             const fs = require('fs');
             const report = JSON.parse(fs.readFileSync('astro-rebuild/link-audit.json','utf8'));
-            if (!report.needsReviewCount) return;
+            const prefix = 'Archive source link audit';
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'all',
+              per_page: 100
+            });
+            const existing = issues.find(issue => issue.title.startsWith(prefix) && !issue.pull_request);
+
+            if (!report.needsReviewCount) {
+              if (existing && existing.state === 'open') {
+                await github.rest.issues.update({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: existing.number,
+                  state: 'closed',
+                  title: `${prefix}: all checked URLs resolved`,
+                  body: [
+                    'Automated monthly audit of original publication URLs.',
+                    '',
+                    `Checked: **${report.checked}** · Known dead confirmed: **${report.knownDeadConfirmed ?? 0}** · Needs review: **0**`,
+                    '',
+                    `Generated: ${report.generatedAt}`
+                  ].join('\n')
+                });
+              }
+              return;
+            }
+
             const rows = report.needsReview.slice(0,60).map(item =>
               `| ${item.state} | ${item.status ?? '—'} | ${item.publication ?? ''} | ${item.title ?? item.slug ?? ''} | ${item.originalUrl} |`
             );
             const body = [
               'Automated monthly audit of original publication URLs.',
               '',
-              `Checked: **${report.checked}** · Needs review: **${report.needsReviewCount}**`,
+              `Checked: **${report.checked}** · Known dead confirmed: **${report.knownDeadConfirmed ?? 0}** · Needs review: **${report.needsReviewCount}**`,
               '',
               '| State | HTTP | Publication | Piece | URL |',
               '| --- | ---: | --- | --- | --- |',
               ...rows,
-              report.needsReviewCount > 60 ? `\n_Only the first 60 rows are shown here. Download the workflow artifact for the complete report._` : '',
+              report.needsReviewCount > 60 ? '\n_Only the first 60 rows are shown here. Download the workflow artifact for the complete report._' : '',
               '',
               `Generated: ${report.generatedAt}`
             ].join('\n');
-            const prefix = 'Archive source link audit';
-            const { data: issues } = await github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              per_page: 100
-            });
-            const existing = issues.find(issue => issue.title.startsWith(prefix));
             const title = `${prefix}: ${report.needsReviewCount} URL(s) need review`;
             if (existing) {
               await github.rest.issues.update({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: existing.number,
+                state: 'open',
                 title,
                 body
               });
