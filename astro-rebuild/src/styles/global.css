@@ -15,7 +15,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);f
 a{color:inherit;text-decoration:none}
 a:hover{color:var(--accent)}
 img{display:block;max-width:100%;height:auto}
-button,input{font:inherit}
+button,input,select,textarea{font:inherit}
 button{color:inherit}
 ::selection{background:var(--ink);color:var(--paper)}
 .wrap{width:min(var(--max),calc(100% - 56px));margin-inline:auto}
@@ -226,4 +226,4 @@ h2,h3{line-height:1}
   .footer-grid{grid-template-columns:1fr;gap:25px}.footer-contact{align-items:flex-start;text-align:left}.footer-bottom{margin-top:30px}
 }
 
-a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
