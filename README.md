@@ -7,7 +7,7 @@ Personal portfolio and publication archive for Alex Franquelli.
 The production implementation lives in `astro-rebuild/` and is built with Astro.
 
 Current launch corpus:
-- 368 full-text published articles
+- 384 full-text published articles
 - English and Italian
 - reviews, interviews, features and live reports
 - legacy Squarespace redirects preserved in `public/_redirects`
