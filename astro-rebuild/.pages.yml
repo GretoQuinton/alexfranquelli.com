@@ -28,7 +28,8 @@ content:
       - name: publication
         label: Publication
         type: string
-        required: true
+        required: false
+        description: "Leave blank when the original publication is still unconfirmed; do not invent one."
       - name: publicationDate
         label: Publication date
         type: string
