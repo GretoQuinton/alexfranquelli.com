@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const root=fileURLToPath(new URL('../src/content/writing/',import.meta.url));
 const output=new URL('../link-audit.json',import.meta.url);
+const auditedStates=fileURLToPath(new URL('../src/data/auditedLinkStates.ts',import.meta.url));
 const timeoutMs=15000;
 const concurrency=6;
 
@@ -16,6 +17,14 @@ async function files(dir){
     else if(entry.name.endsWith('.md')) out.push(path);
   }
   return out;
+}
+async function loadKnownDeadSlugs(){
+  const source=await readFile(auditedStates,'utf8');
+  const setStart=source.indexOf('new Set([');
+  const setEnd=setStart>=0?source.indexOf(']);',setStart):-1;
+  if(setStart<0||setEnd<0) return new Set();
+  const block=source.slice(setStart,setEnd);
+  return new Set([...block.matchAll(/"([^"]+)"/g)].map(match=>match[1]));
 }
 function field(frontmatter,name){
   const match=frontmatter.match(new RegExp('^'+name+':\\s*(.+)\\s*$','m'));
@@ -48,6 +57,7 @@ async function inspect(item){
     return {...item,state:'error',status:null,error:error instanceof Error?error.message:String(error),checkedAt:new Date().toISOString()};
   }
 }
+const knownDead=await loadKnownDeadSlugs();
 const paths=await files(root);
 const items=[];
 for(const path of paths){
@@ -71,7 +81,14 @@ for(let i=0;i<items.length;i+=concurrency){
   results.push(...await Promise.all(items.slice(i,i+concurrency).map(inspect)));
 }
 const counts=results.reduce((acc,row)=>{acc[row.state]=(acc[row.state]||0)+1;return acc;},{});
-const needsReview=results.filter(row=>row.state!=='live'||(row.declaredStatus&&row.declaredStatus!==row.state));
-const report={generatedAt:new Date().toISOString(),checked:results.length,counts,needsReviewCount:needsReview.length,needsReview,results};
+const needsReview=results.filter(row=>{
+  const declared=row.declaredStatus&&row.declaredStatus!=='unchecked'?row.declaredStatus:null;
+  const expected=declared||(knownDead.has(row.slug)?'dead':null);
+  if(row.state==='blocked'||row.state==='error') return true;
+  if(expected) return expected!==row.state;
+  return row.state!=='live';
+});
+const knownDeadConfirmed=results.filter(row=>knownDead.has(row.slug)&&row.state==='dead').length;
+const report={generatedAt:new Date().toISOString(),checked:results.length,counts,knownDeadConfirmed,needsReviewCount:needsReview.length,needsReview,results};
 await writeFile(output,JSON.stringify(report,null,2)+'\n');
 console.log(`Checked ${results.length} original URLs: ${JSON.stringify(counts)}. ${needsReview.length} need review.`);
