@@ -84,7 +84,8 @@ const counts=results.reduce((acc,row)=>{acc[row.state]=(acc[row.state]||0)+1;ret
 const needsReview=results.filter(row=>{
   const declared=row.declaredStatus&&row.declaredStatus!=='unchecked'?row.declaredStatus:null;
   const expected=declared||(knownDead.has(row.slug)?'dead':null);
-  if(row.state==='blocked'||row.state==='error') return true;
+  if(row.state==='blocked') return !expected;
+  if(row.state==='error') return true;
   if(expected) return expected!==row.state;
   return row.state!=='live';
 });
