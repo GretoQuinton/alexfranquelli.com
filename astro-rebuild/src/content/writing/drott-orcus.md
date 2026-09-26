@@ -6,6 +6,8 @@ publicationDate: "2021-10-14"
 displayDate: "2021-10-14"
 language: "English"
 type: "Review"
+originalUrl: "https://www.thelineofbestfit.com/reviews/albums/drott-orcus-album-review"
+originalUrlStatus: "live"
 featured: false
 draft: false
 ---
