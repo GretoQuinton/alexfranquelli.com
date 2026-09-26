@@ -1,0 +1,28 @@
+name: Metadata date candidate audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/metadata-date-candidate-audit.yml'
+      - 'astro-rebuild/scripts/audit-metadata-date-candidates.mjs'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Scan undated article bodies
+        run: node astro-rebuild/scripts/audit-metadata-date-candidates.mjs
+      - name: Upload candidate report
+        uses: actions/upload-artifact@v4
+        with:
+          name: metadata-date-candidates
+          path: astro-rebuild/metadata-date-candidates.json
