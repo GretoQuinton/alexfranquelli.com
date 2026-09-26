@@ -1,6 +1,7 @@
 ---
 title: "Intervista a Daniel Cavanagh (Anathema)"
 slug: "intervista-a-daniel-cavanagh-anathema"
+displayDate: "25 May 2010 (interview date)"
 language: "Italian"
 type: "Interview"
 byline: "Alex Franquelli"
