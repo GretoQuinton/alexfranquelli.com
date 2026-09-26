@@ -1,12 +1,12 @@
 {
   "checkedOn": "2026-09-26",
-  "articleFiles": 383,
-  "generatedPages": 390,
+  "articleFiles": 384,
+  "generatedPages": 391,
   "redirectRules": 220,
   "legacyMappings": 110,
-  "mappingsWithBuiltTargets": 79,
-  "mappingsWithoutBuiltTargets": 31,
-  "distinctMissingDestinations": 31,
+  "mappingsWithBuiltTargets": 80,
+  "mappingsWithoutBuiltTargets": 30,
+  "distinctMissingDestinations": 30,
   "missingDestinations": {
     "/writing/tristan-perich-parallels": [
       "/portfolio/tristan-perich-parallels/",
@@ -127,11 +127,7 @@
     "/writing/mongolia-is-stability-the-new-challenge": [
       "/portfolio/mongolia-is-stability-the-new-challenge/",
       "/portfolio/mongolia-is-stability-the-new-challenge"
-    ],
-    "/writing/andy-stott-we-stay-together": [
-      "/portfolio/andy-stott-we-stay-together/",
-      "/portfolio/andy-stott-we-stay-together"
     ]
   },
-  "limitation": "Rechecked against current main-equivalent content on 2026-09-26: 383 article files, 390 generated pages, and 31 distinct missing legacy destinations. Destination existence is verified; historical publication-version equivalence is not inferred. Pending redirects remain commented until exact article bodies are built."
+  "limitation": "Rechecked after Andy Stott / We Stay Together recovery on 2026-09-26: 384 article files, 391 generated pages, and 30 distinct missing legacy destinations. Destination existence is verified; historical publication-version equivalence is not inferred. Pending redirects remain commented until exact article bodies are built."
 }
