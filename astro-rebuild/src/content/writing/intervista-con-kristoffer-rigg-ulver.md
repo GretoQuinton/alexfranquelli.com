@@ -1,6 +1,7 @@
 ---
 title: "Intervista con Kristoffer Rygg (Ulver)"
 slug: "intervista-con-kristoffer-rigg-ulver"
+displayDate: "18 April 2011 (interview date)"
 language: "Italian"
 type: "Interview"
 byline: "Alex Franquelli"

@@ -2,6 +2,7 @@
 title: "Mudhoney @ Koko (Londra, UK)"
 slug: "mudhoney-koko-londra-uk"
 publication: "IndieForBunnies"
+displayDate: "11 October 2009 (event date)"
 language: "Italian"
 type: "Live report"
 byline: "Alex Franquelli"

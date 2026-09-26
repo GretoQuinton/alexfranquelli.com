@@ -2,6 +2,7 @@
 title: "Lamb live @ Koko (Londra UK, 23/09/2009)"
 slug: "lamb-koko-230909"
 publication: "IndieForBunnies"
+displayDate: "23 September 2009 (event date)"
 language: "Italian"
 type: "Live report"
 byline: "Alex Franquelli"

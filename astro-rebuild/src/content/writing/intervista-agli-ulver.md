@@ -2,6 +2,7 @@
 title: "Ulver – Interview with Kristoffer Rygg and Daniel O’Sullivan"
 slug: "intervista-agli-ulver"
 publication: "Ritual"
+displayDate: "26 October 2010 (interview date)"
 language: "Italian"
 type: "Interview"
 byline: "Alex Franquelli"

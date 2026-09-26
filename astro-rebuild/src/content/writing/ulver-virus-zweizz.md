@@ -2,6 +2,7 @@
 title: "Ulver + Virus + Zweizz @ Koko, London"
 slug: "ulver-virus-zweizz"
 publication: "Ritual"
+displayDate: "22 March 2011 (event date)"
 language: "Italian"
 type: "Live report"
 byline: "Alex Franquelli"
