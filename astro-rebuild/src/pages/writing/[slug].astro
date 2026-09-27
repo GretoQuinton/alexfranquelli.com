@@ -15,9 +15,36 @@ const decodeEntities=(value:string)=>value
   .replace(/&#39;|&apos;/gi,"'")
   .replace(/&ldquo;|&rdquo;/gi,'"')
   .replace(/&lsquo;|&rsquo;/gi,"'");
-const plainText=(value:string)=>decodeEntities(value.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim());
-const openingMatch=(article.body||'').match(/<p[^>]*>([\s\S]*?)<\/p>/i);
-const opening=plainText(openingMatch?.[1]||article.body||'');
+const plainText=(value:string)=>decodeEntities(value
+  .replace(/<[^>]+>/g,' ')
+  .replace(/[#*_~`>]+/g,' ')
+  .replace(/\s+/g,' ')
+  .trim());
+const normalise=(value:string)=>plainText(value).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+const rawBody=article.body||'';
+const rawBlocks=rawBody.trim().split(/\n\s*\n/).filter(Boolean);
+const titleKey=normalise(d.title);
+const scaffoldPattern=/(?:^|\b)(?:di\s+alex\s+franquelli|by\s+alex\s+franquelli|alex\s+franquelli|voto\s*:|rating\s*:|labels?\s*:|websites?\s*:|release\s+dates?\s*:|tracklist\s*:|similar\s+(?:artist|artists|to)\s*:|titolo\s*:|regista\s*:|durata\s*:|caratteri\s*\(con\s+spazi\)|parole\s*:|x{3,}|no\s+title\s+yet)/i;
+const leadText=rawBlocks.slice(0,6).map(plainText).join(' | ');
+const repeatsTitle=rawBlocks.slice(0,4).some(block=>{
+  const key=normalise(block);
+  return key&&titleKey&&(key===titleKey||(key.length>10&&titleKey.includes(key))||(titleKey.length>10&&key.includes(titleKey)));
+});
+const hasSubmissionScaffold=!/^\s*<p[\s>]/i.test(rawBody)&&(scaffoldPattern.test(leadText)||repeatsTitle);
+const proseBlockIndex=hasSubmissionScaffold
+  ? rawBlocks.findIndex((block,index)=>{
+      if(index===0&&repeatsTitle) return false;
+      const text=plainText(block);
+      if(scaffoldPattern.test(text)) return false;
+      const words=text.split(/\s+/).filter(Boolean);
+      return text.length>=90&&words.length>=14;
+    })
+  : -1;
+const leadingScaffoldCount=proseBlockIndex>0?proseBlockIndex:0;
+const openingSource=leadingScaffoldCount>0
+  ? rawBlocks[leadingScaffoldCount]
+  : ((rawBody.match(/<p[^>]*>([\s\S]*?)<\/p>/i)||[])[1]||rawBody);
+const opening=plainText(openingSource);
 const sentence=opening.match(/^(.{30,260}?[.!?])(?:\s|$)/)?.[1];
 const clipped=opening.length>240?(opening.slice(0,241).replace(/\s+\S*$/,'')+'…'):opening;
 const pageDescription=d.description||sentence||clipped||'Writing by Alex Franquelli.';
@@ -73,6 +100,7 @@ const articleJsonLd=JSON.stringify({
       {d.imageSourceUrl&&<a href={d.imageSourceUrl}>Image source ↗</a>}
     </figcaption>}
   </figure>}
+  {leadingScaffoldCount>0&&<style is:inline set:html={`.prose > :nth-child(-n+${leadingScaffoldCount}){display:none}`} />}
   <div class="prose" lang={lang}><Content /></div>
   {(d.magazineIssue||d.printedPages||d.cover)&&<aside class="publication-card">
     <div class="eyebrow">Print archive</div>
