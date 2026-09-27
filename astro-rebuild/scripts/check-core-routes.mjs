@@ -56,8 +56,10 @@ if (isNoIndex === isIndexable) {
 }
 
 if (isNoIndex) {
-  if (!robots.includes('Disallow: /')) {
-    throw new Error('Pre-launch robots.txt must block crawling when the site is noindex.');
+  const robotsBlocks = robots.includes('Disallow: /');
+  const previewAllows = robots.includes('Allow: /');
+  if (!robotsBlocks && !previewAllows) {
+    throw new Error('Noindex build must declare either Disallow: / or the preview-only Allow: / crawler policy.');
   }
   if (!headers.includes('X-Robots-Tag: noindex, nofollow')) {
     throw new Error('Pre-launch _headers must send X-Robots-Tag: noindex, nofollow.');
@@ -79,6 +81,7 @@ const published = [];
 const missingPages = [];
 const missingSitemap = [];
 const squarespaceLeaks = [];
+const descriptionScaffoldLeaks = [];
 
 for (const name of entries) {
   const frontmatter = await readFile(resolve(source, name), 'utf8');
@@ -93,6 +96,12 @@ for (const name of entries) {
   else {
     const built = await readFile(article, 'utf8');
     if (built.includes('squarespace-cdn.com')) squarespaceLeaks.push(slug);
+    if (!/^description:\s*/m.test(frontmatter)) {
+      const description = built.match(/<meta[^>]+name="description"[^>]+content="([^"]*)"/i)?.[1] || '';
+      if (/(?:voto\s*:|rating\s*:|x{3,}|no\s+title\s+yet|tracklist\s*:|similar\s+(?:artist|artists|to)\s*:|release\s+dates?\s*:|caratteri\s*\(con\s+spazi\)|parole\s*:)/i.test(description)) {
+        descriptionScaffoldLeaks.push(slug);
+      }
+    }
   }
   if (!sitemap.includes(`https://www.alexfranquelli.com/writing/${slug}`)) missingSitemap.push(slug);
 }
@@ -106,11 +115,16 @@ if (missingSitemap.length) {
 if (home.includes('squarespace-cdn.com') || squarespaceLeaks.length) {
   throw new Error(`Squarespace CDN references remain in the rendered build:\n${['homepage', ...squarespaceLeaks].filter((value,index)=>index>0 || home.includes('squarespace-cdn.com')).join('\n')}`);
 }
+if (descriptionScaffoldLeaks.length) {
+  throw new Error(`Derived article descriptions still contain manuscript scaffolding:\n${descriptionScaffoldLeaks.join('\n')}`);
+}
 
 const countMatch = writingIndex.match(/Archive\s*[·&middot;]\s*([0-9]+)\s*pieces/i);
 if (countMatch && Number(countMatch[1]) !== published.length) {
   throw new Error(`Writing archive count (${countMatch[1]}) does not match published article count (${published.length}).`);
 }
 
-const mode = isNoIndex ? 'pre-launch/noindex' : 'production/indexable';
+const mode = isNoIndex
+  ? (robots.includes('Allow: /') ? 'preview-crawlable/noindex' : 'pre-launch/noindex')
+  : 'production/indexable';
 console.log(`Verified core routes, ${mode} safeguards and ${published.length} published article pages.`);
