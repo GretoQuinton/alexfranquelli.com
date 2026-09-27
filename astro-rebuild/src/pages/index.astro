@@ -2,197 +2,247 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { getRecoveredImage } from '../lib/recoveredImages';
-const sortDate=(value?:string)=>value ? (Date.parse(value.length===4?`${value}-01-01`:value.length===7?`${value}-01`:value)||0) : 0;
-const writing=(await getCollection('writing',({data})=>!data.draft)).sort((a,b)=>sortDate(b.data.publicationDate)-sortDate(a.data.publicationDate));
-const carouselSlugs=[
-  'shellac-live-at-netil-house-london',
-  'ameen-saleem-the-groove-lab',
-  'drott-orcus',
-  'fennesz-becs',
-  'nine-inch-nails-hesitation-marks',
-  'horseback-piedmont-apocrypha'
-];
-const textFeatureSlugs=[
-  'the-mountaineers-the-killers-the-vanity-set-barfky-london-uk',
-  'genitorturers-shock-n-roll-revolution-ritual',
-  'the-tipping-point-of-mongolia'
-];
-const resolveImage=(article:any)=>{
-  const recovered=getRecoveredImage(article.data.slug,article.data.title);
-  const explicit=article.data.image?{src:article.data.image,alt:article.data.imageAlt||''}:null;
-  return article.data.image&&!article.data.image.includes('squarespace-cdn.com')?explicit:(recovered||explicit);
+
+const parseDate=(value?:string,display?:string)=>{
+  if(value) return Date.parse(value.length===4?`${value}-01-01`:value.length===7?`${value}-01`:value)||0;
+  const year=display?.match(/\b(19|20)\d{2}\b/)?.[0];
+  return year?Date.parse(`${year}-01-01`):0;
 };
-const carouselCards=carouselSlugs
-  .map(slug=>writing.find(a=>a.data.slug===slug))
-  .filter(Boolean)
-  .map(article=>({article,image:resolveImage(article)}))
-  .filter(({image})=>Boolean(image));
-const archive=textFeatureSlugs.map(slug=>writing.find(a=>a.data.slug===slug)).filter(Boolean);
-const dated=writing.map(a=>a.data.publicationDate).filter(Boolean) as string[];
-const years=dated.map(d=>Number(d.slice(0,4))).filter(Boolean);
-const span=years.length?`${Math.min(...years)}—${Math.max(...years)}`:'Two decades';
-const publications=new Set(writing.map(a=>a.data.publication?.trim().toLowerCase().replace(/[^a-z0-9]+/g,'')).filter(Boolean));
+const writing=(await getCollection('writing',({data})=>!data.draft))
+  .sort((a,b)=>parseDate(b.data.publicationDate,b.data.displayDate)-parseDate(a.data.publicationDate,a.data.displayDate));
+
+const decodeEntities=(value:string)=>value
+  .replace(/&nbsp;/gi,' ')
+  .replace(/&amp;/gi,'&')
+  .replace(/&quot;/gi,'"')
+  .replace(/&#39;|&apos;/gi,"'")
+  .replace(/&ldquo;|&rdquo;/gi,'"')
+  .replace(/&lsquo;|&rsquo;/gi,"'");
+const excerpt=(article:any,max=430)=>{
+  const match=(article.body||'').match(/<p[^>]*>([\s\S]*?)<\/p>/i);
+  const clean=decodeEntities((match?.[1]||article.body||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim());
+  if(clean.length<=max) return clean;
+  const clipped=clean.slice(0,max+1).replace(/\s+\S*$/,'');
+  return clipped+'…';
+};
+const imageFor=(article:any)=>{
+  const recovered=getRecoveredImage(article.data.slug,article.data.title);
+  const explicit=article.data.image&&!article.data.image.includes('squarespace-cdn.com')
+    ? {src:article.data.image,alt:article.data.imageAlt||''}
+    : null;
+  return explicit||recovered;
+};
+const langCode=(language:string)=>language==='Italian'?'IT':'EN';
+const publicationKey=(value?:string)=>(value||'').trim().toLowerCase().replace(/[^a-z0-9]+/g,'');
+
+const centerpiece=writing.find(a=>a.data.slug==='the-tipping-point-of-mongolia')||writing[0];
+const fallbackSelected=[
+  'shellac-live-at-netil-house-london',
+  'nine-inch-nails-hesitation-marks',
+  'ameen-saleem-the-groove-lab',
+  'fennesz-becs',
+  'drott-orcus',
+  'ulver-messe-i-x-vi-x-indieforbunnies'
+].map(slug=>writing.find(a=>a.data.slug===slug)).filter(Boolean);
+const flagged=writing.filter(a=>a.data.featured&&a.data.slug!==centerpiece.data.slug);
+const selected=[...flagged,...fallbackSelected.filter(a=>!flagged.some(f=>f.data.slug===a.data.slug))]
+  .filter((a,i,all)=>all.findIndex(x=>x.data.slug===a.data.slug)===i)
+  .slice(0,6)
+  .map(article=>({article,image:imageFor(article),excerpt:excerpt(article,340)}));
+
+const publicationCounts=new Map<string,{label:string,count:number,key:string}>();
+for(const article of writing){
+  const label=article.data.publication?.trim();
+  if(!label) continue;
+  const key=publicationKey(label);
+  const current=publicationCounts.get(key);
+  publicationCounts.set(key,{label:current?.label||label,count:(current?.count||0)+1,key});
+}
+const allPublications=[...publicationCounts.values()].sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label));
 const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home-hero.webp';
 ---
-<BaseLayout description="Alex Franquelli is a writer based between London and Rome. Browse reviews, interviews and features on music, politics and culture." image={heroImage}>
-<section class="hero wrap">
-  <div class="hero-grid">
-    <div>
-      <div class="eyebrow">Writer · London / Rome</div>
-      <h1>Alex<br />Franquelli</h1>
-    </div>
-    <div class="hero-copy">
-      <p class="intro">Writing on music, politics and culture, published in English and Italian.</p>
-      <p class="hero-note">An independent archive of reviews, interviews, live reports and longer features.</p>
-      <div class="actions">
-        <a class="button" href="/writing">Explore the archive</a>
-        <a class="text-link" href="/about">About Alex ↗</a>
+
+<BaseLayout
+  description="Alex Franquelli is a writer and critic based between London and Rome, working across music, politics, culture and fiction."
+  image={heroImage}
+>
+  <section class="hero wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Critic · Essayist · Fiction writer</div>
+        <h1>Alex<br />Franquelli</h1>
+      </div>
+      <div class="hero-copy">
+        <p class="intro">Writing across music, politics and culture, between London and Rome.</p>
+        <p class="hero-note">Italian and English criticism for <em>Ritual</em>, Musicboom, The Quietus, PopMatters, All About Jazz, The Line of Best Fit and others.</p>
+        <div class="actions">
+          <a class="button" href="#selected">Read selected work</a>
+          <a class="text-link" href="/writing">All writing ↗</a>
+        </div>
       </div>
     </div>
-  </div>
-  <figure class="hero-media">
-    <img src={heroImage} alt="" aria-hidden="true" loading="eager" fetchpriority="high" />
-  </figure>
-  <div class="stats" aria-label="Archive at a glance">
-    <div><strong>{writing.length}</strong><span>pieces online</span></div>
-    <div><strong>{span}</strong><span>published work</span></div>
-    <div><strong>{publications.size}</strong><span>publications represented</span></div>
-    <div><strong>EN / IT</strong><span>two languages</span></div>
-  </div>
-</section>
 
-<section class="wrap section featured-section">
-  <div class="section-heading">
-    <div><div class="eyebrow">Portfolio</div><h2>Selected writing</h2></div>
-    <div class="featured-heading-actions">
-      <div class="carousel-controls" aria-label="Selected writing carousel controls">
-        <button class="carousel-button" type="button" data-carousel-prev aria-label="Previous selected article">←</button>
-        <span class="carousel-count"><span data-carousel-current>1</span> / <span data-carousel-total>{carouselCards.length}</span></span>
-        <button class="carousel-button" type="button" data-carousel-next aria-label="Next selected article">→</button>
-      </div>
-      <a class="text-link" href="/writing">View all {writing.length} pieces ↗</a>
+    <div class="hero-media" aria-hidden="true">
+      <img src={heroImage} alt="" loading="eager" fetchpriority="high" />
     </div>
-  </div>
 
-  <div class="featured-carousel" data-carousel>
-    <div class="featured-track" data-carousel-track tabindex="0" aria-label="Selected writing">
-      {carouselCards.map(({article:a,image},i) => <article class="feature-card" data-carousel-card>
-        <a class="feature-card-link" href={'/writing/'+a.data.slug}>
-          <img class="feature-image" src={image.src} alt={image.alt} loading={i<2?'eager':'lazy'} />
-          <div class="feature-index">{String(i+1).padStart(2,'0')}</div>
-          <div class="feature-meta">
-            <span>{a.data.publication||'Archive'}</span>
-            <span>{a.data.displayDate||a.data.publicationDate||''}</span>
+    <div class="identity-strip" aria-label="Writer profile">
+      <span>London / Rome</span>
+      <span>Music · Politics · Fiction</span>
+      <span>IT / EN</span>
+    </div>
+  </section>
+
+  <section id="selected" class="wrap editorial-feature">
+    <div class="editorial-feature-label">
+      <div class="eyebrow">Featured / 01</div>
+      <span class="language-badge">[{langCode(centerpiece.data.language)}]</span>
+    </div>
+    <div class="editorial-feature-body">
+      <div class="editorial-feature-meta">
+        <span>{centerpiece.data.publication||'Published work'}</span>
+        <span>{centerpiece.data.displayDate||centerpiece.data.publicationDate||''}</span>
+        <span>{centerpiece.data.type}</span>
+      </div>
+      <h2>{centerpiece.data.title}</h2>
+      <p class="editorial-opening" lang={centerpiece.data.language==='Italian'?'it':'en'}>{excerpt(centerpiece,620)}</p>
+      <a class="button" href={'/writing/'+centerpiece.data.slug}>Read the piece</a>
+    </div>
+  </section>
+
+  <section class="wrap section work-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Portfolio</div>
+        <h2>Selected criticism</h2>
+      </div>
+      <a class="text-link" href="/writing">All writing ↗</a>
+    </div>
+
+    <div class="work-showcase" data-work-showcase>
+      <div class="work-index">
+        {selected.map(({article:a,image,excerpt:pieceExcerpt},i)=>
+          <a
+            class="work-row"
+            href={'/writing/'+a.data.slug}
+            data-work-row
+            data-title={a.data.title}
+            data-excerpt={pieceExcerpt}
+            data-publication={a.data.publication||'Published work'}
+            data-language={langCode(a.data.language)}
+            data-image={image?.src||''}
+          >
+            {image&&<span class="work-thumb" aria-hidden="true"><img src={image.src} alt="" loading="lazy" /></span>}
+            <span class="work-no">No. {String(i+1).padStart(3,'0')} //</span>
+            <span class="work-title">{a.data.title}</span>
+            <span class="work-publication">{a.data.publication||'Published work'}</span>
+            <span class="language-badge">[{langCode(a.data.language)}]</span>
+          </a>
+        )}
+      </div>
+
+      <aside class="work-copy-pane" aria-live="polite">
+        <div class="work-copy-meta">
+          <span data-work-publication>{selected[0]?.article.data.publication||''}</span>
+          <span data-work-language>[{selected[0]?langCode(selected[0].article.data.language):'EN'}]</span>
+        </div>
+        <p data-work-excerpt>{selected[0]?.excerpt||''}</p>
+        <span class="work-copy-title" data-work-title>{selected[0]?.article.data.title||''}</span>
+      </aside>
+
+      <div class="work-float" data-work-float aria-hidden="true">
+        <img data-work-image src={selected[0]?.image?.src||''} alt="" />
+        <span>READ</span>
+      </div>
+    </div>
+
+    <script is:inline>
+      const showcase=document.querySelector('[data-work-showcase]');
+      const rows=showcase?[...showcase.querySelectorAll('[data-work-row]')]:[];
+      const paneTitle=showcase?.querySelector('[data-work-title]');
+      const paneExcerpt=showcase?.querySelector('[data-work-excerpt]');
+      const panePublication=showcase?.querySelector('[data-work-publication]');
+      const paneLanguage=showcase?.querySelector('[data-work-language]');
+      const float=showcase?.querySelector('[data-work-float]');
+      const floatImage=showcase?.querySelector('[data-work-image]');
+
+      function activate(row){
+        if(!row) return;
+        if(paneTitle) paneTitle.textContent=row.dataset.title||'';
+        if(paneExcerpt) paneExcerpt.textContent=row.dataset.excerpt||'';
+        if(panePublication) panePublication.textContent=row.dataset.publication||'';
+        if(paneLanguage) paneLanguage.textContent='['+(row.dataset.language||'EN')+']';
+        rows.forEach(item=>item.toggleAttribute('data-active',item===row));
+        if(floatImage&&row.dataset.image) floatImage.src=row.dataset.image;
+      }
+
+      rows.forEach(row=>{
+        row.addEventListener('mouseenter',()=>activate(row));
+        row.addEventListener('focus',()=>activate(row));
+        row.addEventListener('pointerenter',()=>{
+          if(float&&row.dataset.image) float.classList.add('is-visible');
+        });
+        row.addEventListener('pointermove',event=>{
+          if(!float||!row.dataset.image) return;
+          float.style.left=(event.clientX+26)+'px';
+          float.style.top=(event.clientY+22)+'px';
+        });
+        row.addEventListener('pointerleave',()=>float?.classList.remove('is-visible'));
+      });
+      activate(rows[0]);
+    </script>
+  </section>
+
+  <section class="now-section">
+    <div class="wrap">
+      <div class="now-heading">
+        <div class="eyebrow">Now · September 2026</div>
+        <h2>Current things.</h2>
+      </div>
+
+      <div class="now-editorial-grid">
+        <article class="draft-card">
+          <span class="now-label">Manuscript</span>
+          <strong>Untitled novel</strong>
+          <em>Draft 3 / Revision phase</em>
+        </article>
+
+        <article class="thought-card">
+          <span class="now-label">Writing / thinking about</span>
+          <blockquote>What would I do if I were stuck in a cube with no exits or windows for 70 years?</blockquote>
+        </article>
+
+        <div class="now-notes">
+          <div>
+            <span class="now-label">Reading</span>
+            <p><em>A Little Life</em><br />Hanya Yanagihara</p>
           </div>
-          <h3>{a.data.title}</h3>
-          <p>{a.data.type}</p>
-          <span class="feature-arrow" aria-hidden="true">↗</span>
+          <div>
+            <span class="now-label">Listening to</span>
+            <p><em>Vault</em><br />Miles</p>
+          </div>
+          <a class="text-link" href="https://www.goodreads.com/author/show/8057489.Alex_Franquelli" rel="me noopener">Goodreads ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap publication-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Body of work</div>
+        <h2>Published with</h2>
+      </div>
+      <a class="text-link" href="/writing">Browse everything ↗</a>
+    </div>
+    <div class="publication-index">
+      {allPublications.map((publication,i)=>
+        <a href={'/writing?publication='+publication.key}>
+          <span class="publication-no">{String(i+1).padStart(2,'0')}</span>
+          <strong>{publication.label}</strong>
+          <span class="publication-count">{publication.count} pieces</span>
         </a>
-      </article>)}
+      )}
     </div>
-  </div>
-
-  {archive.length>0&&<div class="archive-preview">
-    <div class="eyebrow">Also selected</div>
-    {archive.map(a => <article class="article-row">
-      <a href={'/writing/'+a.data.slug}>{a.data.title}</a>
-      <span>{a.data.publication||'Publication unconfirmed'}</span>
-      <span>{a.data.displayDate||a.data.publicationDate||'Date unconfirmed'}</span>
-    </article>)}
-  </div>}
-
-  <script is:inline>
-    const carousel=document.querySelector('[data-carousel]');
-    const track=carousel?.querySelector('[data-carousel-track]');
-    const cards=track?[...track.querySelectorAll('[data-carousel-card]')]:[];
-    const prev=document.querySelector('[data-carousel-prev]');
-    const next=document.querySelector('[data-carousel-next]');
-    const current=document.querySelector('[data-carousel-current]');
-    const total=document.querySelector('[data-carousel-total]');
-    const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    function perPage(){
-      return window.matchMedia('(min-width: 901px)').matches?3:1;
-    }
-
-    function pageCount(){
-      return Math.max(1,Math.ceil(cards.length/perPage()));
-    }
-
-    function pageOffsets(){
-      const step=perPage();
-      return Array.from({length:pageCount()},(_,page)=>{
-        const card=cards[Math.min(cards.length-1,page*step)];
-        if(!track||!card) return 0;
-        return Math.min(card.offsetLeft,Math.max(0,track.scrollWidth-track.clientWidth));
-      });
-    }
-
-    function currentPage(){
-      if(!track) return 0;
-      const offsets=pageOffsets();
-      let best=0;
-      let distance=Infinity;
-      offsets.forEach((offset,index)=>{
-        const delta=Math.abs(track.scrollLeft-offset);
-        if(delta<distance){distance=delta;best=index;}
-      });
-      return best;
-    }
-
-    function updateCarousel(){
-      const page=currentPage();
-      const pages=pageCount();
-      if(current) current.textContent=String(page+1);
-      if(total) total.textContent=String(pages);
-      if(prev) prev.disabled=page===0;
-      if(next) next.disabled=page===pages-1;
-    }
-
-    function go(direction){
-      if(!track||!cards.length) return;
-      const target=Math.max(0,Math.min(pageCount()-1,currentPage()+direction));
-      const offsets=pageOffsets();
-      track.scrollTo({left:offsets[target],behavior:reduceMotion?'auto':'smooth'});
-    }
-
-    let scrollTimer;
-    prev?.addEventListener('click',()=>go(-1));
-    next?.addEventListener('click',()=>go(1));
-    track?.addEventListener('scroll',()=>{
-      clearTimeout(scrollTimer);
-      scrollTimer=setTimeout(updateCarousel,80);
-    },{passive:true});
-    track?.addEventListener('keydown',event=>{
-      if(event.key==='ArrowLeft'){event.preventDefault();go(-1);}
-      if(event.key==='ArrowRight'){event.preventDefault();go(1);}
-    });
-    window.addEventListener('resize',updateCarousel,{passive:true});
-    updateCarousel();
-  </script>
-</section>
-
-<section class="now-section">
-  <div class="wrap now-grid">
-    <div>
-      <div class="eyebrow">Now · September 2026</div>
-      <h2>Current things.</h2>
-    </div>
-    <div class="now-list">
-      <div><span>Finishing</span><p>An untitled novel — end of third draft.</p></div>
-      <div><span>Writing / thinking about</span><p>What would I do if I were stuck in a cube with no exits or windows for 70 years?</p></div>
-      <div><span>Reading</span><p><em>A Little Life</em> by Hanya Yanagihara</p></div>
-      <div><span>Listening to</span><p><em>Vault</em> by Miles</p></div>
-    </div>
-    <a class="text-link" href="https://www.goodreads.com/author/show/8057489.Alex_Franquelli" rel="me noopener">Goodreads ↗</a>
-  </div>
-</section>
-
-<section class="statement">
-  <div class="wrap statement-grid">
-    <div class="eyebrow">The archive</div>
-    <p>This site preserves published work that has lived across magazines, newspapers and music publications — including pieces no longer easy to find at their original URLs.</p>
-    <a class="button button-light" href="/writing">Browse writing</a>
-  </div>
-</section>
+  </section>
 </BaseLayout>
