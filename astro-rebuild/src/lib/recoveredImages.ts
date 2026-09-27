@@ -79,8 +79,11 @@ for(const [key,records] of byTitleCandidates){
   if(unique.length===1) byTitle.set(key,unique[0]);
 }
 
+const usable=(record:ImageRecord|null|undefined)=>
+  record&&!record.src.includes('squarespace-cdn.com')?record:null;
+
 export function getRecoveredImage(slug:string,title:string):ImageRecord|null{
-  return localManifest[slug]||bySlug.get(slug)||byTitle.get(normalise(title))||null;
+  return usable(localManifest[slug])||usable(bySlug.get(slug))||usable(byTitle.get(normalise(title)))||null;
 }
 
 export const recoveredImageCount=Object.keys(localManifest).length||bySlug.size;
