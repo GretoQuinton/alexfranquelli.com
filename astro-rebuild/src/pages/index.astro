@@ -67,7 +67,7 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'https://images.squares
     <div class="featured-heading-actions">
       <div class="carousel-controls" aria-label="Selected writing carousel controls">
         <button class="carousel-button" type="button" data-carousel-prev aria-label="Previous selected article">←</button>
-        <span class="carousel-count"><span data-carousel-current>1</span> / {carouselCards.length}</span>
+        <span class="carousel-count"><span data-carousel-current>1</span> / <span data-carousel-total>{Math.ceil(carouselCards.length/3)}</span></span>
         <button class="carousel-button" type="button" data-carousel-next aria-label="Next selected article">→</button>
       </div>
       <a class="text-link" href="/writing">View all {writing.length} pieces ↗</a>
@@ -108,43 +108,65 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'https://images.squares
     const prev=document.querySelector('[data-carousel-prev]');
     const next=document.querySelector('[data-carousel-next]');
     const current=document.querySelector('[data-carousel-current]');
+    const total=document.querySelector('[data-carousel-total]');
 
-    function nearestIndex(){
-      if(!track||!cards.length) return 0;
-      const left=track.scrollLeft;
+    function perPage(){
+      return window.matchMedia('(min-width: 901px)').matches?3:1;
+    }
+
+    function pageCount(){
+      return Math.max(1,Math.ceil(cards.length/perPage()));
+    }
+
+    function pageOffsets(){
+      const step=perPage();
+      return Array.from({length:pageCount()},(_,page)=>{
+        const card=cards[Math.min(cards.length-1,page*step)];
+        if(!track||!card) return 0;
+        return Math.min(card.offsetLeft,Math.max(0,track.scrollWidth-track.clientWidth));
+      });
+    }
+
+    function currentPage(){
+      if(!track) return 0;
+      const offsets=pageOffsets();
       let best=0;
       let distance=Infinity;
-      cards.forEach((card,index)=>{
-        const delta=Math.abs(card.offsetLeft-left);
+      offsets.forEach((offset,index)=>{
+        const delta=Math.abs(track.scrollLeft-offset);
         if(delta<distance){distance=delta;best=index;}
       });
       return best;
     }
 
     function updateCarousel(){
-      const index=nearestIndex();
-      if(current) current.textContent=String(index+1);
-      if(prev) prev.disabled=index===0;
-      if(next) next.disabled=index===cards.length-1;
+      const page=currentPage();
+      const pages=pageCount();
+      if(current) current.textContent=String(page+1);
+      if(total) total.textContent=String(pages);
+      if(prev) prev.disabled=page===0;
+      if(next) next.disabled=page===pages-1;
     }
 
     function go(direction){
       if(!track||!cards.length) return;
-      const index=nearestIndex();
-      const target=Math.max(0,Math.min(cards.length-1,index+direction));
-      cards[target].scrollIntoView({behavior:'smooth',block:'nearest',inline:'start'});
+      const target=Math.max(0,Math.min(pageCount()-1,currentPage()+direction));
+      const offsets=pageOffsets();
+      track.scrollTo({left:offsets[target],behavior:'smooth'});
     }
 
+    let scrollTimer;
     prev?.addEventListener('click',()=>go(-1));
     next?.addEventListener('click',()=>go(1));
     track?.addEventListener('scroll',()=>{
-      clearTimeout(track._carouselTimer);
-      track._carouselTimer=setTimeout(updateCarousel,80);
+      clearTimeout(scrollTimer);
+      scrollTimer=setTimeout(updateCarousel,80);
     },{passive:true});
     track?.addEventListener('keydown',event=>{
       if(event.key==='ArrowLeft'){event.preventDefault();go(-1);}
       if(event.key==='ArrowRight'){event.preventDefault();go(1);}
     });
+    window.addEventListener('resize',updateCarousel,{passive:true});
     updateCarousel();
   </script>
 </section>
