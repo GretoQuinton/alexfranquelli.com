@@ -78,6 +78,7 @@ const entries = (await readdir(source)).filter(name => name.endsWith('.md'));
 const published = [];
 const missingPages = [];
 const missingSitemap = [];
+const squarespaceLeaks = [];
 
 for (const name of entries) {
   const frontmatter = await readFile(resolve(source, name), 'utf8');
@@ -89,6 +90,10 @@ for (const name of entries) {
   const article = resolve(root, 'writing', slug, 'index.html');
   const info = await stat(article).catch(() => null);
   if (!info?.isFile()) missingPages.push(slug);
+  else {
+    const built = await readFile(article, 'utf8');
+    if (built.includes('squarespace-cdn.com')) squarespaceLeaks.push(slug);
+  }
   if (!sitemap.includes(`https://www.alexfranquelli.com/writing/${slug}`)) missingSitemap.push(slug);
 }
 
@@ -97,6 +102,9 @@ if (missingPages.length) {
 }
 if (missingSitemap.length) {
   throw new Error(`Published article URLs missing from sitemap:\n${missingSitemap.join('\n')}`);
+}
+if (home.includes('squarespace-cdn.com') || squarespaceLeaks.length) {
+  throw new Error(`Squarespace CDN references remain in the rendered build:\n${['homepage', ...squarespaceLeaks].filter((value,index)=>index>0 || home.includes('squarespace-cdn.com')).join('\n')}`);
 }
 
 const countMatch = writingIndex.match(/Archive\s*[·&middot;]\s*([0-9]+)\s*pieces/i);
