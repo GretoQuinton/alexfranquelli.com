@@ -56,8 +56,10 @@ if (isNoIndex === isIndexable) {
 }
 
 if (isNoIndex) {
-  if (!robots.includes('Disallow: /')) {
-    throw new Error('Pre-launch robots.txt must block crawling when the site is noindex.');
+  const robotsBlocks = robots.includes('Disallow: /');
+  const previewAllows = robots.includes('Allow: /');
+  if (!robotsBlocks && !previewAllows) {
+    throw new Error('Noindex build must declare either Disallow: / or the preview-only Allow: / crawler policy.');
   }
   if (!headers.includes('X-Robots-Tag: noindex, nofollow')) {
     throw new Error('Pre-launch _headers must send X-Robots-Tag: noindex, nofollow.');
@@ -104,5 +106,7 @@ if (countMatch && Number(countMatch[1]) !== published.length) {
   throw new Error(`Writing archive count (${countMatch[1]}) does not match published article count (${published.length}).`);
 }
 
-const mode = isNoIndex ? 'pre-launch/noindex' : 'production/indexable';
+const mode = isNoIndex
+  ? (robots.includes('Allow: /') ? 'preview-crawlable/noindex' : 'pre-launch/noindex')
+  : 'production/indexable';
 console.log(`Verified core routes, ${mode} safeguards and ${published.length} published article pages.`);
