@@ -24,8 +24,3 @@ jobs:
           node-version: 22
       - run: npm install
       - run: npm run build
-      - uses: actions/upload-artifact@v4
-        with:
-          name: carousel-qa-dist
-          path: astro-rebuild/dist
-          retention-days: 1
