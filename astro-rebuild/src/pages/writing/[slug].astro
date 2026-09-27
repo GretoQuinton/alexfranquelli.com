@@ -42,7 +42,7 @@ const proseBlockIndex=hasSubmissionScaffold
       const text=plainText(block);
       const words=text.split(/\s+/).filter(Boolean);
       if(index<5&&repeatsTitle(block)) return false;
-      if(scaffoldPattern.test(text)) return false;
+      if(scaffoldPattern.test(text.slice(0,180))) return false;
       if(/^\s*(?:\d+[.)]\s*){2,}/.test(text)) return false;
       return text.length>=90&&words.length>=14;
     })
