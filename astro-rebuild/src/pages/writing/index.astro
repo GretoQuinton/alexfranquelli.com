@@ -60,7 +60,7 @@ const decades=[...new Set(writing.map(x=>{
     </div>
     <button id="clear-filters" class="clear-filters" type="button">Clear filters</button>
   </div>
-  <div class="archive-status" aria-live="polite"><span id="result-count">{writing.length}</span> pieces</div>
+  <div class="archive-status" aria-live="polite"><span id="result-count">{writing.length}</span> <span id="result-label">pieces</span></div>
   <div id="list" class="archive-list">
     {writing.map(a=>{
       const year=Number(a.data.publicationDate?.slice(0,4));
@@ -90,6 +90,7 @@ const decade=document.querySelector('#decade');
 const clear=document.querySelector('#clear-filters');
 const rows=[...document.querySelectorAll('.article-row')];
 const count=document.querySelector('#result-count');
+const label=document.querySelector('#result-label');
 const empty=document.querySelector('#empty-state');
 const status=document.querySelector('.archive-status');
 let activeType='all';
@@ -150,6 +151,7 @@ function update(){
     if(show) visible++;
   });
   count.textContent=visible;
+  if(label) label.textContent=visible===1?'piece':'pieces';
   empty.hidden=visible!==0;
   syncUrl();
 }
