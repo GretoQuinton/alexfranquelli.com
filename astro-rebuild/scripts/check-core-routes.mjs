@@ -56,8 +56,8 @@ if (isNoIndex === isIndexable) {
 }
 
 if (isNoIndex) {
-  const robotsBlocks = robots.includes('Disallow: /');
-  const previewAllows = robots.includes('Allow: /');
+  const robotsBlocks = /^\s*Disallow:\s*\/\s*$/m.test(robots);
+  const previewAllows = /^\s*Allow:\s*\/\s*$/m.test(robots);
   if (!robotsBlocks && !previewAllows) {
     throw new Error('Noindex build must declare either Disallow: / or the preview-only Allow: / crawler policy.');
   }
@@ -65,7 +65,7 @@ if (isNoIndex) {
     throw new Error('Pre-launch _headers must send X-Robots-Tag: noindex, nofollow.');
   }
 } else {
-  if (!robots.includes('Allow: /')) {
+  if (!/^\s*Allow:\s*\/\s*$/m.test(robots)) {
     throw new Error('Production robots.txt must allow crawling when the site is indexable.');
   }
   if (!robots.includes('Sitemap: https://www.alexfranquelli.com/sitemap.xml')) {
@@ -125,6 +125,6 @@ if (countMatch && Number(countMatch[1]) !== published.length) {
 }
 
 const mode = isNoIndex
-  ? (robots.includes('Allow: /') ? 'preview-crawlable/noindex' : 'pre-launch/noindex')
+  ? (/^\s*Allow:\s*\/\s*$/m.test(robots) ? 'preview-crawlable/noindex' : 'pre-launch/noindex')
   : 'production/indexable';
 console.log(`Verified core routes, ${mode} safeguards and ${published.length} published article pages.`);
