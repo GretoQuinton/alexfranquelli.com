@@ -22,28 +22,33 @@ const plainText=(value:string)=>decodeEntities(value
   .trim());
 const normalise=(value:string)=>plainText(value).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const rawBody=article.body||'';
-const rawBlocks=rawBody.trim().split(/\n\s*\n/).filter(Boolean);
+const htmlParagraphs=[...rawBody.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)].map(match=>match[1]);
+const sourceBlocks=htmlParagraphs.length
+  ? htmlParagraphs
+  : rawBody.trim().split(/\n\s*\n/).filter(Boolean);
 const titleKey=normalise(d.title);
-const scaffoldPattern=/(?:^|\b)(?:di\s+alex\s+franquelli|by\s+alex\s+franquelli|alex\s+franquelli|voto\s*:|rating\s*:|labels?\s*:|websites?\s*:|release\s+dates?\s*:|tracklist\s*:|similar\s+(?:artist|artists|to)\s*:|titolo\s*:|regista\s*:|durata\s*:|caratteri\s*\(con\s+spazi\)|parole\s*:|x{3,}|no\s+title\s+yet)/i;
-const leadText=rawBlocks.slice(0,6).map(plainText).join(' | ');
-const repeatsTitle=rawBlocks.slice(0,4).some(block=>{
+const scaffoldPattern=/(?:^|\b)(?:di\s+alex\s+franquelli|by\s+alex\s+franquelli|alex\s+franquelli|voto\s*:|rating\s*:|labels?\s*:|websites?\s*:|release\s+dates?\s*:|tracklist\s*:|similar\s+(?:artist|artists|to)\s*:|titolo\s*:|regista\s*:|durata\s*:|caratteri\s*\(con\s+spazi\)|parole\s*:|x{3,}|no\s+title\s+yet|band\s+site|buy\s+it\s+here|sito\s+ufficiale|per\s+chi\s+ascolta)/i;
+const repeatsTitle=(block:string)=>{
   const key=normalise(block);
-  return key&&titleKey&&(key===titleKey||(key.length>10&&titleKey.includes(key))||(titleKey.length>10&&key.includes(titleKey)));
+  return Boolean(key&&titleKey&&(key===titleKey||(key.length>10&&titleKey.includes(key))||(titleKey.length>10&&key.includes(titleKey))));
+};
+const leadSample=sourceBlocks.slice(0,7);
+const hasSubmissionScaffold=leadSample.some((block,index)=>{
+  const text=plainText(block);
+  return scaffoldPattern.test(text)||(index<4&&repeatsTitle(block));
 });
-const hasSubmissionScaffold=!/^\s*<p[\s>]/i.test(rawBody)&&(scaffoldPattern.test(leadText)||repeatsTitle);
 const proseBlockIndex=hasSubmissionScaffold
-  ? rawBlocks.findIndex((block,index)=>{
-      if(index===0&&repeatsTitle) return false;
+  ? sourceBlocks.findIndex((block,index)=>{
       const text=plainText(block);
-      if(scaffoldPattern.test(text)) return false;
       const words=text.split(/\s+/).filter(Boolean);
+      if(index<5&&repeatsTitle(block)) return false;
+      if(scaffoldPattern.test(text)) return false;
+      if(/^\s*(?:\d+[.)]\s*){2,}/.test(text)) return false;
       return text.length>=90&&words.length>=14;
     })
-  : -1;
-const leadingScaffoldCount=proseBlockIndex>0?proseBlockIndex:0;
-const openingSource=leadingScaffoldCount>0
-  ? rawBlocks[leadingScaffoldCount]
-  : ((rawBody.match(/<p[^>]*>([\s\S]*?)<\/p>/i)||[])[1]||rawBody);
+  : 0;
+const leadingScaffoldCount=hasSubmissionScaffold&&proseBlockIndex>0?proseBlockIndex:0;
+const openingSource=sourceBlocks[Math.max(0,proseBlockIndex)]||rawBody;
 const opening=plainText(openingSource);
 const sentence=opening.match(/^(.{30,260}?[.!?])(?:\s|$)/)?.[1];
 const clipped=opening.length>240?(opening.slice(0,241).replace(/\s+\S*$/,'')+'…'):opening;
