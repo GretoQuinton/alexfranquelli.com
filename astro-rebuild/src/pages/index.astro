@@ -58,7 +58,7 @@ for(const article of writing){
   const current=publicationCounts.get(key);
   publicationCounts.set(key,{label:current?.label||label,count:(current?.count||0)+1,key});
 }
-const topPublications=[...publicationCounts.values()].sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label)).slice(0,6);
+const allPublications=[...publicationCounts.values()].sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label));
 const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home-hero.webp';
 ---
 
@@ -132,6 +132,7 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
             data-language={langCode(a.data.language)}
             data-image={image?.src||''}
           >
+            {image&&<span class="work-thumb" aria-hidden="true"><img src={image.src} alt="" loading="lazy" /></span>}
             <span class="work-no">No. {String(i+1).padStart(3,'0')} //</span>
             <span class="work-title">{a.data.title}</span>
             <span class="work-publication">{a.data.publication||'Published work'}</span>
@@ -235,7 +236,7 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
       <a class="text-link" href="/writing">Browse everything ↗</a>
     </div>
     <div class="publication-index">
-      {topPublications.map((publication,i)=>
+      {allPublications.map((publication,i)=>
         <a href={'/writing?publication='+publication.key}>
           <span class="publication-no">{String(i+1).padStart(2,'0')}</span>
           <strong>{publication.label}</strong>
