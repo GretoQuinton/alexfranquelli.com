@@ -7,6 +7,11 @@ type: "Review"
 description: "La magia oscura dei Can rinasce dalla polvere del tempo"
 byline: "Alex Franquelli"
 releaseLabel: "Mute"
+releaseYear: "2012"
+image: "https://coverartarchive.org/release/9c01b3b2-b16e-4056-a2c3-31a1b3ddec31/front-500"
+imageAlt: "Cover of Can — The Lost Tapes"
+imageCredit: "Can — The Lost Tapes · 2012"
+imageSourceUrl: "https://musicbrainz.org/release-group/0b93da64-7d0b-4b80-905b-55a9b6ddb357"
 featured: false
 draft: false
 ---
