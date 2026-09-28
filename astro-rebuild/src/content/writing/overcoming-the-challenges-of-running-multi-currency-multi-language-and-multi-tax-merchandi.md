@@ -9,15 +9,6 @@ byline: "Alex Franquelli"
 featured: false
 draft: false
 ---
-Alex Franquelli
-Article commissioned by World Business Research.
-Submitted on 29 January 2014
-
-
-Overcoming the challenges of running multi--currency, multi--language and
-multi--tax merchandising systems
-
-
 Omni--channel is undoubtedly the new buzzword. This new, synergetic approach
 is important for retail and is rightly being analysed and debated in publications
 and conferences. But what are the challenges a business encounters when it opts
