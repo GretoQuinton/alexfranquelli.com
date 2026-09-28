@@ -1,6 +1,7 @@
 ---
 title: "The Body - Master, We Perish"
 slug: "the-body-master-we-perish"
+description: "As the Assembly Of Light Choir started murmuring its way into the first track on The Body’s magnificent preceding record, all promises of annihilation by the hands of a bearded duo of Rhode Islanders immediately faded into a celestial oblivion."
 publication: "Angry Metal Guy"
 publicationDate: "2013-04-29"
 displayDate: "2013-04-29"

@@ -7,11 +7,6 @@ byline: "Alex Franquelli"
 featured: false
 draft: false
 ---
-
-La nuova Birmania e gli uomini senza pace
-
-di Alex Franquelli
-
 “Qualsiasi cosa facciate, fatela da nazionalisti. Quando mangiate, mangiate da nazionalisti. Quando viaggiate, fatelo da nazionalisti e, cosa ancora più importante, quando comprate, comprate da veri birmani”. Le parole del piccolo monaco buddista Wirathu hanno cessato d’essere minacciose quando, il 20 Marzo scorso, una rivolta le ha trasformate in violenza. Come in un copione ormai scontato, a scatenare le ire della folla sarebbe stato un episodio dai contorni poco chiari: a Meikthila un orefice di religione islamica avrebbe rifiutato di acquistare dell’oro falso da una coppia di locali. Almeno venti morti, sette case e due moschee distrutte sarebbe il triste bilancio di una rivolta che ha radici lontane nel tempo e nello spazio.
 
 Sayadaw (‘maestro venerabile’) Wirathu è un monaco buddista con una lunga scia di episodi d’intolleranza alle spalle. Il suo nome è da dieci anni dietro le maggiori manifestazioni d’islamofobia nel Paese. Tutte culminano, quasi irrimediabilmente, in sanguinosi attacchi come quello a Mandalay nel 2003 o a Meikthila, appunto, qualche giorno addietro. Alla base di tale sentimento, in un Paese che solo ora inizia ad aprirsi a dinamiche simil-democratiche, c’è la questione del Rakhine, una regione costiera popolata da quasi 800.000 musulmani.

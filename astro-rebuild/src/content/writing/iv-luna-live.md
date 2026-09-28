@@ -4,17 +4,10 @@ slug: "iv-luna-live"
 language: "Italian"
 type: "Live report"
 byline: "Alex Franquelli"
+description: "Cronaca di una nobile fuga dal Natale"
 featured: false
 draft: false
 ---
-IV Luna live @ Qube, Roma (Italia)
-
-Cronaca di una nobile fuga dal Natale
-
-di
-
-Alex Franquelli
-
 Non li avevo mai ascoltati prima d’ora. Forse un’attenzione distratta su qualche radio privata romana, forse li avevo sentiti senza dare un peso specifico a quello che assimilavo, ma mai prima di oggi posso dire di averli incontrati musicalmente.
 
 Stasera in occasione di un mio ritorno nella Capitale mi é sembrato doveroso prestare ascolto a qualcosa di più di una semplice band locale o uno di quei lampi ai quali ci ha abituati l’underground romano.

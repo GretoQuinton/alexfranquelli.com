@@ -4,17 +4,10 @@ slug: "sunn-0-monoliths-and-dimensions"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
+rating: "4"
 featured: false
 draft: false
 ---
-Sunn 0))
-
-Monoliths & Dimensions
-
-di Alex Franquelli
-
-Voto: 4
-
 Primario: che è il primo in una successione, in una serie ordinata. Ha in sé i meccanismi ed il principio fondante di qualcosa sebbene a volte manchi della sostanza evoluta, del concetto arricchito dall'esperienza e delle sue ragioni. Ciò che é primario non é necessariamente godibile dai fruitori del prodotto finito ma serpeggia ugualmente nei loro inconsci quando questi si trovano dinanzi a ciò che non riconoscono come legato all'elemento che normalmente amano e apprezzano.
 
 “Monoliths & Dimensions”, o dovremmo dire i Sunn O))), sono il “numero primo” del metal: la sua scomposizione aritmica, asimmetrica ad entità che basta a se stessa prevalentemente attraverso il rumore, fagocitando le sue stesse dinamiche e traendo ispirazione non dalle sue diramazioni ma dalle mancanze. Di melodia, di struttura, di canoni e dinamismo.

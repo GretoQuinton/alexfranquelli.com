@@ -7,11 +7,6 @@ byline: "Alex Franquelli"
 featured: false
 draft: false
 ---
-Article on Mongolia (no title yet)
-
-(Alex Franquelli)
-
-
 “The sky, the sky is bright!” The voice of the longhaired girl shakes our morning abruptly, as we open our eyes to the almost mystical vision ahead of us. The sun is a warm light reflected on the restless water of the river Onon and the steppe we glimpse beyond the aquatic path disappears in a blur of sensual lambent radiance.
 The joke was on us: we had slept well into the morning despite our promise of an early rise. No storm was in sight but the rounded woman who had cooked for us the night before gave us a word of advice while handing us generous servings of mutton and cabbage.
 

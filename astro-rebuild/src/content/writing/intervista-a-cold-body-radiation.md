@@ -11,9 +11,6 @@ magazineIssue: "51"
 featured: false
 draft: false
 ---
-
-Intervista a Cold Body Radiation di Alex Franquelli
-
 Gli album di una malinconia allucinata e deviata vedono la luce il più delle volte dalla mente di una sola persona. Il compromesso non esiste nella tristezza; un alter ego sarebbe la mediazione e la mediazione allevierebbe la pena traviando il percorso creativo sul nascere. M., mente e cuore dei Cold Body Radiation, traduce concetti semplici in uno stile musicale di passaggio quale è innegabilmente il black metal nel 2012; un genere che dalla nera estetica atonale degli esordi sta prendendo sempre più la forma di un post-rock deviato e estremo. Se il precedente ‘The Great White Emptiness” aveva suscitato interesse tra un pubblico di appassionati, il nuovo ‘Deer Twilight’ e’ senza ombra di dubbio destinato a cambiare ancora una volta le regole del gioco. Il dinamismo è ora parte integrante di un songwriting che, a detta dello stesso M., è pura traduzione, in musica, di idee semplici e definite. La melodia è padrona incontrastata di un gioco ritmico slegato dai canoni dei generi. Un progetto in divenire del quale catturiamo un’istantanea.
 Quanto sono poco importanti le etichette per una band che sembra unire diversi stili per crearne uno nuovo, diverso dal resto?
 Le etichette sono perfettamente inutili. L’atmosfera e il sentimento creano la musica. Per il resto, la gente può chiamarla benissimo come vuole.

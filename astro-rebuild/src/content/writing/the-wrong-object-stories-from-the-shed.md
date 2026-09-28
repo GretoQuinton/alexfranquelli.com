@@ -1,6 +1,7 @@
 ---
 title: "The Wrong Object - Stories From The Shed"
 slug: "the-wrong-object-stories-from-the-shed"
+description: "Per un volgare scherzo del destino ho messo su i The Wrong Object subito dopo aver ascoltato “Mingus Ah Um” mentre leggevo un libro guardandone le figure."
 publication: "Kronic"
 language: "Italian"
 type: "Review"

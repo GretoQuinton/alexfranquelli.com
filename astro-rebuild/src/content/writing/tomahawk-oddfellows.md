@@ -1,6 +1,7 @@
 ---
 title: "Tomahawk - Oddfellows"
 slug: "tomahawk-oddfellows"
+description: "Of all Mike Patton’s project, Tomahawk is the one I appreciate the least."
 publication: "Angry Metal Guy"
 publicationDate: "2013-01-25"
 displayDate: "2013-01-25"
