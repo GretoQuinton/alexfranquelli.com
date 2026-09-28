@@ -173,6 +173,9 @@ h2,h3{line-height:1}
 .publication-details span,.publication-details strong{display:block}
 .publication-details span{color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.12em}
 .publication-card img{width:min(360px,100%);margin-top:24px}
+.tracklist-card{margin-top:54px;padding-top:18px;border-top:1px solid var(--ink)}
+.tracklist-card ol{columns:2;column-gap:42px;margin:16px 0 0;padding-left:22px}
+.tracklist-card li{break-inside:avoid;margin:0 0 7px;font-family:var(--serif);font-size:16px;line-height:1.45}
 .article-nav{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--ink);margin-bottom:82px}
 .article-nav>div{min-width:0}
 .article-nav>div+div{border-left:1px solid var(--line)}
@@ -300,6 +303,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .article-image{margin-bottom:32px}
   .prose{font-size:18px;line-height:1.72}
   .publication-details{flex-wrap:wrap;gap:18px 30px}
+  .tracklist-card ol{columns:1}
   .simple h1{font-size:50px;line-height:.98;margin-bottom:28px}
   .simple p,.simple p:first-of-type{font-size:20px}
   .fiction-meta{grid-template-columns:1fr}
