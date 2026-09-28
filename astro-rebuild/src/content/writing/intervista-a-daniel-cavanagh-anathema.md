@@ -8,12 +8,6 @@ byline: "Alex Franquelli"
 featured: false
 draft: false
 ---
-Intervista a Daniel Cavanagh (Anathema)
-
-Londra, 25 Maggio 2010
-
-di Alex Franquelli
-
 Il sorriso velato di malinconia sul viso di Daniel Cavanagh ha mille significati e ognuno di questi prende forma nelle sue parole in un caldo pomeriggio londinese. La fine di un incubo non coincide sempre con l’inizio di un sogno ma col risveglio, con la presa di coscienza di un uomo che rinasce anche attraverso un album come ‘We’re Here Because We’re Here’ che segna un nuovo, esaltante inizio dopo 7 anni di silenzio. Gli inizi doom nei primi anni 90, le droghe, la morte e quell’estate del 2005 in cui tutto ebbe un nuovo significato. La mia felicita nell’aver dimenticato il foglio con le domande, poi, è pari solo alla sua gioia nel poter parlare senza vincoli di ciò che teneva dentro da anni.
 
 Il futuro è una memoria vigliacca che si nasconde al presente e ai suoi doveri, lontano da sogni che forse neanche conoscerà mai.
