@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { getRecoveredImage } from '../lib/recoveredImages';
+import { currentNovel } from '../data/current';
 
 const parseDate=(value?:string,display?:string)=>{
   if(value) return Date.parse(value.length===4?`${value}-01-01`:value.length===7?`${value}-01`:value)||0;
@@ -36,6 +37,7 @@ const langCode=(language:string)=>language==='Italian'?'IT':'EN';
 const publicationKey=(value?:string)=>(value||'').trim().toLowerCase().replace(/[^a-z0-9]+/g,'');
 
 const centerpiece=writing.find(a=>a.data.slug==='the-tipping-point-of-mongolia')||writing[0];
+const centerpieceImage=imageFor(centerpiece);
 const fallbackSelected=[
   'shellac-live-at-netil-house-london',
   'nine-inch-nails-hesitation-marks',
@@ -48,7 +50,7 @@ const flagged=writing.filter(a=>a.data.featured&&a.data.slug!==centerpiece.data.
 const selected=[...flagged,...fallbackSelected.filter(a=>!flagged.some(f=>f.data.slug===a.data.slug))]
   .filter((a,i,all)=>all.findIndex(x=>x.data.slug===a.data.slug)===i)
   .slice(0,6)
-  .map(article=>({article,image:imageFor(article),excerpt:excerpt(article,340)}));
+  .map(article=>({article,image:imageFor(article),excerpt:excerpt(article,175)}));
 
 const publicationCounts=new Map<string,{label:string,count:number,key:string}>();
 for(const article of writing){
@@ -58,13 +60,25 @@ for(const article of writing){
   const current=publicationCounts.get(key);
   publicationCounts.set(key,{label:current?.label||label,count:(current?.count||0)+1,key});
 }
-const allPublications=[...publicationCounts.values()].sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label));
-const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home-hero.webp';
+const publicationPriority=['ritual','musicboom','thequietus','popmatters','allaboutjazz','thelineofbestfit'];
+const allPublications=[...publicationCounts.values()].sort((a,b)=>{
+  const aRank=publicationPriority.indexOf(a.key);
+  const bRank=publicationPriority.indexOf(b.key);
+  if(aRank!==-1||bRank!==-1){
+    if(aRank===-1) return 1;
+    if(bRank===-1) return -1;
+    return aRank-bRank;
+  }
+  return b.count-a.count||a.label.localeCompare(b.label);
+});
+const legacyHeroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home-hero.webp';
+const heroEditorial=selected.filter(item=>item.image).slice(0,3);
+const socialImage=heroEditorial[0]?.image?.src||legacyHeroImage;
 ---
 
 <BaseLayout
   description="Alex Franquelli is a writer and critic based between London and Rome, working across music, politics, culture and fiction."
-  image={heroImage}
+  image={socialImage}
 >
   <section class="hero wrap">
     <div class="hero-grid">
@@ -82,15 +96,15 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
       </div>
     </div>
 
-    <div class="hero-media" aria-hidden="true">
-      <img src={heroImage} alt="" loading="eager" fetchpriority="high" />
-    </div>
+    {heroEditorial.length>0
+      ? <div class="hero-media hero-editorial-media" aria-label="Selected criticism artwork">
+          {heroEditorial.map(({article:a,image},i)=><a class="hero-art-card" href={'/writing/'+a.data.slug}>
+            <img src={image!.src} alt={image!.alt} loading={i===0?'eager':'lazy'} fetchpriority={i===0?'high':'auto'} />
+            <span><strong>{a.data.publication||'Published work'}</strong>{a.data.title}</span>
+          </a>)}
+        </div>
+      : <div class="hero-media" aria-hidden="true"><img src={legacyHeroImage} alt="" loading="eager" fetchpriority="high" /></div>}
 
-    <div class="identity-strip" aria-label="Writer profile">
-      <span>London / Rome</span>
-      <span>Music · Politics · Fiction</span>
-      <span>IT / EN</span>
-    </div>
   </section>
 
   <section id="selected" class="wrap editorial-feature">
@@ -105,9 +119,17 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
         <span>{centerpiece.data.type}</span>
       </div>
       <h2>{centerpiece.data.title}</h2>
-      <p class="editorial-opening" lang={centerpiece.data.language==='Italian'?'it':'en'}>{excerpt(centerpiece,620)}</p>
+      <p class="editorial-opening" lang={centerpiece.data.language==='Italian'?'it':'en'}>{excerpt(centerpiece,250)}</p>
       <a class="button" href={'/writing/'+centerpiece.data.slug}>Read the piece</a>
     </div>
+    {centerpieceImage&&<figure class="editorial-feature-image">
+      <img src={centerpieceImage.src} alt={centerpieceImage.alt} loading="lazy" />
+      {centerpiece.data.imageCredit&&<figcaption>
+        {centerpiece.data.imageSourceUrl
+          ? <a href={centerpiece.data.imageSourceUrl} rel="noopener">{centerpiece.data.imageCredit} ↗</a>
+          : centerpiece.data.imageCredit}
+      </figcaption>}
+    </figure>}
   </section>
 
   <section class="wrap section work-section">
@@ -142,6 +164,9 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
       </div>
 
       <aside class="work-copy-pane" aria-live="polite">
+        <div class="work-copy-image" data-work-pane-media hidden={!selected[0]?.image}>
+          {selected[0]?.image&&<img data-work-pane-image src={selected[0].image.src} alt="" />}
+        </div>
         <div class="work-copy-meta">
           <span data-work-publication>{selected[0]?.article.data.publication||''}</span>
           <span data-work-language>[{selected[0]?langCode(selected[0].article.data.language):'EN'}]</span>
@@ -151,7 +176,7 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
       </aside>
 
       <div class="work-float" data-work-float aria-hidden="true">
-        <img data-work-image src={selected[0]?.image?.src||''} alt="" />
+        {selected[0]?.image&&<img data-work-image src={selected[0].image.src} alt="" />}
         <span>READ</span>
       </div>
     </div>
@@ -163,6 +188,8 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
       const paneExcerpt=showcase?.querySelector('[data-work-excerpt]');
       const panePublication=showcase?.querySelector('[data-work-publication]');
       const paneLanguage=showcase?.querySelector('[data-work-language]');
+      const paneMedia=showcase?.querySelector('[data-work-pane-media]');
+      const paneImage=showcase?.querySelector('[data-work-pane-image]');
       const float=showcase?.querySelector('[data-work-float]');
       const floatImage=showcase?.querySelector('[data-work-image]');
 
@@ -172,8 +199,30 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
         if(paneExcerpt) paneExcerpt.textContent=row.dataset.excerpt||'';
         if(panePublication) panePublication.textContent=row.dataset.publication||'';
         if(paneLanguage) paneLanguage.textContent='['+(row.dataset.language||'EN')+']';
+        if(paneMedia){
+          paneMedia.toggleAttribute('hidden',!row.dataset.image);
+          if(row.dataset.image){
+            let image=paneMedia.querySelector('[data-work-pane-image]');
+            if(!image){
+              image=document.createElement('img');
+              image.setAttribute('data-work-pane-image','');
+              image.alt='';
+              paneMedia.appendChild(image);
+            }
+            image.src=row.dataset.image;
+          }
+        }
         rows.forEach(item=>item.toggleAttribute('data-active',item===row));
-        if(floatImage&&row.dataset.image) floatImage.src=row.dataset.image;
+        if(float&&row.dataset.image){
+          let image=float.querySelector('[data-work-image]');
+          if(!image){
+            image=document.createElement('img');
+            image.setAttribute('data-work-image','');
+            image.alt='';
+            float.prepend(image);
+          }
+          image.src=row.dataset.image;
+        }
       }
 
       rows.forEach(row=>{
@@ -201,25 +250,27 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
       </div>
 
       <div class="now-editorial-grid">
-        <article class="draft-card">
+        <article class="manuscript-card" data-draft-badge={currentNovel.badge}>
           <span class="now-label">Manuscript</span>
-          <strong>Untitled novel</strong>
-          <em>Draft 3 / Revision phase</em>
-        </article>
-
-        <article class="thought-card">
-          <span class="now-label">Writing / thinking about</span>
-          <blockquote>What would I do if I were stuck in a cube with no exits or windows for 70 years?</blockquote>
+          <strong>{currentNovel.title}</strong>
+          <em>{currentNovel.status}</em>
+          <blockquote>{currentNovel.quote}</blockquote>
+          <span class="manuscript-pull-label">From the manuscript</span>
         </article>
 
         <div class="now-notes">
-          <div>
+          <div class="now-note now-reading">
             <span class="now-label">Reading</span>
-            <p><em>A Little Life</em><br />Hanya Yanagihara</p>
+            <div class="reading-row">
+              <img class="reading-cover" src="/images/editorial/a-little-life.jpg" alt="Cover of A Little Life by Hanya Yanagihara" loading="lazy" />
+              <p><em>A Little Life</em><br />Hanya Yanagihara</p>
+            </div>
           </div>
-          <div>
-            <span class="now-label">Listening to</span>
+          <div class="now-note now-playing">
+            <span class="now-label">Now Playing</span>
             <p><em>Vault</em><br />Miles</p>
+            <iframe class="bandcamp-embed" title="Vault by Miles on Bandcamp" src="https://bandcamp.com/EmbeddedPlayer/v=2/album=1040385539/size=large/tracklist=false/artwork=small/" loading="eager"></iframe>
+            <a class="text-link" href="https://shortspanrecords.bandcamp.com/album/vault" rel="noopener">Open on Bandcamp ↗</a>
           </div>
           <a class="text-link" href="https://www.goodreads.com/author/show/8057489.Alex_Franquelli" rel="me noopener">Goodreads ↗</a>
         </div>

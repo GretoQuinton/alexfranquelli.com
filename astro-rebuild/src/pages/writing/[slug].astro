@@ -35,6 +35,12 @@ const opening=plainText(openingSource);
 const sentence=opening.match(/^(.{30,260}?[.!?])(?:\s|$)/)?.[1];
 const clipped=opening.length>240?(opening.slice(0,241).replace(/\s+\S*$/,'')+'…'):opening;
 const pageDescription=d.description||sentence||clipped||'Writing by Alex Franquelli.';
+const normaliseForCompare=(value:string)=>plainText(value).toLowerCase().replace(/[^a-z0-9à-ÿ]+/g,'');
+const firstBodyText=plainText(sourceBlocks[0]||'');
+const explicitDescriptionRepeatedInBody=Boolean(
+  d.description&&normaliseForCompare(firstBodyText).includes(normaliseForCompare(d.description))
+);
+const showArticleDeck=Boolean(d.description&&!explicitDescriptionRepeatedInBody);
 const recoveredImage=getRecoveredImage(d.slug,d.title);
 const explicitImage=d.image?{src:d.image,alt:d.imageAlt||''}:null;
 const resolvedImage=d.image&&!d.image.includes('squarespace-cdn.com')?explicitImage:(recoveredImage||explicitImage);
@@ -56,6 +62,13 @@ const articleAuthors=authorNames.map((name:string)=>{
     ? {'@type':'Person',name,url:'https://www.alexfranquelli.com/about'}
     : {'@type':'Person',name};
 });
+const showByline=Boolean(d.byline&&(!/^(?:Alex|Alessandro) Franquelli$/i.test(d.byline.trim())||articleAuthors.length>1));
+const recordFacts=[
+  d.rating&&{label:'Rating',value:d.rating},
+  d.releaseLabel&&{label:'Label',value:d.releaseLabel},
+  d.releaseYear&&{label:'Year',value:d.releaseYear},
+  d.genre&&{label:'Genre',value:d.genre}
+].filter(Boolean) as {label:string;value:string}[];
 const articleJsonLd=JSON.stringify({
   '@context':'https://schema.org',
   '@type':'Article',
@@ -77,24 +90,23 @@ const articleJsonLd=JSON.stringify({
   <header class="article-header">
     <div class="eyebrow">{d.type}{d.publication&&<> · {d.publication}</>}</div>
     <h1>{d.title}</h1>
-    <p class="article-deck" lang={lang}>{pageDescription}</p>
+    {showArticleDeck&&<p class="article-deck" lang={lang}>{pageDescription}</p>}
+    {showByline&&<p class="article-byline">By {d.byline}</p>}
     <div class="article-meta">
       <div><span>Publication</span><strong>{d.publication||'Unconfirmed'}</strong></div>
       <div><span>Date</span><strong>{d.displayDate||d.publicationDate||'Unconfirmed'}</strong></div>
       <div><span>Language</span><strong>{d.language}</strong></div>
-      {d.byline&&<div><span>Byline</span><strong>{d.byline}</strong></div>}
-      {d.rating&&<div><span>Rating</span><strong>{d.rating}</strong></div>}
-      {d.releaseLabel&&<div><span>Label</span><strong>{d.releaseLabel}</strong></div>}
-      {d.releaseYear&&<div><span>Release year</span><strong>{d.releaseYear}</strong></div>}
-      {d.genre&&<div><span>Genre</span><strong>{d.genre}</strong></div>}
     </div>
+    {recordFacts.length>0&&<div class="article-record-details" aria-label="Record details">
+      {recordFacts.map(fact=><span><strong>{fact.label}</strong> {fact.value}</span>)}
+    </div>}
     {originalStatus==='live'&&d.originalUrl&&<a class="original-link" href={d.originalUrl} rel="noopener">View original publication ↗</a>}
     {originalStatus==='dead'&&d.archiveUrl&&<a class="original-link" href={d.archiveUrl} rel="noopener">View archived publication ↗</a>}
     {originalStatus==='dead'&&!d.archiveUrl&&<p class="original-note">The original publication is no longer online.</p>}
     {(originalStatus==='unchecked'||!originalStatus)&&d.originalUrl&&<a class="original-link" href={d.originalUrl} rel="noopener">Original publication (link unverified) ↗</a>}
     {(!d.publicationDate||!d.publication)&&<p class="verification-note">Some archive metadata is still being verified. <a href="/contact">Corrections are welcome.</a></p>}
   </header>
-  {resolvedImage&&<figure class="article-image">
+  {resolvedImage&&<figure class:list={['article-image',/review/i.test(d.type||'')&&'article-image-cover']}>
     <img src={resolvedImage.src} alt={resolvedImage.alt} loading="eager" fetchpriority="high" />
     {(d.imageCredit||d.imageSourceUrl)&&<figcaption>
       {d.imageCredit&&<span>{d.imageCredit}</span>}
