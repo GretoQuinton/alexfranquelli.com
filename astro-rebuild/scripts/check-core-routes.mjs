@@ -82,6 +82,7 @@ const missingPages = [];
 const missingSitemap = [];
 const squarespaceLeaks = [];
 const descriptionScaffoldLeaks = [];
+const hiddenProseRuleLeaks = [];
 
 for (const name of entries) {
   const frontmatter = await readFile(resolve(source, name), 'utf8');
@@ -96,6 +97,7 @@ for (const name of entries) {
   else {
     const built = await readFile(article, 'utf8');
     if (built.includes('squarespace-cdn.com')) squarespaceLeaks.push(slug);
+    if (/\.prose\s*>\s*:nth-child\(-n\+\d+\)\s*\{\s*display\s*:\s*none/i.test(built)) hiddenProseRuleLeaks.push(slug);
     if (!/^description:\s*/m.test(frontmatter)) {
       const description = built.match(/<meta[^>]+name="description"[^>]+content="([^"]*)"/i)?.[1] || '';
       if (/(?:voto\s*:|rating\s*:|x{3,}|no\s+title\s+yet|tracklist\s*:|similar\s+(?:artist|artists|to)\s*:|release\s+dates?\s*:|caratteri\s*\(con\s+spazi\)|parole\s*:)/i.test(description)) {
@@ -117,6 +119,9 @@ if (home.includes('squarespace-cdn.com') || squarespaceLeaks.length) {
 }
 if (descriptionScaffoldLeaks.length) {
   throw new Error(`Derived article descriptions still contain manuscript scaffolding:\n${descriptionScaffoldLeaks.join('\n')}`);
+}
+if (hiddenProseRuleLeaks.length) {
+  throw new Error(`Rendered articles contain hidden leading-prose rules:\n${hiddenProseRuleLeaks.join('\n')}`);
 }
 
 const countMatch = writingIndex.match(/Archive\s*[·&middot;]\s*([0-9]+)\s*pieces/i);
