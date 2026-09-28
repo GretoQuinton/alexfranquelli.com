@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { getRecoveredImage } from '../lib/recoveredImages';
+import { currentNovel } from '../data/current';
 
 const parseDate=(value?:string,display?:string)=>{
   if(value) return Date.parse(value.length===4?`${value}-01-01`:value.length===7?`${value}-01`:value)||0;
@@ -94,12 +95,14 @@ const socialImage=heroEditorial[0]?.image?.src||legacyHeroImage;
       </div>
     </div>
 
-    <div class="hero-media hero-editorial-media" aria-label="Selected criticism artwork">
-      {heroEditorial.map(({article:a,image},i)=><a class="hero-art-card" href={'/writing/'+a.data.slug}>
-        <img src={image!.src} alt={image!.alt} loading={i===0?'eager':'lazy'} fetchpriority={i===0?'high':'auto'} />
-        <span><strong>{a.data.publication||'Published work'}</strong>{a.data.title}</span>
-      </a>)}
-    </div>
+    {heroEditorial.length>0
+      ? <div class="hero-media hero-editorial-media" aria-label="Selected criticism artwork">
+          {heroEditorial.map(({article:a,image},i)=><a class="hero-art-card" href={'/writing/'+a.data.slug}>
+            <img src={image!.src} alt={image!.alt} loading={i===0?'eager':'lazy'} fetchpriority={i===0?'high':'auto'} />
+            <span><strong>{a.data.publication||'Published work'}</strong>{a.data.title}</span>
+          </a>)}
+        </div>
+      : <div class="hero-media" aria-hidden="true"><img src={legacyHeroImage} alt="" loading="eager" fetchpriority="high" /></div>}
 
     <div class="identity-strip" aria-label="Writer profile">
       <span>London / Rome</span>
@@ -157,8 +160,8 @@ const socialImage=heroEditorial[0]?.image?.src||legacyHeroImage;
       </div>
 
       <aside class="work-copy-pane" aria-live="polite">
-        <div class="work-copy-image" data-work-pane-media>
-          <img data-work-pane-image src={selected[0]?.image?.src||''} alt="" />
+        <div class="work-copy-image" data-work-pane-media hidden={!selected[0]?.image}>
+          {selected[0]?.image&&<img data-work-pane-image src={selected[0].image.src} alt="" />}
         </div>
         <div class="work-copy-meta">
           <span data-work-publication>{selected[0]?.article.data.publication||''}</span>
@@ -169,7 +172,7 @@ const socialImage=heroEditorial[0]?.image?.src||legacyHeroImage;
       </aside>
 
       <div class="work-float" data-work-float aria-hidden="true">
-        <img data-work-image src={selected[0]?.image?.src||''} alt="" />
+        {selected[0]?.image&&<img data-work-image src={selected[0].image.src} alt="" />}
         <span>READ</span>
       </div>
     </div>
@@ -192,10 +195,30 @@ const socialImage=heroEditorial[0]?.image?.src||legacyHeroImage;
         if(paneExcerpt) paneExcerpt.textContent=row.dataset.excerpt||'';
         if(panePublication) panePublication.textContent=row.dataset.publication||'';
         if(paneLanguage) paneLanguage.textContent='['+(row.dataset.language||'EN')+']';
-        if(paneImage&&row.dataset.image) paneImage.src=row.dataset.image;
-        if(paneMedia) paneMedia.toggleAttribute('hidden',!row.dataset.image);
+        if(paneMedia){
+          paneMedia.toggleAttribute('hidden',!row.dataset.image);
+          if(row.dataset.image){
+            let image=paneMedia.querySelector('[data-work-pane-image]');
+            if(!image){
+              image=document.createElement('img');
+              image.setAttribute('data-work-pane-image','');
+              image.alt='';
+              paneMedia.appendChild(image);
+            }
+            image.src=row.dataset.image;
+          }
+        }
         rows.forEach(item=>item.toggleAttribute('data-active',item===row));
-        if(floatImage&&row.dataset.image) floatImage.src=row.dataset.image;
+        if(float&&row.dataset.image){
+          let image=float.querySelector('[data-work-image]');
+          if(!image){
+            image=document.createElement('img');
+            image.setAttribute('data-work-image','');
+            image.alt='';
+            float.prepend(image);
+          }
+          image.src=row.dataset.image;
+        }
       }
 
       rows.forEach(row=>{
@@ -223,11 +246,11 @@ const socialImage=heroEditorial[0]?.image?.src||legacyHeroImage;
       </div>
 
       <div class="now-editorial-grid">
-        <article class="manuscript-card">
+        <article class="manuscript-card" data-draft-badge={currentNovel.badge}>
           <span class="now-label">Manuscript</span>
-          <strong>Untitled novel</strong>
-          <em>Draft 3 / Revision phase</em>
-          <blockquote>What would I do if I were stuck in a cube with no exits or windows for 70 years?</blockquote>
+          <strong>{currentNovel.title}</strong>
+          <em>{currentNovel.status}</em>
+          <blockquote>{currentNovel.quote}</blockquote>
           <span class="manuscript-pull-label">From the manuscript</span>
         </article>
 
@@ -242,13 +265,30 @@ const socialImage=heroEditorial[0]?.image?.src||legacyHeroImage;
           <div class="now-note now-playing">
             <span class="now-label">Now Playing</span>
             <p><em>Vault</em><br />Miles</p>
-            <iframe class="bandcamp-embed" title="Vault by Miles on Bandcamp" src="https://bandcamp.com/EmbeddedPlayer/v=2/album=1040385539/size=large/tracklist=false/artwork=small/" loading="lazy"></iframe>
-            <a class="text-link" href="https://shortspanrecords.bandcamp.com/album/vault" rel="noopener">Bandcamp ↗</a>
+            <div class="bandcamp-facade" data-bandcamp-player data-src="https://bandcamp.com/EmbeddedPlayer/v=2/album=1040385539/size=large/tracklist=false/artwork=small/">
+              <button class="button bandcamp-load" type="button" data-bandcamp-load>Load Bandcamp player</button>
+              <span>Loads Bandcamp only when you choose to play it.</span>
+            </div>
+            <a class="text-link" href="https://shortspanrecords.bandcamp.com/album/vault" rel="noopener">Open on Bandcamp ↗</a>
           </div>
           <a class="text-link" href="https://www.goodreads.com/author/show/8057489.Alex_Franquelli" rel="me noopener">Goodreads ↗</a>
         </div>
       </div>
     </div>
+    <script is:inline>
+      document.querySelectorAll('[data-bandcamp-load]').forEach(button=>{
+        button.addEventListener('click',()=>{
+          const facade=button.closest('[data-bandcamp-player]');
+          if(!facade||facade.querySelector('iframe')) return;
+          const iframe=document.createElement('iframe');
+          iframe.className='bandcamp-embed';
+          iframe.title='Vault by Miles on Bandcamp';
+          iframe.loading='lazy';
+          iframe.src=facade.dataset.src||'';
+          facade.replaceChildren(iframe);
+        },{once:true});
+      });
+    </script>
   </section>
 
   <section class="wrap publication-section">
