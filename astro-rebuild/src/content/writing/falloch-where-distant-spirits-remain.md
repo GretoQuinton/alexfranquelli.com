@@ -5,6 +5,7 @@ publication: "Ritual"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
+releaseLabel: "Candlelight"
 featured: false
 draft: false
 ---
@@ -12,8 +13,6 @@ draft: false
 <p>Falloch</p>
 
 <p>WHERE DISTANT SPIRITS REMAIN</p>
-
-<p>Candlelight / XXXX</p>
 
 <p>Ombre folk e luci d’autore</p>
 

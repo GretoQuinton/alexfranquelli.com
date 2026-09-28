@@ -46,6 +46,16 @@ const older=currentIndex>=0&&currentIndex<writing.length-1?writing[currentIndex+
 const lang=d.language==='Italian'?'it':'en';
 const canonical=new URL('/writing/'+d.slug, Astro.site).toString();
 const imageUrl=resolvedImage?new URL(resolvedImage.src, Astro.site).toString():undefined;
+const authorNames=(d.byline||'Alex Franquelli')
+  .split(/\s*(?:,|\band\b|\be\b)\s*/i)
+  .map((name:string)=>name.trim())
+  .filter(Boolean);
+const articleAuthors=authorNames.map((name:string)=>{
+  const isAlex=/^(?:Alex|Alessandro) Franquelli$/i.test(name);
+  return isAlex
+    ? {'@type':'Person',name,url:'https://www.alexfranquelli.com/about'}
+    : {'@type':'Person',name};
+});
 const articleJsonLd=JSON.stringify({
   '@context':'https://schema.org',
   '@type':'Article',
@@ -53,7 +63,7 @@ const articleJsonLd=JSON.stringify({
   description:pageDescription,
   url:canonical,
   mainEntityOfPage:canonical,
-  author:{'@type':'Person',name:d.byline||'Alex Franquelli',url:'https://www.alexfranquelli.com/about'},
+  author:articleAuthors,
   datePublished:d.publicationDate||undefined,
   inLanguage:lang,
   publisher:d.publication?{'@type':'Organization',name:d.publication}:undefined,
