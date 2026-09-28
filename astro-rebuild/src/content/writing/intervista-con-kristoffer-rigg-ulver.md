@@ -8,10 +8,6 @@ byline: "Alex Franquelli"
 featured: false
 draft: false
 ---
-Intervista con Kristoffer Rygg (Ulver)
-
-18/04/2011
-
 Chiunque provi a definire la musica degli Ulver, sa che compierà un errore. Non tanto perché farlo è impresa impossibile, quanto perché la band norvegese è entità in perenne mutazione. Un nuovo album (‘Wars of the Roses’) e un nuovo tour presentano una band quasi totalmente diversa da quella che esisteva solo fino a poco tempo fa. Unica costante: l’irrequietezza, l’eterna insoddisfazione di poco lenita da lavori sempre diversi tra loro che nel tempo hanno saputo spaziare da un black metal primitivo (sebbene, col senno di poi, neanche troppo) ad un art rock venato di progressive e jazz. Le atmosfere si sono rarefatte perché ad addensarsi fossero le idee e dei concetti per lo più sconosciuti ad un pubblico che oggi, a più di 3 lustri dal debutto, in parte fa fatica a stare dietro alle variazioni, agli apparenti squilibri compositivi che tracciano un segmento musicale senza l’ombra di una fine. Il motivo di un dinamismo tanto accentuato ce lo spiega Kristoffer Rygg. Per il quale lasciare la via vecchia per quella nuova è una professione. E il non sapere cosa trovare è l’unica, vera, grande passione.
 
 Puoi svelarci innanzitutto il mistero del cambio di titolo dell’album? So che è successo tutto in pochissimo tempo. Come si è passati da ‘Critical Geography’ a ‘Wars of the Roses’?
