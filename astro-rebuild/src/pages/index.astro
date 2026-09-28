@@ -37,6 +37,7 @@ const langCode=(language:string)=>language==='Italian'?'IT':'EN';
 const publicationKey=(value?:string)=>(value||'').trim().toLowerCase().replace(/[^a-z0-9]+/g,'');
 
 const centerpiece=writing.find(a=>a.data.slug==='the-tipping-point-of-mongolia')||writing[0];
+const centerpieceImage=imageFor(centerpiece);
 const fallbackSelected=[
   'shellac-live-at-netil-house-london',
   'nine-inch-nails-hesitation-marks',
@@ -104,11 +105,6 @@ const socialImage=heroEditorial[0]?.image?.src||legacyHeroImage;
         </div>
       : <div class="hero-media" aria-hidden="true"><img src={legacyHeroImage} alt="" loading="eager" fetchpriority="high" /></div>}
 
-    <div class="identity-strip" aria-label="Writer profile">
-      <span>London / Rome</span>
-      <span>Music · Politics · Fiction</span>
-      <span>IT / EN</span>
-    </div>
   </section>
 
   <section id="selected" class="wrap editorial-feature">
@@ -126,6 +122,14 @@ const socialImage=heroEditorial[0]?.image?.src||legacyHeroImage;
       <p class="editorial-opening" lang={centerpiece.data.language==='Italian'?'it':'en'}>{excerpt(centerpiece,250)}</p>
       <a class="button" href={'/writing/'+centerpiece.data.slug}>Read the piece</a>
     </div>
+    {centerpieceImage&&<figure class="editorial-feature-image">
+      <img src={centerpieceImage.src} alt={centerpieceImage.alt} loading="lazy" />
+      {centerpiece.data.imageCredit&&<figcaption>
+        {centerpiece.data.imageSourceUrl
+          ? <a href={centerpiece.data.imageSourceUrl} rel="noopener">{centerpiece.data.imageCredit} ↗</a>
+          : centerpiece.data.imageCredit}
+      </figcaption>}
+    </figure>}
   </section>
 
   <section class="wrap section work-section">
@@ -258,41 +262,20 @@ const socialImage=heroEditorial[0]?.image?.src||legacyHeroImage;
           <div class="now-note now-reading">
             <span class="now-label">Reading</span>
             <div class="reading-row">
-              <div class="book-cover-card" aria-label="A Little Life by Hanya Yanagihara">
-                <span>A Little</span>
-                <strong>Life</strong>
-                <em>Hanya Yanagihara</em>
-              </div>
+              <img class="reading-cover" src="https://covers.openlibrary.org/b/isbn/9780385539258-L.jpg" alt="Cover of A Little Life by Hanya Yanagihara" loading="lazy" />
               <p><em>A Little Life</em><br />Hanya Yanagihara</p>
             </div>
           </div>
           <div class="now-note now-playing">
             <span class="now-label">Now Playing</span>
             <p><em>Vault</em><br />Miles</p>
-            <div class="bandcamp-facade" data-bandcamp-player data-src="https://bandcamp.com/EmbeddedPlayer/v=2/album=1040385539/size=large/tracklist=false/artwork=small/">
-              <button class="button bandcamp-load" type="button" data-bandcamp-load>Load Bandcamp player</button>
-              <span>Loads Bandcamp only when you choose to play it.</span>
-            </div>
+            <iframe class="bandcamp-embed" title="Vault by Miles on Bandcamp" src="https://bandcamp.com/EmbeddedPlayer/v=2/album=1040385539/size=large/tracklist=false/artwork=small/" loading="eager"></iframe>
             <a class="text-link" href="https://shortspanrecords.bandcamp.com/album/vault" rel="noopener">Open on Bandcamp ↗</a>
           </div>
           <a class="text-link" href="https://www.goodreads.com/author/show/8057489.Alex_Franquelli" rel="me noopener">Goodreads ↗</a>
         </div>
       </div>
     </div>
-    <script is:inline>
-      document.querySelectorAll('[data-bandcamp-load]').forEach(button=>{
-        button.addEventListener('click',()=>{
-          const facade=button.closest('[data-bandcamp-player]');
-          if(!facade||facade.querySelector('iframe')) return;
-          const iframe=document.createElement('iframe');
-          iframe.className='bandcamp-embed';
-          iframe.title='Vault by Miles on Bandcamp';
-          iframe.loading='lazy';
-          iframe.src=facade.dataset.src||'';
-          facade.replaceChildren(iframe);
-        },{once:true});
-      });
-    </script>
   </section>
 
   <section class="wrap publication-section">
