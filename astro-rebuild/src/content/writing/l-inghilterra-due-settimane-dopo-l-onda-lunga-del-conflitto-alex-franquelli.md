@@ -7,15 +7,6 @@ byline: "Alex Franquelli"
 featured: false
 draft: false
 ---
-
-L’Inghilterra due settimane dopo: l’onda lunga del conflitto
-
-di Alex Franquelli
-
-caratteri (con spazi): 4995
-
-parole: 794
-
 Qualcosa si è mosso. Nel limbo incosciente che giace a metà strada tra la realtà politica e la vita reale dei sobborghi, si è addormentata la rabbia. Il braccio armato dello scontento è tornato da dove era uscito: dalle case da cui aveva imparato l’assenza di regole familiari, di gerarchie precise che determinino i diritti e i doveri del familiare e del cittadino; figure queste mai così vicine, come in questi anni, ad una crisi d'identità profonda, lacerante.
 
 La proiezione di questo status per le strade, i sobborghi, i vicoli inglesi ha dissipato ogni dubbio sul fatto che la violenza non solo è presente, ma è parte integrante delle moderne dinamiche sociali britanniche nonostante 30 anni di esperimenti liberali l’avessero respinta, ripudiata e apparentemente dimenticata.
