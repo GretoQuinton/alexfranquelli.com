@@ -1,6 +1,7 @@
 ---
 title: "Trillion Red - Metaphere"
 slug: "trillion-red-metaphere"
+description: "Metal is what you make of it."
 publication: "Angry Metal Guy"
 publicationDate: "2012-11-20"
 displayDate: "2012-11-20"
