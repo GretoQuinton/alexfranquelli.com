@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { currentNovel } from '../data/current';
 ---
 <BaseLayout title="About — Alex Franquelli" description="About Alex Franquelli, a writer and critic based between London and Rome.">
   <section class="about-page wrap">
@@ -24,8 +25,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
       <aside class="about-current">
         <span class="now-label">Currently</span>
-        <strong>Finishing an untitled science-fiction novel.</strong>
-        <p>End of third draft.</p>
+        <strong>Finishing an untitled {currentNovel.genre} novel.</strong>
+        <p>{currentNovel.status}.</p>
         <a class="text-link" href="/fiction">Fiction ↗</a>
       </aside>
     </div>
