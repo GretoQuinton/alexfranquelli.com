@@ -24,7 +24,7 @@ draft: false
 
 <p>Gli Ex Easter Island Head, da Liverpool, hanno iniziato da poco il loro set quando entriamo nel caldo ambiente del Cafe Oto e ci perdiamo nella penombra tra divani e sedie da bar, tavolini e le luci dalla strada tranquilla che ne protegge il gioco di suoni. </p>
 
-<p>Non è di certo un caso se un un locale come questo - relativamente piccolo e più simile, appunto, ad un cafe - ospita ormai da qualche mese il meglio dell’avanguardia britannica e non. L’atmosfera è dispersiva quanto basta, il bar è in fondo e il palco attira l’attenzione su di sé abbracciando col suono una struttura squadrata, scarna, oscura.</p>
+<p>Non è di certo un caso se un locale come questo - relativamente piccolo e più simile, appunto, ad un cafe - ospita ormai da qualche mese il meglio dell’avanguardia britannica e non. L’atmosfera è dispersiva quanto basta, il bar è in fondo e il palco attira l’attenzione su di sé abbracciando col suono una struttura squadrata, scarna, oscura.</p>
 
 <p>La musica degli Ex Easter, dicevamo, nasce dalla percussione del corpo di chitarre elettriche attraverso dei battenti da timpano. Le occasionali intrusioni di strumenti a fiato completano un quadro musicale basato su ripetizioni melodiche che alludono alle prime composizioni di Steve Reich ma più propriamente alle sperimentazioni di George Antheil (un classico esempio è ovviamente il suo “Ballet Mécanique”) o a quelle di un Colin McPhee senza pero’ gli splendidi ricorsi all’etnomusicologia. </p>
 
