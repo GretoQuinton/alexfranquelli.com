@@ -106,7 +106,7 @@ const articleJsonLd=JSON.stringify({
     {(originalStatus==='unchecked'||!originalStatus)&&d.originalUrl&&<a class="original-link" href={d.originalUrl} rel="noopener">Original publication (link unverified) ↗</a>}
     {(!d.publicationDate||!d.publication)&&<p class="verification-note">Some archive metadata is still being verified. <a href="/contact">Corrections are welcome.</a></p>}
   </header>
-  {resolvedImage&&<figure class="article-image">
+  {resolvedImage&&<figure class:list={['article-image',/review/i.test(d.type||'')&&'article-image-cover']}>
     <img src={resolvedImage.src} alt={resolvedImage.alt} loading="eager" fetchpriority="high" />
     {(d.imageCredit||d.imageSourceUrl)&&<figcaption>
       {d.imageCredit&&<span>{d.imageCredit}</span>}
