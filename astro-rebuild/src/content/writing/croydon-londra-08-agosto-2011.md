@@ -7,10 +7,6 @@ byline: "Alex Franquelli"
 featured: false
 draft: false
 ---
-Londra, brucia un negozio storico: ‘prendiamoci ciò che ci spetta’
-
-di Alex Franquelli
-
 A Damon scappa da ridere. Intrappolato tra la folla nella quale s’era cacciato poco prima più per curiosità e spirito di emulazione che per un reale bisogno di manifestare il proprio sdegno, mi guarda e sorride. Penso che guardandomi capisca di sembrare ridicolo coi suoi 14 anni negli occhi e una mazza da cricket tra le mani. Invece mi vede, mi chiama e tira un calcio alla grossa serranda in ferro del negozio di videogames.
 
 “Se riesco a coinvolgere altra gente la possiamo aprire e prendere giochi e consolle. Purtroppo però sono qui dalle 8 di sera e sembra che a nessuno interessi”. La “gente” è tutta attorno e corre frenetica come se qualcuno avesse annunciato che la città sarà un territorio senza regole e leggi ancora per poco; come se ognuno avesse nella mente una lista dei desideri pratici da esaudire prima che la tregua finisca e la strada torni nella sua quiete controllata da lunedì sera.
