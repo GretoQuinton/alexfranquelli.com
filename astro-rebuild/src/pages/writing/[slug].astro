@@ -20,35 +20,17 @@ const plainText=(value:string)=>decodeEntities(value
   .replace(/[#*_~`>]+/g,' ')
   .replace(/\s+/g,' ')
   .trim());
-const normalise=(value:string)=>plainText(value).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const rawBody=article.body||'';
 const htmlParagraphs=[...rawBody.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)].map(match=>match[1]);
 const sourceBlocks=htmlParagraphs.length
   ? htmlParagraphs
   : rawBody.trim().split(/\n\s*\n/).filter(Boolean);
-const titleKey=normalise(d.title);
-const scaffoldPattern=/(?:^|\b)(?:di\s+alex\s+franquelli|by\s+alex\s+franquelli|alex\s+franquelli|voto\s*:|rating\s*:|labels?\s*:|websites?\s*:|release\s+dates?\s*:|tracklist\s*:|similar\s+(?:artist|artists|to)\s*:|titolo\s*:|regista\s*:|durata\s*:|caratteri\s*\(con\s+spazi\)|parole\s*:|x{3,}|no\s+title\s+yet|band\s+site|buy\s+it\s+here|sito\s+ufficiale|per\s+chi\s+ascolta)/i;
-const repeatsTitle=(block:string)=>{
-  const key=normalise(block);
-  return Boolean(key&&titleKey&&(key===titleKey||(key.length>10&&titleKey.includes(key))||(titleKey.length>10&&key.includes(titleKey))));
-};
-const leadSample=sourceBlocks.slice(0,7);
-const hasSubmissionScaffold=leadSample.some((block,index)=>{
+const openingSource=sourceBlocks.find(block=>{
   const text=plainText(block);
-  return scaffoldPattern.test(text)||(index<4&&repeatsTitle(block));
-});
-const proseBlockIndex=hasSubmissionScaffold
-  ? sourceBlocks.findIndex((block,index)=>{
-      const text=plainText(block);
-      const words=text.split(/\s+/).filter(Boolean);
-      if(index<5&&repeatsTitle(block)) return false;
-      if(scaffoldPattern.test(text.slice(0,180))) return false;
-      if(/^\s*(?:\d+[.)]\s*){2,}/.test(text)) return false;
-      return text.length>=90&&words.length>=14;
-    })
-  : 0;
-const leadingScaffoldCount=hasSubmissionScaffold&&proseBlockIndex>0?proseBlockIndex:0;
-const openingSource=sourceBlocks[Math.max(0,proseBlockIndex)]||rawBody;
+  const words=text.split(/\s+/).filter(word=>/[A-Za-zÀ-ÿ]/.test(word));
+  const hardBreaks=(block.match(/<br\s*\/?\s*>/gi)||[]).length;
+  return text.length>=120&&words.length>=24&&hardBreaks<=3;
+})||sourceBlocks[0]||rawBody;
 const opening=plainText(openingSource);
 const sentence=opening.match(/^(.{30,260}?[.!?])(?:\s|$)/)?.[1];
 const clipped=opening.length>240?(opening.slice(0,241).replace(/\s+\S*$/,'')+'…'):opening;
@@ -71,7 +53,7 @@ const articleJsonLd=JSON.stringify({
   description:pageDescription,
   url:canonical,
   mainEntityOfPage:canonical,
-  author:{'@type':'Person',name:'Alex Franquelli',url:'https://www.alexfranquelli.com/about'},
+  author:{'@type':'Person',name:d.byline||'Alex Franquelli',url:'https://www.alexfranquelli.com/about'},
   datePublished:d.publicationDate||undefined,
   inLanguage:lang,
   publisher:d.publication?{'@type':'Organization',name:d.publication}:undefined,
@@ -91,6 +73,10 @@ const articleJsonLd=JSON.stringify({
       <div><span>Date</span><strong>{d.displayDate||d.publicationDate||'Unconfirmed'}</strong></div>
       <div><span>Language</span><strong>{d.language}</strong></div>
       {d.byline&&<div><span>Byline</span><strong>{d.byline}</strong></div>}
+      {d.rating&&<div><span>Rating</span><strong>{d.rating}</strong></div>}
+      {d.releaseLabel&&<div><span>Label</span><strong>{d.releaseLabel}</strong></div>}
+      {d.releaseYear&&<div><span>Release year</span><strong>{d.releaseYear}</strong></div>}
+      {d.genre&&<div><span>Genre</span><strong>{d.genre}</strong></div>}
     </div>
     {originalStatus==='live'&&d.originalUrl&&<a class="original-link" href={d.originalUrl} rel="noopener">View original publication ↗</a>}
     {originalStatus==='dead'&&d.archiveUrl&&<a class="original-link" href={d.archiveUrl} rel="noopener">View archived publication ↗</a>}
@@ -105,8 +91,11 @@ const articleJsonLd=JSON.stringify({
       {d.imageSourceUrl&&<a href={d.imageSourceUrl}>Image source ↗</a>}
     </figcaption>}
   </figure>}
-  {leadingScaffoldCount>0&&<style is:inline set:html={`.prose > :nth-child(-n+${leadingScaffoldCount}){display:none}`} />}
   <div class="prose" lang={lang}><Content /></div>
+  {d.tracklist?.length&&<aside class="tracklist-card">
+    <div class="eyebrow">Tracklist</div>
+    <ol>{d.tracklist.map(track=><li>{track}</li>)}</ol>
+  </aside>}
   {(d.magazineIssue||d.printedPages||d.cover)&&<aside class="publication-card">
     <div class="eyebrow">Print archive</div>
     <h3>{d.publication||'Original publication'}</h3>
