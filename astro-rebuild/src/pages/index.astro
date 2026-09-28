@@ -69,12 +69,14 @@ const allPublications=[...publicationCounts.values()].sort((a,b)=>{
   }
   return b.count-a.count||a.label.localeCompare(b.label);
 });
-const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home-hero.webp';
+const legacyHeroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home-hero.webp';
+const heroEditorial=selected.filter(item=>item.image).slice(0,3);
+const socialImage=heroEditorial[0]?.image?.src||legacyHeroImage;
 ---
 
 <BaseLayout
   description="Alex Franquelli is a writer and critic based between London and Rome, working across music, politics, culture and fiction."
-  image={heroImage}
+  image={socialImage}
 >
   <section class="hero wrap">
     <div class="hero-grid">
@@ -92,8 +94,11 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
       </div>
     </div>
 
-    <div class="hero-media" aria-hidden="true">
-      <img src={heroImage} alt="" loading="eager" fetchpriority="high" />
+    <div class="hero-media hero-editorial-media" aria-label="Selected criticism artwork">
+      {heroEditorial.map(({article:a,image},i)=><a class="hero-art-card" href={'/writing/'+a.data.slug}>
+        <img src={image!.src} alt={image!.alt} loading={i===0?'eager':'lazy'} fetchpriority={i===0?'high':'auto'} />
+        <span><strong>{a.data.publication||'Published work'}</strong>{a.data.title}</span>
+      </a>)}
     </div>
 
     <div class="identity-strip" aria-label="Writer profile">
