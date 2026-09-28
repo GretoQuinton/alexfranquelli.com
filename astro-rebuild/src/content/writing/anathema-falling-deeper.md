@@ -5,6 +5,7 @@ publication: "Ritual"
 language: "Italian"
 type: "Review"
 byline: "Alex Franquelli"
+releaseLabel: "K-Scope"
 featured: false
 draft: false
 ---
@@ -12,8 +13,6 @@ draft: false
 <p>ANATHEMA</p>
 
 <p>‘FALLING DEEPER’</p>
-
-<p>K-Scope / XXXXX</p>
 
 <p>Sentieri battuti</p>
 
