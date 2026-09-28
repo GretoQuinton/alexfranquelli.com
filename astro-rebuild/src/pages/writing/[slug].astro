@@ -35,6 +35,12 @@ const opening=plainText(openingSource);
 const sentence=opening.match(/^(.{30,260}?[.!?])(?:\s|$)/)?.[1];
 const clipped=opening.length>240?(opening.slice(0,241).replace(/\s+\S*$/,'')+'…'):opening;
 const pageDescription=d.description||sentence||clipped||'Writing by Alex Franquelli.';
+const normaliseForCompare=(value:string)=>plainText(value).toLowerCase().replace(/[^a-z0-9à-ÿ]+/g,'');
+const firstBodyText=plainText(sourceBlocks[0]||'');
+const explicitDescriptionRepeatedInBody=Boolean(
+  d.description&&normaliseForCompare(firstBodyText).includes(normaliseForCompare(d.description))
+);
+const showArticleDeck=Boolean(d.description&&!explicitDescriptionRepeatedInBody);
 const recoveredImage=getRecoveredImage(d.slug,d.title);
 const explicitImage=d.image?{src:d.image,alt:d.imageAlt||''}:null;
 const resolvedImage=d.image&&!d.image.includes('squarespace-cdn.com')?explicitImage:(recoveredImage||explicitImage);
@@ -84,7 +90,7 @@ const articleJsonLd=JSON.stringify({
   <header class="article-header">
     <div class="eyebrow">{d.type}{d.publication&&<> · {d.publication}</>}</div>
     <h1>{d.title}</h1>
-    <p class="article-deck" lang={lang}>{pageDescription}</p>
+    {showArticleDeck&&<p class="article-deck" lang={lang}>{pageDescription}</p>}
     {showByline&&<p class="article-byline">By {d.byline}</p>}
     <div class="article-meta">
       <div><span>Publication</span><strong>{d.publication||'Unconfirmed'}</strong></div>
