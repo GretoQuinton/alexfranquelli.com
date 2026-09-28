@@ -448,7 +448,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .now-notes{border-top:1px solid var(--ink)}
 .now-note{padding:16px 0 20px;border-bottom:1px solid var(--line)}
 .reading-row{display:grid;grid-template-columns:76px minmax(0,1fr);gap:16px;align-items:center;margin-top:12px}
-.reading-row img{width:76px;aspect-ratio:2/3;object-fit:cover;border:1px solid var(--line)}
+.book-cover-card{width:76px;aspect-ratio:2/3;border:1px solid var(--ink);background:var(--paper-2);padding:8px 7px;display:flex;flex-direction:column;justify-content:center;font-family:var(--serif);line-height:.9;letter-spacing:-.03em}
+.book-cover-card span{font-size:16px}
+.book-cover-card strong{font-size:24px;font-weight:400}
+.book-cover-card em{margin-top:auto;font-family:var(--mono);font-size:6px;line-height:1.15;font-style:normal;text-transform:uppercase;letter-spacing:.04em}
 .now-playing p{margin-bottom:12px}
 .bandcamp-facade{margin:14px 0 10px;padding:14px;border:1px solid var(--line);background:var(--paper-2)}
 .bandcamp-facade span{display:block;margin-top:9px;color:var(--muted);font-size:10px;line-height:1.4}
