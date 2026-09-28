@@ -1,0 +1,38 @@
+name: Fetch final polish assets
+
+on:
+  push:
+    branches:
+      - polish-punch-list-2026-09-28
+    paths:
+      - .github/workflows/fetch-polish-assets.yml
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: polish-punch-list-2026-09-28
+      - name: Fetch verified image assets
+        run: |
+          set -euo pipefail
+          mkdir -p astro-rebuild/public/images/editorial
+          curl -L --fail --retry 3 "https://upload.wikimedia.org/wikipedia/commons/d/da/Mongolian_steppe.jpg" -o astro-rebuild/public/images/editorial/mongolian-steppe.jpg
+          curl -L --fail --retry 3 "https://covers.openlibrary.org/b/isbn/9780385539258-L.jpg" -o astro-rebuild/public/images/editorial/a-little-life.jpg
+          curl -L --fail --retry 3 "https://coverartarchive.org/release/9c01b3b2-b16e-4056-a2c3-31a1b3ddec31/front-500" -o astro-rebuild/public/images/editorial/can-the-lost-tapes.jpg
+          file astro-rebuild/public/images/editorial/*
+      - name: Commit assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add astro-rebuild/public/images/editorial
+          if git diff --cached --quiet; then
+            echo "No asset changes."
+            exit 0
+          fi
+          git commit -m "Self-host final polish image assets"
+          git push origin HEAD:polish-punch-list-2026-09-28
