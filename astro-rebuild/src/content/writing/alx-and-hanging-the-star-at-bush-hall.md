@@ -8,12 +8,6 @@ byline: "Alex Franquelli"
 featured: false
 draft: false
 ---
-Alx and Hanging the Star
-
-Live at Bush Hall
-
-London, 10 February 2012
-
 A hundred and ninety-six seconds. From silence to silence; from the delicate violence of the streets of Shepherd’s Bush to the violent melancholy of a melody that echoes in everybody’s mind until the lights go off and the music stops again.
 
 Kristy Clark introduces herself as an “Aussie”. Simple, like her music, which appears to be quintessential to her being and her singing. Quintissential in such a way that figuring out what it will sound like on an album, far from her presence, away from her timidly careful smiles seems as outrageous as talking during “Snowflakes”; a track that not even technical glitches and annoying feedback can spoil.
