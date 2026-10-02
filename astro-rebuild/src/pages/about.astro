@@ -1,13 +1,34 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { currentNovel } from '../data/current';
 ---
 <BaseLayout title="About — Alex Franquelli" description="About Alex Franquelli, a writer and critic based between London and Rome.">
-  <div class="simple">
+  <section class="about-page wrap">
     <div class="eyebrow">About</div>
     <h1>Alex Franquelli</h1>
-    <p>I am a writer and critic based between London and Rome. I wrote extensively in Italian for <em>Ritual</em>, Musicboom and OndaRock, alongside criticism and features in English for The Quietus, PopMatters, All About Jazz, The Line of Best Fit and openDemocracy.</p>
-    <p>My work moves between music, politics and culture, in Italian and English. I also write fiction and am finishing my first novel.</p>
-    <p>Alongside writing, I work in media planning and buying in London.</p>
-    <p>Reading is part of the work too. You can find my books and reading activity on <a class="text-link" href="https://www.goodreads.com/author/show/8057489.Alex_Franquelli" rel="me noopener">Goodreads ↗</a>.</p>
-  </div>
+
+    <div class="about-lede-grid">
+      <p class="about-lede">I am a writer and critic based between London and Rome. I wrote extensively in Italian for <em>Ritual</em>, Musicboom and OndaRock, alongside criticism and features in English for The Quietus, PopMatters, All About Jazz, The Line of Best Fit and openDemocracy.</p>
+      <aside class="about-profile" aria-label="Profile">
+        <span>London / Rome</span>
+        <span>Music · Politics · Culture</span>
+        <span>Italian / English</span>
+      </aside>
+    </div>
+
+    <div class="about-body-grid">
+      <div class="about-copy">
+        <p>My work moves between music, politics and culture, in Italian and English. I also write fiction and am finishing my first novel.</p>
+        <p>Alongside writing, I work in media planning and buying in London.</p>
+        <p>Reading is part of the work too. You can find my books and reading activity on <a class="text-link" href="https://www.goodreads.com/author/show/8057489.Alex_Franquelli" rel="me noopener">Goodreads ↗</a>.</p>
+      </div>
+
+      <aside class="about-current">
+        <span class="now-label">Currently</span>
+        <strong>Finishing an untitled {currentNovel.genre} novel.</strong>
+        <p>{currentNovel.status}.</p>
+        <a class="text-link" href="/fiction">Fiction ↗</a>
+      </aside>
+    </div>
+  </section>
 </BaseLayout>
