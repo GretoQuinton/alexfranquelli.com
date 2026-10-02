@@ -46,6 +46,15 @@ function parseCSV(input){
 }
 
 const normalise=value=>(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'');
+const normaliseUrl=value=>{
+  try{
+    const url=new URL((value||'').trim());
+    url.hash='';
+    return url.toString().replace(/\/$/,'');
+  }catch{
+    return (value||'').trim().replace(/\/$/,'');
+  }
+};
 
 function fmField(text,name){
   const match=text.match(new RegExp('^'+name+':\\s*(.+)\\s*$','m'));
@@ -57,12 +66,15 @@ function fmField(text,name){
 const articleFiles=(await readdir(contentRoot)).filter(name=>name.endsWith('.md'));
 const builtSlugs=new Set();
 const titleToSlugs=new Map();
+const originalUrlToSlug=new Map();
 for(const name of articleFiles){
   const text=await readFile(join(contentRoot,name),'utf8');
   const slug=fmField(text,'slug');
   const title=fmField(text,'title');
+  const originalUrl=fmField(text,'originalUrl');
   if(!slug) continue;
   builtSlugs.add(slug);
+  if(originalUrl) originalUrlToSlug.set(normaliseUrl(originalUrl),slug);
   const key=normalise(title);
   if(key){
     if(!titleToSlugs.has(key)) titleToSlugs.set(key,[]);
@@ -91,6 +103,7 @@ for(const relative of csvFiles){
     if(source&&!source.startsWith('/')&&!source.startsWith('http')) source='/portfolio/'+source;
     let slug='';
     if(source.startsWith('/')) slug=legacyToSlug.get(source.replace(/\/$/,''))||'';
+    else if(/^https?:\/\//i.test(source)) slug=originalUrlToSlug.get(normaliseUrl(source))||'';
     if(!slug){
       const possible=titleToSlugs.get(normalise(title))||[];
       if(possible.length===1) slug=possible[0];
