@@ -1,4 +1,4 @@
-import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
+import { access, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { extname, join, resolve } from 'node:path';
 
 const repoRoot=resolve(process.cwd());
@@ -114,7 +114,8 @@ for(const relative of csvFiles){
 candidates.push(hero);
 
 const unique=[...new Map(candidates.map(record=>[record.slug,record])).values()];
-await rm(outDir,{recursive:true,force:true});
+let existingManifest={};
+try{existingManifest=JSON.parse(await readFile(manifestPath,'utf8'));}catch{}
 await mkdir(outDir,{recursive:true});
 await mkdir(reportDir,{recursive:true});
 
@@ -128,6 +129,14 @@ function extension(contentType,url){
 }
 
 async function fetchOne(record){
+  const existing=existingManifest[record.slug];
+  if(existing?.sourceUrl===record.image&&existing.src){
+    const localFile=join(astroRoot,'public',existing.src.replace(/^\//,''));
+    try{
+      await access(localFile);
+      return {...record,ok:true,status:200,bytes:0,localPath:existing.src,contentType:'existing',existing:true};
+    }catch{}
+  }
   try{
     const response=await fetch(record.image,{
       redirect:'follow',
@@ -169,8 +178,10 @@ const report={
   generatedAt:new Date().toISOString(),
   candidates:unique.length,
   preserved:results.filter(r=>r.ok).length,
+  preservedExisting:results.filter(r=>r.ok&&r.existing).length,
+  downloaded:results.filter(r=>r.ok&&!r.existing).length,
+  downloadedBytes:results.filter(r=>r.ok&&!r.existing).reduce((sum,r)=>sum+(r.bytes||0),0),
   failed:results.filter(r=>!r.ok).length,
-  totalBytes:results.filter(r=>r.ok).reduce((sum,r)=>sum+(r.bytes||0),0),
   failures:results.filter(r=>!r.ok).map(({slug,title,image,source,status,error})=>({slug,title,image,source,status,error}))
 };
 await writeFile(reportPath,JSON.stringify(report,null,2)+'\n');
