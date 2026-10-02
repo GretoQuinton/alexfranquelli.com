@@ -326,13 +326,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   font-family:var(--mono);
 }
 .eyebrow{font-size:10px;letter-spacing:.13em}
-.hero{padding-top:88px}
-.hero-grid{grid-template-columns:minmax(0,1.7fr) minmax(300px,.58fr);gap:72px;align-items:end}
-.hero h1{font-size:clamp(92px,13vw,184px);line-height:.78;letter-spacing:-.065em;margin-top:22px}
-.hero-copy{padding-bottom:2px}
+.hero{padding-top:72px}
+.hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(380px,.95fr);gap:84px;align-items:start}
+.hero h1{font-size:clamp(72px,8.2vw,126px);line-height:.84;letter-spacing:-.055em;margin-top:18px}
+.hero-copy{max-width:590px;padding:2px 0 0}
 .intro{font-size:clamp(31px,3.2vw,45px);line-height:1.08;margin-bottom:24px}
 .hero-note{max-width:500px;font-family:var(--serif);font-size:17px;line-height:1.52;color:var(--muted)}
-.hero-media{margin-top:58px}
+.hero-media{margin-top:44px}
 .hero-media img{height:clamp(300px,38vw,540px);filter:saturate(.92) contrast(1.02)}
 .identity-strip{display:grid;grid-template-columns:.8fr 1.5fr .5fr;border-bottom:1px solid var(--ink);margin-top:0;font-size:10px;text-transform:uppercase;letter-spacing:.11em}
 .identity-strip span{padding:16px 18px 17px 0;border-right:1px solid var(--line)}
@@ -397,7 +397,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media(max-width:900px){
   .hero{padding-top:60px}
   .hero-grid{grid-template-columns:1fr;gap:30px}
-  .hero h1{font-size:clamp(82px,17vw,138px)}
+  .hero h1{font-size:clamp(72px,14vw,108px)}
   .hero-copy{max-width:720px}
   .editorial-feature{grid-template-columns:1fr;gap:25px;padding:78px 0}
   .editorial-feature-label{justify-content:flex-start}
@@ -415,7 +415,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 }
 @media(max-width:700px){
   .hero{padding-top:42px}
-  .hero h1{font-size:clamp(63px,19vw,92px);line-height:.82}
+  .hero h1{font-size:clamp(56px,17vw,78px);line-height:.86}
   .intro{font-size:28px}
   .hero-note{font-size:16px}
   .identity-strip{grid-template-columns:1fr}
