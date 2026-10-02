@@ -36,6 +36,7 @@ const langCode=(language:string)=>language==='Italian'?'IT':'EN';
 const publicationKey=(value?:string)=>(value||'').trim().toLowerCase().replace(/[^a-z0-9]+/g,'');
 
 const centerpiece=writing.find(a=>a.data.slug==='the-tipping-point-of-mongolia')||writing[0];
+const centerpieceImage=imageFor(centerpiece);
 const fallbackSelected=[
   'shellac-live-at-netil-house-london',
   'nine-inch-nails-hesitation-marks',
@@ -98,6 +99,9 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
       <div class="eyebrow">Featured / 01</div>
       <span class="language-badge">[{langCode(centerpiece.data.language)}]</span>
     </div>
+    {centerpieceImage&&<figure class="editorial-feature-media">
+      <img src={centerpieceImage.src} alt={centerpieceImage.alt} loading="lazy" />
+    </figure>}
     <div class="editorial-feature-body">
       <div class="editorial-feature-meta">
         <span>{centerpiece.data.publication||'Published work'}</span>
@@ -146,6 +150,9 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
           <span data-work-publication>{selected[0]?.article.data.publication||''}</span>
           <span data-work-language>[{selected[0]?langCode(selected[0].article.data.language):'EN'}]</span>
         </div>
+        <div class="work-copy-image" data-work-pane-image-wrap hidden={!selected[0]?.image}>
+          <img data-work-pane-image src={selected[0]?.image?.src||''} alt="" />
+        </div>
         <p data-work-excerpt>{selected[0]?.excerpt||''}</p>
         <span class="work-copy-title" data-work-title>{selected[0]?.article.data.title||''}</span>
       </aside>
@@ -163,6 +170,8 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
       const paneExcerpt=showcase?.querySelector('[data-work-excerpt]');
       const panePublication=showcase?.querySelector('[data-work-publication]');
       const paneLanguage=showcase?.querySelector('[data-work-language]');
+      const paneImageWrap=showcase?.querySelector('[data-work-pane-image-wrap]');
+      const paneImage=showcase?.querySelector('[data-work-pane-image]');
       const float=showcase?.querySelector('[data-work-float]');
       const floatImage=showcase?.querySelector('[data-work-image]');
 
@@ -172,6 +181,16 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
         if(paneExcerpt) paneExcerpt.textContent=row.dataset.excerpt||'';
         if(panePublication) panePublication.textContent=row.dataset.publication||'';
         if(paneLanguage) paneLanguage.textContent='['+(row.dataset.language||'EN')+']';
+        if(paneImage&&paneImageWrap){
+          const src=row.dataset.image||'';
+          if(src){
+            paneImage.src=src;
+            paneImageWrap.hidden=false;
+          }else{
+            paneImage.removeAttribute('src');
+            paneImageWrap.hidden=true;
+          }
+        }
         rows.forEach(item=>item.toggleAttribute('data-active',item===row));
         if(floatImage&&row.dataset.image) floatImage.src=row.dataset.image;
       }
