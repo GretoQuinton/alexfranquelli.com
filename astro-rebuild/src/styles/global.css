@@ -455,3 +455,32 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media(hover:none),(pointer:coarse){
   .work-float{display:none}
 }
+
+
+/* Current Things replaces the oversized name in the homepage hero. */
+.hero-current-slot{min-width:0}
+.hero-current{padding:0;border:0}
+.hero-current .current-inner{width:100%}
+.hero-current .now-heading{display:block;margin:0 0 22px}
+.hero-current .now-heading h2{font-size:clamp(40px,4.7vw,66px);line-height:.98;margin:8px 0 0}
+.hero-current .now-editorial-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.hero-current .draft-card{min-height:190px;padding:18px}
+.hero-current .draft-card strong{font-size:clamp(25px,2.5vw,35px)}
+.hero-current .draft-card::after{font-size:8px;top:14px;right:12px}
+.hero-current .thought-card{min-height:190px;padding:17px 0;grid-column:auto;order:initial}
+.hero-current .thought-card blockquote{font-size:clamp(22px,2.35vw,33px)}
+.hero-current .now-notes{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:14px;border-top:1px solid var(--ink)}
+.hero-current .now-notes>div{padding:12px 0}
+.hero-current .now-notes p{font-size:16px}
+.hero-current .now-notes>.text-link{grid-column:1/-1;margin:0 0 2px}
+@media(max-width:1000px){
+  .hero-current .now-heading h2{font-size:clamp(42px,7vw,64px)}
+  .hero-current .thought-card blockquote{font-size:clamp(25px,3.5vw,37px)}
+}
+@media(max-width:600px){
+  .hero-current .now-editorial-grid{grid-template-columns:1fr}
+  .hero-current .draft-card,.hero-current .thought-card{min-height:0}
+  .hero-current .draft-card{min-height:165px}
+  .hero-current .thought-card{padding:16px 0}
+  .hero-current .thought-card blockquote{margin:16px 0 0;font-size:29px}
+}
