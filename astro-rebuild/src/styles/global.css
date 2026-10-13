@@ -506,3 +506,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
  .hero-current .current-media-entry{display:flex;flex-direction:column}
  .hero-current .current-media-entry img{width:64px}
 }
+
+/* Compact homepage hero photograph — October 2026 */
+.hero-media{margin-top:28px}
+.hero-media img{height:clamp(190px,22vw,300px);min-height:0;object-fit:cover;object-position:center}
+@media(max-width:600px){.hero-media{margin-top:24px}.hero-media img{height:clamp(150px,42vw,220px);min-height:0}}
