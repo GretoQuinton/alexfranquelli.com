@@ -511,3 +511,71 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .hero-media{margin-top:28px}
 .hero-media img{height:clamp(190px,22vw,300px);min-height:0;object-fit:cover;object-position:center}
 @media(max-width:600px){.hero-media{margin-top:24px}.hero-media img{height:clamp(150px,42vw,220px);min-height:0}}
+
+/* Homepage section palette — October 2026 */
+/* Full-bleed editorial bands: existing inner .wrap keeps the established grid. */
+.feature-band{
+  color:#f7f4ed;
+  background:linear-gradient(115deg,#2a403a 0%,#20332f 54%,#192927 100%);
+  border-top:4px solid #b96048;
+}
+.feature-band .editorial-feature{border-bottom:0}
+.feature-band .eyebrow,.feature-band .language-badge{color:#f4baa2}
+.feature-band .editorial-feature-meta{color:#d0dad4}
+.feature-band .editorial-feature-meta span+span::before{color:#8fa59a}
+.feature-band .editorial-opening{color:#f2f0e9}
+.feature-band .editorial-feature-media img{border-top-color:#a5b6ac;border-bottom-color:#667e72}
+.feature-band .button{border-color:#f7f4ed;color:#f7f4ed;background:transparent}
+.feature-band .button:hover,.feature-band .button:focus-visible{color:#20332f;background:#f7f4ed}
+.feature-band a:focus-visible{outline:2px solid #f4baa2;outline-offset:4px}
+
+.criticism-band{
+  color:#1b2923;
+  background:#dfe7df;
+  border-top:1px solid #a1b3a5;
+  border-bottom:1px solid #a1b3a5;
+}
+.criticism-band .eyebrow,.criticism-band .language-badge{color:#86392d}
+.criticism-band .text-link:hover{color:#86392d}
+.criticism-band .work-index{border-top-color:#546c5c}
+.criticism-band .work-row{border-bottom-color:#adbcaf}
+.criticism-band .work-row:hover,
+.criticism-band .work-row:focus-visible,
+.criticism-band .work-row[data-active]{background:#f3f5ef;color:#172a23}
+.criticism-band .work-no,
+.criticism-band .work-publication,
+.criticism-band .work-copy-meta,
+.criticism-band .work-copy-title{color:#445b4d}
+.criticism-band .work-copy-pane{border-left-color:#728a7b}
+.criticism-band .work-copy-image{border-top-color:#728a7b;border-bottom-color:#adbcaf}
+.criticism-band a:focus-visible{outline:2px solid #86392d;outline-offset:3px}
+
+.publication-band{
+  color:#291f1b;
+  background:#eadbc8;
+  border-top:4px solid #a74b37;
+}
+.publication-band .publication-section{border-top:0}
+.publication-band .eyebrow{color:#8f3a2b}
+.publication-band .publication-index{border-top-color:#80665c}
+.publication-band .publication-index a{border-bottom-color:#c8b5a2}
+.publication-band .publication-index a:nth-child(odd){border-right-color:#c8b5a2}
+.publication-band .publication-no,
+.publication-band .publication-count{color:#64544a}
+.publication-band .publication-index a:hover,
+.publication-band .text-link:hover{color:#8c3327}
+.publication-band a:focus-visible{outline:2px solid #8c3327;outline-offset:3px}
+
+/* A restrained oxblood rule marks the introduction without another coloured block. */
+.hero .hero-copy{border-left:3px solid #a74b37;padding-left:25px}
+.hero-current .now-heading .eyebrow{color:#8c3327}
+
+.site-footer{background:#1e2927;color:#f7f4ed;border-top:0}
+.site-footer .footer-grid p,.site-footer .footer-bottom{color:#c4d1c7}
+.site-footer .footer-bottom{border-top-color:#587065}
+.site-footer a:hover{color:#f1b69e}
+.site-footer a:focus-visible{outline:2px solid #f1b69e;outline-offset:4px}
+
+@media(max-width:900px){
+  .hero .hero-copy{border-left:0;border-top:3px solid #a74b37;padding:22px 0 0}
+}
