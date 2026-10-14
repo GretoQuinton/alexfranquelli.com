@@ -126,7 +126,8 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
     </div>
   </section>
 
-  <section id="selected" class="wrap editorial-feature">
+  <section id="selected" class="feature-band">
+  <div class="wrap editorial-feature">
     <div class="editorial-feature-label">
       <div class="eyebrow">Featured / 01</div>
       <span class="language-badge">[{langCode(centerpiece.data.language)}]</span>
@@ -144,9 +145,11 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
       <p class="editorial-opening" lang={centerpiece.data.language==='Italian'?'it':'en'}>{excerpt(centerpiece,620)}</p>
       <a class="button" href={'/writing/'+centerpiece.data.slug}>Read the piece</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="wrap section work-section">
+<section class="criticism-band">
+  <div class="wrap section work-section">
     <div class="section-heading">
       <div>
         <div class="eyebrow">Portfolio</div>
@@ -242,9 +245,11 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
       });
       activate(rows[0]);
     </script>
-  </section>
+  </div>
+</section>
 
-  <section class="wrap publication-section">
+<section class="publication-band">
+  <div class="wrap publication-section">
     <div class="section-heading">
       <div>
         <div class="eyebrow">Body of work</div>
@@ -261,5 +266,6 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
         </a>
       )}
     </div>
-  </section>
+  </div>
+</section>
 </BaseLayout>
