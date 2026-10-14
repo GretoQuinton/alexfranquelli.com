@@ -579,3 +579,22 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media(max-width:900px){
   .hero .hero-copy{border-left:0;border-top:3px solid #a74b37;padding:22px 0 0}
 }
+
+/* Swap the introduction's supporting copy with Current Things — October 2026 */
+.hero-grid.hero-grid-swapped{grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(36px,6vw,84px);align-items:start}
+.hero-grid-swapped .hero-publications{min-width:0;border-left:3px solid #a74b37;padding:6px 0 0 25px}
+.hero-grid-swapped .hero-publications .eyebrow{color:#8c3327}
+.hero-grid-swapped .hero-publications .hero-note{max-width:470px;font-size:clamp(19px,2.1vw,26px);line-height:1.42;margin:18px 0 0}
+.hero-grid-swapped .hero-publications .actions{margin-top:30px}
+.hero .hero-grid-swapped .hero-copy{min-width:0;max-width:none;border:0;padding:0;margin:0}
+.hero-grid-swapped .intro{margin:0 0 34px}
+.hero-grid-swapped .hero-current-slot{width:100%}
+.hero-grid-swapped .hero-current .now-heading{margin-bottom:17px}
+.hero-grid-swapped .hero-current .now-heading h2{font-size:clamp(38px,4.15vw,59px)}
+@media(max-width:900px){
+  .hero-grid.hero-grid-swapped{grid-template-columns:1fr;gap:32px}
+  .hero-grid-swapped .hero-copy{order:1}
+  .hero-grid-swapped .hero-publications{order:2;border-left:0;border-top:3px solid #a74b37;padding:22px 0 0}
+  .hero-grid-swapped .hero-publications .hero-note{font-size:19px}
+  .hero-grid-swapped .intro{margin-bottom:28px}
+}
