@@ -1,4 +1,4 @@
-import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
+import { access, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { extname, join, resolve } from 'node:path';
 
 const repoRoot=resolve(process.cwd());
@@ -46,6 +46,15 @@ function parseCSV(input){
 }
 
 const normalise=value=>(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'');
+const normaliseUrl=value=>{
+  try{
+    const url=new URL((value||'').trim());
+    url.hash='';
+    return url.toString().replace(/\/$/,'');
+  }catch{
+    return (value||'').trim().replace(/\/$/,'');
+  }
+};
 
 function fmField(text,name){
   const match=text.match(new RegExp('^'+name+':\\s*(.+)\\s*$','m'));
@@ -57,12 +66,15 @@ function fmField(text,name){
 const articleFiles=(await readdir(contentRoot)).filter(name=>name.endsWith('.md'));
 const builtSlugs=new Set();
 const titleToSlugs=new Map();
+const originalUrlToSlug=new Map();
 for(const name of articleFiles){
   const text=await readFile(join(contentRoot,name),'utf8');
   const slug=fmField(text,'slug');
   const title=fmField(text,'title');
+  const originalUrl=fmField(text,'originalUrl');
   if(!slug) continue;
   builtSlugs.add(slug);
+  if(originalUrl) originalUrlToSlug.set(normaliseUrl(originalUrl),slug);
   const key=normalise(title);
   if(key){
     if(!titleToSlugs.has(key)) titleToSlugs.set(key,[]);
@@ -91,6 +103,7 @@ for(const relative of csvFiles){
     if(source&&!source.startsWith('/')&&!source.startsWith('http')) source='/portfolio/'+source;
     let slug='';
     if(source.startsWith('/')) slug=legacyToSlug.get(source.replace(/\/$/,''))||'';
+    else if(/^https?:\/\//i.test(source)) slug=originalUrlToSlug.get(normaliseUrl(source))||'';
     if(!slug){
       const possible=titleToSlugs.get(normalise(title))||[];
       if(possible.length===1) slug=possible[0];
@@ -101,7 +114,8 @@ for(const relative of csvFiles){
 candidates.push(hero);
 
 const unique=[...new Map(candidates.map(record=>[record.slug,record])).values()];
-await rm(outDir,{recursive:true,force:true});
+let existingManifest={};
+try{existingManifest=JSON.parse(await readFile(manifestPath,'utf8'));}catch{}
 await mkdir(outDir,{recursive:true});
 await mkdir(reportDir,{recursive:true});
 
@@ -115,6 +129,14 @@ function extension(contentType,url){
 }
 
 async function fetchOne(record){
+  const existing=existingManifest[record.slug];
+  if(existing?.sourceUrl===record.image&&existing.src){
+    const localFile=join(astroRoot,'public',existing.src.replace(/^\//,''));
+    try{
+      await access(localFile);
+      return {...record,ok:true,status:200,bytes:0,localPath:existing.src,contentType:'existing',existing:true};
+    }catch{}
+  }
   try{
     const response=await fetch(record.image,{
       redirect:'follow',
@@ -156,8 +178,10 @@ const report={
   generatedAt:new Date().toISOString(),
   candidates:unique.length,
   preserved:results.filter(r=>r.ok).length,
+  preservedExisting:results.filter(r=>r.ok&&r.existing).length,
+  downloaded:results.filter(r=>r.ok&&!r.existing).length,
+  downloadedBytes:results.filter(r=>r.ok&&!r.existing).reduce((sum,r)=>sum+(r.bytes||0),0),
   failed:results.filter(r=>!r.ok).length,
-  totalBytes:results.filter(r=>r.ok).reduce((sum,r)=>sum+(r.bytes||0),0),
   failures:results.filter(r=>!r.ok).map(({slug,title,image,source,status,error})=>({slug,title,image,source,status,error}))
 };
 await writeFile(reportPath,JSON.stringify(report,null,2)+'\n');

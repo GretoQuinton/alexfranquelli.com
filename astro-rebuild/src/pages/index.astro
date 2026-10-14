@@ -36,6 +36,7 @@ const langCode=(language:string)=>language==='Italian'?'IT':'EN';
 const publicationKey=(value?:string)=>(value||'').trim().toLowerCase().replace(/[^a-z0-9]+/g,'');
 
 const centerpiece=writing.find(a=>a.data.slug==='the-tipping-point-of-mongolia')||writing[0];
+const centerpieceImage=imageFor(centerpiece);
 const fallbackSelected=[
   'shellac-live-at-netil-house-london',
   'nine-inch-nails-hesitation-marks',
@@ -67,17 +68,52 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
   image={heroImage}
 >
   <section class="hero wrap">
-    <div class="hero-grid">
-      <div>
-        <div class="eyebrow">Critic · Essayist · Fiction writer</div>
-        <h1>Alex<br />Franquelli</h1>
-      </div>
-      <div class="hero-copy">
-        <p class="intro">Writing across music, politics and culture, between London and Rome.</p>
+    <div class="hero-grid hero-grid-swapped">
+      <div class="hero-publications">
+        <div class="eyebrow">Published criticism</div>
         <p class="hero-note">Italian and English criticism for <em>Ritual</em>, Musicboom, The Quietus, PopMatters, All About Jazz, The Line of Best Fit and others.</p>
         <div class="actions">
           <a class="button" href="#selected">Read selected work</a>
           <a class="text-link" href="/writing">All writing ↗</a>
+        </div>
+      </div>
+      <div class="hero-copy">
+        <p class="intro">Writing across music, politics and culture, between London and Rome.</p>
+        <div class="hero-current-slot">
+          <section class="now-section hero-current">
+      <div class="current-inner">
+        <div class="now-heading">
+          <div class="eyebrow">Now · October 2026</div>
+          <h2>Current things.</h2>
+        </div>
+
+        <div class="now-editorial-grid">
+          <div class="current-compact-row">
+            <span class="now-label">Manuscript</span>
+            <span class="current-compact-value">Untitled novel <small>Draft 3 / Revision phase</small></span>
+          </div>
+          <div class="current-compact-row">
+            <span class="now-label">Thinking about</span>
+            <span class="current-compact-value current-thought">What would I do if I were stuck in a cube with no exits or windows for 70 years?</span>
+          </div>
+          <div class="now-notes">
+            <div class="current-media-entry">
+              <a href="https://openlibrary.org/books/OL26433767M/A_Little_Life" aria-label="A Little Life by Hanya Yanagihara">
+                <img src="https://covers.openlibrary.org/b/isbn/9781447294832-M.jpg" alt="Cover of A Little Life" loading="lazy" width="74" height="108" />
+              </a>
+              <div><span class="now-label">Reading</span><p><em>A Little Life</em><br />Hanya Yanagihara</p></div>
+            </div>
+            <div class="current-media-entry">
+              <a href="https://shortspanrecords.bandcamp.com/album/vault" aria-label="Vault by Miles">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4JCgwKCQ4MCwwPDw4QFSIWFRMTFSoeIBkiMiw0NDEsMC83Pk9DNzpLOy8wRV5GS1JUWVlZNUJhaGBWZ09XWVX/2wBDAQ8PDxUSFSgWFihVOTA5VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX/wAARCABcAFwDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAMEAQIGBf/EAC8QAAICAQIEBAUDBQAAAAAAAAECAAMRBCEFEjFRE0FhcQYUIjJSI2KBkaHB0fD/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQMCBP/EABwRAQEBAQADAQEAAAAAAAAAAAABAhEDEiExBP/aAAwDAQACEQMRAD8A6RnVPuYD3mFtRjhXUn0Mg1wyEHcmS6ehaV23Y9TM/bV1yfjf0zMTVv2pMzAdScBgcSKy0hhWo3IzmQlTXbWQfuODJd8/DPi7+rmR36TMq0EjUW9mbH8yyeonWddnXG8+t4zEROnJERAREQK2sraxV5QPPzjStYg5LQMeR5hM60AGsMDjO+0pj6mYgAewnm3r132PZ48e/j5Vq5HFy2DBGMdZsV8VkJwpU5xkHMr69Stqg/gDI9MP1k9xJdyaueOp47cTXVlVddQ52wTtuJazmVRom1OquC2BSjecsgLRhNTcgbv0zNfHb9+MPNJ8vfraJuyLy8yOGHpNAMkDvNWBEn+W/f8A2mjUMOhzKiOJlkZeoImJFR8Rsexa/CVsjOSJVapi21TodhkbgS9Ez14pq9rbHmuZyRU162XXKyIxAQDOJFRTatqE1sACJ6Er8QtNGg1Fq/clZI98Tm+GXXt11P6NTPrx4XFuM2DU31aJzWvOeaxTufQHtPGOWJZiWJ6k7majaYssWvl5yRzHlGB5zaTjzW23tWtJrNRo3DUWFe69VPuJ1vDNemv04tUcrKcOv4mcYqliAMZ9Tiet8M2MnEHqzs6HPuP+MpHVi9sYO8eMfKRxIJPHbsJGTk5xiIgIiIUkWqpGo01tJ2FiFf6iSxA4F0ep2rsGHU4YdjAnV8W4NXrz4tbCu/HXGze/+54b8E4gjY+X5vVWBErlRnt/C+mY3W6kj6VXkU9yesj0fw9qLGB1JFSeYByx/wACdFRTXp6lqqUKijAEKkiIkUiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgf/Z" alt="Cover of Vault by Miles" loading="lazy" width="74" height="74" />
+              </a>
+              <div><span class="now-label">Listening to</span><p><em>Vault</em><br />Miles</p></div>
+            </div>
+            <a class="text-link" href="https://www.goodreads.com/author/show/8057489.Alex_Franquelli" rel="me noopener">Goodreads ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
         </div>
       </div>
     </div>
@@ -93,11 +129,15 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
     </div>
   </section>
 
-  <section id="selected" class="wrap editorial-feature">
+  <section id="selected" class="feature-band">
+  <div class="wrap editorial-feature">
     <div class="editorial-feature-label">
       <div class="eyebrow">Featured / 01</div>
       <span class="language-badge">[{langCode(centerpiece.data.language)}]</span>
     </div>
+    {centerpieceImage&&<figure class="editorial-feature-media">
+      <img src={centerpieceImage.src} alt={centerpieceImage.alt} loading="lazy" />
+    </figure>}
     <div class="editorial-feature-body">
       <div class="editorial-feature-meta">
         <span>{centerpiece.data.publication||'Published work'}</span>
@@ -108,9 +148,11 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
       <p class="editorial-opening" lang={centerpiece.data.language==='Italian'?'it':'en'}>{excerpt(centerpiece,620)}</p>
       <a class="button" href={'/writing/'+centerpiece.data.slug}>Read the piece</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="wrap section work-section">
+<section class="criticism-band">
+  <div class="wrap section work-section">
     <div class="section-heading">
       <div>
         <div class="eyebrow">Portfolio</div>
@@ -146,6 +188,9 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
           <span data-work-publication>{selected[0]?.article.data.publication||''}</span>
           <span data-work-language>[{selected[0]?langCode(selected[0].article.data.language):'EN'}]</span>
         </div>
+        <div class="work-copy-image" data-work-pane-image-wrap hidden={!selected[0]?.image}>
+          <img data-work-pane-image src={selected[0]?.image?.src||''} alt="" />
+        </div>
         <p data-work-excerpt>{selected[0]?.excerpt||''}</p>
         <span class="work-copy-title" data-work-title>{selected[0]?.article.data.title||''}</span>
       </aside>
@@ -163,6 +208,8 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
       const paneExcerpt=showcase?.querySelector('[data-work-excerpt]');
       const panePublication=showcase?.querySelector('[data-work-publication]');
       const paneLanguage=showcase?.querySelector('[data-work-language]');
+      const paneImageWrap=showcase?.querySelector('[data-work-pane-image-wrap]');
+      const paneImage=showcase?.querySelector('[data-work-pane-image]');
       const float=showcase?.querySelector('[data-work-float]');
       const floatImage=showcase?.querySelector('[data-work-image]');
 
@@ -172,6 +219,16 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
         if(paneExcerpt) paneExcerpt.textContent=row.dataset.excerpt||'';
         if(panePublication) panePublication.textContent=row.dataset.publication||'';
         if(paneLanguage) paneLanguage.textContent='['+(row.dataset.language||'EN')+']';
+        if(paneImage&&paneImageWrap){
+          const src=row.dataset.image||'';
+          if(src){
+            paneImage.src=src;
+            paneImageWrap.hidden=false;
+          }else{
+            paneImage.removeAttribute('src');
+            paneImageWrap.hidden=true;
+          }
+        }
         rows.forEach(item=>item.toggleAttribute('data-active',item===row));
         if(floatImage&&row.dataset.image) floatImage.src=row.dataset.image;
       }
@@ -191,43 +248,11 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
       });
       activate(rows[0]);
     </script>
-  </section>
+  </div>
+</section>
 
-  <section class="now-section">
-    <div class="wrap">
-      <div class="now-heading">
-        <div class="eyebrow">Now · September 2026</div>
-        <h2>Current things.</h2>
-      </div>
-
-      <div class="now-editorial-grid">
-        <article class="draft-card">
-          <span class="now-label">Manuscript</span>
-          <strong>Untitled novel</strong>
-          <em>Draft 3 / Revision phase</em>
-        </article>
-
-        <article class="thought-card">
-          <span class="now-label">Writing / thinking about</span>
-          <blockquote>What would I do if I were stuck in a cube with no exits or windows for 70 years?</blockquote>
-        </article>
-
-        <div class="now-notes">
-          <div>
-            <span class="now-label">Reading</span>
-            <p><em>A Little Life</em><br />Hanya Yanagihara</p>
-          </div>
-          <div>
-            <span class="now-label">Listening to</span>
-            <p><em>Vault</em><br />Miles</p>
-          </div>
-          <a class="text-link" href="https://www.goodreads.com/author/show/8057489.Alex_Franquelli" rel="me noopener">Goodreads ↗</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="wrap publication-section">
+<section class="publication-band">
+  <div class="wrap publication-section">
     <div class="section-heading">
       <div>
         <div class="eyebrow">Body of work</div>
@@ -244,5 +269,6 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
         </a>
       )}
     </div>
-  </section>
+  </div>
+</section>
 </BaseLayout>

@@ -1,8 +1,9 @@
 {
-  "generatedAt": "2026-09-25T17:45:29.985Z",
-  "candidates": 77,
-  "preserved": 77,
+  "generatedAt": "2026-10-02T09:05:16.551Z",
+  "candidates": 82,
+  "preserved": 82,
+  "preservedExisting": 77,
+  "downloaded": 5,
   "failed": 0,
-  "totalBytes": 5965202,
   "failures": []
 }
