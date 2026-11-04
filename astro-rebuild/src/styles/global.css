@@ -601,3 +601,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 
 /* Breathing room and divider beneath the text-only homepage hero. */
 .hero .identity-strip{margin-top:clamp(28px,4vw,50px);border-top:1px solid var(--ink)}
+
+/* Small, optional visitor count in the dark site footer. */
+.footer-bottom{display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap}
+.footer-visitor-counter{font-variant-numeric:tabular-nums;white-space:nowrap}
+.footer-visitor-counter[hidden]{display:none}
+.footer-visitor-counter output{color:inherit;font-weight:600;margin-left:6px}
