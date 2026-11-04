@@ -25,3 +25,36 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npx wrangler deploy --dry-run
+
+      - name: Smoke-test visitor counter
+        shell: bash
+        run: |
+          set -euo pipefail
+          npx wrangler dev --local --ip 127.0.0.1 --port 8787 --infer-origin-from-routes=false > /tmp/visitor-worker.log 2>&1 &
+          worker_pid=$!
+          trap 'kill "$worker_pid" 2>/dev/null || true' EXIT
+
+          for i in $(seq 1 35); do
+            if curl -fsS http://127.0.0.1:8787/api/visits -o /tmp/visits-before.json; then
+              break
+            fi
+            sleep 1
+          done
+          if [ ! -s /tmp/visits-before.json ]; then
+            cat /tmp/visitor-worker.log
+            exit 1
+          fi
+
+          curl -fsS -X POST -H 'Origin: http://127.0.0.1:8787' http://127.0.0.1:8787/api/visits -o /tmp/visits-post.json
+          curl -fsS http://127.0.0.1:8787/api/visits -o /tmp/visits-after.json
+
+          node --input-type=module -e '
+            import { readFileSync } from "node:fs";
+            const read = (name) => JSON.parse(readFileSync("/tmp/visits-" + name + ".json", "utf8")).visits;
+            const before = read("before");
+            const posted = read("post");
+            const after = read("after");
+            if (![before, posted, after].every(Number.isSafeInteger) || posted !== before + 1 || after !== posted) {
+              throw new Error("Visitor counter failed: " + JSON.stringify({ before, posted, after }));
+            }
+          '
