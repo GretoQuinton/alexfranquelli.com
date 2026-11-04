@@ -88,17 +88,17 @@ const articleJsonLd=JSON.stringify({
       {d.releaseYear&&<div><span>Release year</span><strong>{d.releaseYear}</strong></div>}
       {d.genre&&<div><span>Genre</span><strong>{d.genre}</strong></div>}
     </div>
-    {originalStatus==='live'&&d.originalUrl&&<a class="original-link" href={d.originalUrl} rel="noopener">View original publication ↗</a>}
-    {originalStatus==='dead'&&d.archiveUrl&&<a class="original-link" href={d.archiveUrl} rel="noopener">View archived publication ↗</a>}
+    {originalStatus==='live'&&d.originalUrl&&<a class="original-link" href={d.originalUrl} target="_blank" rel="noopener">View original publication ↗</a>}
+    {originalStatus==='dead'&&d.archiveUrl&&<a class="original-link" href={d.archiveUrl} target="_blank" rel="noopener">View archived publication ↗</a>}
     {originalStatus==='dead'&&!d.archiveUrl&&<p class="original-note">The original publication is no longer online.</p>}
-    {(originalStatus==='unchecked'||!originalStatus)&&d.originalUrl&&<a class="original-link" href={d.originalUrl} rel="noopener">Original publication (link unverified) ↗</a>}
+    {(originalStatus==='unchecked'||!originalStatus)&&d.originalUrl&&<a class="original-link" href={d.originalUrl} target="_blank" rel="noopener">Original publication (link unverified) ↗</a>}
     {(!d.publicationDate||!d.publication)&&<p class="verification-note">Some archive metadata is still being verified. <a href="/contact">Corrections are welcome.</a></p>}
   </header>
   {resolvedImage&&<figure class="article-image">
     <img src={resolvedImage.src} alt={resolvedImage.alt} loading="eager" fetchpriority="high" />
     {(d.imageCredit||d.imageSourceUrl)&&<figcaption>
       {d.imageCredit&&<span>{d.imageCredit}</span>}
-      {d.imageSourceUrl&&<a href={d.imageSourceUrl}>Image source ↗</a>}
+      {d.imageSourceUrl&&<a href={d.imageSourceUrl} target="_blank" rel="noopener">Image source ↗</a>}
     </figcaption>}
   </figure>}
   <div class="prose" lang={lang}><Content /></div>
