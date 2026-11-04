@@ -60,12 +60,11 @@ for(const article of writing){
   publicationCounts.set(key,{label:current?.label||label,count:(current?.count||0)+1,key});
 }
 const allPublications=[...publicationCounts.values()].sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label));
-const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home-hero.webp';
 ---
 
 <BaseLayout
   description="Alex Franquelli is a writer and critic based between London and Rome, working across music, politics, culture and fiction."
-  image={heroImage}
+  image={centerpieceImage?.src}
 >
   <section class="hero wrap">
     <div class="hero-grid hero-grid-swapped">
@@ -108,10 +107,6 @@ const heroImage=getRecoveredImage('__homeHero','')?.src||'/images/recovered/home
     </section>
         </div>
       </div>
-    </div>
-
-    <div class="hero-media" aria-hidden="true">
-      <img src={heroImage} alt="" loading="eager" fetchpriority="high" />
     </div>
 
     <div class="identity-strip" aria-label="Writer profile">
