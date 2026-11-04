@@ -598,3 +598,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .hero-grid-swapped .hero-publications .hero-note{font-size:19px}
   .hero-grid-swapped .intro{margin-bottom:28px}
 }
+
+/* Breathing room and divider beneath the text-only homepage hero. */
+.hero .identity-strip{margin-top:clamp(28px,4vw,50px);border-top:1px solid var(--ink)}
