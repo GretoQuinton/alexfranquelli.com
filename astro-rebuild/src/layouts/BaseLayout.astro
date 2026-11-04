@@ -84,7 +84,12 @@ const personJsonLd = JSON.stringify({
       <a href="https://www.goodreads.com/author/show/8057489.Alex_Franquelli" target="_blank" rel="me noopener">Goodreads ↗</a>
     </div>
   </div>
-  <div class="wrap footer-bottom">© {new Date().getFullYear()} Alex Franquelli</div>
+  <div class="wrap footer-bottom">
+    <span>© {new Date().getFullYear()} Alex Franquelli</span>
+    <span class="footer-visitor-counter" data-visitor-counter hidden title="Approximate visits: counted once per browser every 24 hours">
+      Visits <output data-visitor-total></output>
+    </span>
+  </div>
 </footer>
 <script is:inline>
   // Apply the same behaviour to external links inside rendered article bodies.
@@ -100,6 +105,54 @@ const personJsonLd = JSON.stringify({
         // Leave malformed URLs unchanged.
       }
     });
+  })();
+</script>
+<script is:inline>
+  // A privacy-conscious site visit counter. Only a timestamp is stored in the
+  // visitor's browser; no identity, IP address or identifier is sent to storage.
+  (async () => {
+    const container = document.querySelector('[data-visitor-counter]');
+    const total = document.querySelector('[data-visitor-total]');
+    if (!container || !total) return;
+
+    const key = 'alexfranquelli-counted-until-v1';
+    const now = Date.now();
+    let countedRecently = false;
+    try {
+      countedRecently = Number(localStorage.getItem(key) || 0) > now;
+    } catch {
+      // Storage may be disabled by browser privacy settings.
+    }
+
+    const respectsDNT = navigator.doNotTrack === '1' ||
+      navigator.globalPrivacyControl === true;
+    const shouldCount = !countedRecently && !respectsDNT;
+
+    try {
+      const response = await fetch('/api/visits', {
+        method: shouldCount ? 'POST' : 'GET',
+        cache: 'no-store',
+        credentials: 'same-origin',
+        headers: { Accept: 'application/json' },
+      });
+      if (!response.ok) return;
+      const data = await response.json();
+      if (!Number.isSafeInteger(data.visits) || data.visits < 0) return;
+
+      total.textContent = new Intl.NumberFormat('en-GB').format(data.visits);
+      container.hidden = false;
+
+      if (shouldCount) {
+        try {
+          localStorage.setItem(key, String(now + 24 * 60 * 60 * 1000));
+        } catch {
+          // Counting still works when persistent browser storage is disabled.
+        }
+      }
+    } catch {
+      // If Cloudflare is unavailable, hide the counter instead of showing a
+      // misleading zero. This also keeps old static previews tidy.
+    }
   })();
 </script>
 </body>
