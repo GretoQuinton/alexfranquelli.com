@@ -52,6 +52,27 @@ Pagefind indexes article bodies after the Astro build. The `/writing` interface 
 
 Active rules in `public/_redirects` are validated after every build by `scripts/check-redirects.mjs`. Pending legacy rules remain commented until their article destination exists.
 
+## Visitor counter
+
+The footer shows an approximate **visits** total, starting when this feature is
+deployed (it does not recover historical Squarespace traffic). The site uses
+a small Cloudflare Worker endpoint at `/api/visits`: a GET reads the total;
+a same-origin POST increments it. A SQLite-backed Durable Object keeps the
+total across deployments, with separate state for each Cloudflare Preview.
+
+The browser stores only the next eligible counting time in localStorage,
+so returning readers count at most once per browser every 24 hours. Do Not
+Track and Global Privacy Control requests are not counted. No tracking ID,
+IP address or personal visitor profile is saved. This is an approximate
+count of visits, not a claim about unique individuals. When the endpoint is
+unavailable the footer counter stays hidden rather than displaying zero.
+
+Cloudflare Workers Static Assets still serves every route except
+`/api/visits`; Wrangler provisions the Durable Object when the Worker
+is deployed. Validate the Worker with `npx wrangler deploy --dry-run`.
+For previews, use Cloudflare Worker Previews (`wrangler preview`) so
+the preview's count remains separate from production.
+
 ## Launch safety
 
 The preview remains blocked from indexing until the production domain is cut over. The production indexing switch is kept in a separate draft pull request and should be merged only during the custom-domain launch.
