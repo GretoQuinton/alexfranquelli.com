@@ -90,9 +90,10 @@ const personJsonLd = JSON.stringify({
   // Apply the same behaviour to external links inside rendered article bodies.
   (() => {
     const internalHosts = new Set([window.location.hostname, 'alexfranquelli.com', 'www.alexfranquelli.com']);
-    document.querySelectorAll('a[href^="https://"], a[href^="http://"]').forEach(link => {
+    document.querySelectorAll('a[href]').forEach(link => {
       try {
-        if (internalHosts.has(new URL(link.href).hostname)) return;
+        const url = new URL(link.getAttribute('href'), window.location.href);
+        if (!['http:', 'https:'].includes(url.protocol) || internalHosts.has(url.hostname)) return;
         link.target = '_blank';
         link.relList.add('noopener');
       } catch {
