@@ -80,11 +80,26 @@ const personJsonLd = JSON.stringify({
     </div>
     <div class="footer-links footer-contact">
       <a href="/contact">Contact</a>
-      <a href="https://uk.linkedin.com/in/alexfranquelli" rel="me noopener">LinkedIn ↗</a>
-      <a href="https://www.goodreads.com/author/show/8057489.Alex_Franquelli" rel="me noopener">Goodreads ↗</a>
+      <a href="https://uk.linkedin.com/in/alexfranquelli" target="_blank" rel="me noopener">LinkedIn ↗</a>
+      <a href="https://www.goodreads.com/author/show/8057489.Alex_Franquelli" target="_blank" rel="me noopener">Goodreads ↗</a>
     </div>
   </div>
   <div class="wrap footer-bottom">© {new Date().getFullYear()} Alex Franquelli</div>
 </footer>
+<script is:inline>
+  // Apply the same behaviour to external links inside rendered article bodies.
+  (() => {
+    const internalHosts = new Set([window.location.hostname, 'alexfranquelli.com', 'www.alexfranquelli.com']);
+    document.querySelectorAll('a[href^="https://"], a[href^="http://"]').forEach(link => {
+      try {
+        if (internalHosts.has(new URL(link.href).hostname)) return;
+        link.target = '_blank';
+        link.relList.add('noopener');
+      } catch {
+        // Leave malformed URLs unchanged.
+      }
+    });
+  })();
+</script>
 </body>
 </html>
