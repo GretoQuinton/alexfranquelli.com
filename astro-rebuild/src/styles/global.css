@@ -602,3 +602,97 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 /* Breathing room and divider beneath the text-only homepage hero. */
 .hero .identity-strip{margin-top:clamp(28px,4vw,50px);border-top:1px solid var(--ink)}
 
+
+
+/* Integrated About and Fiction page design from the editorial polish. */
+.about-page{padding:82px 0 110px}
+.about-page>h1{font-size:clamp(82px,12vw,158px);line-height:.86;margin:18px 0 58px}
+.about-lede-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(250px,.45fr);gap:70px;align-items:start;padding-bottom:64px;border-bottom:1px solid var(--ink)}
+.about-lede{margin:0;font-family:var(--serif);font-size:clamp(30px,3.5vw,48px);line-height:1.16;letter-spacing:-.03em}
+.about-profile{border-top:1px solid var(--ink)}
+.about-profile span{display:block;padding:13px 0;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.about-body-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:70px;padding-top:60px}
+.about-copy p{max-width:720px;margin:0 0 1.25em;font-family:var(--serif);font-size:22px;line-height:1.55}
+.about-current{align-self:start;padding:24px 26px 28px;border:1px solid var(--ink);background:var(--paper-2)}
+.about-current strong{display:block;margin:48px 0 12px;font-family:var(--serif);font-size:clamp(30px,3.3vw,46px);line-height:1.03;font-weight:400;letter-spacing:-.035em}
+.about-current p{margin:0 0 28px;font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--accent)}
+.about-current .text-link{font-size:11px}
+
+@media(max-width:900px){
+  .about-lede-grid,.about-body-grid{grid-template-columns:1fr;gap:34px}
+  .about-lede-grid{padding-bottom:48px}
+  .about-profile{max-width:520px}
+  .about-current{max-width:640px}
+}
+@media(max-width:700px){
+  .hero-editorial-media{grid-template-columns:1fr 1fr}
+  .hero-art-card{border-right:0;border-bottom:1px solid rgba(246,244,238,.35)}
+  .hero-art-card:first-child{grid-column:1/-1;aspect-ratio:16/9}
+  .hero-art-card:nth-child(2){border-right:1px solid rgba(246,244,238,.35)}
+  .hero-art-card span{font-size:12px;padding:9px 10px}
+  .about-page{padding:56px 0 78px}
+  .about-page>h1{font-size:clamp(58px,18vw,88px);margin-bottom:38px}
+  .about-lede{font-size:27px}
+  .about-body-grid{padding-top:42px}
+  .about-copy p{font-size:20px}
+  .about-current strong{margin-top:38px;font-size:32px}
+}
+
+
+/* Fiction editorial treatment — October 2026 */
+.fiction-page{padding:82px 0 110px}
+.fiction-header{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:44px 70px;align-items:end;padding-bottom:62px}
+.fiction-header-meta{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.fiction-status{padding:7px 10px 6px;border:1px solid var(--accent);color:var(--accent);font-family:var(--mono);font-size:9px;font-weight:600;line-height:1;text-transform:uppercase;letter-spacing:.12em}
+.fiction-header h1{font-size:clamp(76px,11vw,148px);line-height:.86;letter-spacing:-.055em;margin:0}
+.fiction-premise{max-width:540px;margin:0 0 8px;font-family:var(--serif);font-size:clamp(24px,2.8vw,36px);line-height:1.28;letter-spacing:-.02em;color:var(--muted)}
+.fiction-manuscript{padding:28px 32px 30px;background:var(--ink);color:var(--paper)}
+.fiction-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(246,244,238,.6);border-bottom:1px solid rgba(246,244,238,.28)}
+.fiction-facts>div{padding:14px 18px 15px 0;border-right:1px solid rgba(246,244,238,.22)}
+.fiction-facts>div+div{padding-left:18px}
+.fiction-facts>div:last-child{border-right:0}
+.fiction-facts span,.fiction-facts strong{display:block}
+.fiction-facts span{margin-bottom:4px;font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:.12em;color:#aaa49a}
+.fiction-facts strong{font-family:var(--serif);font-size:18px;font-weight:400}
+.fiction-facts .genre-value{text-transform:capitalize}
+.fiction-manuscript blockquote{max-width:1000px;margin:108px 0 90px;font-family:var(--serif);font-size:clamp(36px,4.5vw,64px);line-height:1.05;letter-spacing:-.04em}
+.fiction-quote-label{font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:.12em;color:#aaa49a}
+.fiction-contact{display:flex;align-items:baseline;justify-content:space-between;gap:30px;padding-top:34px}
+.fiction-contact p{max-width:700px;margin:0;font-family:var(--serif);font-size:20px;line-height:1.5;color:var(--muted)}
+.fiction-contact .text-link{flex:none;font-size:11px}
+
+@media(max-width:900px){
+  .fiction-header{grid-template-columns:1fr;gap:30px}
+  .fiction-premise{max-width:680px}
+}
+@media(max-width:700px){
+  .fiction-page{padding:56px 0 78px}
+  .fiction-header{padding-bottom:44px}
+  .fiction-header h1{font-size:clamp(58px,18vw,88px)}
+  .fiction-premise{font-size:24px}
+  .fiction-manuscript{padding:22px}
+  .fiction-facts{grid-template-columns:1fr}
+  .fiction-facts>div,.fiction-facts>div+div{padding:12px 0;border-right:0;border-bottom:1px solid rgba(246,244,238,.22)}
+  .fiction-facts>div:last-child{border-bottom:0}
+  .fiction-manuscript blockquote{margin:68px 0 60px;font-size:34px}
+  .fiction-contact{display:block;padding-top:28px}
+  .fiction-contact p{font-size:19px;margin-bottom:18px}
+}
+
+
+/* Final-release article layout and editorial metadata (approved polish). */
+.article{width:min(960px,calc(100% - 48px))}
+.article-header{max-width:900px}
+.article-byline{margin:-12px 0 24px;font-family:var(--serif);font-size:18px;line-height:1.4;color:var(--muted)}
+.article-record-details{display:flex;flex-wrap:wrap;gap:8px 18px;margin:-2px 0 20px;color:var(--muted);font-size:11px}
+.article-record-details span{display:inline-flex;gap:6px;align-items:baseline}
+.article-record-details strong{font-family:var(--mono);font-size:9px;font-weight:500;text-transform:uppercase;letter-spacing:.1em;color:var(--ink)}
+.article-image-cover{display:flex;flex-direction:column;align-items:center}
+.article-image-cover img{width:min(100%,680px);height:auto;max-height:none;object-fit:contain;background:var(--paper-2)}
+.prose{max-width:720px;margin-inline:auto;line-height:1.7}
+@media(max-width:700px){
+  .article{width:min(100% - 32px,960px)}
+  .article-byline{font-size:17px;margin-top:-8px}
+  .article-record-details{gap:7px 14px;margin-bottom:16px}
+  .prose{line-height:1.68}
+}
