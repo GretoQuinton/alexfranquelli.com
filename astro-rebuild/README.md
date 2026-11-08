@@ -54,18 +54,20 @@ Active rules in `public/_redirects` are validated after every build by `scripts/
 
 ## Visitor counter
 
-The footer shows an approximate **visits** total, starting when this feature is
-deployed (it does not recover historical Squarespace traffic). The site uses
-a small Cloudflare Worker endpoint at `/api/visits`: a GET reads the total;
-a same-origin POST increments it. A SQLite-backed Durable Object keeps the
-total across deployments, with separate state for each Cloudflare Preview.
+The visitor counter is intentionally **invisible** to website readers.
+It starts when the feature is deployed and does not recover historical
+Squarespace traffic. A small Cloudflare Worker endpoint at `/api/visits`
+maintains the total: a GET reads it and a same-origin POST increments it.
+A SQLite-backed Durable Object keeps the total across deployments, with
+separate state for each Cloudflare Preview.
 
 The browser stores only the next eligible counting time in localStorage,
 so returning readers count at most once per browser every 24 hours. Do Not
 Track and Global Privacy Control requests are not counted. No tracking ID,
 IP address or personal visitor profile is saved. This is an approximate
-count of visits, not a claim about unique individuals. When the endpoint is
-unavailable the footer counter stays hidden rather than displaying zero.
+count of visits, not a claim about unique individuals. The page sends no
+counter request when a visit has already been recorded for that browser
+within 24 hours. Counting failures have no visible effect.
 
 Cloudflare Workers Static Assets still serves every route except
 `/api/visits`; Wrangler provisions the Durable Object when the Worker
