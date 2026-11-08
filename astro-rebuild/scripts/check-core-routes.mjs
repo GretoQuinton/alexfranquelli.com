@@ -84,6 +84,7 @@ const squarespaceLeaks = [];
 const descriptionScaffoldLeaks = [];
 const hiddenProseRuleLeaks = [];
 const releasePlaceholderLeaks = [];
+const duplicateDeckLeaks = [];
 
 for (const name of entries) {
   const frontmatter = await readFile(resolve(source, name), 'utf8');
@@ -100,6 +101,11 @@ for (const name of entries) {
     if (built.includes('squarespace-cdn.com')) squarespaceLeaks.push(slug);
     if (/\.prose\s*>\s*:nth-child\(-n\+\d+\)\s*\{\s*display\s*:\s*none/i.test(built)) hiddenProseRuleLeaks.push(slug);
     if (/(?:\/\s*X{3,}\b|\bX{3,}\s*\/\s*X{3,}\b)/i.test(built)) releasePlaceholderLeaks.push(slug);
+    const deck=built.match(/<p class="article-deck"[^>]*>([\s\S]*?)<\/p>/i)?.[1]
+      ?.replace(/<[^>]+>/g,' ').replace(/&(?:nbsp|amp|quot|#39|apos|ldquo|rdquo|lsquo|rsquo);/gi,' ').replace(/\s+/g,' ').trim().toLowerCase();
+    const proseStart=built.match(/<div class="prose"[^>]*>([\s\S]{0,1800})/i)?.[1]
+      ?.replace(/<[^>]+>/g,' ').replace(/&(?:nbsp|amp|quot|#39|apos|ldquo|rdquo|lsquo|rsquo);/gi,' ').replace(/\s+/g,' ').trim().toLowerCase();
+    if(deck&&proseStart&&proseStart.startsWith(deck)) duplicateDeckLeaks.push(slug);
     if (!/^description:\s*/m.test(frontmatter)) {
       const description = built.match(/<meta[^>]+name="description"[^>]+content="([^"]*)"/i)?.[1] || '';
       if (/(?:voto\s*:|rating\s*:|x{3,}|no\s+title\s+yet|tracklist\s*:|similar\s+(?:artist|artists|to)\s*:|release\s+dates?\s*:|caratteri\s*\(con\s+spazi\)|parole\s*:)/i.test(description)) {
@@ -127,6 +133,9 @@ if (hiddenProseRuleLeaks.length) {
 }
 if (releasePlaceholderLeaks.length) {
   throw new Error(`Rendered articles contain unresolved release placeholders:\n${releasePlaceholderLeaks.join('\n')}`);
+}
+if (duplicateDeckLeaks.length) {
+  throw new Error(`Rendered article decks duplicate the opening prose:\n${duplicateDeckLeaks.join('\n')}`);
 }
 
 const countMatch = writingIndex.match(/Archive\s*[·&middot;]\s*([0-9]+)\s*pieces/i);

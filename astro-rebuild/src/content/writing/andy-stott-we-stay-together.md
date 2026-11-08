@@ -19,7 +19,7 @@ draft: false
 
 <p>La ricerca sonora resta infatti un trionfo dell’antropologia nel senso più tradizionale del termine, ma a cambiare adesso sono le meccaniche, le stratificazioni di cui si avvale l’arrangiamento. Via l’ossessivo rallentamento del composto musicale e spazio ai riverberi, alle alienazioni lungo spirali ritmiche compulsive, ad un sentire blues nel senso meno musicale ma più spirituale del termine.</p>
 
-<p>La techno della precedente vita di Stott viene solamente sfiorata in rare occasioni (“Bad Wires”) e quando ciò avviene, essa è un mezzo e non un fine espressivo. L'ossessività ritmica si è evoluta ed ed è ora un mero retaggio del passato, un esoscheletro fragile usato da Stott per motivi di risonanza estetica e non più con fini portanti.</p>
+<p>La techno della precedente vita di Stott viene solamente sfiorata in rare occasioni (“Bad Wires”) e quando ciò avviene, essa è un mezzo e non un fine espressivo. L'ossessività ritmica si è evoluta ed è ora un mero retaggio del passato, un esoscheletro fragile usato da Stott per motivi di risonanza estetica e non più con fini portanti.</p>
 
 <p>L’impressione che se ne ha, però, è quella di avere di fronte un album interlocutorio che stia perennemente per portare verso lidi sconosciuti ma che si ferma a un tanto così dall’ignoto di un magnifico precipizio.</p>
 
