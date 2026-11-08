@@ -52,6 +52,30 @@ Pagefind indexes article bodies after the Astro build. The `/writing` interface 
 
 Active rules in `public/_redirects` are validated after every build by `scripts/check-redirects.mjs`. Pending legacy rules remain commented until their article destination exists.
 
+## Umami analytics (optional)
+
+Umami is prepared across every site page but is inactive until the
+Cloudflare **build-time** environment variable `PUBLIC_UMAMI_WEBSITE_ID`
+is defined. Do not put an example ID in source code.
+
+1. In Umami, add a website with domain `alexfranquelli.com`.
+2. In Websites > Edit > Tracking code, copy the `data-website-id` value.
+3. In Cloudflare Workers & Pages > `alexfranquelli-com` > Settings >
+   Builds > Environment variables, set `PUBLIC_UMAMI_WEBSITE_ID` to
+   that website ID; then trigger a new build. Runtime-only Worker vars
+   do not inject values into Astro's already-built static HTML.
+4. Umami Cloud defaults to `https://cloud.umami.is/script.js`.
+   For self-hosted Umami, also set the public build-time variable
+   `PUBLIC_UMAMI_SCRIPT_URL` to the script URL shown by your instance.
+5. The tracker is restricted to `alexfranquelli.com` and
+   `www.alexfranquelli.com`, so Cloudflare preview traffic is excluded.
+   Analytics will begin only when the site is served on the final domain.
+
+The script includes `data-exclude-search="true"` to avoid collecting
+archive search queries. No Umami tracker or data requests are made if
+the website ID is not configured. The existing hidden, privacy-friendly
+visitor total is a separate feature from Umami.
+
 ## Visitor counter
 
 The visitor counter is intentionally **invisible** to website readers.
