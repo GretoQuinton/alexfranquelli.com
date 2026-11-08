@@ -11,6 +11,10 @@ const {
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const socialImage = image ? new URL(image, Astro.site).toString() : null;
 const path = Astro.url.pathname;
+// Set these public build-time variables in Cloudflare once Umami provides
+// the website ID and, if self-hosted, the tracker script URL.
+const umamiWebsiteId=(import.meta.env.PUBLIC_UMAMI_WEBSITE_ID||'').trim();
+const umamiScriptUrl=(import.meta.env.PUBLIC_UMAMI_SCRIPT_URL||'https://cloud.umami.is/script.js').trim();
 const nav = [
   { href:'/writing', label:'Writing' },
   { href:'/fiction', label:'Fiction' },
@@ -52,6 +56,14 @@ const personJsonLd = JSON.stringify({
   <script type="application/ld+json" set:html={personJsonLd}></script>
   {jsonLd&&<script type="application/ld+json" set:html={jsonLd}></script>}
   <title>{title}</title>
+  {umamiWebsiteId&&<script
+    is:inline
+    defer
+    src={umamiScriptUrl}
+    data-website-id={umamiWebsiteId}
+    data-domains="alexfranquelli.com,www.alexfranquelli.com"
+    data-exclude-search="true"
+  ></script>}
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
