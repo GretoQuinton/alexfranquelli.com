@@ -14,7 +14,7 @@ draft: false
 
 <p>The range of influences at play here is— by itself—praiseworthy and laudable; the magnitude of their individual skillsets reveals a competence and unity that makes you wonder: do all marching bands sound like this? No, not really. This is funky in all its colourful glory, drenched in jazz, as if it had been forgotten in the Big Easy the day after the Mardi Gras, although this is music for no Wednesdays: it flows and shines at weekends.</p>
 
-<p>If someone has been wondering whether or not the usual funky and soul heroes of many a generation have been thought of when writing this album, the answer is not only provided by the trombone whose life is blown in by none other than trombonist Fred Wesley on "Bill &amp; The Sweet Fairy." And if you're wondering whether or not he's the the historic trombonist for James Brown and Parliament Funkadelic , the answer is: "yes, he is." But the groove continues on the beautifully catchy "Dance With Me," featuring one of the most interesting voices around.</p>
+<p>If someone has been wondering whether or not the usual funky and soul heroes of many a generation have been thought of when writing this album, the answer is not only provided by the trombone whose life is blown in by none other than trombonist Fred Wesley on "Bill &amp; The Sweet Fairy." And if you're wondering whether or not he's the historic trombonist for James Brown and Parliament Funkadelic , the answer is: "yes, he is." But the groove continues on the beautifully catchy "Dance With Me," featuring one of the most interesting voices around.</p>
 
 <p>Avery* Sunshine seems to toy with the tune, stretching the pace, then adapting her vocal line to the texture before cleverly fading in the mix.</p>
 

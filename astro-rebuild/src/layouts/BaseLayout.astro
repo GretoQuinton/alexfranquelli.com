@@ -11,6 +11,10 @@ const {
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const socialImage = image ? new URL(image, Astro.site).toString() : null;
 const path = Astro.url.pathname;
+// Set these public build-time variables in Cloudflare once Umami provides
+// the website ID and, if self-hosted, the tracker script URL.
+const umamiWebsiteId=(import.meta.env.PUBLIC_UMAMI_WEBSITE_ID||'').trim();
+const umamiScriptUrl=(import.meta.env.PUBLIC_UMAMI_SCRIPT_URL||'https://cloud.umami.is/script.js').trim();
 const nav = [
   { href:'/writing', label:'Writing' },
   { href:'/fiction', label:'Fiction' },
@@ -52,6 +56,14 @@ const personJsonLd = JSON.stringify({
   <script type="application/ld+json" set:html={personJsonLd}></script>
   {jsonLd&&<script type="application/ld+json" set:html={jsonLd}></script>}
   <title>{title}</title>
+  {umamiWebsiteId&&<script
+    is:inline
+    defer
+    src={umamiScriptUrl}
+    data-website-id={umamiWebsiteId}
+    data-domains="alexfranquelli.com,www.alexfranquelli.com"
+    data-exclude-search="true"
+  ></script>}
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
@@ -71,7 +83,7 @@ const personJsonLd = JSON.stringify({
   <div class="wrap footer-grid">
     <div>
       <div class="footer-name">Alex Franquelli</div>
-      <p>Criticism, essays and fiction.<br />London / Rome.</p>
+      <p>Criticism, essays and fiction.<br />London.</p>
     </div>
     <div class="footer-links">
       <a href="/writing">Writing</a>
@@ -80,11 +92,63 @@ const personJsonLd = JSON.stringify({
     </div>
     <div class="footer-links footer-contact">
       <a href="/contact">Contact</a>
-      <a href="https://uk.linkedin.com/in/alexfranquelli" rel="me noopener">LinkedIn ↗</a>
-      <a href="https://www.goodreads.com/author/show/8057489.Alex_Franquelli" rel="me noopener">Goodreads ↗</a>
+      <a href="https://uk.linkedin.com/in/alexfranquelli" target="_blank" rel="me noopener">LinkedIn ↗</a>
+      <a href="https://www.goodreads.com/author/show/8057489.Alex_Franquelli" target="_blank" rel="me noopener">Goodreads ↗</a>
     </div>
   </div>
   <div class="wrap footer-bottom">© {new Date().getFullYear()} Alex Franquelli</div>
 </footer>
+<script is:inline>
+  // Apply the same behaviour to external links inside rendered article bodies.
+  (() => {
+    const internalHosts = new Set([window.location.hostname, 'alexfranquelli.com', 'www.alexfranquelli.com']);
+    document.querySelectorAll('a[href]').forEach(link => {
+      try {
+        const url = new URL(link.getAttribute('href'), window.location.href);
+        if (!['http:', 'https:'].includes(url.protocol) || internalHosts.has(url.hostname)) return;
+        link.target = '_blank';
+        link.relList.add('noopener');
+      } catch {
+        // Leave malformed URLs unchanged.
+      }
+    });
+  })();
+</script>
+<script is:inline>
+  // Record an approximate visit without showing a counter to site visitors.
+  // Store only the next eligible count time, not a visitor identity.
+  (async () => {
+    if (navigator.doNotTrack === '1' || navigator.globalPrivacyControl === true) return;
+
+    const key = 'alexfranquelli-counted-until-v1';
+    const now = Date.now();
+    try {
+      if (Number(localStorage.getItem(key) || 0) > now) return;
+    } catch {
+      // Browser storage may be unavailable.
+    }
+
+    try {
+      const response = await fetch('/api/visits', {
+        method: 'POST',
+        cache: 'no-store',
+        credentials: 'same-origin',
+        headers: { Accept: 'application/json' },
+      });
+      if (!response.ok) return;
+
+      const data = await response.json();
+      if (!Number.isSafeInteger(data.visits) || data.visits < 0) return;
+
+      try {
+        localStorage.setItem(key, String(now + 24 * 60 * 60 * 1000));
+      } catch {
+        // Repeat views may be counted when storage is disabled.
+      }
+    } catch {
+      // Tracking failure must never interfere with the website.
+    }
+  })();
+</script>
 </body>
 </html>

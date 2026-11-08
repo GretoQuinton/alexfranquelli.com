@@ -52,6 +52,53 @@ Pagefind indexes article bodies after the Astro build. The `/writing` interface 
 
 Active rules in `public/_redirects` are validated after every build by `scripts/check-redirects.mjs`. Pending legacy rules remain commented until their article destination exists.
 
+## Umami analytics (optional)
+
+Umami is prepared across every site page but is inactive until the
+Cloudflare **build-time** environment variable `PUBLIC_UMAMI_WEBSITE_ID`
+is defined. Do not put an example ID in source code.
+
+1. In Umami, add a website with domain `alexfranquelli.com`.
+2. In Websites > Edit > Tracking code, copy the `data-website-id` value.
+3. In Cloudflare Workers & Pages > `alexfranquelli-com` > Settings >
+   Builds > Environment variables, set `PUBLIC_UMAMI_WEBSITE_ID` to
+   that website ID; then trigger a new build. Runtime-only Worker vars
+   do not inject values into Astro's already-built static HTML.
+4. Umami Cloud defaults to `https://cloud.umami.is/script.js`.
+   For self-hosted Umami, also set the public build-time variable
+   `PUBLIC_UMAMI_SCRIPT_URL` to the script URL shown by your instance.
+5. The tracker is restricted to `alexfranquelli.com` and
+   `www.alexfranquelli.com`, so Cloudflare preview traffic is excluded.
+   Analytics will begin only when the site is served on the final domain.
+
+The script includes `data-exclude-search="true"` to avoid collecting
+archive search queries. No Umami tracker or data requests are made if
+the website ID is not configured. The existing hidden, privacy-friendly
+visitor total is a separate feature from Umami.
+
+## Visitor counter
+
+The visitor counter is intentionally **invisible** to website readers.
+It starts when the feature is deployed and does not recover historical
+Squarespace traffic. A small Cloudflare Worker endpoint at `/api/visits`
+maintains the total: a GET reads it and a same-origin POST increments it.
+A SQLite-backed Durable Object keeps the total across deployments, with
+separate state for each Cloudflare Preview.
+
+The browser stores only the next eligible counting time in localStorage,
+so returning readers count at most once per browser every 24 hours. Do Not
+Track and Global Privacy Control requests are not counted. No tracking ID,
+IP address or personal visitor profile is saved. This is an approximate
+count of visits, not a claim about unique individuals. The page sends no
+counter request when a visit has already been recorded for that browser
+within 24 hours. Counting failures have no visible effect.
+
+Cloudflare Workers Static Assets still serves every route except
+`/api/visits`; Wrangler provisions the Durable Object when the Worker
+is deployed. Validate the Worker with `npx wrangler deploy --dry-run`.
+For previews, use Cloudflare Worker Previews (`wrangler preview`) so
+the preview's count remains separate from production.
+
 ## Launch safety
 
 The preview remains blocked from indexing until the production domain is cut over. The production indexing switch is kept in a separate draft pull request and should be merged only during the custom-domain launch.
